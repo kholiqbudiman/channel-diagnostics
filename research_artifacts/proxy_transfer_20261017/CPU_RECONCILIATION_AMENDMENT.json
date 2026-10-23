@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-10-17T00:04:45.295268+00:00",
+  "new_training_outcomes": 0,
+  "old_profiles_completed": 0,
+  "reason": "CPU-vs-archivedGPU absolute logit tolerance failed at0.004628. Recompute all old diagnostic families on CPU for common numerical runtime; retain original GPU masks and record max logit/argmax differences. No DTD recipe, candidate, endpoint or diagnostic mapping changed. Documented manual implementation correction, no automatic retry.",
+  "prior_go_sha256": "b3909369e21bbe1a1b3fb5fb87fa0154c1a569e04453e20c5ca273e414f07521",
+  "prior_lock_sha256": "8d222e06771ecc47e6c7a8b0dc0b499bb3aa56a37e8f2b9328635309eeb174ce"
+}

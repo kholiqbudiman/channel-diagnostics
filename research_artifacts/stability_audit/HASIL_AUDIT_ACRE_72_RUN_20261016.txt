@@ -1,0 +1,74 @@
+AUDIT ACRE — COHORT STABILITAS 72 RUN — 16 OKTOBER 2026
+
+KESIMPULAN
+Artefak 72/72 run lolos pemeriksaan yang dijelaskan di bawah. Hasil baru layak digunakan sebagai bukti pengembangan dengan label semantik yang benar. Namun, keuntungan alokasi channel dari pilot tidak terkonfirmasi secara konsisten pada split baru. Cohort ini belum membuktikan algoritma alokasi kapasitas yang unggul.
+
+RUANG LINGKUP
+4 konfigurasi x 3 split (4302/4303/4304) x 3 model seeds (2901/2902/2903) x 2 dataset. Checkpoint dipilih memakai selection macro-F1; angka yang dibahas berasal dari development probe. Kandidat dipilih berdasarkan pilot; split saling berbagi pool citra. Tidak ada p-value iid atau confidence interval yang memperlakukan sembilan konteks sebagai sembilan dataset independen.
+
+HASIL PEMERIKSAAN
+- cohort_locked_sources: 7
+- raw_images_current_sha256: 10842
+- checkpoint_metadata: 72
+- base_no_residual_initial_tensor_pairs: 18
+- metric_prediction_history_checks: 72
+- exact_cross_partition_hash_overlap: 0
+- completed_inventory: 72
+- source_comparison_to_automatic_analysis: 72/72 unchanged
+- Label setiap path cocok dengan semantic parent folder dan urutan kelas manifest.
+- Setiap split memiliki fit/selection/probe disjoint, mencakup semua citra yang memenuhi syarat, dengan semua kelas hadir.
+- Dua salinan berlabel konflik TrashNet tetap dikeluarkan; citra mentah tidak dihapus.
+- Hash best.pt dan initial_state.pt sesuai result; metadata checkpoint cocok dengan job, kelas, biaya dan epoch.
+- Semua best epoch cocok dengan maksimum pertama selection history; durasi run cocok dengan batas 100 epoch/patience 20.
+- Saved logits -> confusion -> macro-F1, accuracy dan recall konsisten; fitur finite; tiga mask channel per block sesuai seed terkunci.
+- Source/result/prediction/checkpoint cocok dengan catatan analisis otomatis.
+
+HASIL PROBE
+Mean +/- sample SD deskriptif atas sembilan konteks split-seed; SD bukan confidence interval.
+Dataset | Konfigurasi | Macro-F1 (%) | Delta vs Base (pp) | Konteks positif/9
+warpc | base | 59.039 +/- 3.537 | +0.000 | 0/9
+warpc | base_no_residual | 58.037 +/- 2.961 | -1.002 | 2/9
+warpc | allocation_14_30_36_52 | 57.105 +/- 5.672 | -1.934 | 3/9
+warpc | allocation_12_34_36_36 | 56.522 +/- 2.825 | -2.518 | 4/9
+trashnet | base | 73.901 +/- 4.712 | +0.000 | 0/9
+trashnet | base_no_residual | 74.438 +/- 3.395 | +0.537 | 4/9
+trashnet | allocation_14_30_36_52 | 75.650 +/- 4.053 | +1.749 | 5/9
+trashnet | allocation_12_34_36_36 | 74.874 +/- 3.052 | +0.973 | 6/9
+
+INTERPRETASI YANG DIDUKUNG
+1. Pada WaRP-C, Base mempunyai mean tertinggi di antara empat konfigurasi yang diuji. Tanpa residual -1.002 pp, alokasi [14,30,36,52] -1.934 pp, dan [12,34,36,36] -2.518 pp terhadap Base. Ini tidak membuktikan optimalitas atau superioritas Base atas semua arsitektur.
+2. Pada TrashNet, [14,30,36,52] mempunyai mean +1.749 pp terhadap Base, tetapi hanya 5/9 konteks positif. Mean delta per split adalah -0.452, +1.641, +4.059 pp. Tidak ada keuntungan yang stabil di seluruh split/seed.
+3. Keuntungan tanpa residual pada WaRP-C pilot (+3.032 pp) tidak bertahan: cohort baru -1.002 pp, negatif pada 7/9 konteks dan seluruh mean split. Pilot dan cohort baru berbeda pengelompokan split, seeds, dan pengecualian data; pembalikan tidak dapat diatribusikan pada satu faktor saja.
+4. Alokasi [14,30,36,52] menghasilkan arah rata-rata berlawanan antar task, tetapi arah WaRP-C sendiri berubah antar split. Pola ini layak dibahas sebagai sensitivitas task/split, belum sebagai mekanisme kausal atau aturan alokasi.
+5. Semua konfigurasi berada dalam band +/-1% parameter dan Conv/Linear MAC terhadap Base. Residual addition, aktivasi, BN, pooling, akses memori dan latency tidak tercakup dalam MAC tersebut. Biaya sebanding menurut dua hitungan ini tidak berarti runtime identik.
+
+CANISTER DAN KELAS LAIN
+Canister memiliki 14 contoh probe pada setiap split. Recall nol terjadi pada 14/36 run WaRP-C; satu prediksi benar setara 7.143 poin recall. Jumlah konteks tersebut bukan sampel independen baru.
+base: mean F1 canister 15.207%; mean recall 9.524%; recall nol 3/9.
+base_no_residual: mean F1 canister 12.021%; mean recall 7.937%; recall nol 4/9.
+allocation_14_30_36_52: mean F1 canister 17.339%; mean recall 11.111%; recall nol 3/9.
+allocation_12_34_36_36: mean F1 canister 8.731%; mean recall 5.556%; recall nol 4/9.
+Seluruh kelas dan per-run metrics tersedia di classwise_metrics.csv; tidak memilih hanya kelas yang membaik. Klaim canister +23.65 pp dan cans +13.66 pp dari grouping legacy tidak dipulihkan oleh analisis ini.
+
+IMPLIKASI UNTUK MANUSKRIP
+WAJIB: hapus/ganti abstract, kontribusi, tabel, gambar dan kesimpulan yang memperlakukan grouping legacy sebagai lima kelas semantik yang benar. Simpan hasil lama sebagai provenance terpisah, bukan bukti utama.
+WAJIB: jangan mencampur pilot 36 run dengan cohort 72 run sebagai pengulangan identik; definisi split dan dua pengecualian citra harus dijelaskan.
+WAJIB: jangan menyatakan cohort 72 run membuktikan keunggulan atas DWSep-96/MCUNet-style. Dua baseline tersebut hanya ada pada pilot yang berbeda protokol, tidak masuk cohort baru ini.
+PENTING: novelty yang kini didukung adalah bukti empiris tentang kestabilan/ketidakstabilan konfigurasi pada anggaran parameter dan MAC mendekati sama. Estimator class-aware yang unggul belum ditunjukkan.
+PENTING: sensitivitas channel masking mengukur ketergantungan model yang sudah dilatih, bukan manfaat menambah channel setelah retraining. Jangan mengubahnya menjadi penjelasan kausal.
+LANGKAH BERIKUT: gunakan snapshot yang diaudit untuk membangun ulang hasil paper; untuk arah metodologis, nilai predictor secara terpisah terhadap baseline no-change/random/class-agnostic, sebelum eksperimen konfirmasi baru. Audit ini sendiri tidak meluncurkan training, mengubah protokol, atau mengedit manuskrip.
+
+BATAS PEMERIKSAAN
+- No GPU inference rerun; checkpoint identity and saved predictions checked, not independently rerun logits.
+- Byte-identical duplicates audited; near-duplicate and source-object grouping not audited.
+- Nine split-seed contexts overlap in data; SD is descriptive, not an iid confidence interval.
+- Pilot-informed development cohort; no untouched external confirmation.
+- Tidak melakukan penelusuran prior-art baru atau menyimpulkan kelayakan jurnal dari audit ini.
+- Belum menjalankan ulang inferensi dari checkpoint; konsistensi diperiksa terhadap saved logits dan identitas checkpoint.
+
+BERKAS
+audit_results.json: pemeriksaan dan ringkasan per split.
+verified_results_snapshot.json: 72 result terverifikasi.
+run_metrics.csv: seluruh metrik dan selisih berpasangan.
+classwise_metrics.csv: support, TP, recall, F1 seluruh kelas.
+Remote sumber: /home/kholiq/KD/ACRE_stability_20261016.

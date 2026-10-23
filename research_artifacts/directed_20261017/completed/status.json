@@ -1,0 +1,12 @@
+{
+  "state": "COMPLETE",
+  "reason": "Complete108 new intervention runs",
+  "total": 108,
+  "completed": 108,
+  "queued": 0,
+  "active": [],
+  "failures": [],
+  "reused_base": 18,
+  "per_gpu_cap": 1,
+  "utc": "2026-10-16T22:29:52.218737+00:00"
+}

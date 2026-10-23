@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-10-16T09:23:00.728483+00:00",
+  "kind": "Pilot-informed prospective stability replication",
+  "jobs": 72,
+  "model_seeds": [
+    2901,
+    2902,
+    2903
+  ],
+  "split_seeds": [
+    4302,
+    4303,
+    4304
+  ],
+  "data_exclusion": "Exclude all copies in every exact-content group assigned conflicting labels, consistently before all splits/configs. TrashNet glass176.jpg and plastic152.jpg share identical bytes but different labels; retain raw files and old pilot. No outcome-based exclusion.",
+  "split_method": "Class-stratified grouping by exact image SHA256; all byte-identical copies stay together. Approximate 80/10/10; no source-object/near-duplicate guarantee.",
+  "models": [
+    "base",
+    "base_no_residual",
+    "allocation_14_30_36_52",
+    "allocation_12_34_36_36"
+  ],
+  "primary_development_contrasts": [
+    "allocation_14_30_36_52 minus base",
+    "base_no_residual minus base"
+  ],
+  "secondary_control": "allocation_12_34_36_36 minus base",
+  "endpoint": "probe macro-F1 at selection-selected checkpoint",
+  "classwise": "all classes, canister explicitly retained even if zero",
+  "sample_size_basis": "Finite crossed design of three split levels and three model-seed levels to inspect sign/rank and optimization/split sensitivity. Resource-bounded development replication, not a formal power claim. No optional stopping or selective exclusions.",
+  "inference_scope": "Splits overlap in input images; nine runs are not nine independent datasets. Report paired differences by split and seed; no naive iid p-values or winner-only reporting.",
+  "training_recipe": "Byte-identical experiment.py and model sources to corrected pilot, including AdamW, clipping1, smoothing.1, 100epochs/patience20; only split/config/seed inventory differs.",
+  "selection_bias": "Configs informed by completed pilot; new retraining/splits improve stability assessment but do not create an untouched test set or establish algorithm novelty.",
+  "resource_policy": "At most two workers per GPU, four total, first-epoch and GPU admission checks; wait for DKD post-primary measurements AND aggregation completion; stop new jobs on failures; no automatic retry.",
+  "source_pilot_lock_sha256": "70a8b84ba13a2870e7372ce1a447b2e4915a9742a66a2fc9871af4a048c559a8"
+}

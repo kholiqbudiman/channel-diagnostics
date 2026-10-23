@@ -1,0 +1,26 @@
+{
+  "state": "RUNNING",
+  "reason": "Wait for full DKD slots and spare capacity",
+  "total": 63,
+  "completed": 0,
+  "queued": 61,
+  "active": [
+    {
+      "job": "dtd_split6303_base_s3903",
+      "pid": 3419203,
+      "gpu": 0,
+      "epoch": 79
+    },
+    {
+      "job": "dtd_split6301_base_s3903",
+      "pid": 3419286,
+      "gpu": 1,
+      "epoch": 82
+    }
+  ],
+  "failures": [],
+  "stage": "BASE_AND_DIAGNOSTICS",
+  "prediction_barrier": false,
+  "utc": "2026-10-17T00:16:00.558261+00:00",
+  "per_gpu_cap": 1
+}

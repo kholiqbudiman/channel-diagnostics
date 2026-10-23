@@ -1,0 +1,290 @@
+{
+  "created_utc": "2026-10-16T23:53:04.927037+00:00",
+  "context": "DTD47, official train1+val1, internal four-way split; ACRE transfer study, not official DTD benchmark protocol",
+  "dataset_root": "/home/kholiq/KD/datasets_paper1/_raw/dtd/dtd/images",
+  "configs": [
+    {
+      "name": "base",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    },
+    {
+      "name": "c_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        42,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    },
+    {
+      "name": "d_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        58
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    },
+    {
+      "name": "joint_c_grow_d_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        42,
+        58
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    },
+    {
+      "name": "c_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        38,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    },
+    {
+      "name": "d_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        70
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    },
+    {
+      "name": "joint_c_shrink_d_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        38,
+        70
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  ],
+  "old_configs": [
+    {
+      "name": "base",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    },
+    {
+      "name": "c_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        42,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    },
+    {
+      "name": "d_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        56
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    },
+    {
+      "name": "joint_c_grow_d_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        42,
+        56
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    },
+    {
+      "name": "c_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        38,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    },
+    {
+      "name": "d_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        72
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    },
+    {
+      "name": "joint_c_shrink_d_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        38,
+        72
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  ],
+  "split_seeds": [
+    6301,
+    6302,
+    6303
+  ],
+  "model_seeds": [
+    3901,
+    3902,
+    3903
+  ],
+  "new_runs": 63,
+  "reused_runs": 0,
+  "label_free_delta_d": 6,
+  "joint_minimax_mismatch": 0.005866661132150064,
+  "primary_policy_contrast": [
+    "mask_macro_ce",
+    "mask_f1"
+  ],
+  "primary_endpoint": "Paired evaluation macro-F1 gain of CE-mask choice minus F1-mask choice, also versus Base; all policies retained.",
+  "decision_candidates": [
+    "base",
+    "joint_c_grow_d_shrink",
+    "joint_c_shrink_d_grow"
+  ],
+  "evaluation_gate": "All63 training completions and9 checkpoint-bound predictions committed before nonBase training. No evaluation inference until complete cohort.",
+  "training": "Same100epoch/patience20 AdamW smoothedCE recipe; source-level custom runner only separates diagnostic/evaluation stages.",
+  "uncertainty": "Descriptive split/seed contrasts; 1000 class-stratified paired image bootstraps conditional on fixed checkpoints; no iid tests over overlapping splits.",
+  "failure": "No auto retry or exclusion; stop new launches and retain active jobs.",
+  "no_tuning": "All five diagnostic mappings and architecture comparator fixed before DTD outcomes; report failures, floor performance and mixed directions without replacing context."
+}

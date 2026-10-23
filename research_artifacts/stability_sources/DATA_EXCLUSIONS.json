@@ -1,0 +1,20 @@
+{
+  "warpc": [],
+  "trashnet": [
+    {
+      "sha256": "c41b99aec8a3257c8668a2144ebbaf8042018f0a85d88e22bf4e413b43693dd8",
+      "members": [
+        [
+          384,
+          "glass/glass176.jpg",
+          1
+        ],
+        [
+          1566,
+          "plastic/plastic152.jpg",
+          4
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+HASIL TRANSFER DTD — SELURUH63 RUN SELESAI
+Primary:gain kebijakanCE-mask minus kebijakanF1-mask, juga terhadapBase.
+Konteks baru adalahDTD47; pooltrain1+val1 dibagi internal4bagian. Ini bukan protokol benchmark resmiDTD.
+
+mask_f1: mean gain -1.507 pp; mean regret 2.119 pp; mean rank correlation 0.05396825396825398
+mask_macro_ce: mean gain -1.397 pp; mean regret 2.008 pp; mean rank correlation 0.08571428571428572
+taylor_signed: mean gain -1.019 pp; mean regret 1.630 pp; mean rank correlation -0.022222222222222223
+taylor_squared: mean gain -1.397 pp; mean regret 2.008 pp; mean rank correlation 0.18095238095238098
+bn_gamma: mean gain -2.112 pp; mean regret 2.724 pp; mean rank correlation -0.04761904761904763
+architecture_ridge: mean gain -1.397 pp; mean regret 2.008 pp; mean rank correlation 0.13650793650793652
+choose_base: mean gain +0.000 pp; mean regret 0.612 pp; mean rank correlation None
+
+Lihat primary_policy_contrast.csv untuk semua9konteks, termasuk hasilnegatif.
+Tidak menyimpulkan semua estimator gagal atau mekanisme universal dari konteks tunggal.

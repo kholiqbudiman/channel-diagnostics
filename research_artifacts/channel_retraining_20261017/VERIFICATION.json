@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "training_runs_added": 0,
+  "inference_runs_added": 0,
+  "contexts": 27,
+  "retrained_effects": 162,
+  "local_block_responses": 135,
+  "projection_records": 108,
+  "bidirectional_records": 108,
+  "dtd_profile_commitments": 9,
+  "primary_dtd_contrast": "unchanged",
+  "scope": "Post-outcome observed-response analysis; no causal or population noise-free claim."
+}

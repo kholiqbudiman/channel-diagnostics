@@ -1,0 +1,13 @@
+{
+  "state": "COMPLETE",
+  "reason": "All63 training completed; evaluation released to complete-cohort analysis",
+  "total": 63,
+  "completed": 63,
+  "queued": 0,
+  "active": [],
+  "failures": [],
+  "stage": "CANDIDATES",
+  "prediction_barrier": true,
+  "utc": "2026-10-17T06:56:36.314243+00:00",
+  "per_gpu_cap": 1
+}

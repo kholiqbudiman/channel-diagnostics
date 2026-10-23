@@ -1,0 +1,2370 @@
+{
+  "state": "COMPLETE_DEVELOPMENT_COHORT",
+  "completed": 36,
+  "total": 36,
+  "protocol_lock_sha256": "70a8b84ba13a2870e7372ce1a447b2e4915a9742a66a2fc9871af4a048c559a8",
+  "sources": [
+    {
+      "job_id": "trashnet_allocation_16_24_36_84_s1902",
+      "result_sha256": "3b0be746569e47e713485928c26f3f7bbb622d8f10dad096005e546294a73404",
+      "probe_features_sha256": "5eb6f905da8e3510a8c1f49bf9044d078ac5cfc0303c1f16b0923b44291fe641",
+      "checkpoint_sha256": "cbf2d837267c727d5887aef71d6907d0a9a1576fc0017cc0d5641e3debf7c813"
+    },
+    {
+      "job_id": "trashnet_allocation_16_24_36_84_s1901",
+      "result_sha256": "b3ebd933012ac03448fb51af2d0a5188f0a19ddbb1445a3c676b51e6dabc3fdb",
+      "probe_features_sha256": "caf2a489690d16eaf7929998125e5ae6b410b0206fa55c76373468374c74255b",
+      "checkpoint_sha256": "8be1f610af430b3888b975e631aebfa851a5e65655d4ef19881a7949f5baa72b"
+    },
+    {
+      "job_id": "trashnet_allocation_14_30_36_52_s1902",
+      "result_sha256": "1b36cfd4a0ffc2ca3bf24589e6c7aa2083b02da3695a43304440fe1f3cab89ce",
+      "probe_features_sha256": "fc24e233910aa8ec4cc27fb55d1dce13e5e49e29506ff2125de8af8e3db02636",
+      "checkpoint_sha256": "88866a9b23d4d09d0597e8e640b8fa39aa4699f849871584f73643934183b3fe"
+    },
+    {
+      "job_id": "warpc_allocation_14_30_32_72_s1901",
+      "result_sha256": "fc0973245d14c7b2b88c59e06d758f7dc9a3e132858f0d543fc5ab150a95d219",
+      "probe_features_sha256": "00aae4f598eff44ac60a8587b2f8fb797a34038d4ae310cf58751b6aaa494d44",
+      "checkpoint_sha256": "cd5de0788cad875de1ade3ccf03a741af55654649633b213c8bb2923d1a6a6e6"
+    },
+    {
+      "job_id": "warpc_dwsep96_s1902",
+      "result_sha256": "1df4d3e9d688284936ef568e68f5c87b4335549fc366d49da1fc3fdc0c02255e",
+      "probe_features_sha256": "da464054f777ceb5ce393db2f850bac174a42f937202090b2ddff7d954d5fd37",
+      "checkpoint_sha256": "4c0fe85aef3878f7daacfd05a9b483958ecc3b903869105762ef5e6de5da7a87"
+    },
+    {
+      "job_id": "warpc_base_no_residual_s1901",
+      "result_sha256": "c5a1b36dca1960be5e05ad5f6708924181aaa7f928a76a927fe76c36266c5966",
+      "probe_features_sha256": "a257049e8bd468375c10a3b673b4d4078a51ac0267602eef6fa2e10438c3d347",
+      "checkpoint_sha256": "f860256e36940336cf5bb0efe31d27260b3c440e13c4daca9bb78f1eea0d9392"
+    },
+    {
+      "job_id": "trashnet_allocation_14_30_36_56_s1901",
+      "result_sha256": "dfc6f83591395dab73c4c84005ce915b79c75fa52983a803a3afa791db82abfa",
+      "probe_features_sha256": "92d444813183ed9e0ae6eeecd6ae8c3310f5fddf91a3f8e021f45df313901e7c",
+      "checkpoint_sha256": "3121b6cb92c7e4b974ffef81418b41b21a7e44c3a738bd7e39326278aecbb556"
+    },
+    {
+      "job_id": "trashnet_base_no_residual_s1902",
+      "result_sha256": "a98ec5ee5f2ffeb62c6e6e936275828e172ce3265c079014f261a436106aab95",
+      "probe_features_sha256": "ab71d5beeba51438ac33afbe9bf4c9eeeae3cdfc9aa68fe2a767b2459f98d00e",
+      "checkpoint_sha256": "7902370381ec903e1a1f460945cb3580fa88479115af5c6004dbd484d2eedc3b"
+    },
+    {
+      "job_id": "warpc_allocation_16_24_36_84_s1901",
+      "result_sha256": "f91fb9a9600f938c3a52c53938a55f8dad0a4b524f22b56a2282a64f23410584",
+      "probe_features_sha256": "b578d6f48f93ace502dc0de6cba84a59416dca965161ce766098df5e893320ab",
+      "checkpoint_sha256": "99228f8c23a588a79ff20ed012b90a83135610d8824e1682fc42f4e69d6e125b"
+    },
+    {
+      "job_id": "trashnet_allocation_12_34_36_36_s1902",
+      "result_sha256": "1d73c0bf01b88bde013c205e1db854bb66ea89a9c10a074b321ea0b61bfafa39",
+      "probe_features_sha256": "7b8cf7903c18a8c09386aa46ff2b4e9a9f5b7ef23c05be76a92427a3c2ca900a",
+      "checkpoint_sha256": "2bbbdc1e43ad4b089085286991503e23e38971b98c91c83bb49e4bbf128e6253"
+    },
+    {
+      "job_id": "warpc_dwsep96_s1901",
+      "result_sha256": "a2c4ac7ca43e65625307aed7f89891d6dc7af99aaf1d443d263e5a26ef545b3e",
+      "probe_features_sha256": "87cfa28e4878e2db3f1450301b1cb15c20168ef91a5788163513272ff9951ce1",
+      "checkpoint_sha256": "10ce3312feaa03502ee05d99fc068487a013acc2956422908ffb77ee10222233"
+    },
+    {
+      "job_id": "warpc_allocation_12_34_36_36_s1902",
+      "result_sha256": "efcc9922684e6cce12058a8d22cbb13882efd40de2594e474f4e8d32654574fc",
+      "probe_features_sha256": "a1d266d018237731fb82d211684acc6a21e669e4bce2a5ad802e78c206bb1bc5",
+      "checkpoint_sha256": "c02276b5e86992c25f1a61e542e6f625983d29d4302553a5dfc02f9bf3c9354b"
+    },
+    {
+      "job_id": "warpc_mcunet_style_s1901",
+      "result_sha256": "f5a9ec30aa7774d2951b0244cd963f5484d68d16cb919d21be6b3e9961e4dc5f",
+      "probe_features_sha256": "91c4eda6cf9079cf63c9f65d9fba091f23ef3e1fa0ea06b0552675969eacfe20",
+      "checkpoint_sha256": "4cb8651e0aa7377eb55a755e6d10b745b1d83720e14f393a0dfeddd3394f77ab"
+    },
+    {
+      "job_id": "trashnet_base_s1902",
+      "result_sha256": "67d29a2d6bf4abe7353f853a56700aebf78a4a1b9bedc66d951445dc1ee8203a",
+      "probe_features_sha256": "1f4ac03ede33425b9785502eb9c8901b6524d9a98a875fa7214303eb710e3d5a",
+      "checkpoint_sha256": "48e078b2ced414d966425267eb5ecc4df30bd5628483ac8634c9149e00868f37"
+    },
+    {
+      "job_id": "warpc_allocation_12_34_36_36_s1901",
+      "result_sha256": "583c1d56cdff42ea11bc5192b74f7e03d33f4150a9ad14932c474af2cfb6602b",
+      "probe_features_sha256": "f2712815e677feeb3570cd76d80025d657afe2e7ed4bd57813de967b0c038f3f",
+      "checkpoint_sha256": "795595931f5f8427d545b170527dc64c765423a4c4a788c1226b504c98d18f85"
+    },
+    {
+      "job_id": "warpc_base_no_residual_s1902",
+      "result_sha256": "e5b9356d29e8e2a6fb64647c68f335604efaa2b82ab47469e3ee72505d1f441a",
+      "probe_features_sha256": "fdd4f3fcf1147349536ce816f29c2dc47c9d05ef955ba84ed07cc986fddce1af",
+      "checkpoint_sha256": "ff8a24234b8b6502f2a6cd653672de3c58da68c1734503c463b9519a696d8774"
+    },
+    {
+      "job_id": "warpc_allocation_14_30_32_72_s1902",
+      "result_sha256": "e2e5c070674fa94cfd688c9cef5452084279c414ee8a0e06b9a8cc99aa453ad5",
+      "probe_features_sha256": "be595b60ba4b2642376ea29c49c05d4051578d8b9531d433383d6c9b6247c5b2",
+      "checkpoint_sha256": "7fd2fcfa85e466c301bfdbc08dee32aa136c9b56c6f0d3e2bb50f41b7ad90bfc"
+    },
+    {
+      "job_id": "warpc_allocation_14_30_36_56_s1901",
+      "result_sha256": "255976658d8527e4a3e23611a7fdff0ed860e2b001cece4718449afccf85e8b6",
+      "probe_features_sha256": "1d7953ce9340fa71cc4a73fa256c4fa77352d22c61ad6b37bd4f807516232c55",
+      "checkpoint_sha256": "ee767a778df06707838b44fe185df58dae510f260348d6711ef0cd0f6d63bfde"
+    },
+    {
+      "job_id": "trashnet_allocation_12_34_36_36_s1901",
+      "result_sha256": "d34cb9b7ec7740e10cd2078825da2c0a5cf748f6fff6b34510fdfa3e32b04b8d",
+      "probe_features_sha256": "4bfde69320f0374cd641240e86c88dab1b1147f4d022eec1d1a06853d87a2b9f",
+      "checkpoint_sha256": "a351a21cd17b0878df5ede9b1076354eb7a6d2e04b1bdc6d242913340f058dce"
+    },
+    {
+      "job_id": "trashnet_mcunet_style_s1902",
+      "result_sha256": "b0b792178dd3da6a48cfa1985f634f913e272f7cec4df1a1d1f4308b656d5b09",
+      "probe_features_sha256": "095987b3ea831ec5b19a34d9cd2338efa09ad85bc867ff5d8581b2cd7d1c34ab",
+      "checkpoint_sha256": "9244cb9b9bcaeb3661b7eb934e4d5dbc8dbf5533b70c9de6f69bf30fa8b2317a"
+    },
+    {
+      "job_id": "warpc_allocation_14_30_36_52_s1901",
+      "result_sha256": "c2befbc8c14f625feaaa57dacec50e0b39f58f183d503b098b612526a9b4e5b2",
+      "probe_features_sha256": "46af731261b35447366fa23239003850a0eae6c3be44a798605b0359b41900dc",
+      "checkpoint_sha256": "21cc7080db4419369efcaa9ff7bbd9d10f8a3d83d80055be8c9902223d6e96ff"
+    },
+    {
+      "job_id": "trashnet_dwsep96_s1901",
+      "result_sha256": "fc15aac9e96e6f48dbc3a28354e61c23b168f863d1891769f7e3a2f753e40421",
+      "probe_features_sha256": "a36f537bb5679f3f5dbbdf478e011e89b1c4e18e34e485d5a6fa138b64fbd5de",
+      "checkpoint_sha256": "254b50db884ad1630a609036fde6e0dcf2396c10ac6670b76973ddad5e39c8fd"
+    },
+    {
+      "job_id": "warpc_mcunet_style_s1902",
+      "result_sha256": "126f523289ef3715136957ecdf40142edfa79c59ea4d6b9eeef3ba99b220412c",
+      "probe_features_sha256": "e1ac4e692d588187e9e25f68c7fd7b51f1b2e9953812c9ca22a4ad4fc3090eaf",
+      "checkpoint_sha256": "88307ab13a63dc83a3862a035241711d52ab96a9806ca86bc6df597009501d32"
+    },
+    {
+      "job_id": "warpc_base_s1902",
+      "result_sha256": "ffacd9bd25eca605062a655d31e189c22e3bd49a8daf414213517aee11bb6266",
+      "probe_features_sha256": "0ae2bec3a468e1e4a243a53c136771342339c3a0fc953a45ad559040f8d07bdf",
+      "checkpoint_sha256": "83282fd8a77b2821cd771bd911915b80eb1392befeb926e7057517687cd38626"
+    },
+    {
+      "job_id": "trashnet_allocation_14_30_32_72_s1901",
+      "result_sha256": "67a9208f32465e5021b108b200bc4a57204f9d98a477c224cf16387e62a412f7",
+      "probe_features_sha256": "fc86f7c1279785da88c1ba45e0428481e12fa1b61fe23e168646e720062c4727",
+      "checkpoint_sha256": "41c1137ca1fa197a91e94f8cc3458189ce8f924caf054af002bab73e17dac52d"
+    },
+    {
+      "job_id": "trashnet_mcunet_style_s1901",
+      "result_sha256": "183524be6e32b494999182da1ead1a9d22ab50719c488edb50f5367c1f4d2335",
+      "probe_features_sha256": "e1729cba9a301100d7ef2ef135276cc73374b918c8d69a7f8158cab7ff5e7d4f",
+      "checkpoint_sha256": "9ec827f57566a614d440ac9d1c87ceb1e4c01df6c04c9a247886c4151a1b6f3c"
+    },
+    {
+      "job_id": "trashnet_allocation_14_30_36_52_s1901",
+      "result_sha256": "87d48383f6bdff608712897193b20d30881e9d30d2f3f05404029adfcf29e5f5",
+      "probe_features_sha256": "2030c6bff33ffe45a0f917abfed72f6610173f269464a7a49d882562ee221eb3",
+      "checkpoint_sha256": "e286d60b7543b96b27fe35145def6e368c02ada89c5b0cc24b1454c1fada3ed9"
+    },
+    {
+      "job_id": "trashnet_allocation_14_30_32_72_s1902",
+      "result_sha256": "3bbb398bdead26371f2971d12e456018baf72b1fa7a574eff3847e4cc8352ac8",
+      "probe_features_sha256": "ab0f1b76e6eac64d3f9a234ecc35a5a17a362a553511497d5a61ad58d3e891b2",
+      "checkpoint_sha256": "e0774de3a1c51019efa7cde078f6d0d670d15a0896f491880741465056ce70d7"
+    },
+    {
+      "job_id": "trashnet_base_no_residual_s1901",
+      "result_sha256": "cd7901f2084a061ee92c429dacf25e9da04f4549deddea251765ba1fa54d1a32",
+      "probe_features_sha256": "e5aa1f9fe6f489c01475579de0c80dfe1ab9a74c9093312bec58e521b0283d5c",
+      "checkpoint_sha256": "cdbfba776ce4798966163c42fb71b64006133db0633ff54e04ca315ac4f03a5f"
+    },
+    {
+      "job_id": "trashnet_dwsep96_s1902",
+      "result_sha256": "d8e96ffa46d82a170dc1d91ffee556747bb3565696dc2296ddfe4999b3d1f904",
+      "probe_features_sha256": "349d264f6c0dfb4d06ee9dcff91356c4217084c7dd6f84c59fa1bf5067b6dff9",
+      "checkpoint_sha256": "49caa129f45ea5063027b1a437b342bc467b9e35c062caebf8ebbfe959e214f5"
+    },
+    {
+      "job_id": "warpc_base_s1901",
+      "result_sha256": "e09489e2cee15504ba06ea656cee11ae56339f03ffb81e64c0de1f606a787620",
+      "probe_features_sha256": "738d40b57e5cb74b3ca8d495ca85335ffc5e08526d4ef9101f0994221c6aa6b4",
+      "checkpoint_sha256": "064ba13df133ef9f913c228008ff9e3fe216f441091b42b9897bd7f97265e863"
+    },
+    {
+      "job_id": "trashnet_allocation_14_30_36_56_s1902",
+      "result_sha256": "ae9b31049c463499c26a21b7c976d6b0d00b14a67d39293c354b8073657d7151",
+      "probe_features_sha256": "c70b06d8693a63c41b2592954d485e4a75f8d8c7c0c1a191f177ff278847ccc9",
+      "checkpoint_sha256": "7d164938dd0eb57b5934f563f2327945e01bbfd386895d3ca52e61678f694fca"
+    },
+    {
+      "job_id": "warpc_allocation_14_30_36_52_s1902",
+      "result_sha256": "d4f090dc63b2aecadc2bb54d5b3ee7a50d9f3311bac1ca0a9f420749d4a7b471",
+      "probe_features_sha256": "40ca6cd7349602318ac54e8aa45720c452a6032d009d27d45d575f4bd6b0943d",
+      "checkpoint_sha256": "c8960ff292448c7acacbd38ae98d01b15ee3a62b4a3e8c95ea5885e45353db1c"
+    },
+    {
+      "job_id": "trashnet_base_s1901",
+      "result_sha256": "434957e5cae70332c2eb5c49efb6902563e0e33d95a47d8a9834541e926e189e",
+      "probe_features_sha256": "472411cfb8e1b225399a4037150a1f7b32dc686e92e4f66b33266606d16a9102",
+      "checkpoint_sha256": "fbc502e616f6329390d4c6136324c36b7807ae2f54ce596e7740a2c559be24ee"
+    },
+    {
+      "job_id": "warpc_allocation_16_24_36_84_s1902",
+      "result_sha256": "1eb552daa826935bfe505a314525c01e39fd95b149a3c0d288df9625d3897847",
+      "probe_features_sha256": "dca0b9410487fc2e76446683e06b95619a081da4c0f5daaf4a2b6f9801cf48e1",
+      "checkpoint_sha256": "24f77f7266cad46b31e10433610c9b04f78425ef95aec2a8eb9ba1f29cb0bd8e"
+    },
+    {
+      "job_id": "warpc_allocation_14_30_36_56_s1902",
+      "result_sha256": "1d57e3ea7484f48be97c0016e7d3b28df3559a83203a182e51bbf906b9de96eb",
+      "probe_features_sha256": "e9d8517f63f48f7ef9305bc552d83c1e36a9e8e00d07bfbc559cf3399b96a4ea",
+      "checkpoint_sha256": "8887bb87571a0e99a2a1841a536ed6af8e20ab2d41a13107f17d35d6aee84def"
+    }
+  ],
+  "design_identifiability": {
+    "nonreference_allocations": 5,
+    "four_width_transfer_rank": 4,
+    "four_width_singular_values": [
+      0.8884410068593201,
+      0.43573333962966815,
+      0.03909062705780817,
+      0.01537340079081827
+    ],
+    "condition_number": 57.7907919625656,
+    "five_block_transfer_rank": 4,
+    "warning": "Blocks 2 and 3 share the same width. Their independent allocation effects are not identifiable from this pilot. Ridge coefficients are not causal effects. Grow/shrink directions are incompletely covered."
+  },
+  "sum_recorded_run_elapsed_s": 17031.877101421356,
+  "scientific_results_computed": true,
+  "analysis_source_sha256": {
+    "analyze_complete_pilot.py": "c47cd2e20c5fc5c8010ed04a59a69b1ac5c0c31ffe24ddff514ef3dee31fc0de",
+    "confusion_response.py": "879a17cdfda925b335562c95d0db8aae499e5df4ca199d54490e1160c7c85042"
+  },
+  "scope": "Exploratory method development only. No independent confirmation, novelty proof, or calibrated uncertainty.",
+  "surrogate_validation": [
+    {
+      "heldout_axis": "allocation",
+      "heldout_group": "(12, 34, 36, 36)",
+      "mode": "architecture_only",
+      "training_ids": [
+        "trashnet_allocation_16_24_36_84_s1902",
+        "trashnet_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_14_30_36_52_s1902",
+        "warpc_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_56_s1901",
+        "warpc_allocation_16_24_36_84_s1901",
+        "warpc_allocation_14_30_32_72_s1902",
+        "warpc_allocation_14_30_36_56_s1901",
+        "warpc_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1902",
+        "trashnet_allocation_14_30_36_56_s1902",
+        "warpc_allocation_14_30_36_52_s1902",
+        "warpc_allocation_16_24_36_84_s1902",
+        "warpc_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "trashnet_allocation_12_34_36_36_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 74.96687697998703,
+          "observed_macro_f1_pct": 78.6335684728087,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "warpc_allocation_12_34_36_36_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 56.30718526923889,
+          "observed_macro_f1_pct": 56.382868407966555,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "warpc_allocation_12_34_36_36_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 56.666315494906996,
+          "observed_macro_f1_pct": 50.62175854721127,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "trashnet_allocation_12_34_36_36_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 71.5820857873997,
+          "observed_macro_f1_pct": 76.33706163117927,
+          "reference_macro_f1_pct": 74.38509897234704
+        }
+      ],
+      "mae_pp": 3.6354768557561545,
+      "selection": []
+    },
+    {
+      "heldout_axis": "allocation",
+      "heldout_group": "(12, 34, 36, 36)",
+      "mode": "frequency_only",
+      "training_ids": [
+        "trashnet_allocation_16_24_36_84_s1902",
+        "trashnet_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_14_30_36_52_s1902",
+        "warpc_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_56_s1901",
+        "warpc_allocation_16_24_36_84_s1901",
+        "warpc_allocation_14_30_32_72_s1902",
+        "warpc_allocation_14_30_36_56_s1901",
+        "warpc_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1902",
+        "trashnet_allocation_14_30_36_56_s1902",
+        "warpc_allocation_14_30_36_52_s1902",
+        "warpc_allocation_16_24_36_84_s1902",
+        "warpc_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "trashnet_allocation_12_34_36_36_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 75.17202032584323,
+          "observed_macro_f1_pct": 78.6335684728087,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "warpc_allocation_12_34_36_36_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 56.54142762130672,
+          "observed_macro_f1_pct": 56.382868407966555,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "warpc_allocation_12_34_36_36_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 57.303028606935705,
+          "observed_macro_f1_pct": 50.62175854721127,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "trashnet_allocation_12_34_36_36_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 71.75668808648942,
+          "observed_macro_f1_pct": 76.33706163117927,
+          "reference_macro_f1_pct": 74.38509897234704
+        }
+      ],
+      "mae_pp": 3.7204377411799783,
+      "selection": []
+    },
+    {
+      "heldout_axis": "allocation",
+      "heldout_group": "(12, 34, 36, 36)",
+      "mode": "class_agnostic",
+      "training_ids": [
+        "trashnet_allocation_16_24_36_84_s1902",
+        "trashnet_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_14_30_36_52_s1902",
+        "warpc_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_56_s1901",
+        "warpc_allocation_16_24_36_84_s1901",
+        "warpc_allocation_14_30_32_72_s1902",
+        "warpc_allocation_14_30_36_56_s1901",
+        "warpc_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1902",
+        "trashnet_allocation_14_30_36_56_s1902",
+        "warpc_allocation_14_30_36_52_s1902",
+        "warpc_allocation_16_24_36_84_s1902",
+        "warpc_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "trashnet_allocation_12_34_36_36_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 74.17191980028255,
+          "observed_macro_f1_pct": 78.6335684728087,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "warpc_allocation_12_34_36_36_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 58.82829916449461,
+          "observed_macro_f1_pct": 56.382868407966555,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "warpc_allocation_12_34_36_36_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 59.75972301920132,
+          "observed_macro_f1_pct": 50.62175854721127,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "trashnet_allocation_12_34_36_36_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 72.3523044509741,
+          "observed_macro_f1_pct": 76.33706163117927,
+          "reference_macro_f1_pct": 74.38509897234704
+        }
+      ],
+      "mae_pp": 5.007450270312354,
+      "selection": []
+    },
+    {
+      "heldout_axis": "allocation",
+      "heldout_group": "(12, 34, 36, 36)",
+      "mode": "class_pair",
+      "training_ids": [
+        "trashnet_allocation_16_24_36_84_s1902",
+        "trashnet_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_14_30_36_52_s1902",
+        "warpc_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_56_s1901",
+        "warpc_allocation_16_24_36_84_s1901",
+        "warpc_allocation_14_30_32_72_s1902",
+        "warpc_allocation_14_30_36_56_s1901",
+        "warpc_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1902",
+        "trashnet_allocation_14_30_36_56_s1902",
+        "warpc_allocation_14_30_36_52_s1902",
+        "warpc_allocation_16_24_36_84_s1902",
+        "warpc_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "trashnet_allocation_12_34_36_36_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 76.20859655870261,
+          "observed_macro_f1_pct": 78.6335684728087,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "warpc_allocation_12_34_36_36_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 59.443257510156485,
+          "observed_macro_f1_pct": 56.382868407966555,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "warpc_allocation_12_34_36_36_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 58.43312876938506,
+          "observed_macro_f1_pct": 50.62175854721127,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "trashnet_allocation_12_34_36_36_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 74.52364931227478,
+          "observed_macro_f1_pct": 76.33706163117927,
+          "reference_macro_f1_pct": 74.38509897234704
+        }
+      ],
+      "mae_pp": 3.7775358893435733,
+      "selection": []
+    },
+    {
+      "heldout_axis": "allocation",
+      "heldout_group": "(14, 30, 32, 72)",
+      "mode": "architecture_only",
+      "training_ids": [
+        "trashnet_allocation_16_24_36_84_s1902",
+        "trashnet_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_14_30_36_52_s1902",
+        "trashnet_allocation_14_30_36_56_s1901",
+        "warpc_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_36_56_s1901",
+        "trashnet_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_36_56_s1902",
+        "warpc_allocation_14_30_36_52_s1902",
+        "warpc_allocation_16_24_36_84_s1902",
+        "warpc_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "warpc_allocation_14_30_32_72_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 55.11262416673476,
+          "observed_macro_f1_pct": 53.43027531277736,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_14_30_32_72_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 54.79731027395036,
+          "observed_macro_f1_pct": 45.73912991160495,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "trashnet_allocation_14_30_32_72_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 69.9706455635281,
+          "observed_macro_f1_pct": 76.5854353415329,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_14_30_32_72_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 73.32933650972585,
+          "observed_macro_f1_pct": 74.55376972675593,
+          "reference_macro_f1_pct": 78.72029467568386
+        }
+      ],
+      "mae_pp": 4.644938052834425,
+      "selection": []
+    },
+    {
+      "heldout_axis": "allocation",
+      "heldout_group": "(14, 30, 32, 72)",
+      "mode": "frequency_only",
+      "training_ids": [
+        "trashnet_allocation_16_24_36_84_s1902",
+        "trashnet_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_14_30_36_52_s1902",
+        "trashnet_allocation_14_30_36_56_s1901",
+        "warpc_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_36_56_s1901",
+        "trashnet_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_36_56_s1902",
+        "warpc_allocation_14_30_36_52_s1902",
+        "warpc_allocation_16_24_36_84_s1902",
+        "warpc_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "warpc_allocation_14_30_32_72_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 55.167531285500516,
+          "observed_macro_f1_pct": 53.43027531277736,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_14_30_32_72_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 54.09897557127283,
+          "observed_macro_f1_pct": 45.73912991160495,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "trashnet_allocation_14_30_32_72_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 69.9395599274892,
+          "observed_macro_f1_pct": 76.5854353415329,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_14_30_32_72_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 73.33060882093706,
+          "observed_macro_f1_pct": 74.55376972675593,
+          "reference_macro_f1_pct": 78.72029467568386
+        }
+      ],
+      "mae_pp": 4.491534488063403,
+      "selection": []
+    },
+    {
+      "heldout_axis": "allocation",
+      "heldout_group": "(14, 30, 32, 72)",
+      "mode": "class_agnostic",
+      "training_ids": [
+        "trashnet_allocation_16_24_36_84_s1902",
+        "trashnet_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_14_30_36_52_s1902",
+        "trashnet_allocation_14_30_36_56_s1901",
+        "warpc_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_36_56_s1901",
+        "trashnet_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_36_56_s1902",
+        "warpc_allocation_14_30_36_52_s1902",
+        "warpc_allocation_16_24_36_84_s1902",
+        "warpc_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "warpc_allocation_14_30_32_72_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 55.69580476503917,
+          "observed_macro_f1_pct": 53.43027531277736,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_14_30_32_72_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 55.308426282829735,
+          "observed_macro_f1_pct": 45.73912991160495,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "trashnet_allocation_14_30_32_72_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 69.8519568622704,
+          "observed_macro_f1_pct": 76.5854353415329,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_14_30_32_72_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 72.7887740425001,
+          "observed_macro_f1_pct": 74.55376972675593,
+          "reference_macro_f1_pct": 78.72029467568386
+        }
+      ],
+      "mae_pp": 5.083324996751234,
+      "selection": []
+    },
+    {
+      "heldout_axis": "allocation",
+      "heldout_group": "(14, 30, 32, 72)",
+      "mode": "class_pair",
+      "training_ids": [
+        "trashnet_allocation_16_24_36_84_s1902",
+        "trashnet_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_14_30_36_52_s1902",
+        "trashnet_allocation_14_30_36_56_s1901",
+        "warpc_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_36_56_s1901",
+        "trashnet_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_36_56_s1902",
+        "warpc_allocation_14_30_36_52_s1902",
+        "warpc_allocation_16_24_36_84_s1902",
+        "warpc_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "warpc_allocation_14_30_32_72_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 55.629559752612856,
+          "observed_macro_f1_pct": 53.43027531277736,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_14_30_32_72_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 55.419093836162645,
+          "observed_macro_f1_pct": 45.73912991160495,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "trashnet_allocation_14_30_32_72_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 70.98896536973878,
+          "observed_macro_f1_pct": 76.5854353415329,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_14_30_32_72_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 73.35226090309965,
+          "observed_macro_f1_pct": 74.55376972675593,
+          "reference_macro_f1_pct": 78.72029467568386
+        }
+      ],
+      "mae_pp": 4.669306789960899,
+      "selection": []
+    },
+    {
+      "heldout_axis": "allocation",
+      "heldout_group": "(14, 30, 36, 52)",
+      "mode": "architecture_only",
+      "training_ids": [
+        "trashnet_allocation_16_24_36_84_s1902",
+        "trashnet_allocation_16_24_36_84_s1901",
+        "warpc_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_56_s1901",
+        "warpc_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_32_72_s1902",
+        "warpc_allocation_14_30_36_56_s1901",
+        "trashnet_allocation_12_34_36_36_s1901",
+        "trashnet_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_32_72_s1902",
+        "trashnet_allocation_14_30_36_56_s1902",
+        "warpc_allocation_16_24_36_84_s1902",
+        "warpc_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "trashnet_allocation_14_30_36_52_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 72.83643628011895,
+          "observed_macro_f1_pct": 73.46654846654846,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "warpc_allocation_14_30_36_52_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 54.64958353104484,
+          "observed_macro_f1_pct": 54.97505337694546,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_52_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 69.48806928473233,
+          "observed_macro_f1_pct": 80.76931840721588,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "warpc_allocation_14_30_36_52_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 54.34835238064606,
+          "observed_macro_f1_pct": 55.36171341422983,
+          "reference_macro_f1_pct": 54.18078694698203
+        }
+      ],
+      "mae_pp": 3.3125480470993622,
+      "selection": []
+    },
+    {
+      "heldout_axis": "allocation",
+      "heldout_group": "(14, 30, 36, 52)",
+      "mode": "frequency_only",
+      "training_ids": [
+        "trashnet_allocation_16_24_36_84_s1902",
+        "trashnet_allocation_16_24_36_84_s1901",
+        "warpc_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_56_s1901",
+        "warpc_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_32_72_s1902",
+        "warpc_allocation_14_30_36_56_s1901",
+        "trashnet_allocation_12_34_36_36_s1901",
+        "trashnet_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_32_72_s1902",
+        "trashnet_allocation_14_30_36_56_s1902",
+        "warpc_allocation_16_24_36_84_s1902",
+        "warpc_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "trashnet_allocation_14_30_36_52_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 72.84586787400688,
+          "observed_macro_f1_pct": 73.46654846654846,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "warpc_allocation_14_30_36_52_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 54.81972783262442,
+          "observed_macro_f1_pct": 54.97505337694546,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_52_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 69.47515563419245,
+          "observed_macro_f1_pct": 80.76931840721588,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "warpc_allocation_14_30_36_52_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 54.01249248946961,
+          "observed_macro_f1_pct": 55.36171341422983,
+          "reference_macro_f1_pct": 54.18078694698203
+        }
+      ],
+      "mae_pp": 3.354847458661567,
+      "selection": []
+    },
+    {
+      "heldout_axis": "allocation",
+      "heldout_group": "(14, 30, 36, 52)",
+      "mode": "class_agnostic",
+      "training_ids": [
+        "trashnet_allocation_16_24_36_84_s1902",
+        "trashnet_allocation_16_24_36_84_s1901",
+        "warpc_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_56_s1901",
+        "warpc_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_32_72_s1902",
+        "warpc_allocation_14_30_36_56_s1901",
+        "trashnet_allocation_12_34_36_36_s1901",
+        "trashnet_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_32_72_s1902",
+        "trashnet_allocation_14_30_36_56_s1902",
+        "warpc_allocation_16_24_36_84_s1902",
+        "warpc_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "trashnet_allocation_14_30_36_52_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 72.53500562716823,
+          "observed_macro_f1_pct": 73.46654846654846,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "warpc_allocation_14_30_36_52_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 54.84620466323028,
+          "observed_macro_f1_pct": 54.97505337694546,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_52_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 69.46739653083644,
+          "observed_macro_f1_pct": 80.76931840721588,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "warpc_allocation_14_30_36_52_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 54.45466948366517,
+          "observed_macro_f1_pct": 55.36171341422983,
+          "reference_macro_f1_pct": 54.18078694698203
+        }
+      ],
+      "mae_pp": 3.3173393400098767,
+      "selection": []
+    },
+    {
+      "heldout_axis": "allocation",
+      "heldout_group": "(14, 30, 36, 52)",
+      "mode": "class_pair",
+      "training_ids": [
+        "trashnet_allocation_16_24_36_84_s1902",
+        "trashnet_allocation_16_24_36_84_s1901",
+        "warpc_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_56_s1901",
+        "warpc_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_32_72_s1902",
+        "warpc_allocation_14_30_36_56_s1901",
+        "trashnet_allocation_12_34_36_36_s1901",
+        "trashnet_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_32_72_s1902",
+        "trashnet_allocation_14_30_36_56_s1902",
+        "warpc_allocation_16_24_36_84_s1902",
+        "warpc_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "trashnet_allocation_14_30_36_52_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 73.02338418634983,
+          "observed_macro_f1_pct": 73.46654846654846,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "warpc_allocation_14_30_36_52_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 54.94587457956367,
+          "observed_macro_f1_pct": 54.97505337694546,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_52_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 69.85926976815396,
+          "observed_macro_f1_pct": 80.76931840721588,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "warpc_allocation_14_30_36_52_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 54.7812306271498,
+          "observed_macro_f1_pct": 55.36171341422983,
+          "reference_macro_f1_pct": 54.18078694698203
+        }
+      ],
+      "mae_pp": 2.9907186259305902,
+      "selection": []
+    },
+    {
+      "heldout_axis": "allocation",
+      "heldout_group": "(14, 30, 36, 56)",
+      "mode": "architecture_only",
+      "training_ids": [
+        "trashnet_allocation_16_24_36_84_s1902",
+        "trashnet_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_14_30_36_52_s1902",
+        "warpc_allocation_14_30_32_72_s1901",
+        "warpc_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_32_72_s1902",
+        "trashnet_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1902",
+        "warpc_allocation_14_30_36_52_s1902",
+        "warpc_allocation_16_24_36_84_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "trashnet_allocation_14_30_36_56_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 69.53491704588131,
+          "observed_macro_f1_pct": 81.39695728405405,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "warpc_allocation_14_30_36_56_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 54.69448839342299,
+          "observed_macro_f1_pct": 50.74617945484088,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_56_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 72.88433420085997,
+          "observed_macro_f1_pct": 74.68142436945638,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "warpc_allocation_14_30_36_56_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 54.39187187860719,
+          "observed_macro_f1_pct": 57.38956625074272,
+          "reference_macro_f1_pct": 54.18078694698203
+        }
+      ],
+      "mae_pp": 5.1512834293716985,
+      "selection": []
+    },
+    {
+      "heldout_axis": "allocation",
+      "heldout_group": "(14, 30, 36, 56)",
+      "mode": "frequency_only",
+      "training_ids": [
+        "trashnet_allocation_16_24_36_84_s1902",
+        "trashnet_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_14_30_36_52_s1902",
+        "warpc_allocation_14_30_32_72_s1901",
+        "warpc_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_32_72_s1902",
+        "trashnet_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1902",
+        "warpc_allocation_14_30_36_52_s1902",
+        "warpc_allocation_16_24_36_84_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "trashnet_allocation_14_30_36_56_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 69.52972889391731,
+          "observed_macro_f1_pct": 81.39695728405405,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "warpc_allocation_14_30_36_56_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 54.88455961644539,
+          "observed_macro_f1_pct": 50.74617945484088,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_56_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 72.90069741820972,
+          "observed_macro_f1_pct": 74.68142436945638,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "warpc_allocation_14_30_36_56_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 54.10552894319219,
+          "observed_macro_f1_pct": 57.38956625074272,
+          "reference_macro_f1_pct": 54.18078694698203
+        }
+      ],
+      "mae_pp": 5.267593202634611,
+      "selection": []
+    },
+    {
+      "heldout_axis": "allocation",
+      "heldout_group": "(14, 30, 36, 56)",
+      "mode": "class_agnostic",
+      "training_ids": [
+        "trashnet_allocation_16_24_36_84_s1902",
+        "trashnet_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_14_30_36_52_s1902",
+        "warpc_allocation_14_30_32_72_s1901",
+        "warpc_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_32_72_s1902",
+        "trashnet_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1902",
+        "warpc_allocation_14_30_36_52_s1902",
+        "warpc_allocation_16_24_36_84_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "trashnet_allocation_14_30_36_56_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 69.51315617795122,
+          "observed_macro_f1_pct": 81.39695728405405,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "warpc_allocation_14_30_36_56_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 54.89560144944734,
+          "observed_macro_f1_pct": 50.74617945484088,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_56_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 72.57797771252392,
+          "observed_macro_f1_pct": 74.68142436945638,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "warpc_allocation_14_30_36_56_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 54.52533230022756,
+          "observed_macro_f1_pct": 57.38956625074272,
+          "reference_macro_f1_pct": 54.18078694698203
+        }
+      ],
+      "mae_pp": 5.25022592703923,
+      "selection": []
+    },
+    {
+      "heldout_axis": "allocation",
+      "heldout_group": "(14, 30, 36, 56)",
+      "mode": "class_pair",
+      "training_ids": [
+        "trashnet_allocation_16_24_36_84_s1902",
+        "trashnet_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_14_30_36_52_s1902",
+        "warpc_allocation_14_30_32_72_s1901",
+        "warpc_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_32_72_s1902",
+        "trashnet_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1902",
+        "warpc_allocation_14_30_36_52_s1902",
+        "warpc_allocation_16_24_36_84_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "trashnet_allocation_14_30_36_56_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 69.9502394556879,
+          "observed_macro_f1_pct": 81.39695728405405,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "warpc_allocation_14_30_36_56_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 55.00377061461329,
+          "observed_macro_f1_pct": 50.74617945484088,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_56_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 73.10328930263253,
+          "observed_macro_f1_pct": 74.68142436945638,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "warpc_allocation_14_30_36_56_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 54.811553032662566,
+          "observed_macro_f1_pct": 57.38956625074272,
+          "reference_macro_f1_pct": 54.18078694698203
+        }
+      ],
+      "mae_pp": 4.965114318260639,
+      "selection": []
+    },
+    {
+      "heldout_axis": "allocation",
+      "heldout_group": "(16, 24, 36, 84)",
+      "mode": "architecture_only",
+      "training_ids": [
+        "trashnet_allocation_14_30_36_52_s1902",
+        "warpc_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_56_s1901",
+        "trashnet_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_32_72_s1902",
+        "warpc_allocation_14_30_36_56_s1901",
+        "trashnet_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1902",
+        "trashnet_allocation_14_30_36_56_s1902",
+        "warpc_allocation_14_30_36_52_s1902",
+        "warpc_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "trashnet_allocation_16_24_36_84_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 71.13868977021731,
+          "observed_macro_f1_pct": 73.39639166668759,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "trashnet_allocation_16_24_36_84_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 67.83363432978905,
+          "observed_macro_f1_pct": 75.06732590292637,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "warpc_allocation_16_24_36_84_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 53.07035780386159,
+          "observed_macro_f1_pct": 55.43828560245755,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_16_24_36_84_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 52.820395893580155,
+          "observed_macro_f1_pct": 49.782353751480485,
+          "reference_macro_f1_pct": 54.18078694698203
+        }
+      ],
+      "mae_pp": 3.724340852575807,
+      "selection": []
+    },
+    {
+      "heldout_axis": "allocation",
+      "heldout_group": "(16, 24, 36, 84)",
+      "mode": "frequency_only",
+      "training_ids": [
+        "trashnet_allocation_14_30_36_52_s1902",
+        "warpc_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_56_s1901",
+        "trashnet_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_32_72_s1902",
+        "warpc_allocation_14_30_36_56_s1901",
+        "trashnet_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1902",
+        "trashnet_allocation_14_30_36_56_s1902",
+        "warpc_allocation_14_30_36_52_s1902",
+        "warpc_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "trashnet_allocation_16_24_36_84_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 70.89706670415926,
+          "observed_macro_f1_pct": 73.39639166668759,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "trashnet_allocation_16_24_36_84_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 67.57955325277715,
+          "observed_macro_f1_pct": 75.06732590292637,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "warpc_allocation_16_24_36_84_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 52.77949569957639,
+          "observed_macro_f1_pct": 55.43828560245755,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_16_24_36_84_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 51.968870978765516,
+          "observed_macro_f1_pct": 49.782353751480485,
+          "reference_macro_f1_pct": 54.18078694698203
+        }
+      ],
+      "mae_pp": 3.7081011857109374,
+      "selection": []
+    },
+    {
+      "heldout_axis": "allocation",
+      "heldout_group": "(16, 24, 36, 84)",
+      "mode": "class_agnostic",
+      "training_ids": [
+        "trashnet_allocation_14_30_36_52_s1902",
+        "warpc_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_56_s1901",
+        "trashnet_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_32_72_s1902",
+        "warpc_allocation_14_30_36_56_s1901",
+        "trashnet_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1902",
+        "trashnet_allocation_14_30_36_56_s1902",
+        "warpc_allocation_14_30_36_52_s1902",
+        "warpc_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "trashnet_allocation_16_24_36_84_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 69.99499816074359,
+          "observed_macro_f1_pct": 73.39639166668759,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "trashnet_allocation_16_24_36_84_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 66.85051784360536,
+          "observed_macro_f1_pct": 75.06732590292637,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "warpc_allocation_16_24_36_84_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 52.36901914796067,
+          "observed_macro_f1_pct": 55.43828560245755,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_16_24_36_84_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 52.003002735057294,
+          "observed_macro_f1_pct": 49.782353751480485,
+          "reference_macro_f1_pct": 54.18078694698203
+        }
+      ],
+      "mae_pp": 4.227029250834674,
+      "selection": []
+    },
+    {
+      "heldout_axis": "allocation",
+      "heldout_group": "(16, 24, 36, 84)",
+      "mode": "class_pair",
+      "training_ids": [
+        "trashnet_allocation_14_30_36_52_s1902",
+        "warpc_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_56_s1901",
+        "trashnet_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_32_72_s1902",
+        "warpc_allocation_14_30_36_56_s1901",
+        "trashnet_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1902",
+        "trashnet_allocation_14_30_36_56_s1902",
+        "warpc_allocation_14_30_36_52_s1902",
+        "warpc_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "trashnet_allocation_16_24_36_84_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 69.72311927682068,
+          "observed_macro_f1_pct": 73.39639166668759,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "trashnet_allocation_16_24_36_84_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 66.84006212764172,
+          "observed_macro_f1_pct": 75.06732590292637,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "warpc_allocation_16_24_36_84_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 52.03733780357964,
+          "observed_macro_f1_pct": 55.43828560245755,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_16_24_36_84_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 51.60147797024267,
+          "observed_macro_f1_pct": 49.782353751480485,
+          "reference_macro_f1_pct": 54.18078694698203
+        }
+      ],
+      "mae_pp": 4.280152045697914,
+      "selection": []
+    },
+    {
+      "heldout_axis": "dataset",
+      "heldout_group": "trashnet",
+      "mode": "architecture_only",
+      "training_ids": [
+        "warpc_allocation_14_30_32_72_s1901",
+        "warpc_allocation_16_24_36_84_s1901",
+        "warpc_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_32_72_s1902",
+        "warpc_allocation_14_30_36_56_s1901",
+        "warpc_allocation_14_30_36_52_s1901",
+        "warpc_allocation_14_30_36_52_s1902",
+        "warpc_allocation_16_24_36_84_s1902",
+        "warpc_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "trashnet_allocation_16_24_36_84_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 72.52979340670218,
+          "observed_macro_f1_pct": 73.39639166668759,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "trashnet_allocation_16_24_36_84_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 69.1883829097243,
+          "observed_macro_f1_pct": 75.06732590292637,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_52_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 73.41257801840597,
+          "observed_macro_f1_pct": 73.46654846654846,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_56_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 69.96501318541947,
+          "observed_macro_f1_pct": 81.39695728405405,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_12_34_36_36_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 74.26658567980333,
+          "observed_macro_f1_pct": 78.6335684728087,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "trashnet_allocation_12_34_36_36_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 70.89134527920206,
+          "observed_macro_f1_pct": 76.33706163117927,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_14_30_32_72_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 69.82335759394135,
+          "observed_macro_f1_pct": 76.5854353415329,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_52_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 70.05225089320152,
+          "observed_macro_f1_pct": 80.76931840721588,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_14_30_32_72_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 73.17901441511853,
+          "observed_macro_f1_pct": 74.55376972675593,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_56_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 73.32359001768594,
+          "observed_macro_f1_pct": 74.68142436945638,
+          "reference_macro_f1_pct": 78.72029467568386
+        }
+      ],
+      "mae_pp": 4.82558898699609,
+      "selection": [
+        {
+          "dataset": "trashnet",
+          "seed": 1901,
+          "selected": "manual_base",
+          "gain_vs_manual_base_pp": 0.0,
+          "development_oracle_regret_pp": 7.011858311707016,
+          "expected_uniform_random_score_pct": 77.42353292320924
+        },
+        {
+          "dataset": "trashnet",
+          "seed": 1902,
+          "selected": "manual_base",
+          "gain_vs_manual_base_pp": 0.0,
+          "development_oracle_regret_pp": 0.0,
+          "expected_uniform_random_score_pct": 75.57533289632349
+        }
+      ]
+    },
+    {
+      "heldout_axis": "dataset",
+      "heldout_group": "trashnet",
+      "mode": "frequency_only",
+      "training_ids": [
+        "warpc_allocation_14_30_32_72_s1901",
+        "warpc_allocation_16_24_36_84_s1901",
+        "warpc_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_32_72_s1902",
+        "warpc_allocation_14_30_36_56_s1901",
+        "warpc_allocation_14_30_36_52_s1901",
+        "warpc_allocation_14_30_36_52_s1902",
+        "warpc_allocation_16_24_36_84_s1902",
+        "warpc_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "trashnet_allocation_16_24_36_84_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 72.40501450585147,
+          "observed_macro_f1_pct": 73.39639166668759,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "trashnet_allocation_16_24_36_84_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 69.04026868895383,
+          "observed_macro_f1_pct": 75.06732590292637,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_52_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 73.40387211890466,
+          "observed_macro_f1_pct": 73.46654846654846,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_56_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 69.93674250949827,
+          "observed_macro_f1_pct": 81.39695728405405,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_12_34_36_36_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 74.246978316381,
+          "observed_macro_f1_pct": 78.6335684728087,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "trashnet_allocation_12_34_36_36_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 70.830302195929,
+          "observed_macro_f1_pct": 76.33706163117927,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_14_30_32_72_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 69.72045218960314,
+          "observed_macro_f1_pct": 76.5854353415329,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_52_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 70.0212336764404,
+          "observed_macro_f1_pct": 80.76931840721588,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_14_30_32_72_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 73.1070796956283,
+          "observed_macro_f1_pct": 74.55376972675593,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_56_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 73.31596495293503,
+          "observed_macro_f1_pct": 74.68142436945638,
+          "reference_macro_f1_pct": 78.72029467568386
+        }
+      ],
+      "mae_pp": 4.885989241904044,
+      "selection": [
+        {
+          "dataset": "trashnet",
+          "seed": 1901,
+          "selected": "manual_base",
+          "gain_vs_manual_base_pp": 0.0,
+          "development_oracle_regret_pp": 7.011858311707016,
+          "expected_uniform_random_score_pct": 77.42353292320924
+        },
+        {
+          "dataset": "trashnet",
+          "seed": 1902,
+          "selected": "manual_base",
+          "gain_vs_manual_base_pp": 0.0,
+          "development_oracle_regret_pp": 0.0,
+          "expected_uniform_random_score_pct": 75.57533289632349
+        }
+      ]
+    },
+    {
+      "heldout_axis": "dataset",
+      "heldout_group": "trashnet",
+      "mode": "class_agnostic",
+      "training_ids": [
+        "warpc_allocation_14_30_32_72_s1901",
+        "warpc_allocation_16_24_36_84_s1901",
+        "warpc_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_32_72_s1902",
+        "warpc_allocation_14_30_36_56_s1901",
+        "warpc_allocation_14_30_36_52_s1901",
+        "warpc_allocation_14_30_36_52_s1902",
+        "warpc_allocation_16_24_36_84_s1902",
+        "warpc_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "trashnet_allocation_16_24_36_84_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 71.04225200041667,
+          "observed_macro_f1_pct": 73.39639166668759,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "trashnet_allocation_16_24_36_84_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 67.87212672022793,
+          "observed_macro_f1_pct": 75.06732590292637,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_52_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 73.41017674183931,
+          "observed_macro_f1_pct": 73.46654846654846,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_56_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 70.0085164840521,
+          "observed_macro_f1_pct": 81.39695728405405,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_12_34_36_36_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 74.36993911028448,
+          "observed_macro_f1_pct": 78.6335684728087,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "trashnet_allocation_12_34_36_36_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 71.03573398237279,
+          "observed_macro_f1_pct": 76.33706163117927,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_14_30_32_72_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 69.18816905150709,
+          "observed_macro_f1_pct": 76.5854353415329,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_52_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 70.08725330822699,
+          "observed_macro_f1_pct": 80.76931840721588,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_14_30_32_72_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 72.3827371747827,
+          "observed_macro_f1_pct": 74.55376972675593,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_56_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 73.33199670773611,
+          "observed_macro_f1_pct": 74.68142436945638,
+          "reference_macro_f1_pct": 78.72029467568386
+        }
+      ],
+      "mae_pp": 5.215889998771938,
+      "selection": [
+        {
+          "dataset": "trashnet",
+          "seed": 1901,
+          "selected": "manual_base",
+          "gain_vs_manual_base_pp": 0.0,
+          "development_oracle_regret_pp": 7.011858311707016,
+          "expected_uniform_random_score_pct": 77.42353292320924
+        },
+        {
+          "dataset": "trashnet",
+          "seed": 1902,
+          "selected": "manual_base",
+          "gain_vs_manual_base_pp": 0.0,
+          "development_oracle_regret_pp": 0.0,
+          "expected_uniform_random_score_pct": 75.57533289632349
+        }
+      ]
+    },
+    {
+      "heldout_axis": "dataset",
+      "heldout_group": "trashnet",
+      "mode": "class_pair",
+      "training_ids": [
+        "warpc_allocation_14_30_32_72_s1901",
+        "warpc_allocation_16_24_36_84_s1901",
+        "warpc_allocation_12_34_36_36_s1902",
+        "warpc_allocation_12_34_36_36_s1901",
+        "warpc_allocation_14_30_32_72_s1902",
+        "warpc_allocation_14_30_36_56_s1901",
+        "warpc_allocation_14_30_36_52_s1901",
+        "warpc_allocation_14_30_36_52_s1902",
+        "warpc_allocation_16_24_36_84_s1902",
+        "warpc_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "trashnet_allocation_16_24_36_84_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 72.19031943496886,
+          "observed_macro_f1_pct": 73.39639166668759,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "trashnet_allocation_16_24_36_84_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 68.84902461896685,
+          "observed_macro_f1_pct": 75.06732590292637,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_52_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 73.13662841671315,
+          "observed_macro_f1_pct": 73.46654846654846,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_56_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 69.1823937317968,
+          "observed_macro_f1_pct": 81.39695728405405,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_12_34_36_36_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 73.79852806431684,
+          "observed_macro_f1_pct": 78.6335684728087,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "trashnet_allocation_12_34_36_36_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 69.45876613344485,
+          "observed_macro_f1_pct": 76.33706163117927,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_14_30_32_72_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 68.6722443856233,
+          "observed_macro_f1_pct": 76.5854353415329,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_52_s1901",
+          "dataset": "trashnet",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 69.30880197609883,
+          "observed_macro_f1_pct": 80.76931840721588,
+          "reference_macro_f1_pct": 74.38509897234704
+        },
+        {
+          "id": "trashnet_allocation_14_30_32_72_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 72.49761623276417,
+          "observed_macro_f1_pct": 74.55376972675593,
+          "reference_macro_f1_pct": 78.72029467568386
+        },
+        {
+          "id": "trashnet_allocation_14_30_36_56_s1902",
+          "dataset": "trashnet",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 73.00615087337444,
+          "observed_macro_f1_pct": 74.68142436945638,
+          "reference_macro_f1_pct": 78.72029467568386
+        }
+      ],
+      "mae_pp": 5.478732740109744,
+      "selection": [
+        {
+          "dataset": "trashnet",
+          "seed": 1901,
+          "selected": "manual_base",
+          "gain_vs_manual_base_pp": 0.0,
+          "development_oracle_regret_pp": 7.011858311707016,
+          "expected_uniform_random_score_pct": 77.42353292320924
+        },
+        {
+          "dataset": "trashnet",
+          "seed": 1902,
+          "selected": "manual_base",
+          "gain_vs_manual_base_pp": 0.0,
+          "development_oracle_regret_pp": 0.0,
+          "expected_uniform_random_score_pct": 75.57533289632349
+        }
+      ]
+    },
+    {
+      "heldout_axis": "dataset",
+      "heldout_group": "warpc",
+      "mode": "architecture_only",
+      "training_ids": [
+        "trashnet_allocation_16_24_36_84_s1902",
+        "trashnet_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_14_30_36_52_s1902",
+        "trashnet_allocation_14_30_36_56_s1901",
+        "trashnet_allocation_12_34_36_36_s1902",
+        "trashnet_allocation_12_34_36_36_s1901",
+        "trashnet_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1902",
+        "trashnet_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "warpc_allocation_14_30_32_72_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 54.10262985516477,
+          "observed_macro_f1_pct": 53.43027531277736,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_16_24_36_84_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 53.694983555051046,
+          "observed_macro_f1_pct": 55.43828560245755,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_12_34_36_36_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 54.30258644295145,
+          "observed_macro_f1_pct": 56.382868407966555,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "warpc_allocation_12_34_36_36_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 54.60235607927879,
+          "observed_macro_f1_pct": 50.62175854721127,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_14_30_32_72_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 53.818603088702474,
+          "observed_macro_f1_pct": 45.73912991160495,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "warpc_allocation_14_30_36_56_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 54.45437133622205,
+          "observed_macro_f1_pct": 50.74617945484088,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_14_30_36_52_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 54.46384817861236,
+          "observed_macro_f1_pct": 54.97505337694546,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_14_30_36_52_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 54.16839127128823,
+          "observed_macro_f1_pct": 55.36171341422983,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "warpc_allocation_16_24_36_84_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 53.42416623527117,
+          "observed_macro_f1_pct": 49.782353751480485,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "warpc_allocation_14_30_36_56_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 54.159210943365466,
+          "observed_macro_f1_pct": 57.38956625074272,
+          "reference_macro_f1_pct": 54.18078694698203
+        }
+      ],
+      "mae_pp": 2.884089627779788,
+      "selection": [
+        {
+          "dataset": "warpc",
+          "seed": 1901,
+          "selected": "warpc_allocation_12_34_36_36_s1901",
+          "gain_vs_manual_base_pp": -3.8967549154015657,
+          "development_oracle_regret_pp": 4.816527055246276,
+          "expected_uniform_random_score_pct": 53.28834429280755
+        },
+        {
+          "dataset": "warpc",
+          "seed": 1902,
+          "selected": "warpc_allocation_12_34_36_36_s1902",
+          "gain_vs_manual_base_pp": 2.202081460984523,
+          "development_oracle_regret_pp": 1.0066978427761626,
+          "expected_uniform_random_score_pct": 53.139403113834426
+        }
+      ]
+    },
+    {
+      "heldout_axis": "dataset",
+      "heldout_group": "warpc",
+      "mode": "frequency_only",
+      "training_ids": [
+        "trashnet_allocation_16_24_36_84_s1902",
+        "trashnet_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_14_30_36_52_s1902",
+        "trashnet_allocation_14_30_36_56_s1901",
+        "trashnet_allocation_12_34_36_36_s1902",
+        "trashnet_allocation_12_34_36_36_s1901",
+        "trashnet_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1902",
+        "trashnet_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "warpc_allocation_14_30_32_72_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 54.6353492654844,
+          "observed_macro_f1_pct": 53.43027531277736,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_16_24_36_84_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 53.765534928341864,
+          "observed_macro_f1_pct": 55.43828560245755,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_12_34_36_36_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 54.9819936696374,
+          "observed_macro_f1_pct": 56.382868407966555,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "warpc_allocation_12_34_36_36_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 55.35302404424425,
+          "observed_macro_f1_pct": 50.62175854721127,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_14_30_32_72_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 54.33154812934888,
+          "observed_macro_f1_pct": 45.73912991160495,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "warpc_allocation_14_30_36_56_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 54.91170696028491,
+          "observed_macro_f1_pct": 50.74617945484088,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_14_30_36_52_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 54.93525814697258,
+          "observed_macro_f1_pct": 54.97505337694546,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_14_30_36_52_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 54.59626259515187,
+          "observed_macro_f1_pct": 55.36171341422983,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "warpc_allocation_16_24_36_84_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 53.578851482371334,
+          "observed_macro_f1_pct": 49.782353751480485,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "warpc_allocation_14_30_36_56_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 54.57169549129869,
+          "observed_macro_f1_pct": 57.38956625074272,
+          "reference_macro_f1_pct": 54.18078694698203
+        }
+      ],
+      "mae_pp": 2.918752512475854,
+      "selection": [
+        {
+          "dataset": "warpc",
+          "seed": 1901,
+          "selected": "warpc_allocation_12_34_36_36_s1901",
+          "gain_vs_manual_base_pp": -3.8967549154015657,
+          "development_oracle_regret_pp": 4.816527055246276,
+          "expected_uniform_random_score_pct": 53.28834429280755
+        },
+        {
+          "dataset": "warpc",
+          "seed": 1902,
+          "selected": "warpc_allocation_12_34_36_36_s1902",
+          "gain_vs_manual_base_pp": 2.202081460984523,
+          "development_oracle_regret_pp": 1.0066978427761626,
+          "expected_uniform_random_score_pct": 53.139403113834426
+        }
+      ]
+    },
+    {
+      "heldout_axis": "dataset",
+      "heldout_group": "warpc",
+      "mode": "class_agnostic",
+      "training_ids": [
+        "trashnet_allocation_16_24_36_84_s1902",
+        "trashnet_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_14_30_36_52_s1902",
+        "trashnet_allocation_14_30_36_56_s1901",
+        "trashnet_allocation_12_34_36_36_s1902",
+        "trashnet_allocation_12_34_36_36_s1901",
+        "trashnet_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1902",
+        "trashnet_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "warpc_allocation_14_30_32_72_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 53.98574391610956,
+          "observed_macro_f1_pct": 53.43027531277736,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_16_24_36_84_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 53.72507337530834,
+          "observed_macro_f1_pct": 55.43828560245755,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_12_34_36_36_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 54.53837936414618,
+          "observed_macro_f1_pct": 56.382868407966555,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "warpc_allocation_12_34_36_36_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 54.88511783755017,
+          "observed_macro_f1_pct": 50.62175854721127,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_14_30_32_72_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 53.5678754323514,
+          "observed_macro_f1_pct": 45.73912991160495,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "warpc_allocation_14_30_36_56_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 54.490258444711934,
+          "observed_macro_f1_pct": 50.74617945484088,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_14_30_36_52_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 54.48109815181551,
+          "observed_macro_f1_pct": 54.97505337694546,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_14_30_36_52_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 54.14916772789808,
+          "observed_macro_f1_pct": 55.36171341422983,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "warpc_allocation_16_24_36_84_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 53.30396452172966,
+          "observed_macro_f1_pct": 49.782353751480485,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "warpc_allocation_14_30_36_56_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 54.160897312208654,
+          "observed_macro_f1_pct": 57.38956625074272,
+          "reference_macro_f1_pct": 54.18078694698203
+        }
+      ],
+      "mae_pp": 2.840613429550313,
+      "selection": [
+        {
+          "dataset": "warpc",
+          "seed": 1901,
+          "selected": "warpc_allocation_12_34_36_36_s1901",
+          "gain_vs_manual_base_pp": -3.8967549154015657,
+          "development_oracle_regret_pp": 4.816527055246276,
+          "expected_uniform_random_score_pct": 53.28834429280755
+        },
+        {
+          "dataset": "warpc",
+          "seed": 1902,
+          "selected": "warpc_allocation_12_34_36_36_s1902",
+          "gain_vs_manual_base_pp": 2.202081460984523,
+          "development_oracle_regret_pp": 1.0066978427761626,
+          "expected_uniform_random_score_pct": 53.139403113834426
+        }
+      ]
+    },
+    {
+      "heldout_axis": "dataset",
+      "heldout_group": "warpc",
+      "mode": "class_pair",
+      "training_ids": [
+        "trashnet_allocation_16_24_36_84_s1902",
+        "trashnet_allocation_16_24_36_84_s1901",
+        "trashnet_allocation_14_30_36_52_s1902",
+        "trashnet_allocation_14_30_36_56_s1901",
+        "trashnet_allocation_12_34_36_36_s1902",
+        "trashnet_allocation_12_34_36_36_s1901",
+        "trashnet_allocation_14_30_32_72_s1901",
+        "trashnet_allocation_14_30_36_52_s1901",
+        "trashnet_allocation_14_30_32_72_s1902",
+        "trashnet_allocation_14_30_36_56_s1902"
+      ],
+      "predictions": [
+        {
+          "id": "warpc_allocation_14_30_32_72_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 57.927850221835996,
+          "observed_macro_f1_pct": 53.43027531277736,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_16_24_36_84_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 55.362670041230736,
+          "observed_macro_f1_pct": 55.43828560245755,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_12_34_36_36_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 61.40583914491779,
+          "observed_macro_f1_pct": 56.382868407966555,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "warpc_allocation_12_34_36_36_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 58.99242292989133,
+          "observed_macro_f1_pct": 50.62175854721127,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_14_30_32_72_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 60.061312809862756,
+          "observed_macro_f1_pct": 45.73912991160495,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "warpc_allocation_14_30_36_56_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 57.540312199899745,
+          "observed_macro_f1_pct": 50.74617945484088,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_14_30_36_52_s1901",
+          "dataset": "warpc",
+          "seed": 1901,
+          "predicted_macro_f1_pct": 57.61342836448644,
+          "observed_macro_f1_pct": 54.97505337694546,
+          "reference_macro_f1_pct": 54.51851346261284
+        },
+        {
+          "id": "warpc_allocation_14_30_36_52_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 59.56100723976541,
+          "observed_macro_f1_pct": 55.36171341422983,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "warpc_allocation_16_24_36_84_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 56.62956446440123,
+          "observed_macro_f1_pct": 49.782353751480485,
+          "reference_macro_f1_pct": 54.18078694698203
+        },
+        {
+          "id": "warpc_allocation_14_30_36_56_s1902",
+          "dataset": "warpc",
+          "seed": 1902,
+          "predicted_macro_f1_pct": 59.43887317513432,
+          "observed_macro_f1_pct": 57.38956625074272,
+          "reference_macro_f1_pct": 54.18078694698203
+        }
+      ],
+      "mae_pp": 5.481732768362232,
+      "selection": [
+        {
+          "dataset": "warpc",
+          "seed": 1901,
+          "selected": "warpc_allocation_12_34_36_36_s1901",
+          "gain_vs_manual_base_pp": -3.8967549154015657,
+          "development_oracle_regret_pp": 4.816527055246276,
+          "expected_uniform_random_score_pct": 53.28834429280755
+        },
+        {
+          "dataset": "warpc",
+          "seed": 1902,
+          "selected": "warpc_allocation_12_34_36_36_s1902",
+          "gain_vs_manual_base_pp": 2.202081460984523,
+          "development_oracle_regret_pp": 1.0066978427761626,
+          "expected_uniform_random_score_pct": 53.139403113834426
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+ACRE PROXY/DTD — COMPLETE,17 OKTOBER2026
+63/63 training dan63/63 evaluasi selesai;0failure,0worker,0antrean.
+Training berakhir13.56WIB;analisisakhirCOMPLETE. Diagnostik lama18/18COMPLETE.
+Hasil dan rekonsiliasi lokal ada di completed_20261017/.
+Baca HASIL_TRANSFER_DTD_RINGKAS_20261017.txt.
+Manuskrip belum ditulis ulang dengan hasil baru.

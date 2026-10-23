@@ -1,0 +1,26 @@
+[
+  {
+    "script": "verify_corrected_evidence.py",
+    "exit_code": 0,
+    "stdout": "PASS: source locks,72 unique corrected runs, confusion metrics, selection history, joint budget band, and manuscript summary table.\nCheckpoint files, raw images, and saved-logit NPZ files are not embedded; their prior audit is documented, not rerun by this lightweight verifier.\n",
+    "stderr": ""
+  },
+  {
+    "script": "verify_directed_tables.py",
+    "exit_code": 0,
+    "stdout": "PASS:126 unique cells,36 joint contrasts,matched Base/joint budgets,main interaction table,and all proxy MAE summaries.\n",
+    "stderr": ""
+  },
+  {
+    "script": "verify_empirical_evidence.py",
+    "exit_code": 0,
+    "stdout": "{\n  \"status\": \"PASS\",\n  \"distinct_training_runs\": 279,\n  \"cohort_new_runs\": [\n    36,\n    72,\n    108,\n    63\n  ],\n  \"reused_base_records\": 18,\n  \"metric_records_checked\": 297,\n  \"policy_decisions_checked\": 189,\n  \"interaction_contexts_checked\": 54,\n  \"dtd_all_effects_checked\": 54,\n  \"scope\": \"Retained records and printed summary reconciliation; no fresh inference or remote binary authentication.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "script": "channel_retraining_20261017/verify_channel_retraining.py",
+    "exit_code": 0,
+    "stdout": "{\n  \"status\": \"PASS\",\n  \"training_runs_added\": 0,\n  \"inference_runs_added\": 0,\n  \"contexts\": 27,\n  \"retrained_effects\": 162,\n  \"local_block_responses\": 135,\n  \"projection_records\": 108,\n  \"bidirectional_records\": 108,\n  \"dtd_profile_commitments\": 9,\n  \"primary_dtd_contrast\": \"unchanged\",\n  \"scope\": \"Post-outcome observed-response analysis; no causal or population noise-free claim.\"\n}\n",
+    "stderr": ""
+  }
+]

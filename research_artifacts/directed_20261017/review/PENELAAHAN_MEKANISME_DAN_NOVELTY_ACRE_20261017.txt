@@ -1,0 +1,128 @@
+PENELAAHAN KLAIM MEKANISME DAN NOVELTY ACRE
+17 Oktober 2026
+Skill: cs-paper-review-writing
+
+KEPUTUSAN UTAMA
+ACRE kini memiliki temuan empiris yang lebih spesifik: pada intervensi lebar tertentu, efek setelah retraining tidak sama dengan penjumlahan efek komponen, dan sensitivitas masking model Base tidak cukup untuk memprediksi hasil perubahan arsitektur. Temuan ini mendukung studi batas prediksi alokasi kapasitas. Bukti belum menetapkan mekanisme representasi yang menyebabkan interaksi, algoritma alokasi baru yang berhasil, ataupun kebaruan pertama di dunia.
+
+1. BUKTI YANG DITELAAH
+Manuskrip penelitian terkoreksi 16 Oktober, khususnya abstract, Introduction, kontribusi, diagnostik, dan pembahasan alokasi. Manuskrip tersebut masih melaporkan pilot 36 dan stability 72; belum memasukkan cohort intervensi terbaru.
+Cohort terbaru: 108 training baru dan 18 referensi Base yang digunakan kembali, bukan 126 training baru. Dua dataset, tiga split 4302/4303/4304, tiga model seed 2901/2902/2903. Dua factorial 2x2 berlawanan arah berbagi Base.
+Base: [16,24,40,64].
+Arah c naik/d turun: c=42, d=56.
+Arah c turun/d naik: c=38, d=72.
+Checkpoint dipilih dari selection subset; probe adalah subset pengembangan yang telah terekspos dalam penelitian. Ini bukan konfirmasi pada task atau test yang belum digunakan.
+
+Audit tambahan dalam review ini:
+- 126 result.json diambil dari server; unik dan lengkap.
+- Macro-F1 dan accuracy dihitung ulang dari 126 confusion matrix.
+- Label dan argmax logits NPZ direkonsiliasi dengan seluruh 126 confusion matrix.
+- Hash 126 best.pt dan 126 initial_state.pt cocok dengan rekaman.
+- Histori 126 run cocok dengan checkpoint pada maksimum selection pertama dan aturan patience 20/100 epoch.
+- Interaksi accuracy, balanced accuracy, loss rata-rata kelas, dan loss berbobot support dihitung ulang.
+- Semua kelas diperiksa melalui leave-one-class-out; semua split melalui leave-one-split-out.
+- Bootstrap berpasangan, terstratifikasi kelas, 1000 resampling per konteks, seed tetap. Indeks gambar sama untuk empat sel dalam setiap kontras. Interval percentile hanya mengukur ketidakpastian gambar pada checkpoint/probe yang tetap; bukan variasi pelatihan, split, objek sumber, atau generalisasi dataset. Tidak ada klaim p-value populasi dari sembilan konteks yang menggunakan pool data tumpang tindih.
+- Tidak dilakukan retraining, inferensi ulang GPU, perubahan protokol, pemilihan kandidat baru, atau perubahan manuskrip.
+Analisis tambahan ini bersifat post-outcome review, bukan preregistrasi baru.
+
+2. MAKNA KONTRAS
+I = F(joint) - F(component c) - F(component d) + F(Base).
+I negatif berarti performa gabungan lebih rendah daripada prediksi aditif dari dua intervensi tunggal, pada skala metrik tersebut. I bukan selisih joint terhadap Base.
+Contoh WaRP-C c naik/d turun: komponen +0,614 dan -0,141 pp; prediksi aditif +0,473 pp. Hasil joint -3,653 pp terhadap Base. Selisih terhadap prediksi aditif adalah -4,126 pp.
+Nilai interaksi yang besar tidak berarti model joint lebih baik. Pada arah sebaliknya, interaksi WaRP-C positif +1,900 pp tetapi joint tetap -1,205 pp terhadap Base.
+
+RINGKASAN SEMUA ARAH (mean sembilan konteks; satuan pp untuk F1/accuracy)
+Dataset   Arah             Joint-Base F1    I F1     I accuracy   I F1 negatif
+WaRP-C    c naik/d turun      -3,653       -4,126      -1,869        7/9
+WaRP-C    c turun/d naik      -1,205       +1,900      +0,013        3/9
+TrashNet  c naik/d turun      +0,468       -0,716      -1,010        4/9
+TrashNet  c turun/d naik      -0,812       -3,179      -2,806        6/9
+
+WaRP-C c naik/d turun adalah sinyal yang paling jelas:
+- Mean I F1 per split: -7,471; -2,187; -2,720 pp.
+- I accuracy negatif pada 9/9 konteks, mean per split -3,371; -0,985; -1,250 pp.
+- Interaksi pada perbaikan loss berbobot support negatif pada ketiga mean split. Dengan orientasi higher-is-better, mean I loss = -0,0473.
+- Menghapus satu split secara bergantian mempertahankan mean I F1 negatif, rentang -5,096 hingga -2,454 pp.
+- Mengeluarkan satu kelas secara bergantian dari rata-rata mempertahankan mean I negatif. Tanpa canister: -3,009 pp; tanpa cardboard: -2,891 pp. Jadi rata-rata negatif bukan semata kontribusi canister.
+- Namun SD antarkonteks F1 = 4,303 pp. Hanya 3/9 interval bootstrap F1 berada seluruhnya di bawah nol; 2/9 untuk accuracy. Ini bukti arah rata-rata pada konteks yang diuji, bukan kepastian efek di setiap konteks.
+
+TrashNet c turun/d naik juga menunjukkan mean I F1/accuracy/loss negatif pada ketiga split, tetapi SD I F1 = 6,019 pp dan hanya 1/9 interval bootstrap F1 seluruhnya negatif. Hindari menyebut efek universal atau terbukti stabil secara populasi.
+Dua arah lain lebih campuran. Semua empat arah wajib ditampilkan untuk menghindari pemilihan narasi hanya dari hasil paling mendukung.
+
+3. APA YANG SUDAH BISA DIKLAIM
+A. Didukung: non-aditivitas empiris pada perubahan lebar yang diuji setelah training dan checkpoint selection dengan resep yang sama. Nyatakan arah, dataset, ukuran perubahan, dan variasinya.
+B. Didukung: pada WaRP-C c naik/d turun, interaksi negatif tidak dapat dijelaskan hanya oleh nonlinieritas rumus F1. Accuracy adalah jumlah prediksi benar yang dinormalisasi pada probe tetap dan juga menunjukkan interaksi negatif. Loss berbobot sampel memberi bukti tambahan pada keluaran prediktif.
+C. Didukung: interaksi makro melibatkan pola kelas yang berbeda. Mean I F1 WaRP-C arah ini: bottle -0,924; canister -8,595; cans -4,334; cardboard -9,069; detergent +2,290 pp. Ini pelokalan dampak pada output, bukan bukti channel tertentu mengodekan kelas tertentu.
+D. Didukung dengan batas: proxy masking linear yang telah ditetapkan tidak cukup memprediksi retraining pada rancangan ini. Ini menguji proxy tertentu, bukan semua sensitivity estimator, pruning criterion, atau class-aware allocation.
+E. Didukung: perbandingan Base dengan joint memiliki biaya hampir sama. Sel tunggal memang dibiarkan keluar band untuk mengidentifikasi komponen. Jangan menyebut semua 7 sel jointly resource-matched.
+
+4. KLAIM MEKANISTIK YANG BELUM DIDUKUNG
+- 'Non-aditivitas membuktikan co-adaptation/semantic bottleneck/kompetisi fitur sebagai penyebab.'
+  Yang diamati adalah respons pipeline training dan selection terhadap intervensi arsitektur. Tidak ada mediator representasi yang diintervensi dan diverifikasi menyebabkan perubahan output.
+- 'Stage c khusus belajar canister atau cardboard.'
+  Lebar c mengubah output block4 sekaligus input/hidden expansion block5. Lebar d mengubah output block5 dan classifier. Ini intervensi batas lebar yang saling terhubung, bukan pemisahan fungsi stage secara murni.
+- 'Seluruh kegagalan estimator disebabkan interaction.'
+  Identitas error_joint = I + error_c + error_d adalah aljabar. Komponen dapat saling meniadakan. Rasio mean I/mean error bukan persentase kausal.
+- 'Interaksi bebas pengaruh optimasi.'
+  Model diretrain dan checkpoint terbaik bisa berasal dari epoch berbeda. Contoh mean best epoch WaRP-C: Base 60,0; c_grow 61,8; d_shrink 65,6; joint 46,7. Perbedaan ini bukan bukti penyebab, tetapi menjelaskan bahwa efek yang diestimasi mencakup optimasi dan selection, bukan hanya kapasitas representasi intrinsik.
+- 'Perubahan parameter/MAC persis nol.'
+  Joint WaRP-C arah naik/turun: parameter +0,0395%, MAC +0,5227%; arah sebaliknya: parameter -0,2766%, MAC -0,5227%. Ada juga interaksi kecil dalam fungsi biaya akibat dimensi yang saling dikalikan. Klaim yang tepat adalah dalam toleransi yang ditetapkan, bukan benar-benar identik.
+
+Pemeriksaan tambahan nonlinieritas F1:
+CM_add = CM_c + CM_d - CM_Base menghasilkan matriks tidak sah (sel negatif) pada 33/36 konteks. Hanya 3 valid. Oleh karena itu review ini tidak memproyeksikan matriks tersebut lalu menyebut hasilnya 'kontribusi murni kurvatur'. Pemisahan universal antara kurvatur F1 dan perubahan output lewat konstruksi ini tidak teridentifikasi. Bukti accuracy/loss cukup untuk membatasi penjelasan 'semuanya hanya rumus F1'.
+
+5. PENELAAHAN LITERATUR DAN BATAS NOVELTY
+Sumber primer dibaca pada bagian metode yang relevan; bukan hanya ringkasan AI.
+
+CATRO, Hu dkk., arXiv:2110.10921v2, Section III-B sampai III-E:
+https://arxiv.org/html/2110.10921
+Sudah mempertimbangkan informasi kelas, dampak gabungan channel, dan pemilihan jumlah channel dengan constraint komputasi. Section III-D menggunakan aproksimasi diskriminasi untuk perubahan channel lokal. CATRO bukan metode yang sepenuhnya menganggap channel independen. ACRE belum menjalankan CATRO; tidak boleh mengklaim mengalahkan atau membantah CATRO.
+
+Accelerate CNN via Recursive Bayesian Pruning, Zhou dkk., ICCV 2019, Section 3.2:
+https://arxiv.org/pdf/1812.00353
+Sudah memodelkan ketergantungan redundansi antarlayer melalui posterior noise yang bergantung pada layer sebelumnya. Maka 'menemukan pertama kali inter-layer dependency' bukan novelty ACRE.
+
+Network Pruning via Resource Reallocation (PEEL), Hou dkk., bagian metode Step 2-4 dan ablation:
+https://arxiv.org/pdf/2103.01847
+Sudah mengalokasikan resource berdasarkan layer importance dan mempertimbangkan pembaruan importance dalam alokasi multi-round. Maka 'layer penting diberi lebih banyak channel' bukan novelty baru. Proxy ACRE berbeda dan belum dibandingkan langsung dengan PEEL.
+
+Rethinking the Value of Network Pruning, Liu dkk., Section 3:
+https://arxiv.org/html/1810.05270
+Sudah membedakan arsitektur terpilih dari bobot warisan dan memeriksa training dari awal. Maka 'arsitektur perlu dinilai setelah retraining' juga bukan gagasan baru.
+
+Pembeda ACRE yang masuk akal:
+Pengukuran terkontrol atas kesenjangan antara ketergantungan model terlatih yang diukur dengan masking dan respons perubahan lebar setelah retraining, melalui kontrol komponen dan joint pada CNN sekitar 20K parameter, dengan parameter/MAC joint dibatasi bersama dan keluaran per kelas diperiksa.
+Ini kandidat kontribusi empiris yang spesifik. Empat sumber tersebut cukup untuk menolak klaim kebaruan yang terlalu luas, tetapi bukan pencarian sistematis yang membuktikan belum ada studi identik. Jangan menulis 'first' atau 'unique' tanpa penelusuran lebih luas.
+
+6. FRAMING YANG DISARANKAN
+Pertanyaan pusat:
+'Dapatkah sensitivitas channel pada model yang sudah terlatih memprediksi dampak redistribusi kapasitas setelah pelatihan ulang ketika parameter dan MAC dijaga hampir sama?'
+
+Argumen pusat:
+'Dalam konfigurasi ultra-ringkas yang diuji, ketergantungan pada channel di model terlatih tidak cukup untuk menentukan manfaat redistribusi lebar setelah retraining. Kontrol komponen memperlihatkan bahwa kesalahan prediksi dapat mencakup baik kesalahan respons tunggal maupun efek gabungan yang tidak aditif.'
+
+Draft klaim Inggris yang didukung:
+'Using two opposing width-intervention factorials, we evaluate whether channel-masking sensitivity predicts retrained capacity redistribution in approximately 20K-parameter CNNs. On WaRP-C, jointly increasing c from 40 to 42 and decreasing d from 64 to 56 produces a mean macro-F1 interaction of -4.13 percentage points across nine split-seed contexts, with negative split means and a corresponding accuracy interaction of -1.87 points. The joint configuration remains within 1% of Base in both parameters and convolution/linear MACs. These findings identify a setting in which additive component effects and a fixed masking-based proxy do not adequately predict the retrained joint outcome; they do not establish a universal representation mechanism or a validated allocation algorithm.'
+Sertakan semua arah lain pada Results untuk melengkapi paragraf fokus ini.
+
+7. PRIORITAS PROPORSIONAL
+Perlu sekarang jika hasil dimasukkan ke paper:
+1) Jadikan pertanyaan prediksi masking-versus-retraining sebagai pusat argumen, bukan klaim arsitektur manual selalu unggul.
+2) Tambahkan desain dua factorial dan seluruh arah hasil, termasuk yang campuran, dengan 108 baru/18 referensi dijelaskan tepat.
+3) Tampilkan interaksi macro-F1 berdampingan dengan accuracy dan loss, class-wise, variasi konteks dan interval kondisional yang diberi batas interpretasi.
+4) Bandingkan novelty secara eksplisit dengan CATRO, RBP, PEEL; jangan mengklaim sudah membandingkan performa algoritmanya.
+5) Tempatkan identitas dekomposisi sebagai alat analisis, bukan algoritma atau teori baru.
+
+Jika tetap menghendaki klaim mekanisme kausal yang lebih kuat:
+Pertanyaan lanjutan harus memisahkan mediator representasi, optimasi dan selection, bukan sekadar menambah seeds. Contoh minimal yang perlu dirancang dahulu: titik training bersama yang disimpan untuk semua sel atau kontrol selection yang terencana, lalu intervensi representasi yang menguji mediator yang dinyatakan. Hasil sekarang belum menetapkan mediator tersebut. Tidak ada eksperimen tambahan diluncurkan oleh review ini.
+Jika menghendaki algoritma allocation: perlu estimator/aturan yang dibekukan dan evaluasi keputusan pada kandidat/task yang tidak dipakai membangun aturan dengan budget pencarian setara. Memasang interaction term sesudah melihat 108 hasil lalu menguji kembali pada hasil yang sama tidak cukup.
+
+8. KESIMPULAN EDITORIAL
+Kekuatan ACRE meningkat karena pertanyaannya lebih spesifik dan intervensinya dapat ditelusuri. Kontribusi yang saat ini dapat dipertahankan adalah temuan empiris tentang keterbatasan prediksi alokasi kapasitas, bukan penemuan umum bahwa layer saling bergantung. Belum ada dasar untuk menyatakan mekanisme baru telah terbukti atau ambang Neurocomputing telah terlampaui. Penilaian tersebut perlu mengikuti manuskrip yang benar-benar memuat temuan ini dan membedakannya dari penelitian terdekat.
+
+BERKAS REPRODUKSI
+review_metrics.py: perhitungan metrik, kelas, split dan epoch.
+conditional_bootstrap_remote.py: rekonsiliasi prediksi/hash dan bootstrap CPU server.
+results_snapshot.json: 126 result records.
+review_summary.json, metric_interactions.csv, class_influence.csv,
+curvature_validity.csv, checkpoint_epochs.csv, conditional_bootstrap.json.

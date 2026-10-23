@@ -1,0 +1,148 @@
+{
+  "model_costs": {
+    "warpc": {
+      "base": {
+        "params": 20245,
+        "macs": 9055616,
+        "flops_convention": 18111232
+      },
+      "base_no_residual": {
+        "params": 20245,
+        "macs": 9055616,
+        "flops_convention": 18111232
+      },
+      "allocation_14_30_36_52": {
+        "params": 20131,
+        "macs": 9131876,
+        "flops_convention": 18263752
+      },
+      "allocation_12_34_36_36": {
+        "params": 20413,
+        "macs": 9107604,
+        "flops_convention": 18215208
+      }
+    },
+    "trashnet": {
+      "base": {
+        "params": 20310,
+        "macs": 9055680,
+        "flops_convention": 18111360
+      },
+      "base_no_residual": {
+        "params": 20310,
+        "macs": 9055680,
+        "flops_convention": 18111360
+      },
+      "allocation_14_30_36_52": {
+        "params": 20184,
+        "macs": 9131928,
+        "flops_convention": 18263856
+      },
+      "allocation_12_34_36_36": {
+        "params": 20450,
+        "macs": 9107640,
+        "flops_convention": 18215280
+      }
+    }
+  },
+  "datasets": {
+    "warpc": {
+      "classes": [
+        "bottle",
+        "canister",
+        "cans",
+        "cardboard",
+        "detergent"
+      ],
+      "n_enumerated": 8823,
+      "n_used": 8823,
+      "excluded_conflicting_content_groups": [],
+      "class_counts": {
+        "fit": [
+          5217,
+          121,
+          450,
+          520,
+          755
+        ],
+        "selection": [
+          651,
+          14,
+          56,
+          65,
+          94
+        ],
+        "probe": [
+          651,
+          14,
+          56,
+          65,
+          94
+        ]
+      },
+      "exact_cross_split_duplicates": 0
+    },
+    "trashnet": {
+      "classes": [
+        "cardboard",
+        "glass",
+        "metal",
+        "paper",
+        "plastic",
+        "trash"
+      ],
+      "n_enumerated": 2019,
+      "n_used": 2017,
+      "excluded_conflicting_content_groups": [
+        {
+          "sha256": "c41b99aec8a3257c8668a2144ebbaf8042018f0a85d88e22bf4e413b43693dd8",
+          "members": [
+            [
+              384,
+              "glass/glass176.jpg",
+              1
+            ],
+            [
+              1566,
+              "plastic/plastic152.jpg",
+              4
+            ]
+          ]
+        }
+      ],
+      "class_counts": {
+        "fit": [
+          258,
+          321,
+          264,
+          381,
+          308,
+          89
+        ],
+        "selection": [
+          32,
+          39,
+          32,
+          47,
+          38,
+          10
+        ],
+        "probe": [
+          32,
+          39,
+          32,
+          47,
+          38,
+          10
+        ]
+      },
+      "exact_cross_split_duplicates": 0
+    }
+  },
+  "checks": [
+    "All 8 task/model forward/backward checks finite",
+    "Actual and symbolic costs match; all joint budget bands within 1%",
+    "Base/no-residual initial weights equal for all three model seeds",
+    "Every class present, split IDs disjoint, no exact content hash crossing splits"
+  ]
+}

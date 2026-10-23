@@ -1,0 +1,204 @@
+{
+  "replicates": 1000,
+  "rows": [
+    {
+      "split": 6303,
+      "seed": 3903,
+      "ce_minus_f1_policy_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "ce_minus_base_interval_pp": [
+        -4.065920721396262,
+        3.1485717562226534
+      ],
+      "interaction_intervals": {
+        "c_up_d_down": [
+          -4.619329485135173,
+          6.470723641965942
+        ],
+        "c_down_d_up": [
+          -6.582295963074019,
+          3.9438012421474005
+        ]
+      }
+    },
+    {
+      "split": 6301,
+      "seed": 3903,
+      "ce_minus_f1_policy_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "ce_minus_base_interval_pp": [
+        -7.708803840263798,
+        -0.5502644488738693
+      ],
+      "interaction_intervals": {
+        "c_up_d_down": [
+          -0.9630882580341685,
+          9.066818246695966
+        ],
+        "c_down_d_up": [
+          -0.8935414649661836,
+          9.024014560109004
+        ]
+      }
+    },
+    {
+      "split": 6301,
+      "seed": 3901,
+      "ce_minus_f1_policy_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "ce_minus_base_interval_pp": [
+        -6.131392510845057,
+        1.6216965342596719
+      ],
+      "interaction_intervals": {
+        "c_up_d_down": [
+          -9.365092809797288,
+          0.4850453712608006
+        ],
+        "c_down_d_up": [
+          -4.015433858274493,
+          5.181751583126899
+        ]
+      }
+    },
+    {
+      "split": 6303,
+      "seed": 3902,
+      "ce_minus_f1_policy_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "ce_minus_base_interval_pp": [
+        -4.983924728557069,
+        2.690154091950795
+      ],
+      "interaction_intervals": {
+        "c_up_d_down": [
+          -6.377637771965954,
+          5.153411762408704
+        ],
+        "c_down_d_up": [
+          -5.797349688598749,
+          5.646921620761903
+        ]
+      }
+    },
+    {
+      "split": 6302,
+      "seed": 3901,
+      "ce_minus_f1_policy_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "ce_minus_base_interval_pp": [
+        -0.29041552061602155,
+        6.468462293207348
+      ],
+      "interaction_intervals": {
+        "c_up_d_down": [
+          -2.337396811427215,
+          8.777274813967617
+        ],
+        "c_down_d_up": [
+          -6.015014703858888,
+          4.5895075888412755
+        ]
+      }
+    },
+    {
+      "split": 6302,
+      "seed": 3903,
+      "ce_minus_f1_policy_interval_pp": [
+        -2.7254452978396397,
+        4.8103085300868464
+      ],
+      "ce_minus_base_interval_pp": [
+        -6.645654081786558,
+        0.9474115620961823
+      ],
+      "interaction_intervals": {
+        "c_up_d_down": [
+          -1.726833660711911,
+          9.293887835142442
+        ],
+        "c_down_d_up": [
+          -5.13575848206133,
+          5.010007601754791
+        ]
+      }
+    },
+    {
+      "split": 6301,
+      "seed": 3902,
+      "ce_minus_f1_policy_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "ce_minus_base_interval_pp": [
+        -4.913810554483085,
+        1.8006827805790164
+      ],
+      "interaction_intervals": {
+        "c_up_d_down": [
+          -9.057567859673204,
+          1.3515595056781917
+        ],
+        "c_down_d_up": [
+          -2.951332057369507,
+          6.538250880026294
+        ]
+      }
+    },
+    {
+      "split": 6303,
+      "seed": 3901,
+      "ce_minus_f1_policy_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "ce_minus_base_interval_pp": [
+        -5.444788241144644,
+        1.3011853869488368
+      ],
+      "interaction_intervals": {
+        "c_up_d_down": [
+          -3.2472445066122773,
+          8.503297212599682
+        ],
+        "c_down_d_up": [
+          -10.789168675319798,
+          0.6328120515365085
+        ]
+      }
+    },
+    {
+      "split": 6302,
+      "seed": 3902,
+      "ce_minus_f1_policy_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "ce_minus_base_interval_pp": [
+        -4.689664890745294,
+        2.397961963017897
+      ],
+      "interaction_intervals": {
+        "c_up_d_down": [
+          -6.9446365072383,
+          3.296985358723924
+        ],
+        "c_down_d_up": [
+          -3.5180381452606877,
+          6.533306301772469
+        ]
+      }
+    }
+  ],
+  "scope": "Image uncertainty conditional on fixed diagnostic choices, models and evaluation sets. Not diagnostic estimation/training/split/task uncertainty."
+}

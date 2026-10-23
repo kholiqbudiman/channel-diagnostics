@@ -1,0 +1,9 @@
+{
+  "state": "PASS",
+  "profiles": 18,
+  "decision_records": 126,
+  "all_choices_and_regrets_reconciled": true,
+  "cpu_saved_argmax_disagreements": 1,
+  "max_cpu_saved_logit_difference": 0.009131193161010742,
+  "scope": "Retrospective old outcomes. All diagnostic families recomputed on CPU; original GPU masks retained in profiles."
+}

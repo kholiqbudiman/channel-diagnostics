@@ -1,0 +1,73 @@
+ACRE — PERBANDINGAN DIAGNOSTIK DAN TRANSFER DTD (17 OKTOBER 2026)
+Keputusan dibuat sesudah review hasil WaRP-C/TrashNet, sebelum training DTD.
+
+KONTEKS BARU
+DTD47 dari berkas raw dan daftar resmi train1+val1, tanpa membaca citra test.
+Pool ini sudah tersedia untuk proyek lain; konteks yang ditahan adalah evaluasi
+ACRE pada tugas tekstur ini, bukan klaim dataset belum pernah digunakan siapa pun.
+Kelas diambil dari nama pada daftar resmi. Tidak memilih subset kelas.
+Tiga split hash-grouped:6301,6302,6303. Dalam tiap split kira-kira70%fit,
+10%selection,10%diagnostic,10%evaluation. Exact-content dengan label konflik
+akan dikeluarkan seluruhnya sebelum split; semua keputusan dicatat.
+Model seed3901,3902,3903. Recipe,96px,AdamW,100epoch/patience20 sama dengan
+cohort terkoreksi. Rancangan3x3 mempertahankan desain silang sebelumnya;
+bukan pernyataan statistical power atau9dataset independen.
+
+INTERVENSI
+Base16,24,40,64. c naik/turun2 adalah langkah even-grid terkecil.
+Langkah d simetris dipilih hanya dari minimax mismatch parameter/MAC untukK47.
+Perhitungan simbolik sebelum outcome memberi d6:joint42,58 dan38,70.
+Dua factorial berbagiBase:7sel x3split x3seed=63training baru, termasuk9Base.
+HanyaBase danjoint wajib +/-1%P/M; komponen adalah kontrol intervensi.
+Seluruh9Base dan diagnostiknya selesai lebih dahulu. Prediksi dan pilihan
+semua kebijakan harus dikomit sebelum54nonBase diluncurkan.
+Evaluation tidak dibaca sampai semua63training selesai dan hash prediksi cocok.
+
+DIAGNOSTIK YANG DITETAPKAN
+1. Original F1 masking: slope dari sekitar10%channel removal,3mask tetap.
+2. Macro-CE masking: slope perubahan cross-entropy rerata kelas, masking sama.
+   Loss kontinu memberi pembanding terhadap sensitivitas F1 yang diskrit.
+3. Taylor signed: turunan loss terhadap gate aktivasi block; arah lokal manfaat.
+4. Taylor squared: rata-rata kuadrat kontribusi activation*gradient perchannel,
+   diinspirasi importance Taylor ordepertama Molchanovdkk.2019. Skor ordinal.
+5. BN gamma: rerataabs gamma projectionBN perblock, diinspirasi layerimportance
+   PEEL. Skor ordinal. Tidak mengklaim replikasi algoritmaPEEL/Taylorpruning.
+Semua skor diag-delta memakai log rasio lebar terhadapBase dan hanya dataD.
+Metode3/4 memakai evaluasiBN tetap dan per-sample contribution sebelum agregasi.
+Skor ordinal tidak diberi MAE dalam satuanF1. Laporkan rank dan keputusan.
+Kontrol:pilihBase,uniformrandom expectation,dan ridge architecture-only tanpa
+intercept yang fit ke108efek lama (standardisasiRMS fitur,lambda1 tetap).
+Ridge dibekukan sebelum training baru. Tidak ada tuning padaDTD.
+
+ENDPOINT
+Primary:gainF1 kebijakan macro-CE masking dibanding originalF1masking,
+serta dibanding pilihBase. Kandidat keputusan hanyaBase+2joint yangmatched.
+Laporkan seluruh5diagnostik+ridge, gains,regret terhadaporacle retrospektif,
+rank skor terhadap efekF1 pada6nonreference,danMAEF1 hanya untukprediksiF1/ridge.
+Secondary:gainmacroCE, finiteinteractionF1/accuracy/loss keduaarah,
+errorjoint=interaction+errorcomponent1+errorcomponent2.
+Semua hasil negatif/campuran disimpan. Tidak ada pemilihanwinner posthoc.
+Ringkasan percontext/split; bootstrapgambar hanya kondisional pada checkpoint.
+Tidak mengubah inferensideskriptif menjadi iidpvalue antar split yangtumpangtindih.
+
+RETROSPEKTIF LAMA
+Bandingkan diagnostik yang sama pada18Base lama; masking/loss dari rekaman,
+Taylor/BN dari checkpoint. Data probe lama sudah terekspos; analisis ini
+retrospektif. DTD mempunyaiD terpisah dariE untuk memisahkan informasidiagnostik.
+
+INTERPRETASI SEBELUM HASIL
+Jika pembanding membaik, akui kegagalanproxy lama bersifatproxy-specific.
+Jika banyakdiagnostik gagal, simpulan tetap terbatas pada keluarga/task yang diuji.
+Jika interaksi tidakbertahan, laporkan batastransfer; tidak mengubah desain.
+JikaBase mendekati chance, tampilkan sebagai keterbatasan informatifitas konteks,
+bukan menghapus run atau mengganti task setelah melihat hasil.
+
+OPERASI
+ACRE maksimal1worker/GPU, menjaga DKD dan profil biaya terisolasi prioritas.
+Perbandingan lama CPU2threads. Tidak menyentuh eksperimen terkunci sebelumnya.
+Tidak ada retry otomatis, tidak overwrite hasil, failure menghentikan admission.
+Tidak ada perubahan klaim manuskrip sebelum audit seluruhcohort.
+Sumber primer:
+https://arxiv.org/pdf/1906.10771
+https://arxiv.org/pdf/2103.01847
+https://www.robots.ox.ac.uk/~vgg/data/dtd/

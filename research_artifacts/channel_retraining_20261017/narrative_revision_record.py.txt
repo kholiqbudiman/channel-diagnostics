@@ -1,0 +1,185 @@
+from pathlib import Path
+import shutil,json,csv,subprocess
+import numpy as np
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+S=Path('/tmp/acre_channel_retraining_20261017/source')
+R=Path('/mnt/d/Coding/SERVER AI/KD/Disertasi/Paper 2_split')
+H=Path('/mnt/d/Coding/SERVER AI/KD/wasterecycle/acre_channel_retraining_analysis_20261017')
+if S.exists():raise SystemExit('Staging already exists')
+shutil.copytree(R/'research_revision_empirical_20261017/source',S)
+A=S/'research_artifacts/channel_retraining_20261017';shutil.copytree(H,A,ignore=shutil.ignore_patterns('before_revision'))
+s=json.loads((A/'analysis_summary.json').read_text());dslabels={'warpc':'WaRP-C','trashnet':'TrashNet','dtd':'DTD'}
+rows=[]
+for z in s['local_taylor']:
+ rows.append(dslabels[z['dataset']]+f" & {z['taylor_mae']:.3f} / {z['zero_mae']:.3f} & {z['retrained_ce_mae']:.3f} / {z['zero_retrained_ce_mae']:.3f} "+r'\\')
+(S/'tables/channel_local_rows.tex').write_text('\n'.join(rows)+'\n')
+rows=[]
+for ds in dslabels:
+ p=next(z for z in s['projection'] if z['dataset']==ds and z['target']=='f1' and z['method']=='mask_f1')
+ task=next(z for z in s['averaged_response_projection'] if z['dataset']==ds and z['target']=='f1' and z['level']=='task')
+ c,d=[next(z for z in s['bidirectional'] if z['dataset']==ds and z['target']=='f1' and z['axis']==axis) for axis in ['c','d']]
+ rows.append(dslabels[ds]+f" & {p['mean_minimum_rmse']:.3f} & {task['minimum_rmse']:.3f} & {c['same_sign']}/9 & {d['same_sign']}/9 "+r'\\')
+(S/'tables/channel_projection_rows.tex').write_text('\n'.join(rows)+'\n')
+rows=[]
+for z in s['projection']:
+ lab={'mask_f1':'F1 mask','architecture_ridge':'Ridge','mask_macro_ce':'Loss mask','taylor_signed':'Signed Taylor'}[z['method']]
+ rows.append(dslabels[z['dataset']]+f" & {z['target'].replace('_',' ')} & {lab} & {z['mean_actual_rmse']:.5f} & {z['mean_minimum_rmse']:.5f} & {z['mean_zero_rmse']:.5f} & {100*z['pooled_minimum_fraction_of_sse']:.2f} "+r'\\')
+(S/'tables/channel_projection_full_rows.tex').write_text('\n'.join(rows)+'\n')
+rows=[]
+for z in s['intervention']:
+ lab={'c_grow':r'$c\uparrow$','d_shrink':r'$d\downarrow$','joint_c_grow_d_shrink':r'$c\uparrow,d\downarrow$','c_shrink':r'$c\downarrow$','d_grow':r'$d\uparrow$','joint_c_shrink_d_grow':r'$c\downarrow,d\uparrow$'}[z['candidate']]
+ rows.append(dslabels[z['dataset']]+f" & {lab} & {z['mean_gain_pp']:+.3f} & {z['proxy_mae']:.3f} & {z['zero_mae']:.3f} & {z['sign_agreement']}/9 "+r'\\')
+(S/'tables/channel_intervention_rows.tex').write_text('\n'.join(rows)+'\n')
+# New figure: local score fidelity and bidirectional retraining response.
+plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11,'axes.spines.top':False,'axes.spines.right':False,'pdf.fonttype':42,'savefig.bbox':'tight'})
+fig,axs=plt.subplots(1,3,figsize=(12.4,3.7));blue='#326B91';orange='#BA7632';teal='#438D8C';gray='#6C7480'
+x=np.arange(3);local=s['local_taylor'];ax=axs[0]
+ax.bar(x-.17,[z['taylor_mae']/z['zero_mae'] for z in local],.33,color=blue,label='Frozen mask response')
+ax.bar(x+.17,[z['retrained_ce_mae']/z['zero_retrained_ce_mae'] for z in local],.33,color=orange,label='Retrained width gain')
+ax.axhline(1,color=gray,ls='--',lw=1);ax.set_xticks(x,[dslabels[z['dataset']] for z in local],fontsize=10);ax.set_ylabel('Taylor MAE / zero-prediction MAE');ax.set_title('(a) Local relevance and retraining',fontsize=11);ax.legend(fontsize=8,frameon=False,loc='lower left');ax.set_ylim(0,1.42)
+bidir=list(csv.DictReader((A/'bidirectional_contexts.csv').open()))
+for ax,axis,title in zip(axs[1:],['c','d'],['(b) Width c: both retrained directions','(c) Width d: both retrained directions']):
+ for ds,col in [('warpc',blue),('trashnet',orange),('dtd',teal)]:
+  a=[z for z in bidir if z['dataset']==ds and z['target']=='f1' and z['axis']==axis]
+  ax.scatter([float(z['growth_gain']) for z in a],[float(z['shrink_gain']) for z in a],s=27,color=col,label=dslabels[ds],alpha=.8)
+ ax.axhline(0,color=gray,lw=1);ax.axvline(0,color=gray,lw=1);ax.set_xlabel('Growth gain (pp)');ax.set_ylabel('Shrinkage gain (pp)');ax.set_title(title,fontsize=11);ax.grid(alpha=.12);ax.legend(fontsize=8,frameon=False,loc='best')
+fig.tight_layout();fig.savefig(S/'figures/channel_retraining_boundary.pdf');fig.savefig(S/'figures/channel_retraining_boundary.png',dpi=160);plt.close(fig)
+# Focused narrative changes, preserving all prospective endpoints and raw outcomes.
+p=S/'main.tex';t=p.read_text()
+a=t.index('\\begin{abstract}');b=t.index('\\end{abstract}',a)+len('\\end{abstract}')
+t=t[:a]+r'''\begin{abstract}
+Can channel importance in a trained compact CNN guide beneficial capacity redistribution after retraining? ACRE (Architecture--Capacity Reasoning and Engineering) examines the link between channel diagnostics, width changes, and retrained outcomes through 279 distinct training runs across waste-image and texture classification. Opposing component-and-joint interventions keep Base and joint candidates within 1\% in parameters and convolution/linear MACs. Five fixed diagnostics are compared with architecture-only and retain-Base controls. A prospective 47-class DTD transfer separates fitting, checkpoint selection, diagnostics, and evaluation, with choices committed before nonreference training. All five diagnostics select nonreference candidates in every DTD context, yet their mean selected gains are negative; changing the masking endpoint from F1 to class-balanced loss changes only one of nine choices. A post-outcome audit further distinguishes local diagnostic relevance from restrictions of the width mapping. Signed Taylor estimates finite masking loss better than zero prediction on the two waste tasks, but not retrained loss changes. Growth and shrinkage frequently have same-sign retrained effects, which a zero-anchored linear log-width score cannot jointly represent. Even after outcome-specific optimal recalibration, mean six-effect F1 RMSE remains 3.532, 3.230, and 2.022 points on WaRP-C, TrashNet, and DTD. Residual mismatch persists in task-averaged responses. These results locate limitations in both score transfer and the specified mapping family, while separating prediction fidelity, decision utility, and candidate headroom. They support validating the diagnostic-to-retraining interface rather than treating fitted-model importance as a width-allocation prescription.
+\end{abstract}'''+t[b:]
+needle='A further distinction concerns what a diagnostic is meant to accomplish.'
+add=r'''Two links must therefore be assessed separately: whether a diagnostic describes a finite perturbation of the fitted model, and whether its conversion into a width score predicts a retrained response. A locally informative signal may lose relevance during this conversion. The conversion also imposes restrictions of its own. A fixed zero-anchored linear log-width score predicts opposite signs for growth and shrinkage along the same width axis, regardless of how its slope is calibrated. Retrained responses need not satisfy that restriction. Testing the mapping family as well as the originating diagnostic makes the source of mismatch more specific.
+
+'''
+t=t.replace(needle,add+needle)
+t=t.replace('The contributions are threefold:',r'''A post-outcome response audit then asks whether changing the diagnostic's numerical calibration could resolve the mismatch within the specified linear interface. It checks frozen-model Taylor/mask agreement, bidirectional retrained effects, and the best attainable fit of a zero-anchored log-width response. This analysis uses already observed outcomes and remains distinct from the prospectively committed DTD decisions.
+
+The contributions are threefold:''')
+t=t.replace('A controlled empirical assessment of the link between fitted-model diagnostics and retrained width decisions, comparing five diagnostic mappings and simple controls with prospective separation of diagnostic and evaluation data.','A multilevel empirical assessment connecting fitted-model perturbation response, retrained width effects, and architecture decisions, comparing five diagnostic mappings and simple controls with prospective diagnostic/evaluation separation.')
+t=t.replace('Two opposing component-and-joint factorials under Base--joint parameter/MAC matching, distinguishing individual prediction errors from finite interactions in the architecture--training--selection response.','Two opposing component-and-joint factorials under Base--joint parameter/MAC matching, with a post-outcome audit distinguishing local score relevance, fixed-mapping restrictions, and finite interactions in retrained responses.')
+# Remove unrelated training-method digression; preserve bibliography entries as provenance.
+t=t.replace(r'Knowledge distillation~\citep{hinton2015distilling,zhao2022dkd} and imbalance-aware losses~\citep{cui2019class,cao2019ldam} change the supervision or objective. They are complementary interventions, not mechanisms varied in these corrected architecture cohorts. Holding the training recipe fixed keeps their effects separate from the width comparisons.',r'The corrected cohorts hold smoothed cross-entropy and the optimization recipe fixed, so that changing supervision is not conflated with changing the channel distribution. The class-level analysis measures the outcome of these architecture interventions; it does not assume that rare classes benefit from a particular width schedule.')
+# Local validity formula and geometric audit definitions.
+needle='\\paragraph{Controls}'
+add=r'''\paragraph{Frozen-model local-response check}
+For a uniformly sampled fixed-size removal of fraction $f$ of block output channels, the first-order expected class-balanced loss increase is $f s_{{\rm signed},j}$. We compare this derivative-based estimate with the observed mean finite masking loss increase, over all five blocks in every context. This is a post-outcome check of Taylor agreement with fitted-model perturbation; the mask slope is not validated against the same responses used to construct it. The finite mask size and three sampled subsets limit the approximation. Old profiles use the common CPU reanalysis; DTD profiles are the original committed GPU diagnostics.
+
+'''
+t=t.replace(needle,add+needle)
+needle='\\section{Experimental Protocol}\\label{sec:protocol}'
+add=r'''\subsection{Calibration versus fixed-mapping restriction}\label{sec:projection-method}
+A post-outcome audit constructs, within each context, a six-row matrix $X$ whose columns are $\log(c/40)$ and $\log(d/64)$ for the four component and two joint interventions. The observed retrained gain vector is $\mathbf g$. Since only $c,d$ change, the fixed score family in Eq.~\eqref{eq:score} reduces to $X\mathbf b$. Its outcome-specific least-squares oracle is
+\begin{equation}
+ \mathbf b^*=\arg\min_{\mathbf b}\|\mathbf g-X\mathbf b\|_2^2.
+\end{equation}
+For any calibrated slope $\mathbf b$ in this family, orthogonal projection gives
+\begin{align}\label{eq:projection}
+ \|\mathbf g-X\mathbf b\|_2^2
+ &=\|\mathbf g-X\mathbf b^*\|_2^2\nonumber\\
+ &\quad+\|X\mathbf b^*-X\mathbf b\|_2^2.
+\end{align}
+The first term is observed-response mismatch that slope recalibration alone cannot remove; the second is distance from the best fit within that family. This is standard least-squares geometry, not a new estimator or a causal allocation of error. The oracle uses all six known outcomes and is never presented as a prospective policy. We report its minimum RMSE over the six effects, separately for F1 gains and class-balanced loss improvements. These are different endpoints and retain their units.
+
+We also inspect paired growth/shrinkage signs and fit the same mapping to seed-averaged split responses and task-averaged responses. A single zero-anchored slope must predict opposite signs for growth and shrinkage, whereas both observed gains can have the same sign. These observed constraints include optimization and checkpoint-selection variation. Averaging is a descriptive check, not a proof of noise-free architecture curvature. Full definitions and all contexts appear in Supplementary Section S12. No new training or change to the original DTD primary analysis is involved.
+
+'''
+t=t.replace(needle,add+needle)
+needle='\\subsection{Alternative diagnostics in exposed waste-image contexts}'
+add=r'''\subsection{Local diagnostic relevance does not ensure retraining prediction}\label{sec:local-results}
+The derivative-based expected masking loss provides a check independent of the loss-mask slope's construction. On WaRP-C, signed Taylor has mean finite-mask loss MAE 0.065 versus 0.092 for predicting zero damage; it improves on zero in all nine contexts. TrashNet gives 0.172 versus 0.192, with improvement in eight contexts. DTD instead gives 0.167 versus 0.144, with no context improving on zero. These are descriptive comparisons over five block responses per context, not independent replications of 45 different networks.
+
+\begin{table}[!ht]\centering\footnotesize
+\caption{Signed Taylor versus zero prediction. Both columns report class-balanced CE error, but masking loss increase and retrained loss improvement are different targets.}
+\label{tab:local-transfer}
+\begin{tabular}{@{}lrr@{}}\toprule
+Task & \shortstack{Frozen-mask MAE\\Taylor / zero} & \shortstack{Retrained-gain MAE\\Taylor / zero}\\\midrule
+\tablerows{tables/channel_local_rows.tex}
+\bottomrule\end{tabular}\end{table}
+
+After the fixed log-width conversion, signed Taylor does not improve mean retrained loss-gain MAE over zero on any task (\Cref{tab:local-transfer}). Thus, the waste-task diagnostic contains some local masking information without providing an improved retraining prediction under the tested conversion. DTD additionally exposes a limitation at the local-response stage itself. This separates two observable failure points instead of treating every unsuccessful width choice as absence of diagnostic information.
+
+'''
+t=t.replace(needle,add+needle)
+needle='\\FloatBarrier\n\\section{Discussion}\\label{sec:discussion}'
+add=r'''\subsection{Bidirectional responses constrain every calibration of the fixed map}\label{sec:projection-results}
+Growth and shrinkage of the same width often have same-sign observed F1 gains. For $c$, this occurs in 5/9 WaRP-C, 7/9 TrashNet, and 6/9 DTD contexts; for $d$, the counts are 7/9, 2/9, and 5/9. Both favorable and unfavorable same-sign pairs are retained. Such a pair cannot be represented exactly by any single zero-anchored linear slope, which predicts opposite signs. These are counts of observed responses, not a population monotonicity test.
+
+\begin{figure*}[!t]\centering
+\includegraphics[width=.98\textwidth]{figures/channel_retraining_boundary.pdf}
+\caption{Local response and retraining differ. (a) Taylor MAE normalized to its target-specific zero predictor; below one is better. (b,c) Growth and shrinkage gains; same-sign quadrants violate a single zero-anchored slope's sign constraint.}
+\label{fig:channel-boundary}\end{figure*}
+
+Even with slopes chosen after all six outcomes are known, the minimum mean context-level F1 RMSE is 3.532 pp on WaRP-C, 3.230 on TrashNet, and 2.022 on DTD (\Cref{tab:projection}). The actual F1-mask mean RMSEs are 4.212, 4.395, and 2.407 pp. Therefore, replacing the mask-derived slope by an outcome-specific optimal slope still cannot reproduce the observed response vector within this fixed mapping family. It does not follow that a nonlinear or adaptive allocation method must succeed.
+
+\begin{table}[!ht]\centering\footnotesize
+\caption{Post-outcome minimum F1 RMSE (pp) within the fixed mapping family. Context RMSE is averaged over nine fits; task RMSE fits the averaged six-effect response. Last columns count same-sign growth/shrinkage pairs.}
+\label{tab:projection}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrrrr@{}}\toprule
+Task & \shortstack{Mean context\\minimum RMSE} & \shortstack{Task-mean\\minimum RMSE} & $c$ pairs & $d$ pairs\\\midrule
+\tablerows{tables/channel_projection_rows.tex}
+\bottomrule\end{tabular}\end{table}
+
+The residual is not confined to unaveraged seed-level responses: minimum RMSE of the task-averaged response is 1.785, 0.849, and 1.287 pp, respectively. These descriptive averages reduce some training variation but do not establish a noise-free response surface. Loss-based projection checks also retain residual mismatch (Supplementary Section S12), so the observation is not restricted to F1-valued fitting. The result is a restriction of this mapping on these outcomes, rather than a universal lower bound on importance-based architecture design.
+
+The intervention-level view is mixed and is retained in full. F1 masking improves on zero-gain MAE for $d$ shrinkage on all three tasks (2.868/3.192, 2.066/2.646, and 1.103/1.534 pp), whereas $c$ growth is worse on all three. Other single/joint cells differ by task. This asymmetry further prevents summarizing the evidence as universal diagnostic failure or as an established law that shrinkage is always predictable.
+
+'''
+t=t.replace(needle,add+needle)
+t=t.replace('The component-and-joint design adds information unavailable from a Base-versus-proposal comparison.',r'''The local-response audit identifies a more specific boundary than failure of one proxy: a signal can agree with frozen-model masking yet fail after conversion to a retraining score, and recalibrating a fixed linear score cannot remove all observed-response mismatch. This motivates checking both the diagnostic and the restrictions imposed by its architecture interface. The projection oracle supplies a diagnostic bound for that interface; its dependence on known outcomes prevents its use as evidence of a successful selector.
+
+The component-and-joint design adds information unavailable from a Base-versus-proposal comparison.''')
+t=t.replace('Repeated splits reuse images, and image-bootstrap intervals condition on fixed checkpoints.',r'''The local-response, bidirectional, and projection analyses are post-outcome explanatory checks. Their oracle fits are not transferred predictions, their error decomposition is not causal, and their residuals include training/selection variation. Task-averaged checks do not remove all uncertainty or establish an intrinsic architecture mechanism. Repeated splits reuse images, and image-bootstrap intervals condition on fixed checkpoints.''')
+t=t.replace('The supported lesson is to evaluate fitted-model diagnostics through the decisions they produce, while reporting prediction fidelity and candidate opportunity separately.',r'''The response audit further shows that local importance agreement and usefulness after retraining are distinct. Same-sign growth/shrinkage responses and outcome-specific projection residuals identify limits of the fixed linear log-width interface, beyond inaccurate calibration alone. These are observed empirical boundaries, rather than proof of a universal architecture mechanism. The supported lesson is to validate the diagnostic-to-width conversion through retrained responses and decisions, while reporting prediction fidelity and candidate opportunity separately.''')
+t=t.replace('The directed extension includes', 'The directed extension includes')
+t=t.replace('Raw benchmark images and checkpoint binaries are not embedded in this lightweight bundle.', 'The post-outcome channel/retraining extension adds nine hash-verified retained DTD diagnostic/commitment pairs, all 27 context analyses, local masking checks, projection residuals, bidirectional contrasts, and their generating scripts. Raw benchmark images and checkpoint binaries are not embedded in this lightweight bundle.')
+p.write_text(t)
+# Append a complete record of the new explanatory analysis.
+p=S/'supplementary.tex';t=p.read_text();pos=t.rindex('\\end{document}')
+add=r'''\clearpage
+\section{Channel Diagnostics, Bidirectional Widths, and Retrained Responses}\label{sec:s12}
+This explanatory extension is performed after inspecting completed outcomes. Its analysis plan and timestamp/hash receipt are retained; it is not preregistered confirmation and does not replace the prospective DTD primary contrast. All 27 contexts, 162 nonreference retrained effects, and 135 block--context masking responses are retained. No new training or inference is performed. Nine original DTD diagnostic JSONs and score commitments are retrieved read-only and verified against the saved prediction barrier, diagnostic hashes, and corresponding Base checkpoint identities. Frozen experiment locks and original outcomes remain unchanged.
+
+\subsection{Local masking relevance}
+For example $i$ and block channel $h$, let $u_{ijh}$ be the spatial sum of activation times unsmoothed cross-entropy gradient. The signed Taylor slope is $s_j=-\mathbb E_{\rm class}\sum_hu_{ijh}$. Under a uniformly sampled fixed-size mask removing fraction $f$, the first-order expected loss change is $-f\mathbb E_{\rm class}\sum_hu_{ijh}=fs_j$. This uses the expected sum of sampled channel contributions; it does not predict the exact three finite sampled masks. The observed target is their mean class-balanced loss increase for each block. Evaluation mode keeps parameters and BN statistics fixed.
+
+Taylor finite-mask MAE improves on zero prediction in 9/9 WaRP-C and 8/9 TrashNet contexts, but in 0/9 DTD contexts. Mean five-block Spearman correlations are 0.633, 0.122, and 0.322. The five blocks belong to one fitted model in each context, and shared image pools limit independence. No validation is claimed by comparing a mask-derived slope to the very masking responses defining it. The Taylor/mask comparison instead uses a gradient-derived quantity and measured finite removal responses. No threshold, slope, or policy is fitted using this check.
+
+The retraining target is class-balanced loss improvement over the Base result on the corresponding probe/evaluation subset. It differs from finite masking loss increase on the diagnostic subset. Its signed-Taylor MAEs are 0.064837, 0.073680, and 0.054207, versus 0.061753, 0.072312, and 0.049679 for zero gain. Local and retrained errors therefore retain separate units/targets despite both using cross-entropy. DTD local diagnostics are the original GPU profiles; old profiles are the common CPU reanalysis.
+
+\subsection{Bidirectional closure and fixed-family projection}
+Let $g_+$ and $g_-$ be retrained gains under growth and shrinkage along one width, and $l_+>0,l_-<0$ their log-width displacements. A zero-anchored single slope requires $g_+/l_+=g_-/l_-$. Same-sign nonzero gains violate this restriction. A magnitude-aware closure is
+\[
+ C=\frac{l_+g_- - l_-g_+}{l_+-l_-}.
+\]
+It is the zero-displacement intercept of the line through the two observed nonreference responses; the known Base gain is zero. It is descriptive and includes training/selection variation. Mean absolute F1 closures are 2.272/2.526 pp for WaRP-C $c/d$, 2.774/1.560 for TrashNet, and 1.862/1.127 for DTD. All positive/negative pairs and zero cases are retained in the context CSV. Across tasks there are 32 same-sign pairs out of 54 axis--context measurements, not 54 independent training contexts.
+
+Within each context, $X$ contains all six known log-width displacement pairs. Its two columns have full rank. The outcome-specific oracle $\mathbf b^*=X^+\mathbf g$ minimizes squared residual on these same six outcomes. Orthogonality gives $X^T(\mathbf g-X\mathbf b^*)=0$ and the exact squared-error identity reported in the main text. The residual is the best attainable approximation error on this observed vector within the specified zero-anchored linear family. It is not an irreducible population error, a training-noise correction, a causal variance component, or a newly validated estimator. Joint-resource matching applies to Base/joint decision candidates; the separate controls intentionally need not satisfy the budget band.
+
+\begin{table}[!ht]\centering\small
+\caption{Complete projection summary. RMSE is averaged over nine context-specific fits. F1 units are pp; macro CE units are unsmoothed class-balanced loss improvement. The final column is a geometric ratio of pooled squared residuals, not a causal percentage of failure.}
+\begin{tabular}{@{}lllrrrr@{}}\toprule
+Task & Target & Score & Actual RMSE & Minimum RMSE & Zero RMSE & Minimum/actual SSE (\%)\\\midrule
+\tablerows{tables/channel_projection_full_rows.tex}
+\bottomrule\end{tabular}\end{table}
+
+Task-averaged F1 response projection gives minimum RMSE 1.785041, 0.848574, and 1.287278 pp for WaRP-C, TrashNet, and DTD. Corresponding zero-gain RMSEs are 1.903514, 0.865838, and 1.342609 pp. Seed-averaged per-split fits and class-balanced loss projections are also retained in the JSON summary. These checks show whether mismatch persists after averaging the available responses; they do not independently establish a population response curve. The post-outcome oracle is never used to amend prospective DTD choices or claim an improvement over them.
+
+\subsection{Complete intervention-level F1-mask errors}
+\begin{table}[!ht]\centering\small
+\caption{Every component/joint cell in the common CPU old-task reanalysis and original DTD diagnostic mapping. Gain and MAE use pp; $s$ counts sign agreement across nine contexts. No subgroup is omitted.}
+\begin{tabular}{@{}llrrrr@{}}\toprule Task & Intervention & Mean gain & F1-mask MAE & Zero MAE & $s$\\\midrule
+\tablerows{tables/channel_intervention_rows.tex}
+\bottomrule\end{tabular}\end{table}
+
+For example, $d$ shrinkage improves F1-mask MAE over zero on every task, while $c$ growth does not. This observed asymmetry does not establish a universal direction rule; other shrinkage/growth cells have mixed results. Original GPU joint-only errors in Section S7 remain separate and unchanged. The extension provides context-level projection, bidirectional, local response, and intervention CSVs, its source/hash manifest, and a portable verifier. All 279 distinct training runs remain the same; these are additional analyses of existing models and outcomes.
+\FloatBarrier
+'''
+t=t[:pos]+add+t[pos:];p.write_text(t)
+(S/'highlights.txt').write_text('Channel diagnostics are tested from local masking through retrained width decisions.\nGrowth and shrinkage often violate a fixed linear score\'s opposite-sign constraint.\nPost-outcome calibration cannot remove all observed response mismatch.\nProspective texture decisions separate diagnostics from final evaluation.\nPrediction fidelity, decision utility, and candidate headroom are assessed together.\n')
+print('Staged ACRE-only manuscript extension, new vector figure, four tables, and full explanatory supplement.')

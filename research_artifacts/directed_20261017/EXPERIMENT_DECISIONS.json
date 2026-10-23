@@ -1,0 +1,121 @@
+{
+  "created_utc": "2026-10-16T14:50:15.707020+00:00",
+  "kind": "Directed two-factor mechanistic development, not independent confirmation",
+  "source_stability_lock_sha256": "890e503fae0118bb24d7db1f77355fc42726605066572ef16f65a8f78e54bb0e",
+  "new_training_jobs": 108,
+  "reused_base_runs": 18,
+  "contexts_per_dataset": 9,
+  "datasets": [
+    "warpc",
+    "trashnet"
+  ],
+  "splits": [
+    4302,
+    4303,
+    4304
+  ],
+  "model_seeds": [
+    2901,
+    2902,
+    2903
+  ],
+  "configs": [
+    {
+      "name": "base",
+      "channels": [
+        16,
+        24,
+        40,
+        64
+      ],
+      "role": "reference"
+    },
+    {
+      "name": "c_grow",
+      "channels": [
+        16,
+        24,
+        42,
+        64
+      ],
+      "role": "component_control"
+    },
+    {
+      "name": "d_shrink",
+      "channels": [
+        16,
+        24,
+        40,
+        56
+      ],
+      "role": "component_control"
+    },
+    {
+      "name": "joint_c_grow_d_shrink",
+      "channels": [
+        16,
+        24,
+        42,
+        56
+      ],
+      "role": "joint_budget_transfer"
+    },
+    {
+      "name": "c_shrink",
+      "channels": [
+        16,
+        24,
+        38,
+        64
+      ],
+      "role": "component_control"
+    },
+    {
+      "name": "d_grow",
+      "channels": [
+        16,
+        24,
+        40,
+        72
+      ],
+      "role": "component_control"
+    },
+    {
+      "name": "joint_c_shrink_d_grow",
+      "channels": [
+        16,
+        24,
+        38,
+        72
+      ],
+      "role": "joint_budget_transfer"
+    }
+  ],
+  "selection_rule": {
+    "delta_c": 2,
+    "symmetric_delta_d": 8,
+    "label_free_minimax_budget_mismatch": 0.005227253452443237
+  },
+  "research_question": "Does masking-to-retraining proxy failure arise from errors of the individual width interventions, non-additivity of their joint effect, or both?",
+  "directions": [
+    {
+      "name": "c_up_d_down",
+      "component_g": "c_grow",
+      "component_d": "d_shrink",
+      "joint": "joint_c_grow_d_shrink"
+    },
+    {
+      "name": "c_down_d_up",
+      "component_g": "d_grow",
+      "component_d": "c_shrink",
+      "joint": "joint_c_shrink_d_grow"
+    }
+  ],
+  "analysis": "After all108 new results only. I=Fjoint-Fg-Fd+Fbase. For fixed mask predictor, errorjoint=I+errorg+errord. Report all classes, split/seed effects, signs and arithmetic precision/recall attribution. No iid significance across overlapping data splits. No after-outcome estimator fit or winning-ablation selection.",
+  "hypothesis_scope": "Additivity and proxy fidelity can fail or hold. Do not assume non-additivity causes the previously observed failure before these controls exist. This tests width-boundary interventions, not independent biological/semantic roles of blocks.",
+  "joint_constraints": "Base and joint transfer cells within1% params andConv/LinearMACs forK5/K6. Single-factor cells intentionally outside this band to identify finite component effects; never call them resource-matched superiority controls.",
+  "training": "Byte-identical locked stability runner, model sources, data manifests, checkpoint-selection and100epoch/patience20 AdamW recipe. RuntimeTorch2.10.0+cu128. No official test access. Base references reused, not retrained or counted as new observations.",
+  "size_basis": "Six nonreference cells are the minimal union of two opposing2x2 factorials sharing one Base. Reuse all existing3splits x3modelseeds x2datasets to preserve pairing and avoid choosing favorable contexts. No formal population power claim.",
+  "operational": "At most one ACRE worker perGPU. DKD priority: admit alongside scientific DKD only when that GPU already has4 live DKD workers with epoch>=1, telemetry fresh, no unknown CUDA processes, util<75%, freeVRAM>=8GiB and CPUload<80%. When DKD ends, wait until all15 isolated cost profiles complete before further ACRE admission. Never interrupt existing jobs, no automatic retry on failure.",
+  "predictive_scope": "Base diagnostics are development-probe-derived. Calibration/tasks already exposed; this does not create an untouched final test or validate a new allocation algorithm."
+}

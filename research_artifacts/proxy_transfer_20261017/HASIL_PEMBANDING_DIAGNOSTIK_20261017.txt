@@ -1,0 +1,30 @@
+HASIL PEMBANDING DIAGNOSTIK ACRE — 17 OKTOBER 2026
+
+Seluruh 18 profil lama selesai;126 keputusan(18 konteks x 7 kebijakan) direkonsiliasi ke126 record model lama. Ini analisis retrospektif pada probe yang telah terekspos, bukan validasi DTD.
+
+Angka berikut adalah mean gain macro-F1 dari model yang DIPILIH diagnostik di antara Base+dua joint, dibanding Base dalam konteks sama. Bukan skor importance dan bukan peningkatan rata-rata seluruh kandidat.
+
+Diagnostik                    WaRP-C       TrashNet
+Masking F1                     -3.236 pp    +0.468 pp
+Masking macro-CE               -3.653 pp    +0.468 pp
+Taylor signed                  -3.653 pp    +0.983 pp
+Taylor squared                 -3.653 pp    +0.468 pp
+BN gamma                       -1.205 pp    -0.812 pp
+Architecture-only ridge        +0.000 pp    +0.000 pp
+Selalu Base                    +0.000 pp    +0.000 pp
+
+Interpretasi:
+- Mengganti F1 dengan loss belum otomatis memperbaiki keputusan.
+- Taylor signed memberi mean gain tertinggi di antara diagnostik yang diuji pada TrashNet, tetapi tidak memperbaiki hasil WaRP-C. Ini bukan alasan memilih Taylor setelah melihat hasil untuk menjadi satu-satunya metode DTD.
+- BN gamma lebih baik daripada masking F1 pada WaRP-C, namun mean gain-nya tetap negatif terhadap Base.
+- Ridge dan pilih Base sama-sama memilih Base untuk seluruh konteks; ini kontrol yang penting.
+- Semua diagnostik, semua arah dan semua konteks tetap dipertahankan.
+- Unit skor berbeda, sehingga tidak membandingkan MAE skor BN/Taylor-squared langsung dengan F1.
+
+Numerik dan provenance:
+Semua diagnostik lama dihitung ulang di CPU yang sama. Mask GPU asli dipertahankan dalam all_profiles.json. Selisih logit/argmax CPU versus prediksi GPU dicatat. Ini tidak mengganti checkpoint atau hasil training lama.
+Jumlah perbedaan argmax baseline CPU/GPU: 1. Selisih logit maksimum: 0.009131.
+
+Konteks DTD47 sudah dikunci sebelum outcome, dengan data diagnostic terpisah dari evaluation. Pengujian itu masih berlangsung. Perbedaan hasil antar diagnostik pada data lama tidak dipakai untuk mengubah protokol DTD.
+
+Sumber angka: old_comparison/summary.json,all_decisions.csv,dan local_decision_audit.json.

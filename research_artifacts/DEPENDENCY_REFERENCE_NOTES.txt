@@ -1,0 +1,6 @@
+Primary-text verification, 17 October 2026
+RBP: arXiv:1812.00353v2, Sections 1 and 3.2, ICCV 2019.
+CATRO: arXiv:2110.10921v2 (30 March 2023), Sections III-B--III-E, especially III-D. DOI 10.1109/TNNLS.2023.3262952 is stated by the authors on arXiv. Final volume/pages were not verified and are not invented.
+PEEL: arXiv:2103.01847v1 (2021), method Steps 2--4 and multi-round ablation. The bibliography explicitly cites the preprint version read.
+Rethinking: arXiv:1810.05270v2, Section 3; ICLR 2019 is stated by the authors.
+These citations establish related methodology, not a comprehensive priority search or direct benchmark comparison.

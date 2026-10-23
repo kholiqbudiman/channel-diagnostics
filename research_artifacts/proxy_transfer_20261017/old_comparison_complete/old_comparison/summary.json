@@ -1,0 +1,321 @@
+{
+  "methods": [
+    {
+      "dataset": "trashnet",
+      "method": "mask_f1",
+      "contexts": 9,
+      "mean_selected_gain_pp": 0.4679887933969269,
+      "descriptive_sd_gain_pp": 3.0855876805670395,
+      "mean_regret_pp": 1.8028464528543364,
+      "mean_uniform_random_gain_pp": -0.11460132588566739,
+      "mean_macro_ce_improvement": 0.0293113942499514,
+      "mean_spearman_f1": 0.11111111111111112,
+      "valid_rank_contexts": 9,
+      "nonbase_choices": 9,
+      "mean_f1_gain_mae_pp": 3.588000840548593
+    },
+    {
+      "dataset": "trashnet",
+      "method": "mask_macro_ce",
+      "contexts": 9,
+      "mean_selected_gain_pp": 0.4679887933969269,
+      "descriptive_sd_gain_pp": 3.0855876805670395,
+      "mean_regret_pp": 1.8028464528543364,
+      "mean_uniform_random_gain_pp": -0.11460132588566739,
+      "mean_macro_ce_improvement": 0.0293113942499514,
+      "mean_spearman_f1": 0.009523809523809523,
+      "valid_rank_contexts": 9,
+      "nonbase_choices": 9
+    },
+    {
+      "dataset": "trashnet",
+      "method": "taylor_signed",
+      "contexts": 9,
+      "mean_selected_gain_pp": 0.9830613081298623,
+      "descriptive_sd_gain_pp": 2.4482384259520815,
+      "mean_regret_pp": 1.287773938121401,
+      "mean_uniform_random_gain_pp": -0.11460132588566739,
+      "mean_macro_ce_improvement": 0.03889975558828424,
+      "mean_spearman_f1": 0.022222222222222223,
+      "valid_rank_contexts": 9,
+      "nonbase_choices": 8
+    },
+    {
+      "dataset": "trashnet",
+      "method": "taylor_squared",
+      "contexts": 9,
+      "mean_selected_gain_pp": 0.4679887933969269,
+      "descriptive_sd_gain_pp": 3.0855876805670395,
+      "mean_regret_pp": 1.8028464528543364,
+      "mean_uniform_random_gain_pp": -0.11460132588566739,
+      "mean_macro_ce_improvement": 0.0293113942499514,
+      "mean_spearman_f1": 0.015873015873015876,
+      "valid_rank_contexts": 9,
+      "nonbase_choices": 9
+    },
+    {
+      "dataset": "trashnet",
+      "method": "bn_gamma",
+      "contexts": 9,
+      "mean_selected_gain_pp": -0.811792771053929,
+      "descriptive_sd_gain_pp": 5.267570328560991,
+      "mean_regret_pp": 3.082628017305192,
+      "mean_uniform_random_gain_pp": -0.11460132588566739,
+      "mean_macro_ce_improvement": 0.02482707688102015,
+      "mean_spearman_f1": -0.01587301587301589,
+      "valid_rank_contexts": 9,
+      "nonbase_choices": 9
+    },
+    {
+      "dataset": "trashnet",
+      "method": "architecture_ridge",
+      "contexts": 9,
+      "mean_selected_gain_pp": 0.0,
+      "descriptive_sd_gain_pp": 0.0,
+      "mean_regret_pp": 2.2708352462512633,
+      "mean_uniform_random_gain_pp": -0.11460132588566739,
+      "mean_macro_ce_improvement": 0.0,
+      "mean_spearman_f1": -0.041269841269841255,
+      "valid_rank_contexts": 9,
+      "nonbase_choices": 0,
+      "mean_f1_gain_mae_pp": 3.102898584069141
+    },
+    {
+      "dataset": "trashnet",
+      "method": "choose_base",
+      "contexts": 9,
+      "mean_selected_gain_pp": 0.0,
+      "descriptive_sd_gain_pp": 0.0,
+      "mean_regret_pp": 2.2708352462512633,
+      "mean_uniform_random_gain_pp": -0.11460132588566739,
+      "mean_macro_ce_improvement": 0.0,
+      "mean_spearman_f1": null,
+      "valid_rank_contexts": 0,
+      "nonbase_choices": 0,
+      "mean_f1_gain_mae_pp": 3.048547403646665
+    },
+    {
+      "dataset": "warpc",
+      "method": "mask_f1",
+      "contexts": 9,
+      "mean_selected_gain_pp": -3.236019305309875,
+      "descriptive_sd_gain_pp": 5.768879640701739,
+      "mean_regret_pp": 4.549828849947882,
+      "mean_uniform_random_gain_pp": -1.6194757014249497,
+      "mean_macro_ce_improvement": -0.04309700859917533,
+      "mean_spearman_f1": 0.09841269841269841,
+      "valid_rank_contexts": 9,
+      "nonbase_choices": 9,
+      "mean_f1_gain_mae_pp": 3.4674232005152916
+    },
+    {
+      "dataset": "warpc",
+      "method": "mask_macro_ce",
+      "contexts": 9,
+      "mean_selected_gain_pp": -3.6534659603351907,
+      "descriptive_sd_gain_pp": 4.5427442646840195,
+      "mean_regret_pp": 4.967275504973197,
+      "mean_uniform_random_gain_pp": -1.6194757014249497,
+      "mean_macro_ce_improvement": -0.03111943602561952,
+      "mean_spearman_f1": 0.05396825396825397,
+      "valid_rank_contexts": 9,
+      "nonbase_choices": 9
+    },
+    {
+      "dataset": "warpc",
+      "method": "taylor_signed",
+      "contexts": 9,
+      "mean_selected_gain_pp": -3.6534659603351907,
+      "descriptive_sd_gain_pp": 4.5427442646840195,
+      "mean_regret_pp": 4.967275504973197,
+      "mean_uniform_random_gain_pp": -1.6194757014249497,
+      "mean_macro_ce_improvement": -0.03111943602561952,
+      "mean_spearman_f1": -0.09206349206349207,
+      "valid_rank_contexts": 9,
+      "nonbase_choices": 9
+    },
+    {
+      "dataset": "warpc",
+      "method": "taylor_squared",
+      "contexts": 9,
+      "mean_selected_gain_pp": -3.6534659603351907,
+      "descriptive_sd_gain_pp": 4.5427442646840195,
+      "mean_regret_pp": 4.967275504973197,
+      "mean_uniform_random_gain_pp": -1.6194757014249497,
+      "mean_macro_ce_improvement": -0.03111943602561952,
+      "mean_spearman_f1": 0.12380952380952383,
+      "valid_rank_contexts": 9,
+      "nonbase_choices": 9
+    },
+    {
+      "dataset": "warpc",
+      "method": "bn_gamma",
+      "contexts": 9,
+      "mean_selected_gain_pp": -1.2049611439396581,
+      "descriptive_sd_gain_pp": 4.268387976277501,
+      "mean_regret_pp": 2.5187706885776646,
+      "mean_uniform_random_gain_pp": -1.6194757014249497,
+      "mean_macro_ce_improvement": 0.003919198115666729,
+      "mean_spearman_f1": 0.10476190476190476,
+      "valid_rank_contexts": 9,
+      "nonbase_choices": 9
+    },
+    {
+      "dataset": "warpc",
+      "method": "architecture_ridge",
+      "contexts": 9,
+      "mean_selected_gain_pp": 0.0,
+      "descriptive_sd_gain_pp": 0.0,
+      "mean_regret_pp": 1.3138095446380065,
+      "mean_uniform_random_gain_pp": -1.6194757014249497,
+      "mean_macro_ce_improvement": 0.0,
+      "mean_spearman_f1": 0.14920634920634923,
+      "valid_rank_contexts": 9,
+      "nonbase_choices": 0,
+      "mean_f1_gain_mae_pp": 3.2733570629901934
+    },
+    {
+      "dataset": "warpc",
+      "method": "choose_base",
+      "contexts": 9,
+      "mean_selected_gain_pp": 0.0,
+      "descriptive_sd_gain_pp": 0.0,
+      "mean_regret_pp": 1.3138095446380065,
+      "mean_uniform_random_gain_pp": -1.6194757014249497,
+      "mean_macro_ce_improvement": 0.0,
+      "mean_spearman_f1": null,
+      "valid_rank_contexts": 0,
+      "nonbase_choices": 0,
+      "mean_f1_gain_mae_pp": 3.279733625115736
+    }
+  ],
+  "primary": [
+    {
+      "dataset": "trashnet",
+      "split": 4302,
+      "seed": 2901,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": -3.1822886927880205
+    },
+    {
+      "dataset": "trashnet",
+      "split": 4302,
+      "seed": 2902,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": -1.8590938299752509
+    },
+    {
+      "dataset": "trashnet",
+      "split": 4302,
+      "seed": 2903,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": -4.635652632596418
+    },
+    {
+      "dataset": "warpc",
+      "split": 4302,
+      "seed": 2901,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": -8.64693688673379
+    },
+    {
+      "dataset": "warpc",
+      "split": 4302,
+      "seed": 2902,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": -13.077942910091231
+    },
+    {
+      "dataset": "warpc",
+      "split": 4302,
+      "seed": 2903,
+      "ce_policy_minus_f1_policy_pp": -7.555415682008345,
+      "ce_policy_minus_base_pp": -0.7424868905476032
+    },
+    {
+      "dataset": "trashnet",
+      "split": 4303,
+      "seed": 2901,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": 1.4095563546277532
+    },
+    {
+      "dataset": "trashnet",
+      "split": 4303,
+      "seed": 2902,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": 1.0606392295115654
+    },
+    {
+      "dataset": "trashnet",
+      "split": 4303,
+      "seed": 2903,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": 0.618463370628362
+    },
+    {
+      "dataset": "warpc",
+      "split": 4303,
+      "seed": 2901,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": -3.0231321229157047
+    },
+    {
+      "dataset": "warpc",
+      "split": 4303,
+      "seed": 2902,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": 1.861583950210239
+    },
+    {
+      "dataset": "warpc",
+      "split": 4303,
+      "seed": 2903,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": -2.0379864364414786
+    },
+    {
+      "dataset": "trashnet",
+      "split": 4304,
+      "seed": 2901,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": 3.0038734213327274
+    },
+    {
+      "dataset": "trashnet",
+      "split": 4304,
+      "seed": 2902,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": 4.177456342514219
+    },
+    {
+      "dataset": "trashnet",
+      "split": 4304,
+      "seed": 2903,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": 3.6189455773174046
+    },
+    {
+      "dataset": "warpc",
+      "split": 4304,
+      "seed": 2901,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": -1.1251834875804292
+    },
+    {
+      "dataset": "warpc",
+      "split": 4304,
+      "seed": 2902,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": -4.118392801633746
+    },
+    {
+      "dataset": "warpc",
+      "split": 4304,
+      "seed": 2903,
+      "ce_policy_minus_f1_policy_pp": 3.798395786780503,
+      "ce_policy_minus_base_pp": -1.9707160572829707
+    }
+  ],
+  "scope": "All prespecified methods retained. Scores of ordinal diagnostics are not F1 units. Contexts overlap in image pools; descriptive comparisons, not iid p-values."
+}

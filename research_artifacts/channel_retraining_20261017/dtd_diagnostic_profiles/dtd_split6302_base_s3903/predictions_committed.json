@@ -1,0 +1,80 @@
+{
+  "scores": {
+    "base": {
+      "mask_f1": 0.0,
+      "mask_macro_ce": 0.0,
+      "taylor_signed": 0.0,
+      "taylor_squared": 0.0,
+      "bn_gamma": 0.0,
+      "architecture_ridge": 0.0,
+      "choose_base": 0.0
+    },
+    "c_grow": {
+      "mask_f1": 1.552305977875116,
+      "mask_macro_ce": 0.06550047674354828,
+      "taylor_signed": -0.014302470425303268,
+      "taylor_squared": 0.0036101216350750667,
+      "bn_gamma": 0.04869843041941294,
+      "architecture_ridge": 0.3748509169629168,
+      "choose_base": 0.0
+    },
+    "d_shrink": {
+      "mask_f1": -1.875244990303952,
+      "mask_macro_ce": -0.019695990051783567,
+      "taylor_signed": 0.020574193701535126,
+      "taylor_squared": -0.0011065725763470028,
+      "bn_gamma": -0.13570815846004242,
+      "architecture_ridge": -0.30335578199322,
+      "choose_base": 0.0
+    },
+    "joint_c_grow_d_shrink": {
+      "mask_f1": -0.32293901242883616,
+      "mask_macro_ce": 0.04580448669176471,
+      "taylor_signed": 0.0062717232762318584,
+      "taylor_squared": 0.002503549058728064,
+      "bn_gamma": -0.08700972804062947,
+      "architecture_ridge": 0.07149513496969678,
+      "choose_base": 0.0
+    },
+    "c_shrink": {
+      "mask_f1": -1.6319454721693298,
+      "mask_macro_ce": -0.06886091271315438,
+      "taylor_signed": 0.015036244261173105,
+      "taylor_squared": -0.0037953352884757554,
+      "bn_gamma": -0.05119685432990568,
+      "architecture_ridge": -0.3940822656068957,
+      "choose_base": 0.0
+    },
+    "d_grow": {
+      "mask_f1": 1.7070766695992885,
+      "mask_macro_ce": 0.017929692000728737,
+      "taylor_signed": -0.018729140056529082,
+      "taylor_squared": 0.0010073373015619489,
+      "bn_gamma": 0.12353811495524754,
+      "architecture_ridge": 0.2761514259236799,
+      "choose_base": 0.0
+    },
+    "joint_c_shrink_d_grow": {
+      "mask_f1": 0.07513119742995866,
+      "mask_macro_ce": -0.050931220712425646,
+      "taylor_signed": -0.0036928957953559776,
+      "taylor_squared": -0.0027879979869138067,
+      "bn_gamma": 0.07234126062534185,
+      "architecture_ridge": -0.11793083968321574,
+      "choose_base": 0.0
+    }
+  },
+  "choices": {
+    "mask_f1": "joint_c_shrink_d_grow",
+    "mask_macro_ce": "joint_c_grow_d_shrink",
+    "taylor_signed": "joint_c_grow_d_shrink",
+    "taylor_squared": "joint_c_grow_d_shrink",
+    "bn_gamma": "joint_c_shrink_d_grow",
+    "architecture_ridge": "joint_c_grow_d_shrink",
+    "choose_base": "base"
+  },
+  "checkpoint_sha256": "bb129e84592e947c536cd056179ed0bc31724c9cc98c6c88c40e96ec0048f0e0",
+  "diagnostic_sha256": "11ffd655ccb505a0c31c22ca3c19af77632603c48dd5d1b0c443525b31d37d8d",
+  "manifest_sha256": "645016efb40686612f7e1f996e99f65c5b7975a954cae3c3f9492de6a5d5a3bf",
+  "scope": "Committed before nonBase training; uses diagnostic subset, never evaluation outcomes."
+}

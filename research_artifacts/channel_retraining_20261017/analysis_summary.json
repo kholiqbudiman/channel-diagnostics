@@ -1,0 +1,922 @@
+{
+  "scope": "Post-outcome ACRE-only analysis. Existing prospective primary contrast unchanged. No new training/inference. All27 contexts retained.",
+  "projection": [
+    {
+      "dataset": "warpc",
+      "target": "f1",
+      "method": "mask_f1",
+      "contexts": 9,
+      "mean_minimum_rmse": 3.531990483705556,
+      "mean_actual_rmse": 4.211599271081508,
+      "mean_zero_rmse": 3.8686293081533756,
+      "pooled_minimum_fraction_of_sse": 0.7213506367316729,
+      "mean_calibration_rmse": 2.22818769179732
+    },
+    {
+      "dataset": "warpc",
+      "target": "f1",
+      "method": "architecture_ridge",
+      "contexts": 9,
+      "mean_minimum_rmse": 3.531990483705556,
+      "mean_actual_rmse": 3.836031645543393,
+      "mean_zero_rmse": 3.8686293081533756,
+      "pooled_minimum_fraction_of_sse": 0.8439415488319039,
+      "mean_calibration_rmse": 1.4101261779253176
+    },
+    {
+      "dataset": "warpc",
+      "target": "macro_ce",
+      "method": "mask_macro_ce",
+      "contexts": 9,
+      "mean_minimum_rmse": 0.06309300581961967,
+      "mean_actual_rmse": 0.08615174243554478,
+      "mean_zero_rmse": 0.0701454262896469,
+      "pooled_minimum_fraction_of_sse": 0.5799309601451281,
+      "mean_calibration_rmse": 0.0568172459222783
+    },
+    {
+      "dataset": "warpc",
+      "target": "macro_ce",
+      "method": "taylor_signed",
+      "contexts": 9,
+      "mean_minimum_rmse": 0.06309300581961967,
+      "mean_actual_rmse": 0.07848490588196255,
+      "mean_zero_rmse": 0.0701454262896469,
+      "pooled_minimum_fraction_of_sse": 0.6883396457363893,
+      "mean_calibration_rmse": 0.04453365709816001
+    },
+    {
+      "dataset": "trashnet",
+      "target": "f1",
+      "method": "mask_f1",
+      "contexts": 9,
+      "mean_minimum_rmse": 3.230368659668527,
+      "mean_actual_rmse": 4.3949337568590074,
+      "mean_zero_rmse": 3.611756178807547,
+      "pooled_minimum_fraction_of_sse": 0.6152395304384671,
+      "mean_calibration_rmse": 2.504344409781167
+    },
+    {
+      "dataset": "trashnet",
+      "target": "f1",
+      "method": "architecture_ridge",
+      "contexts": 9,
+      "mean_minimum_rmse": 3.230368659668527,
+      "mean_actual_rmse": 3.6266572904165235,
+      "mean_zero_rmse": 3.611756178807547,
+      "pooled_minimum_fraction_of_sse": 0.833249140197709,
+      "mean_calibration_rmse": 1.3423902270319497
+    },
+    {
+      "dataset": "trashnet",
+      "target": "macro_ce",
+      "method": "mask_macro_ce",
+      "contexts": 9,
+      "mean_minimum_rmse": 0.07319014983475801,
+      "mean_actual_rmse": 0.09348684313504611,
+      "mean_zero_rmse": 0.08141445223681622,
+      "pooled_minimum_fraction_of_sse": 0.70331143447306,
+      "mean_calibration_rmse": 0.04883094477302071
+    },
+    {
+      "dataset": "trashnet",
+      "target": "macro_ce",
+      "method": "taylor_signed",
+      "contexts": 9,
+      "mean_minimum_rmse": 0.07319014983475801,
+      "mean_actual_rmse": 0.08257774769647566,
+      "mean_zero_rmse": 0.08141445223681622,
+      "pooled_minimum_fraction_of_sse": 0.8613873992208062,
+      "mean_calibration_rmse": 0.029358697584065594
+    },
+    {
+      "dataset": "dtd",
+      "target": "f1",
+      "method": "mask_f1",
+      "contexts": 9,
+      "mean_minimum_rmse": 2.021994713467345,
+      "mean_actual_rmse": 2.4070002133698987,
+      "mean_zero_rmse": 2.290035532421573,
+      "pooled_minimum_fraction_of_sse": 0.7830410903565757,
+      "mean_calibration_rmse": 1.18861706416159
+    },
+    {
+      "dataset": "dtd",
+      "target": "f1",
+      "method": "architecture_ridge",
+      "contexts": 9,
+      "mean_minimum_rmse": 2.021994713467345,
+      "mean_actual_rmse": 2.2493700073829617,
+      "mean_zero_rmse": 2.290035532421573,
+      "pooled_minimum_fraction_of_sse": 0.8826012606538411,
+      "mean_calibration_rmse": 0.8117047218808295
+    },
+    {
+      "dataset": "dtd",
+      "target": "macro_ce",
+      "method": "mask_macro_ce",
+      "contexts": 9,
+      "mean_minimum_rmse": 0.05046989970765887,
+      "mean_actual_rmse": 0.06048388942027234,
+      "mean_zero_rmse": 0.05781358809094234,
+      "pooled_minimum_fraction_of_sse": 0.7383078910170122,
+      "mean_calibration_rmse": 0.031261735035158535
+    },
+    {
+      "dataset": "dtd",
+      "target": "macro_ce",
+      "method": "taylor_signed",
+      "contexts": 9,
+      "mean_minimum_rmse": 0.05046989970765887,
+      "mean_actual_rmse": 0.06370455308321443,
+      "mean_zero_rmse": 0.05781358809094234,
+      "pooled_minimum_fraction_of_sse": 0.6434602191856228,
+      "mean_calibration_rmse": 0.03533777095268544
+    }
+  ],
+  "averaged_response_projection": [
+    {
+      "dataset": "warpc",
+      "level": "task",
+      "split": null,
+      "target": "f1",
+      "contexts_averaged": 9,
+      "minimum_rmse": 1.7850413214782384,
+      "zero_rmse": 1.9035143626422208,
+      "observed_mean_gains": [
+        0.613777032209768,
+        -0.14084724484716007,
+        -3.6534659603351907,
+        -2.4806892683945225,
+        -0.6245616486800919,
+        -1.2049611439396581
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "warpc",
+      "level": "task",
+      "split": null,
+      "target": "macro_ce",
+      "contexts_averaged": 9,
+      "minimum_rmse": 0.015331784364623268,
+      "zero_rmse": 0.01766944274651013,
+      "observed_mean_gains": [
+        0.01570891307459933,
+        -0.004472093780835512,
+        -0.03111943602561952,
+        -0.02378875613212588,
+        -0.0075366662608253,
+        0.003919198115666729
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "warpc",
+      "level": "split",
+      "split": 4302,
+      "target": "f1",
+      "contexts_averaged": 3,
+      "minimum_rmse": 2.7877223058755254,
+      "zero_rmse": 3.1683118833823585,
+      "observed_mean_gains": [
+        0.8845182486746026,
+        -0.9022006931411966,
+        -7.4891222291242086,
+        0.3154774264269733,
+        -0.3817175802730925,
+        -1.5167980877201401
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "warpc",
+      "level": "split",
+      "split": 4302,
+      "target": "macro_ce",
+      "contexts_averaged": 3,
+      "minimum_rmse": 0.050174183895317984,
+      "zero_rmse": 0.05358257383074549,
+      "observed_mean_gains": [
+        -0.019218018651008657,
+        -0.0491374144951503,
+        -0.09737843672434492,
+        -0.04206297198931378,
+        -0.020675094922383692,
+        -0.05256826480229689
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "warpc",
+      "level": "split",
+      "split": 4303,
+      "target": "f1",
+      "contexts_averaged": 3,
+      "minimum_rmse": 1.3838961925770352,
+      "zero_rmse": 1.554462701302224,
+      "observed_mean_gains": [
+        0.10685509082429452,
+        1.0139049513335412,
+        -1.0665115363823148,
+        -3.4491328411260227,
+        0.649355401015472,
+        -0.055478174686169744
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "warpc",
+      "level": "split",
+      "split": 4303,
+      "target": "macro_ce",
+      "contexts_averaged": 3,
+      "minimum_rmse": 0.05275328112583457,
+      "zero_rmse": 0.05441375388558854,
+      "observed_mean_gains": [
+        0.08277187347412103,
+        0.051531704266866006,
+        0.007556058963139822,
+        -0.004412923256556252,
+        0.040922739108403494,
+        0.0806672275066375
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "warpc",
+      "level": "split",
+      "split": 4304,
+      "target": "f1",
+      "contexts_averaged": 3,
+      "minimum_rmse": 2.1185890328057537,
+      "zero_rmse": 2.384346940198667,
+      "observed_mean_gains": [
+        0.8499577571304068,
+        -0.5342459927338249,
+        -2.4047641154990487,
+        -4.308412390484517,
+        -2.1413227667826553,
+        -2.042607169412664
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "warpc",
+      "level": "split",
+      "split": 4304,
+      "target": "macro_ce",
+      "contexts_averaged": 3,
+      "minimum_rmse": 0.022143613621978545,
+      "zero_rmse": 0.023294046611545476,
+      "observed_mean_gains": [
+        -0.016427115599314385,
+        -0.015810571114222238,
+        -0.0035359303156534683,
+        -0.02489037315050761,
+        -0.0428576429684957,
+        -0.01634136835734042
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "trashnet",
+      "level": "task",
+      "split": null,
+      "target": "f1",
+      "contexts_averaged": 9,
+      "minimum_rmse": 0.8485743191701768,
+      "zero_rmse": 0.8658375126359165,
+      "observed_mean_gains": [
+        0.46960309462071353,
+        0.7148210235374108,
+        0.4679887933969269,
+        0.976319919008508,
+        1.3911613240108334,
+        -0.811792771053929
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "trashnet",
+      "level": "task",
+      "split": null,
+      "target": "macro_ce",
+      "contexts_averaged": 9,
+      "minimum_rmse": 0.04519500133969784,
+      "zero_rmse": 0.045381599740772084,
+      "observed_mean_gains": [
+        0.05712661257496586,
+        0.040040786619539616,
+        0.0293113942499514,
+        0.04581899223504244,
+        0.06257236997286479,
+        0.02482707688102015
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "trashnet",
+      "level": "split",
+      "split": 4302,
+      "target": "f1",
+      "contexts_averaged": 3,
+      "minimum_rmse": 2.1556699438572218,
+      "zero_rmse": 2.1787129649671586,
+      "observed_mean_gains": [
+        -1.6109375869738944,
+        1.090475953168531,
+        -3.2256783851198967,
+        -1.239841656586331,
+        -0.3982841737581945,
+        -3.5490343373978703
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "trashnet",
+      "level": "split",
+      "split": 4302,
+      "target": "macro_ce",
+      "contexts_averaged": 3,
+      "minimum_rmse": 0.029929230396522923,
+      "zero_rmse": 0.03182997061195578,
+      "observed_mean_gains": [
+        0.0453960630628798,
+        0.033151682880189694,
+        -0.0321502304739422,
+        -0.002474801407919965,
+        0.03440348638428584,
+        -0.02637581692801579
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "trashnet",
+      "level": "split",
+      "split": 4303,
+      "target": "f1",
+      "contexts_averaged": 3,
+      "minimum_rmse": 1.7462979364590159,
+      "zero_rmse": 1.7648256134133198,
+      "observed_mean_gains": [
+        0.1102150134869504,
+        1.5129680486428754,
+        1.0295529849225602,
+        0.7785405331233951,
+        3.8367083245291886,
+        0.001237398666281327
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "trashnet",
+      "level": "split",
+      "split": 4303,
+      "target": "macro_ce",
+      "contexts_averaged": 3,
+      "minimum_rmse": 0.06702594837545538,
+      "zero_rmse": 0.06716119637775077,
+      "observed_mean_gains": [
+        0.03953240149550966,
+        0.08379566338327198,
+        0.051935709185070476,
+        0.04861292243003845,
+        0.10046795341703625,
+        0.057661859525574566
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "trashnet",
+      "level": "split",
+      "split": 4304,
+      "target": "f1",
+      "contexts_averaged": 3,
+      "minimum_rmse": 2.379662496367348,
+      "zero_rmse": 2.4120653987979455,
+      "observed_mean_gains": [
+        2.909531857349085,
+        -0.4589809311991739,
+        3.600091780388117,
+        3.39026088048846,
+        0.7350598212615059,
+        1.112418625569802
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "trashnet",
+      "level": "split",
+      "split": 4304,
+      "target": "macro_ce",
+      "contexts_averaged": 3,
+      "minimum_rmse": 0.06447657627306778,
+      "zero_rmse": 0.06471191160256116,
+      "observed_mean_gains": [
+        0.08645137316650812,
+        0.003175013595157187,
+        0.06814870403872593,
+        0.09131885568300883,
+        0.05284567011727226,
+        0.043195188045501674
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "dtd",
+      "level": "task",
+      "split": null,
+      "target": "f1",
+      "contexts_averaged": 9,
+      "minimum_rmse": 1.2872781388723893,
+      "zero_rmse": 1.3426090344658612,
+      "observed_mean_gains": [
+        -0.6385160467930299,
+        -1.2056725172753846,
+        -1.3966354964508332,
+        -1.4067068920976888,
+        -0.7512010049463215,
+        -2.1119960264159556
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "dtd",
+      "level": "task",
+      "split": null,
+      "target": "macro_ce",
+      "contexts_averaged": 9,
+      "minimum_rmse": 0.013485395972604473,
+      "zero_rmse": 0.02067296518610354,
+      "observed_mean_gains": [
+        0.03164775926734256,
+        -0.02044407216651509,
+        -0.0070960113060953844,
+        -0.012927056063433313,
+        -0.0035788738840297147,
+        -0.03023934012045531
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "dtd",
+      "level": "split",
+      "split": 6301,
+      "target": "f1",
+      "contexts_averaged": 3,
+      "minimum_rmse": 2.1399322593740138,
+      "zero_rmse": 2.2586487706943914,
+      "observed_mean_gains": [
+        -0.7622688440111745,
+        -0.354856051478824,
+        -2.5883200364224934,
+        -3.6362199989838984,
+        -1.289946165817207,
+        -2.883839698331259
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "dtd",
+      "level": "split",
+      "split": 6301,
+      "target": "macro_ce",
+      "contexts_averaged": 3,
+      "minimum_rmse": 0.02306697626554437,
+      "zero_rmse": 0.03787077083664595,
+      "observed_mean_gains": [
+        0.04421246559061901,
+        0.0009174169378076691,
+        -0.034051209476822684,
+        -0.05377505222956339,
+        0.04870388820661716,
+        -0.015042542988526955
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "dtd",
+      "level": "split",
+      "split": 6302,
+      "target": "f1",
+      "contexts_averaged": 3,
+      "minimum_rmse": 0.9413669570570482,
+      "zero_rmse": 1.0396500145209169,
+      "observed_mean_gains": [
+        -0.13042661680905235,
+        -1.9463616245490425,
+        -0.2775732492273697,
+        -0.7106250894410001,
+        -0.726841427988648,
+        -1.2528227537845755
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "dtd",
+      "level": "split",
+      "split": 6302,
+      "target": "macro_ce",
+      "contexts_averaged": 3,
+      "minimum_rmse": 0.02487145994426022,
+      "zero_rmse": 0.029806113712695877,
+      "observed_mean_gains": [
+        0.028300880117619442,
+        -0.042431297877156084,
+        -0.005582158024429222,
+        -0.012589993206321518,
+        -0.029895822207132827,
+        -0.04056652598347199
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "dtd",
+      "level": "split",
+      "split": 6303,
+      "target": "f1",
+      "contexts_averaged": 3,
+      "minimum_rmse": 1.2509966592096315,
+      "zero_rmse": 1.254308688430896,
+      "observed_mean_gains": [
+        -1.0228526795588628,
+        -1.3157998757982874,
+        -1.3240132037026366,
+        0.12672441213183205,
+        -0.2368154210331094,
+        -2.199325627132032
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    },
+    {
+      "dataset": "dtd",
+      "level": "split",
+      "split": 6303,
+      "target": "macro_ce",
+      "contexts_averaged": 3,
+      "minimum_rmse": 0.02271670890325145,
+      "zero_rmse": 0.026136873258445697,
+      "observed_mean_gains": [
+        0.022429932093789223,
+        -0.019818335560196854,
+        0.01834533358296575,
+        0.027583877245584976,
+        -0.029544687651573476,
+        -0.03510895138936698
+      ],
+      "scope": "Projection of averaged observed response; not population/causal inference."
+    }
+  ],
+  "bidirectional": [
+    {
+      "dataset": "warpc",
+      "target": "f1",
+      "axis": "c",
+      "contexts": 9,
+      "both_positive": 2,
+      "both_negative": 3,
+      "same_sign": 5,
+      "mean_closure": -0.8947591534906694,
+      "mean_absolute_closure": 2.272295570029941
+    },
+    {
+      "dataset": "warpc",
+      "target": "f1",
+      "axis": "d",
+      "contexts": 9,
+      "both_positive": 3,
+      "both_negative": 4,
+      "same_sign": 7,
+      "mean_closure": -0.39786017648893446,
+      "mean_absolute_closure": 2.5259936558735356
+    },
+    {
+      "dataset": "warpc",
+      "target": "macro_ce",
+      "axis": "c",
+      "contexts": 9,
+      "both_positive": 1,
+      "both_negative": 3,
+      "same_sign": 4,
+      "mean_closure": -0.0035459947062788533,
+      "mean_absolute_closure": 0.03944590018050662
+    },
+    {
+      "dataset": "warpc",
+      "target": "macro_ce",
+      "axis": "d",
+      "contexts": 9,
+      "both_positive": 1,
+      "both_negative": 5,
+      "same_sign": 6,
+      "mean_closure": -0.006100399142573125,
+      "mean_absolute_closure": 0.05037153498200747
+    },
+    {
+      "dataset": "trashnet",
+      "target": "f1",
+      "axis": "c",
+      "contexts": 9,
+      "both_positive": 4,
+      "both_negative": 3,
+      "same_sign": 7,
+      "mean_closure": 0.7166249042758805,
+      "mean_absolute_closure": 2.7741540246616427
+    },
+    {
+      "dataset": "trashnet",
+      "target": "f1",
+      "axis": "d",
+      "contexts": 9,
+      "both_positive": 2,
+      "both_negative": 0,
+      "same_sign": 2,
+      "mean_closure": 1.074182254120469,
+      "mean_absolute_closure": 1.560186190397418
+    },
+    {
+      "dataset": "trashnet",
+      "target": "macro_ce",
+      "axis": "c",
+      "contexts": 9,
+      "both_positive": 6,
+      "both_negative": 1,
+      "same_sign": 7,
+      "mean_closure": 0.051614206621924556,
+      "mean_absolute_closure": 0.06632770694338579
+    },
+    {
+      "dataset": "trashnet",
+      "target": "macro_ce",
+      "axis": "d",
+      "contexts": 9,
+      "both_positive": 5,
+      "both_negative": 0,
+      "same_sign": 5,
+      "mean_closure": 0.0520125374011624,
+      "mean_absolute_closure": 0.06660894820637592
+    },
+    {
+      "dataset": "dtd",
+      "target": "f1",
+      "axis": "c",
+      "contexts": 9,
+      "both_positive": 3,
+      "both_negative": 3,
+      "same_sign": 6,
+      "mean_closure": -1.013005078210042,
+      "mean_absolute_closure": 1.8624989191159125
+    },
+    {
+      "dataset": "dtd",
+      "target": "f1",
+      "axis": "d",
+      "contexts": 9,
+      "both_positive": 1,
+      "both_negative": 4,
+      "same_sign": 5,
+      "mean_closure": -0.9677694176542424,
+      "mean_absolute_closure": 1.126969726766391
+    },
+    {
+      "dataset": "dtd",
+      "target": "macro_ce",
+      "axis": "c",
+      "contexts": 9,
+      "both_positive": 5,
+      "both_negative": 3,
+      "same_sign": 8,
+      "mean_closure": 0.009917769225357356,
+      "mean_absolute_closure": 0.04848036137234342
+    },
+    {
+      "dataset": "dtd",
+      "target": "macro_ce",
+      "axis": "d",
+      "contexts": 9,
+      "both_positive": 2,
+      "both_negative": 4,
+      "same_sign": 6,
+      "mean_closure": -0.011615613532075278,
+      "mean_absolute_closure": 0.0417212109918079
+    }
+  ],
+  "intervention": [
+    {
+      "dataset": "warpc",
+      "candidate": "c_grow",
+      "contexts": 9,
+      "mean_gain_pp": 0.613777032209768,
+      "proxy_mae": 2.866537957265931,
+      "zero_mae": 2.089780179049571,
+      "positive": 5,
+      "sign_agreement": 4
+    },
+    {
+      "dataset": "warpc",
+      "candidate": "d_shrink",
+      "contexts": 9,
+      "mean_gain_pp": -0.14084724484716007,
+      "proxy_mae": 2.8683890032170214,
+      "zero_mae": 3.192362402421666,
+      "positive": 5,
+      "sign_agreement": 7
+    },
+    {
+      "dataset": "warpc",
+      "candidate": "joint_c_grow_d_shrink",
+      "contexts": 9,
+      "mean_gain_pp": -3.6534659603351907,
+      "proxy_mae": 5.3116160462912525,
+      "zero_mae": 4.067151282604133,
+      "positive": 1,
+      "sign_agreement": 3
+    },
+    {
+      "dataset": "warpc",
+      "candidate": "c_shrink",
+      "contexts": 9,
+      "mean_gain_pp": -2.4806892683945225,
+      "proxy_mae": 3.9077983857059087,
+      "zero_mae": 4.532685034939712,
+      "positive": 3,
+      "sign_agreement": 7
+    },
+    {
+      "dataset": "warpc",
+      "candidate": "d_grow",
+      "contexts": 9,
+      "mean_gain_pp": -0.6245616486800919,
+      "proxy_mae": 2.6377868428175604,
+      "zero_mae": 2.3134408302573823,
+      "positive": 3,
+      "sign_agreement": 4
+    },
+    {
+      "dataset": "warpc",
+      "candidate": "joint_c_shrink_d_grow",
+      "contexts": 9,
+      "mean_gain_pp": -1.2049611439396581,
+      "proxy_mae": 3.212410967794077,
+      "zero_mae": 3.4829820214219507,
+      "positive": 4,
+      "sign_agreement": 5
+    },
+    {
+      "dataset": "trashnet",
+      "candidate": "c_grow",
+      "contexts": 9,
+      "mean_gain_pp": 0.46960309462071353,
+      "proxy_mae": 4.5394888815333125,
+      "zero_mae": 2.9740689231925064,
+      "positive": 4,
+      "sign_agreement": 4
+    },
+    {
+      "dataset": "trashnet",
+      "candidate": "d_shrink",
+      "contexts": 9,
+      "mean_gain_pp": 0.7148210235374108,
+      "proxy_mae": 2.0659345089429695,
+      "zero_mae": 2.645929310602131,
+      "positive": 6,
+      "sign_agreement": 6
+    },
+    {
+      "dataset": "trashnet",
+      "candidate": "joint_c_grow_d_shrink",
+      "contexts": 9,
+      "mean_gain_pp": 0.4679887933969269,
+      "proxy_mae": 2.6643717638236986,
+      "zero_mae": 2.6184410501435247,
+      "positive": 6,
+      "sign_agreement": 6
+    },
+    {
+      "dataset": "trashnet",
+      "candidate": "c_shrink",
+      "contexts": 9,
+      "mean_gain_pp": 0.976319919008508,
+      "proxy_mae": 4.658289700029973,
+      "zero_mae": 2.9381283635761752,
+      "positive": 6,
+      "sign_agreement": 3
+    },
+    {
+      "dataset": "trashnet",
+      "candidate": "d_grow",
+      "contexts": 9,
+      "mean_gain_pp": 1.3911613240108334,
+      "proxy_mae": 2.665645971704705,
+      "zero_mae": 3.3704273706488643,
+      "positive": 5,
+      "sign_agreement": 8
+    },
+    {
+      "dataset": "trashnet",
+      "candidate": "joint_c_shrink_d_grow",
+      "contexts": 9,
+      "mean_gain_pp": -0.811792771053929,
+      "proxy_mae": 4.934274217256901,
+      "zero_mae": 3.74428940371679,
+      "positive": 4,
+      "sign_agreement": 5
+    },
+    {
+      "dataset": "dtd",
+      "candidate": "c_grow",
+      "contexts": 9,
+      "mean_gain_pp": -0.6385160467930299,
+      "proxy_mae": 2.925159711718168,
+      "zero_mae": 2.5908374213457637,
+      "positive": 5,
+      "sign_agreement": 5
+    },
+    {
+      "dataset": "dtd",
+      "candidate": "d_shrink",
+      "contexts": 9,
+      "mean_gain_pp": -1.2056725172753846,
+      "proxy_mae": 1.102609339274484,
+      "zero_mae": 1.5335862869868306,
+      "positive": 3,
+      "sign_agreement": 6
+    },
+    {
+      "dataset": "dtd",
+      "candidate": "joint_c_grow_d_shrink",
+      "contexts": 9,
+      "mean_gain_pp": -1.3966354964508332,
+      "proxy_mae": 2.491491344512105,
+      "zero_mae": 2.099803215027782,
+      "positive": 1,
+      "sign_agreement": 2
+    },
+    {
+      "dataset": "dtd",
+      "candidate": "c_shrink",
+      "contexts": 9,
+      "mean_gain_pp": -1.4067068920976888,
+      "proxy_mae": 1.7896949819359413,
+      "zero_mae": 2.19674933577063,
+      "positive": 4,
+      "sign_agreement": 5
+    },
+    {
+      "dataset": "dtd",
+      "candidate": "d_grow",
+      "contexts": 9,
+      "mean_gain_pp": -0.7512010049463215,
+      "proxy_mae": 2.018959557671793,
+      "zero_mae": 1.2361040491093336,
+      "positive": 3,
+      "sign_agreement": 1
+    },
+    {
+      "dataset": "dtd",
+      "candidate": "joint_c_shrink_d_grow",
+      "contexts": 9,
+      "mean_gain_pp": -2.1119960264159556,
+      "proxy_mae": 2.3172145809669855,
+      "zero_mae": 2.6324441613507354,
+      "positive": 1,
+      "sign_agreement": 7
+    }
+  ],
+  "local_taylor": [
+    {
+      "dataset": "warpc",
+      "contexts": 9,
+      "blocks": 45,
+      "retrained_ce_mae": 0.06483690469271662,
+      "zero_retrained_ce_mae": 0.06175263888306087,
+      "taylor_mae": 0.06502896775143273,
+      "zero_mae": 0.09205968640468738,
+      "mean_spearman": 0.6333333333333333,
+      "contexts_better_than_zero": 9
+    },
+    {
+      "dataset": "trashnet",
+      "contexts": 9,
+      "blocks": 45,
+      "retrained_ce_mae": 0.07367972941146438,
+      "zero_retrained_ce_mae": 0.07231199345838875,
+      "taylor_mae": 0.17167651458588448,
+      "zero_mae": 0.19241363290283414,
+      "mean_spearman": 0.1222222222222222,
+      "contexts_better_than_zero": 8
+    },
+    {
+      "dataset": "dtd",
+      "contexts": 9,
+      "blocks": 45,
+      "retrained_ce_mae": 0.05420715514547932,
+      "zero_retrained_ce_mae": 0.049679456579581865,
+      "taylor_mae": 0.1666471918510889,
+      "zero_mae": 0.1438917952132469,
+      "mean_spearman": 0.3222222222222222,
+      "contexts_better_than_zero": 0
+    }
+  ]
+}

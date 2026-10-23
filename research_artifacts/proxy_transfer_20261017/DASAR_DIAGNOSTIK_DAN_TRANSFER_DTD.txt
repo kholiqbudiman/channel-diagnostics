@@ -1,0 +1,54 @@
+DASAR DIAGNOSTIK DAN PROTOKOL TRANSFER ACRE
+17 Oktober 2026
+
+Pertanyaan: apakah kegagalan proxy masking-F1 sebelumnya terutama berasal dari metrik yang diskrit, keterbatasan respons lokal, atau interaksi perubahan lebar setelah retraining? Pembanding dibekukan sebelum hasil DTD. Tidak ada algoritma pruning yang diklaim telah direplikasi penuh.
+
+1. Masking F1: rerata perubahan macro-F1 dari tiga mask tetap di setiap block, dinormalisasi oleh -log(1-f). Ini mempertahankan bentuk proxy sebelumnya.
+2. Masking macro-CE: mask yang sama, tetapi memakai kenaikan cross-entropy rata-rata kelas. Loss yang kontinu memberi pembanding terhadap perubahan F1 yang bergantung pada argmax.
+3. Taylor signed: kontribusi lokal activation*gradient, dijumlahkan per channel, lalu dirata-ratakan per kelas dan dibalik tandanya agar nilai positif berarti arah perbaikan loss.
+4. Taylor squared: kuadrat kontribusi activation*gradient per channel, dirata-ratakan per channel dan kelas. Ini skor kepentingan ordinal yang diinspirasi kriteria Taylor orde pertama, bukan prediksi F1.
+5. BN gamma: rata-rata nilai mutlak gamma pada projection BN tiap block. Ini adaptasi skor kepentingan layer yang diinspirasi PEEL, bukan menjalankan seluruh PEEL.
+
+Untuk semua diagnostik, skor redistribusi adalah jumlah perubahan log lebar block dikali skor block. Pemakaian skor removal/importance untuk memperkirakan manfaat pelebaran adalah hipotesis yang diuji, bukan teorema. Skor ordinal dinilai melalui korelasi peringkat dan hasil pilihan; hanya prediksi F1 yang diberi MAE dalam poin F1.
+
+Kontrol: pilih Base; nilai harapan pilihan uniform di antara tiga kandidat yang resource-matched; ridge architecture-only dengan intercept nol. Ridge hanya memakai 108 efek lama, fitur log(c/40),log(d/64), standardisasi RMS, lambda L2=1 tanpa tuning. Semua metode tetap dilaporkan.
+
+Sumber primer yang dibaca:
+Molchanov et al., Importance Estimation for Neural Network Pruning, CVPR2019: kriteria Taylor dan pengukuran fidelity importance.
+https://arxiv.org/pdf/1906.10771
+Hou et al., Network Pruning via Resource Reallocation: layer importance berbasis BN dan alokasi ulang.
+https://arxiv.org/pdf/2103.01847
+DTD, Cimpoi et al.:47 kategori tekstur dan pemisahan resmi train/validation/test.
+https://www.robots.ox.ac.uk/~vgg/data/dtd/
+
+KONTEKS BARU
+Menggunakan citra raw sesuai whitelist train1.txt+val1.txt resmi DTD. Sebanyak 3760 citra,47 kelas,80 citra/kelas; citra test tidak dibaca. Data sudah tersedia untuk proyek lain. Klaim konteks baru adalah transfer evaluasi ACRE ke tekstur, bukan klaim seluruh data belum pernah dipakai dalam penelitian lain. Protokol internal empat bagian ini juga bukan protokol benchmark DTD resmi.
+
+Tiga split 6301/6302/6303 menjaga hash konten identik dalam bagian sama. Tidak ditemukan grup hash dengan label konflik. Rasio target70/10/10/10 untuk fit/selection/diagnostic/evaluation. Satu duplicate group membuat diagnostic split 6301 berisi377 gambar; split lain 376. Fit 2631 atau 2632, selection 376, evaluation 376. Kedekatan perseptual/identitas objek tidak diaudit.
+
+Base memiliki 22975 parameter dan 9,058304 MMAC pada 96 px. Perubahan c=+/-2; minimax biaya memilih d=+/-6 untuk K47. Joint 42,58: 22913 parameter, 9,111446 MMAC. Joint 38,70: 23005 parameter, 9,005738 MMAC. Base danjoint berada dalam kedua band 1%; komponen tunggal memang tidak diwajibkan masuk band.
+
+Tujuh sel x 3 split x 3 seed 3901/3902/3903 =63 training baru. Desain silang memisahkan variasi split dan inisialisasi serta menjaga perbandingan dengan rancangan sebelumnya. Tidak ada klaim jumlah ini menjamin statistical power populasi atau menjadikan9 konteks sebagai9 dataset independen.
+
+PENGUNCIAN INFORMASI
+Seluruh9 Base dilatih lebih dahulu. Checkpoint dipilih hanya pada selection. Diagnostik dihitung padaD yang terpisah dariE. Prediksi dan pilihan semua kebijakan dikomit serta di-hash sebelum54 model nonBase boleh diluncurkan. Evaluation baru diinferensikan setelah semua63 training lengkap dan sembilan commitment diverifikasi.
+
+Primary:gain F1 kebijakan CE-mask minus kebijakan F1-mask, serta gain kebijakan CE-mask terhadapBase. Keputusan dibatasi padaBase+dua joint. Secondary:semua metode, regret, korelasi peringkat, MAE yang satuannya sesuai, dan interaction F1/accuracy/loss dua arah. Oracle adalah batas retrospektif, bukan metode yang tersedia sebelum outcome.
+
+Analisis per split/seed bersifat deskriptif. Bootstrap gambar berpasangan dan terstratifikasi kelas berisi1000 resampling per konteks, bersyarat pada checkpoint dan pilihan diagnostik tetap. Tidak mencakup ketidakpastian estimasi diagnostik, training, split, atau task. Semua hasil negatif/campuran tetap dipertahankan. Base mendekati chance akan dilaporkan, tidak menjadi alasan mengganti task.
+
+RUNTIME DAN AUDIT
+Training dan diagnostik DTD:GPU/Torch2.10.0+cu128. Evaluasi akhir seluruh konfigurasi:CPU dengan runtimeTorch yang sama. Diagnostik lama dihitung ulang seluruhnya di CPU agar semua keluarga diagnostik memakai runtime yang sama; mask GPU asli tetap disimpan. Perbedaan numerik CPU/GPU dicatat, tidak dianggap bukti checkpoint berbeda. Tidak ada klaim bitwise identity lintas perangkat atau hasil ini sebagai benchmark kecepatan.
+
+Preflight:rumus biaya cocok dengan hook;7 forward/backward finite; turunan gate cocok dengan finite difference;18 pasangan awal memiliki tensor stem/block1-3 sama; diagnostik tidak mengubah bobot atau buffer BN; skor gradien konsisten untuk batch 47 dan 11. Analisis kebijakan diuji pada63 record sintetis dengan jawaban hitung tangan:kontras 8 pp dan interaksi -3/+2 pp.
+
+STARTUP YANG DIPERTAHANKAN
+Startup pertama berhenti sebelum ada training DTD karena pemeriksaan selisih absolut CPU/GPU sebesar 0,002 tidak lolos:selisih maksimum 0,004628. Sumber, lock, status dan log startup itu disimpan. Koreksi manual terdokumentasi mengganti pemeriksaan ini menjadi pencatatan perbedaan logit/argmax dan menghitung ulang seluruh mask lama di CPU. Aturan DTD, endpoint, kandidat dan pemetaan skor tidak diubah. Ini bukan retry otomatis atau penghapusan hasil negatif.
+
+OPERASIONAL
+Maksimal satu worker ACRE per GPU. Admission memeriksa worker DKD sudah terisi, utilisasi dan RAM/VRAM; isolated cost profiling tetap didahulukan ketika siap. Tidak menghentikan pekerjaan lain. Failure menahan peluncuran baru tanpa retry otomatis.
+
+Server:/home/kholiq/KD/ACRE_proxy_transfer_20261017
+Layanan aktif:r2 untuk scheduler,old-diagnostics,analysis.
+Keluaran otomatis:HASIL_PERBANDINGAN_LAMA.txt,old_comparison/summary.json; setelah seluruh DTD selesai:HASIL_TRANSFER_DTD.txt,dtd_comparison/*,verified_results_snapshot.json,conditional_bootstrap.json,evaluation_audit.json.
+Manuskrip belum diperbarui dengan hasil yang masih berjalan.

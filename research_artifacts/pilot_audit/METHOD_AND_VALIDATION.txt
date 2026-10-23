@@ -1,0 +1,181 @@
+PENGEMBANGAN METODOLOGI ACRE — 10 OKTOBER 2026
+Status: prototipe penelitian, belum tervalidasi; bukan hasil eksperimen atau
+klaim novelty untuk manuscript. Submission tetap ditunda.
+
+ARGUMEN PUSAT YANG AKAN DIUJI
+Pada CNN ultra-kompak, redistribusi kapasitas pada dua anggaran yang hampir
+tetap dapat mengubah bukan hanya recall tiap kelas, tetapi tujuan kesalahan
+klasifikasi. Apakah respons confusion antar kelas dapat membantu memprediksi
+alokasi channel yang meningkatkan macro-F1 pada task yang tidak digunakan
+untuk mengembangkan aturan tersebut?
+
+Temuan legacy tidak menjadi dasar bukti semantik. Koreksi label merupakan
+syarat validitas. Pilot 36 run, source, urutan jobs, split, dan aturan checkpoint
+tetap terkunci. Tidak ada eksperimen tambahan yang disisipkan ke antrean ini.
+
+APA YANG SUDAH DIIMPLEMENTASIKAN
+1. confusion_response.py: surrogate respons confusion dengan fitur perubahan
+   channel, diagnostik loss tiap kelas/stage, dan separabilitas pasangan kelas.
+   Prediksi berupa confusion yang valid, kemudian dihitung macro-F1.
+2. analyze_complete_pilot.py: hanya membaca hasil jika seluruh cohort selesai.
+   Audit hash input/checkpoint/split; verifikasi urutan sample, confusion dan
+   metric dari logits tersimpan. Tidak menulis ke folder pilot.
+3. Validasi pengembangan: leave-entire-allocation-out pada seluruh tasks/seeds,
+   dan leave-entire-dataset-out. Semua hasil alokasi/task heldout dikeluarkan
+   dari fit dan scaling. Bukan random split pasangan kelas atau seeds.
+4. Kontrol estimator: architecture-only, frequency-only, class-agnostic yang
+   merata-ratakan diagnostik kelas, dan class-pair. Objective/candidate space
+   sama. Ranking kontrol random dibandingkan dengan expected uniform score.
+   Base manual ikut sebagai pilihan, sehingga metode boleh tidak mengubah Base.
+
+Tidak ada predictor yang sudah dilatih pada hasil ACRE baru karena pilot belum
+selesai. Uji sintetik hanya memverifikasi implementasi, bukan manfaat riset.
+
+FORMULASI PROTOTIPE
+Reference a0 = [16,24,40,64]; widths block = [a,b,b,c,d]. Untuk kandidat a:
+d_s = log(width_s(a)/width_s(a0)), dipecah menjadi d_s+ dan d_s-.
+Kedua arah memiliki koefisien terpisah. Mengurangi channel tidak diasumsikan
+sebagai kebalikan efek menambah channel.
+
+Untuk confusion reference C0 dan kandidat hasil retraining Ca, target respons
+pasangan true class i, predicted class j adalah:
+r_ij = log((Ca_ij+0.5)/(Ca_ii+0.5))
+       - log((C0_ij+0.5)/(C0_ii+0.5)), untuk i != j.
+Koefisien ridge bersama dipelajari dari development retraining records.
+Fitur terdiri dari directional width transfer dikalikan context reference:
+confusion, recall, support proportion, class loss, frozen-mask loss change,
+dan log(1+pairwise feature separation). Kandidat tidak perlu hasil retraining
+pada interface prediksi. Target outcome hanya boleh masuk saat kalibrasi.
+
+Softmax tiap baris menghasilkan probabilitas prediksi, lalu dikalikan support
+reference n_i. Prediksi macro-F1 dihitung dari TP, FP, FN pada confusion itu.
+Karena FP kelas j bergantung pada salah klasifikasi dari kelas lain, informasi
+pasangan kelas mungkin relevan meskipun recall atau mean loss sama. Ini
+hipotesis yang harus lolos ablation; bukan bukti mekanisme kausal.
+
+Setiap run memiliki bobot kalibrasi total yang sama, termasuk ketika jumlah
+kelas berbeda. Pasangan kelas bukan unit replikasi statistik independen.
+Ridge=1 dan smoothing=0.5 ditetapkan untuk prototipe development. Setiap tuning
+selanjutnya harus menggunakan nested grouping pada data development saja.
+Ranking akhir tunduk pada perhitungan P/M exact dari source pilot, termasuk
+BN/bias untuk parameter, Conv/Linear untuk MAC. Band +/-1% mengikuti pilot;
+bukan otomatis batas perangkat keras. Candidate yang keluar salah satu band
+ditolak. Residual/operator baru tidak diprediksi oleh surrogate topology ini.
+
+MENGAPA INI BELUM MENJADI NOVELTY TERBUKTI
+Audit desain menemukan lima transfer nonreference dengan rank empat untuk
+empat widths, condition number sekitar 57.8. Block 2 dan 3 selalu berbagi width
+b, sehingga tidak ada intervensi yang memisahkan efek kapasitas kedua block.
+Koefisien surrogate tidak boleh diinterpretasi sebagai efek causal stage.
+Arah shrink/grow juga tidak semuanya terwakili. Pilot dapat memeriksa prediksi
+lokal; diperlukan transfer terpisah setelah pilot untuk mekanisme lebih luas.
+
+Mean_k[L_k(a0)-L_k(a)] hanya perbaikan class-balanced loss. Nama class-aware
+tidak membuatnya baru. Ridge, softmax, class-pair metrics, dan budget constraint
+juga merupakan teknik umum. Kandidat kontribusi adalah kemampuan respons
+confusion terkalibrasi untuk memandu redistribusi dengan kedua anggaran tetap,
+jika lebih baik dari kontrol, hemat search cost, dan berlaku pada task baru.
+Belum ada pembuktian bahwa kombinasi ini berbeda cukup jauh dari literatur.
+
+PROTOKOL PEMBUKTIAN BERURUTAN
+A. Selesaikan 36 run dengan semantic mapping benar. Jangan melihat subset
+   score untuk mengganti desain atau memilih kandidat. Kegagalan dipertahankan;
+   keputusan rerun harus terdokumentasi untuk seluruh cohort yang terdampak.
+B. Jalankan audit complete-cohort. Kuantifikasi efek alokasi, residual, P/M,
+   dan per-class confusion tanpa menggunakan test set untuk seleksi. Laporkan
+   hasil campuran/negatif. Dua seeds satu split belum inferensi final.
+C. Uji apakah surrogate memprediksi outcome kandidat heldout dan ranking
+   di task heldout. Allocation holdout hanya memiliki satu kandidat per context:
+   gunakan prediction error, bukan top-1 ranking yang trivial. Task holdout
+   memuat seluruh lima redistribusi dan Base sehingga selection regret dapat
+   dihitung. Oracle hanya pembanding retrospektif, bukan metode praktis.
+D. Jika ada sinyal: bentuk eksperimen transfer capacity prospektif terpisah.
+   Lock arah transfer dan kandidat sebelum full retraining. Pisahkan train-fit,
+   method-development/calibration, checkpoint selection, dan final assessment.
+   Pilot probe sudah development-exposed; jangan menyebutnya untouched test.
+   Reference-only diagnostics pada task baru harus dari development partition.
+E. Kalibrasi tambahan dapat memakai short-training transfer. Ukur hubungan
+   respons short-training vs full retraining pada kandidat heldout. Budget,
+   epoch, scheduler, init/copy rule, dan jumlah proposal harus dikunci dulu.
+   Pilot yang sekarang hanya melatih penuh; jangan mengklaim short-training
+   telah diterapkan atau bahwa compute murah telah terbukti.
+F. Konfirmasi additional stratified splits/seeds dan lebih dari satu budget
+   setelah memilih research scope. Tentukan seeds via pilot paired variance
+   dan smallest practically meaningful effect yang dinyatakan sebelumnya.
+   Jangan otomatis membuka grid 10K/20K/30K/50K tanpa feasibility/accounting.
+G. Konfirmasi pada task baru yang tidak dipakai membuat estimator, dengan
+   class semantics dan content/group leakage audit. Pilih dataset setelah
+   menilai ukuran, lisensi, split protocol, imbalance, dan compute availability.
+   Dataset publik baru bagi proyek bukan jaminan bebas benchmark adaptation.
+
+PEMBANDING ADIL DAN BIAYA YANG WAJIB DICATAT
+- Manual Base, uniform allocation apabila feasible, random feasible allocation.
+- Frequency-only dan class-agnostic menggunakan objective macro-F1 yang sama.
+- Stronger cheap-search/short-training control, bukan hanya random.
+- Jika pembandingan metode pruning/NAS relevan dan implementasi dapat dijalankan
+  pada search space ini, adaptasi harus dijelaskan; jangan mengklaim replica
+  CATRO/NetAdapt/MorphNet dari surrogate kontrol sederhana.
+- Reference training, diagnostics passes, full calibration training, fitting,
+  candidate trials dan final retraining semuanya dihitung. Laporkan total cost
+  dan marginal cost pada task baru secara terpisah. Pilot training tidak gratis.
+- Same candidate set, attainable P/M bands, data access, checkpoint rule,
+  trial/epoch budget. Jika informasi diagnostics dibagikan, sebutkan shared cost.
+- Hardware latency/energy tetap membutuhkan pengukuran terkalibrasi; MACs tidak
+  membuktikan keunggulan perangkat. Data praktikum lama bukan benchmark causal.
+
+KETIDAKPASTIAN DAN KRITERIA MENOLAK HIPOTESIS
+Laporkan paired sample bootstrap dan variasi antar split/model seeds, dengan
+group/source dependence dipertahankan. CI dari fixed probe/fixed model hanya
+conditional sample uncertainty, bukan generalisasi split atau task. Canister
+probe hanya 14 sampel; legacy semantic test support 30. Hindari kesimpulan kelas
+terlalu kuat dari satu/dua perubahan prediksi.
+Periksa class-pair vs class-agnostic pada task baru dan matched search budgets.
+Jika respons masking gagal memprediksi transfer/retraining, buang klaim masking
+sebagai penjelasan mekanistik. Jika surrogate tidak mengurangi regret/search
+cost atau tidak mengalahkan kontrol, jangan menyebut metode unggul. Hasil nol
+bisa menjadi studi batas alokasi kapasitas, tanpa memaksakan algoritma baru.
+
+LANDSCAPE LITERATUR YANG SUDAH DIPERIKSA
+Training CNNs with Selective Allocation of Channels (ICML 2019), full paper
+bagian metode diperiksa: expected channel damage matrix dan dynamic channel
+deallocation/reallocation melalui selective convolution. Channel damage untuk
+redistribusi kapasitas sudah memiliki preseden, walau bukan surrogate respons
+confusion semantik untuk joint P/M allocation yang kita prototipkan.
+https://proceedings.mlr.press/v97/jeong19c/jeong19c.pdf
+NetAdapt, full paper: constrained adaptation memakai short-term fine-tuning
+dan empirical resource measurements. Cheap adaptation bukan ide baru.
+https://arxiv.org/pdf/1804.03230
+MorphNet, full paper bagian related work/expansion diperiksa: perubahan struktur
+dengan resource constraints, sparsification dan expansion. Mengubah channel
+pada size/FLOP tetap bukan ide baru secara umum.
+https://arxiv.org/pdf/1711.06798
+IMB-NAS, full paper diperiksa pada audit sebelumnya: architecture ranking
+di bawah imbalance dan supernet adaptation. Imbalance-aware NAS sudah ada.
+https://shengyun-peng.github.io/papers/22_imb_nas.pdf
+CATRO, abstract/bibliografi diperiksa; full PDF belum berhasil diakses: joint
+channel pruning memakai class discrimination dan greedy trace-ratio objective.
+https://arxiv.org/abs/2110.10921
+Rethinking Class-Discrimination Based CNN Channel Pruning, full paper diperiksa
+pada audit sebelumnya: discriminant metrics dan sensitivity vs FLOPs.
+https://arxiv.org/pdf/2004.14492
+HBO-NAS, full online article diperiksa pada audit sebelumnya: activation
+separability berbasis kelas untuk training-free architecture fitness.
+https://www.nature.com/articles/s41598-026-55213-5
+MORE, full proceedings diperiksa pada audit sebelumnya: low-rank training
+component dan rebalancing, fusi bobot untuk inference tanpa overhead.
+https://proceedings.neurips.cc/paper_files/paper/2025/file/c4889bd7f7ce643003746526da2c2fc4-Paper-Conference.pdf
+Audit ini memetakan overlap, belum literature review exhaustive. Perbandingan
+algorithm-level, terutama confusion prediction untuk NAS dan class-aware
+redistribution, masih perlu dituntaskan sebelum menyatakan gap baru.
+
+CARA MENJALANKAN
+CPU implementation checks:
+python3 -m unittest discover -s acre_method_development_20261010 -p test_method.py -v
+
+Audit/prototipe setelah full pilot tersedia:
+python3 acre_method_development_20261010/analyze_complete_pilot.py \
+  --pilot acre_novelty_20261010 --runs acre_novelty_20261010/runs \
+  --output acre_method_development_20261010/complete_pilot_analysis.json
+
+Script berhenti pada waiting report apabila cohort belum lengkap. Output yang
+ada tidak ditimpa. Tidak ada training atau submit otomatis dari script ini.

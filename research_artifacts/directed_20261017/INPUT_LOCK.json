@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-16T12:09:49.024289+00:00",
+  "inputs": {
+    "/mnt/d/Coding/SERVER AI/KD/wasterecycle/acre_novelty_20261010/review_complete_pilot_20261016/confusion_response.py": "879a17cdfda925b335562c95d0db8aae499e5df4ca199d54490e1160c7c85042",
+    "/mnt/d/Coding/SERVER AI/KD/wasterecycle/acre_novelty_20261010/review_complete_pilot_20261016/analyze_complete_pilot.py": "c47cd2e20c5fc5c8010ed04a59a69b1ac5c0c31ffe24ddff514ef3dee31fc0de",
+    "/mnt/d/Coding/SERVER AI/KD/wasterecycle/acre_novelty_20261010/review_complete_pilot_20261016/verified_pilot_snapshot.json": "a5cb19547a4985a76a0a2bdfb2142010fbf9a1edf4ead18fd217a0e066253d72",
+    "/mnt/d/Coding/SERVER AI/KD/wasterecycle/acre_stability_20261016/audit_20261016/verified_results_snapshot.json": "8c1353abf89ca3765788cbb0c235ffa2a19e5a931784f6e1a00c2ec6d5f3d396"
+  },
+  "plan_sha256": "7fb67d9a8f69e467acb2eda1f1232e72088c2804cd808c0f85bda76627ef34e1"
+}

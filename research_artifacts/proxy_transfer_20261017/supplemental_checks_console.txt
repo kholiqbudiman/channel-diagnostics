@@ -1,0 +1,12 @@
+{
+  "state": "PASS",
+  "profile_parameters_and_BN_buffers_unchanged": true,
+  "gradient_scores_batch_size_invariant": true,
+  "early_tensor_pairs_checked": 18,
+  "finite_difference_checks": "See preflight.json",
+  "test_data_access": "Fit images only; no evaluation inference",
+  "training_outcomes_available": 0,
+  "check_source_sha256": "202a88d2a1cd878e64e4f06d5f3784ebbc699ae88a72e952fab6fcd6dac6b763"
+}
+/home/kholiq/.local/lib/python3.10/site-packages/torch/cuda/__init__.py:65: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]

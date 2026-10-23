@@ -1,0 +1,74 @@
+[
+  {
+    "dataset": "all",
+    "direction": "all",
+    "n": 36,
+    "proxy_mae": 4.019451140706256,
+    "zero_gain_mae": 3.4782159394715992,
+    "sign_agreement": 0.5277777777777778
+  },
+  {
+    "dataset": "all",
+    "direction": "c_up_d_down",
+    "n": 18,
+    "proxy_mae": 3.9833210919368387,
+    "zero_gain_mae": 3.3427961663738297,
+    "sign_agreement": 0.5
+  },
+  {
+    "dataset": "all",
+    "direction": "c_down_d_up",
+    "n": 18,
+    "proxy_mae": 4.055581189475671,
+    "zero_gain_mae": 3.6136357125693683,
+    "sign_agreement": 0.5555555555555556
+  },
+  {
+    "dataset": "warpc",
+    "direction": "all",
+    "n": 18,
+    "proxy_mae": 4.239250402269066,
+    "zero_gain_mae": 3.7750666520130403,
+    "sign_agreement": 0.4444444444444444
+  },
+  {
+    "dataset": "warpc",
+    "direction": "c_up_d_down",
+    "n": 9,
+    "proxy_mae": 5.283976526057295,
+    "zero_gain_mae": 4.067151282604132,
+    "sign_agreement": 0.3333333333333333
+  },
+  {
+    "dataset": "warpc",
+    "direction": "c_down_d_up",
+    "n": 9,
+    "proxy_mae": 3.1945242784808383,
+    "zero_gain_mae": 3.482982021421949,
+    "sign_agreement": 0.5555555555555556
+  },
+  {
+    "dataset": "trashnet",
+    "direction": "all",
+    "n": 18,
+    "proxy_mae": 3.799651879143443,
+    "zero_gain_mae": 3.181365226930158,
+    "sign_agreement": 0.6111111111111112
+  },
+  {
+    "dataset": "trashnet",
+    "direction": "c_up_d_down",
+    "n": 9,
+    "proxy_mae": 2.6826656578163828,
+    "zero_gain_mae": 2.618441050143528,
+    "sign_agreement": 0.6666666666666666
+  },
+  {
+    "dataset": "trashnet",
+    "direction": "c_down_d_up",
+    "n": 9,
+    "proxy_mae": 4.916638100470504,
+    "zero_gain_mae": 3.7442894037167886,
+    "sign_agreement": 0.5555555555555556
+  }
+]

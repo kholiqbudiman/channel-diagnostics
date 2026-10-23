@@ -1,0 +1,26 @@
+HASIL TRANSFER ACRE-DTD — 17 OKTOBER 2026
+
+STATUS: 63/63 training selesai, antrean 0, worker aktif 0, kegagalan 0.
+Training selesai 17 Oktober 13.56 WIB. Analisis akhir COMPLETE.
+Diagnostik lama 18/18 juga COMPLETE.
+
+Seluruh 9 Base predictions dikomit sebelum kandidat nonBase; evaluasi akhir dilepas setelah 63 training diverifikasi. Receipt audit server 63 checkpoint/initialization hashes dan 9 prediction commit tersedia. Hasil ditarik ke lokal; 63 keputusan gain/regret direkonsiliasi ulang dengan 63 record model. Ini belum merupakan review akhir kelayakan publikasi.
+
+Mean gain F1 model yang dipilih terhadap Base, dalam poin persentase:
+mask_f1: -1.507 pp
+mask_macro_ce: -1.397 pp
+taylor_signed: -1.019 pp
+taylor_squared: -1.397 pp
+bn_gamma: -2.112 pp
+architecture_ridge: -1.397 pp
+choose_base: +0.000 pp
+
+Base mean macro-F1: 25.944% (descriptive SD 2.065pp);chance uniform 47 kelas sekitar 2.128% accuracy. Chance accuracy bukan acuan F1 yang identik.
+
+Interpretasi awal:
+Semua diagnostik dan ridge yang diuji memberi mean gain negatif terhadap Base pada konteks transfer ini. Mempertahankan Base mengungguli mean pilihan diagnostik tersebut. Ini mendukung analisis batas penggunaan diagnostik, bukan klaim algoritma alokasi berhasil atau semua metode sensitivity-based gagal secara umum.
+
+Konteks baru memakai pool DTD train1+val1 dan empat bagian internal; bukan protokol benchmark resmi DTD. Konteks split-seed tumpangtindih, sehingga mean ini tidak diperlakukan sebagai replikasi dataset independen. Semua hasil positif/negatif dan interval kondisional tetap tersedia.
+
+Primary CE-mask minus F1-mask:mean +0,111 pp, sementara CE-mask terhadapBase tetap -1,397 pp. Keuntungan relatif kecil ini tidak sama dengan manfaat dibanding mempertahankanBase.
+Interaksi F1 DTD mean:c naik/d turun +0,448 pp; c turun/d naik +0,046 pp. Pola mean interaksi negatif WaRP-C tidak muncul pada konteks DTD ini. Angka kecil atau campuran bukan bukti ekuivalensi atau ketiadaan interaksi.

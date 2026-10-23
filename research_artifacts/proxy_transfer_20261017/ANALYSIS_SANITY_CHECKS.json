@@ -1,0 +1,12 @@
+{
+  "state": "PASS",
+  "contexts": 9,
+  "records": 63,
+  "known_primary_policy_contrast_pp": 8.0,
+  "known_finite_interactions_pp": [
+    -3.0,
+    2.0
+  ],
+  "all_methods_retained": 7,
+  "scope": "Synthetic hand-computed effects; no DTD outcomes or runtime source modification."
+}

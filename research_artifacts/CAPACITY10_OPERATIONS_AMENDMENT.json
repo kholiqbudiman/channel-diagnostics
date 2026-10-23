@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-16T09:41:42.302898+00:00",
+  "old_scheduler_pid": 2683640,
+  "adopted_training_workers": {
+    "split4303_warpc_allocation_12_34_36_36_s2902": {
+      "pid": 2689148,
+      "gpu": 1
+    },
+    "split4302_warpc_allocation_12_34_36_36_s2901": {
+      "pid": 2689748,
+      "gpu": 1
+    }
+  },
+  "completed_before_handover": [
+    "split4303_trashnet_base_no_residual_s2903",
+    "split4304_trashnet_base_no_residual_s2902"
+  ],
+  "max_workers_per_gpu": 10,
+  "max_workers_total": 20,
+  "ramp": "First60seconds at most4perGPU, then10, subject to first-epoch, memory, utilization and CPU admission.",
+  "thresholds": "Min8GiBfreeVRAM; min32GiBavailablehostRAM; CPUload<0.8*nCPU; utilization<85% for additional resident workers.",
+  "scientific_protocol_changed": false,
+  "active_training_restarted": false,
+  "source_sha256": "91eace540471d6485a30317a9271bc315be7e2dcc5abb658e6afb56c85eca714"
+}

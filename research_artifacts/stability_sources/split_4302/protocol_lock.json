@@ -1,0 +1,14 @@
+{
+  "scope": "Prospective pilot-informed stability cohort, no powered confirmatory or independent-dataset claim",
+  "sources": {
+    "experiment.py": "c30252ad382a47612a7e225a0b1bab899bcd1d525bfab2a3c3b343a5af3a2936",
+    "models.py": "ca25d2a8899cc12009149d1657b4f27d4acc9c4e639162f7471ea9d5ba046f21",
+    "legacy_issue3.py": "538db3b6842c38912b5339655a3d0b900613e3024744a0d46484210c67f6e231",
+    "legacy_table3.py": "3e813fa91229f49cfd4973ac49a068f12f5b8b14bd78fd2f60bbb943c290ff0f",
+    "budget_design.py": "3c29f3caed6d00a407164c256977362edafb0d311f94457738a0a12597b929cf",
+    "protocol.json": "0acc180557bfd2f9a053a1b7b6b81b3566cecec9b0e66ea1bed72ff1d71d36f2",
+    "preflight.json": "69ebb930ddc6f3f9ec07ee99ec0ae231f66973454f7c00529efeb24e940daa48",
+    "data_warpc.json": "84b8ac1775f081343cf21e63bdf835056542da3cf5ac025916878aa18218fc1e",
+    "data_trashnet.json": "23bdc609477a4f37c4fdf79b55be272d8461eedc51d7b93ce43f4ddafba3f3a7"
+  }
+}

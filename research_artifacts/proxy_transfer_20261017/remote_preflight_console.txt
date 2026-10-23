@@ -1,0 +1,88 @@
+{
+  "state": "PASS",
+  "torch": "2.10.0+cu128",
+  "costs": {
+    "base": {
+      "params": 22975,
+      "macs": 9058304,
+      "flops_convention": 18116608
+    },
+    "c_grow": {
+      "params": 23711,
+      "macs": 9129872,
+      "flops_convention": 18259744
+    },
+    "d_shrink": {
+      "params": 22201,
+      "macs": 9040742,
+      "flops_convention": 18081484
+    },
+    "joint_c_grow_d_shrink": {
+      "params": 22913,
+      "macs": 9111446,
+      "flops_convention": 18222892
+    },
+    "c_shrink": {
+      "params": 22255,
+      "macs": 8989040,
+      "flops_convention": 17978080
+    },
+    "d_grow": {
+      "params": 23749,
+      "macs": 9075866,
+      "flops_convention": 18151732
+    },
+    "joint_c_shrink_d_grow": {
+      "params": 23005,
+      "macs": 9005738,
+      "flops_convention": 18011476
+    }
+  },
+  "split_sizes": {
+    "6301": {
+      "fit": 2631,
+      "selection": 376,
+      "diagnostic": 377,
+      "evaluation": 376
+    },
+    "6302": {
+      "fit": 2632,
+      "selection": 376,
+      "diagnostic": 376,
+      "evaluation": 376
+    },
+    "6303": {
+      "fit": 2632,
+      "selection": 376,
+      "diagnostic": 376,
+      "evaluation": 376
+    }
+  },
+  "raw_image_count": 3760,
+  "used_image_count": 3760,
+  "excluded_content_groups": 0,
+  "forward_backward": [
+    "base",
+    "c_grow",
+    "d_shrink",
+    "joint_c_grow_d_shrink",
+    "c_shrink",
+    "d_grow",
+    "joint_c_shrink_d_grow"
+  ],
+  "gate_derivative_checks": [
+    {
+      "stage": "block4",
+      "autograd": -0.001107098604865877,
+      "finite_difference": -0.0011070986083439038
+    },
+    {
+      "stage": "block5",
+      "autograd": -0.001107098604865877,
+      "finite_difference": -0.0011070986083439038
+    }
+  ],
+  "zero_and_additivity_checks": "PASS"
+}
+/home/kholiq/.local/lib/python3.10/site-packages/torch/cuda/__init__.py:65: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]

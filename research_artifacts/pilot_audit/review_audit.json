@@ -1,0 +1,17 @@
+{
+  "completed": 36,
+  "unit_tests_passed": 10,
+  "source_hashes_match_previous_analysis": true,
+  "initial_weights_base_vs_no_residual_equal_pairs": 4,
+  "split_checks": {
+    "warpc": {
+      "cross_split_identical_image_hash_groups": 0,
+      "scope": "Exact bytes only; not a near-duplicate or source-object grouping audit."
+    },
+    "trashnet": {
+      "cross_split_identical_image_hash_groups": 0,
+      "scope": "Exact bytes only; not a near-duplicate or source-object grouping audit."
+    }
+  },
+  "checkpoint_selection_history_pass": 36
+}

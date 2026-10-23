@@ -1,0 +1,147 @@
+﻿PEMERIKSAAN ACRE — PILOT LENGKAP 16 OKTOBER 2026
+
+KESIMPULAN
+Pilot selesai 36/36 tanpa kegagalan. Audit artefak lolos. Hasilnya memberi
+dasar untuk memilih eksperimen berikutnya, tetapi belum menunjukkan bahwa
+prototipe pemilih alokasi berbasis pasangan kelas lebih baik daripada kontrol.
+Jangan menaikkan klaim novelty atau menghidupkan kembali klaim minoritas legacy.
+
+RUANG LINGKUP
+9 konfigurasi x 2 seeds (1901/1902) x 2 dataset; satu split stratified 4301.
+Checkpoint dipilih dengan selection macro-F1. Angka di bawah adalah PROBE
+development dari checkpoint tersebut. Probe sudah terekspos untuk pengembangan
+metode dan bukan final test independen. Tidak ada training baru dalam pemeriksaan ini.
+
+AUDIT YANG DILAKUKAN
+- Audit CPU load_complete dijalankan ulang pada seluruh cohort di server.
+- Hash input terkunci, best.pt, initial_state.pt, dan split sesuai.
+- Urutan label probe sesuai manifest; logits -> confusion -> macro-F1 cocok.
+- Seluruh 36 checkpoint terpilih cocok dengan maksimum pertama history selection.
+- Hash 36 result/prediction/checkpoint cocok dengan analisis otomatis sebelumnya.
+- 10 pemeriksaan unit analisis PASS. Dua sempat terhalang direktori sementara
+  pada sandbox read-only, kemudian seluruhnya lulus setelah izin eksekusi.
+- Bobot awal Base vs no-residual identik: 4/4 pasangan, 98 tensor per pasangan.
+- Tidak ada hash citra identik yang melintasi fit/selection/probe pada manifest.
+  Ini belum merupakan audit near-duplicate atau grouping objek/sumber gambar.
+- Verifikasi byte citra saat ini tidak diulang di sini; runner memeriksanya
+  sebelum tiap run dan pemeriksaan kesiapan 16 Oktober telah memverifikasinya.
+
+HASIL PROBE — MEAN +/- SAMPLE SD ANTAR DUA SEED
+Catatan: SD dari dua seeds bersifat deskriptif, bukan confidence interval.
+
+WARPC
+Konfigurasi | Macro-F1 (%) | Delta vs Base (pp), per seed | P | MMAC
+allocation_12_34_36_36 | 53.502 +/- 4.074 | -3.897, +2.202 | 20413 | 9.107604
+allocation_14_30_32_72 | 49.585 +/- 5.438 | -1.088, -8.442 | 20239 | 9.047592
+allocation_14_30_36_52 | 55.168 +/- 0.273 | +0.457, +1.181 | 20131 | 9.131876
+allocation_14_30_36_56 | 54.068 +/- 4.698 | -3.772, +3.209 | 20447 | 9.142264
+allocation_16_24_36_84 | 52.610 +/- 3.999 | +0.920, -4.398 | 20401 | 8.971332
+base | 54.350 +/- 0.239 | +0.000, +0.000 | 20245 | 9.055616
+base_no_residual | 57.382 +/- 0.893 | +2.232, +3.832 | 20245 | 9.055616
+dwsep96 | 52.219 +/- 1.458 | -1.269, -2.993 | 20237 | 3.339384
+mcunet_style | 54.220 +/- 2.127 | +1.205, -1.465 | 22261 | 9.022704
+
+TRASHNET
+Konfigurasi | Macro-F1 (%) | Delta vs Base (pp), per seed | P | MMAC
+allocation_12_34_36_36 | 77.485 +/- 1.624 | +1.952, -0.087 | 20450 | 9.107640
+allocation_14_30_32_72 | 75.570 +/- 1.437 | +2.200, -4.167 | 20312 | 9.047664
+allocation_14_30_36_52 | 77.118 +/- 5.164 | +6.384, -5.254 | 20184 | 9.131928
+allocation_14_30_36_56 | 78.039 +/- 4.749 | +7.012, -4.039 | 20504 | 9.142320
+allocation_16_24_36_84 | 74.232 +/- 1.182 | +0.682, -5.324 | 20486 | 8.971416
+base | 76.553 +/- 3.065 | +0.000, +0.000 | 20310 | 9.055680
+base_no_residual | 74.412 +/- 5.241 | -3.679, -0.603 | 20310 | 9.055680
+dwsep96 | 73.701 +/- 0.420 | -0.981, -4.723 | 20358 | 3.339504
+mcunet_style | 76.638 +/- 3.656 | -0.332, +0.503 | 22310 | 9.022752
+
+INTERPRETASI ARSITEKTUR
+1. Base vs DWSep: mean delta Base +2.131 pp pada WaRP-C dan +2.852 pp pada
+   TrashNet, positif pada kedua seeds. Namun Base memakai sekitar 2.71x MACs.
+   Ini tidak mengisolasi keuntungan topologi pada komputasi yang sama.
+2. Base vs MCUNet-style: mean delta Base +0.130 pp pada WaRP-C dan -0.086 pp
+   pada TrashNet. MCUNet-style memiliki sekitar 9.9% lebih banyak parameter;
+   ini bukan kontrol jointly matched dan tidak menunjukkan dominasi Base.
+3. Tanpa residual: +3.032 pp pada WaRP-C (kedua seeds positif), tetapi
+   -2.141 pp pada TrashNet (kedua negatif). Ini kandidat interaksi task-topology
+   yang perlu diuji kembali, bukan alasan menghapus residual pada semua task.
+   Param/MAC Conv-Linear sama; operasi addition tidak dihitung dalam MAC ini.
+4. Alokasi [14,30,36,52]: +0.819 pp pada WaRP-C, positif kedua seeds.
+   TrashNet mean +0.565 pp tetapi delta +6.384 dan -5.254 pp antar seed.
+   Belum ada redistribusi non-Base yang positif pada keempat konteks task-seed.
+5. Lima redistribusi residual memenuhi band +/-1% P dan MAC pada kedua dataset.
+   Peringkat tertinggi di probe adalah deskripsi retrospektif, bukan prosedur
+   pemilihan arsitektur yang telah tervalidasi.
+
+TEMUAN KELAS YANG MATERIAL
+WaRP-C probe support: bottle 651, canister 14, cans 56, cardboard 65, detergent 94.
+17/18 run memiliki recall canister 0%. Satu run no-residual seed1902 memperoleh
+1/14 benar (7.143%). Klaim peningkatan canister dari grouping legacy tidak
+dapat dipakai. Channel redistribution sekarang belum menyelesaikan kelas ini.
+Canister yang sangat kecil juga membuat diagnostik pasangan kelas berisik.
+TrashNet probe support: cardboard32, glass40, metal32, paper47, plastic38, trash10.
+Lihat classwise_probe.csv untuk semua kelas dan seluruh run.
+
+EVALUASI PROTOTIPE CONFUSION-RESPONSE
+Prototipe dibuat sebelum pilot selesai. Seluruh allocation atau dataset
+heldout dikeluarkan dari fit/scaling. Tidak ada random split baris pasangan.
+Error berikut dalam poin persentase macro-F1, prediksi vs hasil retraining:
+allocation / architecture_only: MAE 4.094; 20 prediksi.
+dataset / architecture_only: MAE 3.855; 20 prediksi.
+allocation / frequency_only: MAE 4.109; 20 prediksi.
+dataset / frequency_only: MAE 3.902; 20 prediksi.
+allocation / class_agnostic: MAE 4.577; 20 prediksi.
+dataset / class_agnostic: MAE 4.028; 20 prediksi.
+allocation / class_pair: MAE 4.137; 20 prediksi.
+dataset / class_pair: MAE 5.480; 20 prediksi.
+Class-pair pada heldout dataset MAE5.480 vs architecture-only3.855.
+Pada allocation holdout MAE4.137 vs architecture-only4.094.
+Keempat estimator memilih kandidat identik pada keempat konteks dataset-seed:
+TrashNet memilih Base pada kedua seeds; WaRP-C memilih [12,34,36,36].
+Gain aktual pada WaRP-C -3.897 dan +2.202 pp. Dengan demikian, informasi
+pasangan kelas belum memberi keuntungan keputusan pada pilot ini.
+Angka ini adalah development validation, bukan final independent validation.
+Pasangan kelas bukan sampel replikasi statistik yang independen.
+
+PEMERIKSAAN METODE YANG PERLU DIBERESKAN SEBELUM KONFIRMASI
+- Hanya lima transfer nonreference; rank empat dan condition number57.79.
+  Block2/3 berbagi width. Koefisien surrogate bukan efek kausal tiap block.
+- Ada 110 fitur directional class-pair untuk lima block, dengan konteks task
+  hanya dua. Banyak pasangan tidak menggantikan keragaman task/intervensi.
+- predict_cm mempertahankan Base persis, tetapi kandidat nonreference memakai
+  log-ratio smoothing0.5. Pada transfer mendekati nol, prediksi mengarah ke
+  confusion tersmoothing dan tidak persis Base. Ini berpotensi membiasakan
+  ranking terhadap Base, terutama pada kelas support kecil. Dampaknya belum
+  dikuantifikasi. Perbaiki/ablate anchoring pada versi development terpisah;
+  jangan menimpa versi dan hasil prototipe lama atau menganggapnya pasti
+  penyebab hasil negatif. Ranking lama tetap disimpan sebagai hasil asli.
+- Selection-probe gap besar pada beberapa WaRP-C run; contoh Base seed1901
+  selection66.156 vs probe54.519. Tidak otomatis bukti leakage; konfirmasi
+  pada split lain dibutuhkan sebelum menyimpulkan pola arsitektur stabil.
+
+KEPUTUSAN PENELITIAN DAN LANGKAH BERIKUT
+A. Jangan memperbesar grid atau mengklaim algoritma unggul dari hasil ini.
+B. Prioritaskan eksperimen stabilitas yang lebih kecil: Base, no-residual,
+   [14,30,36,52], dan satu kontrol redistribusi yang ditetapkan sebelum run.
+   Gunakan split stratified baru dan blok seed berpasangan. Kunci checkpoint
+   selection, primary contrast dan kriteria manfaat sebelum membuka hasil.
+   Jumlah split/seed dihitung sesuai efek relevan dan varians pilot; dua seed
+   sekarang belum cukup stabil untuk menetapkan angka universal seperti50.
+C. Audit contoh canister dan near-duplicate/source grouping lewat data yang
+   tersedia terlebih dahulu. Jika nantinya menguji loss/rebalancing, pisahkan
+   faktor tersebut dari alokasi channel agar novelty tetap bisa diatribusikan.
+D. Perbaikan predictor bersifat development: bandingkan anchoring, reference-
+   only/no-change, architecture-only, class-agnostic, dan class-pair pada
+   objective serta kandidat sama. Jangan tune pada final assessment berikutnya.
+E. Baru lanjutkan predictor ke task/budget baru jika ada sinyal prediksi yang
+   membaik pada holdout; hitung biaya diagnostics dan calibration retraining.
+F. Penilaian prior-art baru belum dilakukan dalam pemeriksaan ini. Hasil ini
+   tidak menetapkan kebaruan terhadap NAS/pruning yang telah dipetakan sebelumnya.
+
+TINDAKAN SAAT INI
+Pemeriksaan menggunakan CPU, tidak menjalankan training ACRE dan tidak mengubah
+protokol pilot atau manuscript. Pipeline post-primary DKD11 tetap terpisah.
+
+SUMBER DAN LOKASI
+Remote pilot: /home/kholiq/KD/ACRE_novelty_20261010
+Remote analysis: /home/kholiq/KD/ACRE_method_development_20261010
+Local snapshot: verified_pilot_snapshot.json; analisis asli: complete_pilot_analysis.json.
+Script laporan ini: summarize_review.py. CSV dan grafik deskriptif disimpan bersama.

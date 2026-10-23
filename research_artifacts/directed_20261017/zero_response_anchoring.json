@@ -1,0 +1,232 @@
+[
+  {
+    "cohort": "pilot",
+    "dataset": "trashnet",
+    "split": 4301,
+    "seed": 1902,
+    "raw_f1_pct": 78.72029467568386,
+    "zero_response_candidate_f1_pct": 72.53474120675833,
+    "zero_response_bias_pp": -6.185553468925531,
+    "zero_diagonal_classes": []
+  },
+  {
+    "cohort": "pilot",
+    "dataset": "warpc",
+    "split": 4301,
+    "seed": 1902,
+    "raw_f1_pct": 54.18078694698203,
+    "zero_response_candidate_f1_pct": 54.074765325340415,
+    "zero_response_bias_pp": -0.10602162164161655,
+    "zero_diagonal_classes": [
+      "canister"
+    ]
+  },
+  {
+    "cohort": "pilot",
+    "dataset": "warpc",
+    "split": 4301,
+    "seed": 1901,
+    "raw_f1_pct": 54.51851346261284,
+    "zero_response_candidate_f1_pct": 54.36718937918585,
+    "zero_response_bias_pp": -0.15132408342698467,
+    "zero_diagonal_classes": [
+      "canister"
+    ]
+  },
+  {
+    "cohort": "pilot",
+    "dataset": "trashnet",
+    "split": 4301,
+    "seed": 1901,
+    "raw_f1_pct": 74.38509897234704,
+    "zero_response_candidate_f1_pct": 69.19321529514312,
+    "zero_response_bias_pp": -5.191883677203924,
+    "zero_diagonal_classes": []
+  },
+  {
+    "cohort": "stability",
+    "dataset": "warpc",
+    "split": 4302,
+    "seed": 2901,
+    "raw_f1_pct": 63.52474070983916,
+    "zero_response_candidate_f1_pct": 61.751447218523516,
+    "zero_response_bias_pp": -1.7732934913156417,
+    "zero_diagonal_classes": []
+  },
+  {
+    "cohort": "stability",
+    "dataset": "warpc",
+    "split": 4302,
+    "seed": 2902,
+    "raw_f1_pct": 65.74286020161149,
+    "zero_response_candidate_f1_pct": 63.672733584404796,
+    "zero_response_bias_pp": -2.070126617206691,
+    "zero_diagonal_classes": []
+  },
+  {
+    "cohort": "stability",
+    "dataset": "warpc",
+    "split": 4302,
+    "seed": 2903,
+    "raw_f1_pct": 59.56966980517533,
+    "zero_response_candidate_f1_pct": 58.341733976178304,
+    "zero_response_bias_pp": -1.2279358289970288,
+    "zero_diagonal_classes": []
+  },
+  {
+    "cohort": "stability",
+    "dataset": "trashnet",
+    "split": 4302,
+    "seed": 2901,
+    "raw_f1_pct": 79.51449013949015,
+    "zero_response_candidate_f1_pct": 72.88210822897047,
+    "zero_response_bias_pp": -6.63238191051968,
+    "zero_diagonal_classes": []
+  },
+  {
+    "cohort": "stability",
+    "dataset": "trashnet",
+    "split": 4302,
+    "seed": 2902,
+    "raw_f1_pct": 80.25156904674978,
+    "zero_response_candidate_f1_pct": 73.94384186815715,
+    "zero_response_bias_pp": -6.307727178592637,
+    "zero_diagonal_classes": []
+  },
+  {
+    "cohort": "stability",
+    "dataset": "trashnet",
+    "split": 4302,
+    "seed": 2903,
+    "raw_f1_pct": 77.35823201676163,
+    "zero_response_candidate_f1_pct": 71.27928407517,
+    "zero_response_bias_pp": -6.078947941591628,
+    "zero_diagonal_classes": []
+  },
+  {
+    "cohort": "stability",
+    "dataset": "warpc",
+    "split": 4303,
+    "seed": 2901,
+    "raw_f1_pct": 57.69977614949089,
+    "zero_response_candidate_f1_pct": 56.98135609158522,
+    "zero_response_bias_pp": -0.7184200579056665,
+    "zero_diagonal_classes": []
+  },
+  {
+    "cohort": "stability",
+    "dataset": "warpc",
+    "split": 4303,
+    "seed": 2902,
+    "raw_f1_pct": 55.23911121885172,
+    "zero_response_candidate_f1_pct": 54.609950482511216,
+    "zero_response_bias_pp": -0.6291607363405061,
+    "zero_diagonal_classes": []
+  },
+  {
+    "cohort": "stability",
+    "dataset": "warpc",
+    "split": 4303,
+    "seed": 2903,
+    "raw_f1_pct": 55.38075489841555,
+    "zero_response_candidate_f1_pct": 55.16130182031096,
+    "zero_response_bias_pp": -0.21945307810459225,
+    "zero_diagonal_classes": [
+      "canister"
+    ]
+  },
+  {
+    "cohort": "stability",
+    "dataset": "trashnet",
+    "split": 4303,
+    "seed": 2901,
+    "raw_f1_pct": 70.82262766473292,
+    "zero_response_candidate_f1_pct": 65.88864655389003,
+    "zero_response_bias_pp": -4.933981110842889,
+    "zero_diagonal_classes": []
+  },
+  {
+    "cohort": "stability",
+    "dataset": "trashnet",
+    "split": 4303,
+    "seed": 2902,
+    "raw_f1_pct": 66.84392688852992,
+    "zero_response_candidate_f1_pct": 62.73565786308121,
+    "zero_response_bias_pp": -4.108269025448719,
+    "zero_diagonal_classes": []
+  },
+  {
+    "cohort": "stability",
+    "dataset": "trashnet",
+    "split": 4303,
+    "seed": 2903,
+    "raw_f1_pct": 73.59320253514502,
+    "zero_response_candidate_f1_pct": 68.38036570237199,
+    "zero_response_bias_pp": -5.212836832773027,
+    "zero_diagonal_classes": []
+  },
+  {
+    "cohort": "stability",
+    "dataset": "warpc",
+    "split": 4304,
+    "seed": 2901,
+    "raw_f1_pct": 56.96509339026162,
+    "zero_response_candidate_f1_pct": 56.848343696006445,
+    "zero_response_bias_pp": -0.11674969425518045,
+    "zero_diagonal_classes": [
+      "canister"
+    ]
+  },
+  {
+    "cohort": "stability",
+    "dataset": "warpc",
+    "split": 4304,
+    "seed": 2902,
+    "raw_f1_pct": 58.14587726263352,
+    "zero_response_candidate_f1_pct": 58.00091504720564,
+    "zero_response_bias_pp": -0.14496221542787957,
+    "zero_diagonal_classes": [
+      "canister"
+    ]
+  },
+  {
+    "cohort": "stability",
+    "dataset": "warpc",
+    "split": 4304,
+    "seed": 2903,
+    "raw_f1_pct": 59.08736549429746,
+    "zero_response_candidate_f1_pct": 58.33988155080062,
+    "zero_response_bias_pp": -0.7474839434968406,
+    "zero_diagonal_classes": []
+  },
+  {
+    "cohort": "stability",
+    "dataset": "trashnet",
+    "split": 4304,
+    "seed": 2901,
+    "raw_f1_pct": 74.94146238478406,
+    "zero_response_candidate_f1_pct": 69.5020522575985,
+    "zero_response_bias_pp": -5.439410127185562,
+    "zero_diagonal_classes": []
+  },
+  {
+    "cohort": "stability",
+    "dataset": "trashnet",
+    "split": 4304,
+    "seed": 2902,
+    "raw_f1_pct": 68.12632151853619,
+    "zero_response_candidate_f1_pct": 63.28821321711964,
+    "zero_response_bias_pp": -4.838108301416543,
+    "zero_diagonal_classes": []
+  },
+  {
+    "cohort": "stability",
+    "dataset": "trashnet",
+    "split": 4304,
+    "seed": 2903,
+    "raw_f1_pct": 73.65452169614986,
+    "zero_response_candidate_f1_pct": 68.50776940137192,
+    "zero_response_bias_pp": -5.146752294777945,
+    "zero_diagonal_classes": []
+  }
+]

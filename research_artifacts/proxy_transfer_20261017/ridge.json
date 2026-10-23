@@ -1,0 +1,19 @@
+{
+  "features": [
+    "log(c/40)",
+    "log(d/64)"
+  ],
+  "rms": [
+    0.04087167792334138,
+    0.1027999291580127
+  ],
+  "coefficients": [
+    0.31401382242071396,
+    0.31679124169012474
+  ],
+  "lambda_l2": 1.0,
+  "intercept": 0.0,
+  "fit_rows": 108,
+  "source_sha256": "186bb9e41fa77917a31408cff2176c59f708bc9ff4c8dbec6714392fdb991623",
+  "scope": "Fixed architecture-only comparator calibrated on old exposed outcomes, never DTD. No hyperparameter search."
+}

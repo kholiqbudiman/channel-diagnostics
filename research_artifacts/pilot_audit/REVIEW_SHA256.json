@@ -1,0 +1,20 @@
+{
+  "analyze_complete_pilot.py": "c47cd2e20c5fc5c8010ed04a59a69b1ac5c0c31ffe24ddff514ef3dee31fc0de",
+  "architecture_summary.csv": "bb85b8def52eeddb62769dd5463833d11b12f8da1de980351022385e14352cab",
+  "classwise_probe.csv": "0f71eb5d0d4897e919e3786a00b92cadf30c1f755815281f5eaca6b5aa46cb50",
+  "cohort_gate_20261010.json": "9873177085deb3e05c2dbc6c8842e6f7beda6b2e5835c40cfc1bbfb6d4a0c901",
+  "complete_pilot_analysis.json": "79541de1896c0c74c76cb75c0c468dce8d643d01177d3abc00c60ebadab1167a",
+  "confusion_response.py": "879a17cdfda925b335562c95d0db8aae499e5df4ca199d54490e1160c7c85042",
+  "HASIL_PEMERIKSAAN_ACRE_20261016.txt": "6379f3cfab59ce6e1e6df417b420d31265b98b54d334f524d2d8014d929a6e8c",
+  "METHOD_AND_VALIDATION.txt": "6377aa00df62de57bd1ca1badd46c4c48c8109302153bd04a633018e94e45152",
+  "pilot_paired_differences.pdf": "2647fe480e3f18151d0c2e48482f214ff1c5662d5c923e1727f7f30abaeafe6e",
+  "pilot_paired_differences.png": "5834366d5246872abb8513cec62276ca4cc7ff8c22c1fefb530fad29e931140e",
+  "retrieved_sha256.json": "e45f0c155a257210dac4cb6635f6ecff985c28abe952a84ab9ba71d255abb56f",
+  "review_audit.json": "b0fe41e259fb6ba1bbcfdf42622c4a88aca2bb0675f9bf7afec34511bb2615ea",
+  "source_manifest.json": "20536053562a0b5500192852298378159d0b9da536bf1369f939f59a2e816c74",
+  "summarize_review.py": "2f78e97c0257d795db716991defb21130a3e918762806dd0089c02e9aa53a894",
+  "surrogate_summary.csv": "7196a6fa2727c139008c58ac3d055dca20acf439d77bc93753b8fccfcbea2642",
+  "test_method.py": "929b5c306dcb421b410fedfc98fb7da41f92e00fe37ac75ceedd026d902b824f",
+  "verified_pilot_snapshot.json": "a5cb19547a4985a76a0a2bdfb2142010fbf9a1edf4ead18fd217a0e066253d72",
+  "watcher_status.json": "2d54d65a30f4aa494ba9fe50f69642de504d8f152784fcaccc70582c825f53c9"
+}

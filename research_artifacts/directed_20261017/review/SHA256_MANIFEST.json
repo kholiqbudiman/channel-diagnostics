@@ -1,0 +1,12 @@
+{
+  "checkpoint_epochs.csv": "b31c215a6091e70cc7d9c9a44c36f7b105390af3928f70efc8dc07ba9c24e033",
+  "class_influence.csv": "1618c267c0aa8b650e0981580009562db76bdc0856b32de507dd65d3b2e4f8ea",
+  "conditional_bootstrap.json": "5fcf72dbfb53130ff5472741d180df6c8a72651092d2f4ae168e432bcbc9b644",
+  "conditional_bootstrap_remote.py": "fc860d5e2500be8d2ffa0891e9d36f1e64d36c64e7a25f8ffef6df1ab1b3dc51",
+  "curvature_validity.csv": "09310f7574f986fa540f9475ce50c3d6a64b079f22ba703d3fc08715723a160b",
+  "metric_interactions.csv": "b43dcc3737e2b82922850ed213255344d68b69b5388eaf40c0d632d1281674b6",
+  "PENELAAHAN_MEKANISME_DAN_NOVELTY_ACRE_20261017.txt": "0566c3d1617ff880385283422cea2cd02352803fd8915a79b0f5103e935803b0",
+  "results_snapshot.json": "186bb9e41fa77917a31408cff2176c59f708bc9ff4c8dbec6714392fdb991623",
+  "review_metrics.py": "7640f2b5a2100058b1748ee9d1c9a291ee257322635ec0ce5b181c8002af79a6",
+  "review_summary.json": "92ff3a8100fd7313286f270e0cb8e9d760807e5ed38d5d615d7f8e9ec385c0e2"
+}

@@ -1,0 +1,983 @@
+{
+  "audits": {
+    "4302": {
+      "state": "COMPLETE_DEVELOPMENT_COHORT",
+      "completed": 42,
+      "total": 42,
+      "protocol_lock_sha256": "06fdbe26a1efb11792a096e9d820d079b2b4e5e6dc9edfd093c09d411173ddd4",
+      "sources": [
+        {
+          "job_id": "warpc_base_s2901",
+          "result_sha256": "bbe8df0a9a4daad0d798ba2aded6e9dbba9c1eec683bdb670f9ec60a6428b92f",
+          "probe_features_sha256": "bcfa2e03b529f5e1c53d30d5ef643ccd8e7657b01d4285009741a0fae01dd9f9",
+          "checkpoint_sha256": "03bbf75fcd0a99f9f9a1691baf3bfd14f491d74a4c254706a6f9051ab2fb9eea"
+        },
+        {
+          "job_id": "warpc_c_grow_s2901",
+          "result_sha256": "90ae28f04cd8579f28ae90b8545eded917e764944ff7e67e46a15cf96677ded0",
+          "probe_features_sha256": "0e9c47ceb7f0158c2e7364b5ffe9eb514d4a6ec5fdb467874807c822a3630c28",
+          "checkpoint_sha256": "ab4ee1e8360a0c392d109e4795e9376e5e89d2a136b2016a7c9b1ec3789a3f50"
+        },
+        {
+          "job_id": "warpc_d_shrink_s2901",
+          "result_sha256": "89b3b4c253f9b14be24a30f39b758fddfa6630473130bca054f81d4efe9532ef",
+          "probe_features_sha256": "20227fa05a1e24dd43c237754c8ecbc21f2921b8bbb48306d6726898d958a0b7",
+          "checkpoint_sha256": "d4264dc84fccffc8aafee79ab4138cd1a5432e4000ae9d10c3ce427cf687ff57"
+        },
+        {
+          "job_id": "warpc_joint_c_grow_d_shrink_s2901",
+          "result_sha256": "af0f70fed9e1bd7264f134b2ec0baed69f4d55a69a869d6d795eedf0365daf71",
+          "probe_features_sha256": "2bf3cf44795e362bf7daea17fc40178387e9b5ba2e717dbd738ea361464c493f",
+          "checkpoint_sha256": "fd1c49fa7ca8f1ac57a38242f3217e417d2b4de7b323f867d2d7390cbd43c5ef"
+        },
+        {
+          "job_id": "warpc_c_shrink_s2901",
+          "result_sha256": "0ce05eedfe58caf92de030b9cbc8512aaf54fdd72f860d7527f30d450cfdc28f",
+          "probe_features_sha256": "4ededcc2ab9688482d940fcb89fa2c9de7cfe17942655c3b9e1e81df80205af1",
+          "checkpoint_sha256": "5f9e331ddd49e0557a0afdc4b5025802c2fb1eeb637df1e9d36052deea990395"
+        },
+        {
+          "job_id": "warpc_d_grow_s2901",
+          "result_sha256": "a7ca39f66558b5a1aefe198d937f2bf2375b633e395838e9b7db30fdbb3ce050",
+          "probe_features_sha256": "2fddc9ed7b19d9554b9ea13549edd953c5782a7398d94a37bb1522d929c155d9",
+          "checkpoint_sha256": "c6ad45d9e8f2abf7a6e50b42048cc2a9d32e7d5ab52e93cb3fbb6777682c9e2e"
+        },
+        {
+          "job_id": "warpc_joint_c_shrink_d_grow_s2901",
+          "result_sha256": "992b8d1eea455ad1d542d509a1630bc305be7ab0b4d4d806ad8f814ead765408",
+          "probe_features_sha256": "55e739a6dec11ad80c73abd583a21fd765c248fdf287df2d3241817f89acdd50",
+          "checkpoint_sha256": "b0db24d46476e608ec47bbadbb0c0d636eec0fa99b285d8f4dccc7d9f49e2bc0"
+        },
+        {
+          "job_id": "warpc_base_s2902",
+          "result_sha256": "5a8e483feeeda850bc8ede92661095816c6a3db0dada2e88d520834bbed8a7e0",
+          "probe_features_sha256": "d84088a29c4cb33a64c6082749cacb88bd5bbc9736f5e87921716f10b4899cc3",
+          "checkpoint_sha256": "eeb8ea4a0efeb6faa68cb01918c5ee7921e8fd0921f33e83ff26231a2adcf197"
+        },
+        {
+          "job_id": "warpc_c_grow_s2902",
+          "result_sha256": "ddd9c096d727f0bd8e08104930e6ffe1155dde7d528853fca8d60beaeab1226a",
+          "probe_features_sha256": "79bcda9d495fe6911efb87a368a7840f0c4f9c77d515165357494a5471c5299e",
+          "checkpoint_sha256": "87fe078d63cdefc5f97d4a52965be0717a28bebaa9e415cb0dd796228e26f75f"
+        },
+        {
+          "job_id": "warpc_d_shrink_s2902",
+          "result_sha256": "c96c7f8a73d57b566eef788678440279676882308a18ea69dd9e34509cf912f8",
+          "probe_features_sha256": "8dcaff207e80c75b101485956e0ff642c7006b7ad00f8c94b500516efea81335",
+          "checkpoint_sha256": "9a4886b6e48aeb69c1501b2eb73eb2324cbde0ec25eaf2e76239e2eee7491d42"
+        },
+        {
+          "job_id": "warpc_joint_c_grow_d_shrink_s2902",
+          "result_sha256": "67f186e86fbc6371e05deaf4b922aa3dcd9d662e3c8867d4cec5400532af92d4",
+          "probe_features_sha256": "251ea8807f0ae67b2eca1f83d23a76b76775a170d553737e7c6a626925da67fb",
+          "checkpoint_sha256": "b4c21d3433936edc03a5634374e64b00922421e66f9835d6e89800741d62935e"
+        },
+        {
+          "job_id": "warpc_c_shrink_s2902",
+          "result_sha256": "a8afa58df0cff30fe969c2d9dadd0edb0cdc9ed7e57293e084e23a72a7bb7967",
+          "probe_features_sha256": "961e26c68ee07b92163ca562147bf08f1b4b92ea1f9a1d45d3f2db365ce090b3",
+          "checkpoint_sha256": "f2badbd8d7bc696681fc95d4564cc94083bb9892a8cfb55197a54b408531b8a0"
+        },
+        {
+          "job_id": "warpc_d_grow_s2902",
+          "result_sha256": "c9e553d0f778f5bc666bf9fb42c2dc4c6124cfb886f49f52c0d8944b88aac8d0",
+          "probe_features_sha256": "6f4cbb52cf95d92c626e09e8b313deb0eca59326b4789ebd290fc41611102a47",
+          "checkpoint_sha256": "14e458c9022efe23672ef822bdc4c6bfb5b18e71dcef6ff2b600dc2b3336ecf8"
+        },
+        {
+          "job_id": "warpc_joint_c_shrink_d_grow_s2902",
+          "result_sha256": "37fd3cf07d86b514a20f5e405fd8199791e9ed6a419eb1905281b2e571c07094",
+          "probe_features_sha256": "028a5925ff97fe35cc1de211964ad84a05afac8dc96db683d4376f3dc243ce18",
+          "checkpoint_sha256": "57afa2e6322bb3466926834f65ae13971666324fe8ad2f37d6c6e0354392f9af"
+        },
+        {
+          "job_id": "warpc_base_s2903",
+          "result_sha256": "645cd0415d6efb2a3b43c2a83d82c5b4982921c5f4eebd1427554852e693fe89",
+          "probe_features_sha256": "9b4f2859a2b04a582326b6fdfc049931d8890c1350f9aac2d217eb2e21c7dc97",
+          "checkpoint_sha256": "04937133ac903649095abf2f2b988ed2f1d62c683ba17455a115d1b41ccaa5cc"
+        },
+        {
+          "job_id": "warpc_c_grow_s2903",
+          "result_sha256": "272066d32f659625c47042af730e21a933b49fa2d0577a6af28f1f969862e556",
+          "probe_features_sha256": "033bafc3b22ed348b3e3c30e5fb7648756ad5c4176487ef55ecfa5ed0078a0b6",
+          "checkpoint_sha256": "1e1eb5295d71234bf54a7b88ad0793f16786419ed96b11f84dcc39fb4b195105"
+        },
+        {
+          "job_id": "warpc_d_shrink_s2903",
+          "result_sha256": "5fc11ef197c6209614e383cabe473ec9cd8367e2952567aa3cbfc7d10acc326c",
+          "probe_features_sha256": "ce08628ed8b55410ee5eb39c12930e586e61a2e7964476dbb5efab35637b93f0",
+          "checkpoint_sha256": "36829de33cdba720c713883320b2421b58c4dd9ccfe25256193d6a573f671207"
+        },
+        {
+          "job_id": "warpc_joint_c_grow_d_shrink_s2903",
+          "result_sha256": "e9f9c4ba50951f7bca0f1f775f898da75fcf30108116ac69ec9e831ec5af039f",
+          "probe_features_sha256": "b9af71b2fcd0b35c7d7cf88b8c3495b94fcd475d823ddd635193a6041422bbea",
+          "checkpoint_sha256": "2dfdccc801c2bf806d98f9fb32945169c1510043d2b39c014cd7e797573044b6"
+        },
+        {
+          "job_id": "warpc_c_shrink_s2903",
+          "result_sha256": "840b33f86543ed0f39f9825618af0753f0883d977fbc75ef12c33299d0d5b997",
+          "probe_features_sha256": "b9b9c6ef749356b972c0647c1d6c512b0c75e70f1c5822d868acb87457bb8022",
+          "checkpoint_sha256": "2ed8f9b765b616e5baf7f07ff63b6124cf381b19e3fc04dbd4788548f635bda3"
+        },
+        {
+          "job_id": "warpc_d_grow_s2903",
+          "result_sha256": "2f521573a7e056957c85af1c7bc65add6c032882b9135e4d31d5a45b2bc2ff3f",
+          "probe_features_sha256": "e31d355d5c5c8d374a782e5202d84b6e3ecfd99f78df4f723aee745d9f5cd68a",
+          "checkpoint_sha256": "c573b858c583f2e18dadc0024229e4a43164a2cb73f200e7d3d83415345fc281"
+        },
+        {
+          "job_id": "warpc_joint_c_shrink_d_grow_s2903",
+          "result_sha256": "91d1dfa88a51f5d8e6f857b9cc3ce5300ec3c9848fe93fa802f77bf068e7f186",
+          "probe_features_sha256": "ccd2c2fecceb390848d5c2371e6745e5061cb6546f9345408b6a23174158c199",
+          "checkpoint_sha256": "b9770ac2637c5c429f64bcaa0207ca6c06bef40c60224bd1888dc8e5b95e17d3"
+        },
+        {
+          "job_id": "trashnet_base_s2901",
+          "result_sha256": "c2cd31fa67c91b8311444a5da98590768816fb6fbe495793adf5a22280c55bcd",
+          "probe_features_sha256": "8e7493ebcb1c6953b24ee7c6809e51c8011cea11088cda6b1901c79564a1106e",
+          "checkpoint_sha256": "85106b99eb91ac9ab696b0f82ab6b42833120fd1c30c58452fd56e89702c047f"
+        },
+        {
+          "job_id": "trashnet_c_grow_s2901",
+          "result_sha256": "52a8a91182dcd4827faa18110b1d936dc5cfbc3e0464f25aa79a45cf69d1ea78",
+          "probe_features_sha256": "18d85e5d849baef2475a7577016eb7764107bf37feb08e649c1bf5fdac070d4b",
+          "checkpoint_sha256": "c50c315b272f7b0d7f84795a3edbdb1e206e30a02a4b74ea3879f879beb11f9f"
+        },
+        {
+          "job_id": "trashnet_d_shrink_s2901",
+          "result_sha256": "693155482b12e49e70300383f3c28333e4babbc374e147b5257f1153851cf967",
+          "probe_features_sha256": "ab159ea81ace5c33175e33759db1c50f29afc7d1ee3086df2061939184312f15",
+          "checkpoint_sha256": "702e77a12b38164a57602f02886f2331a0c194f130fd3dbe1623077b633e3cb0"
+        },
+        {
+          "job_id": "trashnet_joint_c_grow_d_shrink_s2901",
+          "result_sha256": "7e0762d9c5cda474b0825e0e19c1eb84196ff074a4c7a64d359f730e1924b58b",
+          "probe_features_sha256": "25f7dd51ebc48045b901edb512f7203dab2d7eccf86d1e4495e40b2c0b4466de",
+          "checkpoint_sha256": "6bf14c44bc68d381f4fa0d51bb14957586a483d0e730a750727bcaa38d928dd4"
+        },
+        {
+          "job_id": "trashnet_c_shrink_s2901",
+          "result_sha256": "4594ac81f0afc42f1918bd477504d8a688ff929f848727bf5e40ae241f2f6a7e",
+          "probe_features_sha256": "045f0a8fecf6f6d285904b88bb739ae387a7f55645faeab9d088e9e6a2d0ab4a",
+          "checkpoint_sha256": "47698e655527f0ea6b8bad264f2157d2b9ce3fa89fec22f11f9f00efcc0cbfa9"
+        },
+        {
+          "job_id": "trashnet_d_grow_s2901",
+          "result_sha256": "f24a2706ef07752dfdbeb55baef8036b17fbc680ebe018172b470184177f54aa",
+          "probe_features_sha256": "936f824489d370586ac2d8bb1c07e5b3b2dbf9580d39e0c831988f0e2c1fe27f",
+          "checkpoint_sha256": "b9f8c3581afd8e2e7dba18fcfb22a99bf55a0404a93009056c36f1676f5d97bb"
+        },
+        {
+          "job_id": "trashnet_joint_c_shrink_d_grow_s2901",
+          "result_sha256": "5b85d45e4756d444ba2770eb2980a4b4fb62bfb7750af38483e7c5ddc5b1328f",
+          "probe_features_sha256": "0bdb99cc7b16d21d15c51bdd4b7f1d8d69bdc0bfaeca71fd1a7e3a2aafdf6a18",
+          "checkpoint_sha256": "5d0b7b56f3c4c639b40153b907f933501a15d00d65463a13b019d7bb295730d6"
+        },
+        {
+          "job_id": "trashnet_base_s2902",
+          "result_sha256": "4e367f04cb82dc08c3295c82b86afdec4da4dfaa9da24214c4c75bf57aed3094",
+          "probe_features_sha256": "e4246fd04bb4a67370a690696e9daf5e67e53d3d173c67d64f4677afd50af1d5",
+          "checkpoint_sha256": "c98aa84daf0abb41a4b35864fc46269a42440635eb7fcf0f2ceaf429ca95d85d"
+        },
+        {
+          "job_id": "trashnet_c_grow_s2902",
+          "result_sha256": "8927067268f2a5b43be38e4e97f8784587ad5133fb73a410816e517df83ff7df",
+          "probe_features_sha256": "7ed45a88858de6331f15456dd827794bfdef7287460ebe9bede7eaa7170251b0",
+          "checkpoint_sha256": "84761d109f82c7a3d1e23b41840a2b0db2f8a5ba8b2006ad44a8f7cc3d485bae"
+        },
+        {
+          "job_id": "trashnet_d_shrink_s2902",
+          "result_sha256": "50c82659597da4df2c87d1f5aa0bcfe8547cd9d49cd3365580451a6dfe263f8b",
+          "probe_features_sha256": "503d06aa6d3a5fda8fae9f6025209898b06b9c1972bee0b2775aa1184f85b47e",
+          "checkpoint_sha256": "87f990f43ee6f74ecc9234c3696b480e990a24fdc1f1e0f1e724f7e69b867a4a"
+        },
+        {
+          "job_id": "trashnet_joint_c_grow_d_shrink_s2902",
+          "result_sha256": "239f420584dfc4281eb78cf451ed1558a8aac2db5c4d1f9d497ad44546db620d",
+          "probe_features_sha256": "22affc2f9566d59221b983c2d8a99d312a95f6b32e549b4733d26fa96df4dd79",
+          "checkpoint_sha256": "ce30fccd746ed599e849a72c1385ca13da957c8262a6b5e9d56970d8991a0d35"
+        },
+        {
+          "job_id": "trashnet_c_shrink_s2902",
+          "result_sha256": "437d3e6355780e618e5711b28180f902eda22fb887044fc942bae4723193dea8",
+          "probe_features_sha256": "f2fa948f090e8ea56ed79771d4ffbcaacd463b1175f26a8110495d5a65d30cdc",
+          "checkpoint_sha256": "015dfe6d98c724ab32c2b1d70b11da2bc2843287829d3b0488c45a198e75197e"
+        },
+        {
+          "job_id": "trashnet_d_grow_s2902",
+          "result_sha256": "81d0d4fd24a8aa853eadebf2b978db6f20f5fa284a98456c2028f2651f88a5d6",
+          "probe_features_sha256": "f65df61d50616e177478e41bde57a12fced1107e3a52465b85c30fb8796e8fbd",
+          "checkpoint_sha256": "85d06399fd29eba21b9ecb6e6ecf02114f12baf56e34dcebc645272ee6d31ba1"
+        },
+        {
+          "job_id": "trashnet_joint_c_shrink_d_grow_s2902",
+          "result_sha256": "c8c150136dd2708aa2986d80da8e7190a6af6789ae9d95687e0ea6ade12e7672",
+          "probe_features_sha256": "3fa3804e12e363ee63470e09af37254e9476598c945d57e24a805681a989cae1",
+          "checkpoint_sha256": "3b49788bbc13a0351fe7ca32e8e4d633d4be5771f99f2f860df36a78957aa631"
+        },
+        {
+          "job_id": "trashnet_base_s2903",
+          "result_sha256": "715c66800a763c53b9f5156b66b62f3eb83ae1ad837014fdeaf1a4774dc41426",
+          "probe_features_sha256": "9f2e9396f14ecf30755141200d9eaf4b2bd29703c2dbaeda3d6382eb8d74562b",
+          "checkpoint_sha256": "f468dd7506cd93ed2c3f11011eb78b12b6c0cf13e6f6829a0f80f3e8472c4b1d"
+        },
+        {
+          "job_id": "trashnet_c_grow_s2903",
+          "result_sha256": "74d602e8098458782536d176e99d61f4e31591a4b6215347d586a2567812fc35",
+          "probe_features_sha256": "32975d95294422600a8b16498c54eb6ca760e9127442cd888f68de7712d33e66",
+          "checkpoint_sha256": "c7f4ef52c93929ae03ebad57aee67c3fdfad5bd89fbe827e9e7675169098c600"
+        },
+        {
+          "job_id": "trashnet_d_shrink_s2903",
+          "result_sha256": "055f1b3975252bb7b17935fc034614e5526f02c5d5a9580ab23ab9c3df5e1b4d",
+          "probe_features_sha256": "05e68f3513f71264991e93c56d2ad4c885fca803a6a29c3a81cf9634239f4ad5",
+          "checkpoint_sha256": "b731279073c5f5916a3ddf2a73cb754cd4a079611b20d12f46abae42da25a9f6"
+        },
+        {
+          "job_id": "trashnet_joint_c_grow_d_shrink_s2903",
+          "result_sha256": "854688439e4adb572f56434c5754180d4a4fa11c0609fed717775f655289f302",
+          "probe_features_sha256": "8778c5081ed046985599519836438ecbefbed01ba8c7de7614db7fcde71a4099",
+          "checkpoint_sha256": "1e0f8dddf57a440f3e74e1d76c3485bae6871fcf910c72d7e59db7dd5a886de7"
+        },
+        {
+          "job_id": "trashnet_c_shrink_s2903",
+          "result_sha256": "02bb0c0dfbe78a86e67e3af053154a40ec5931b8d68182b3f975af813a77e9ad",
+          "probe_features_sha256": "7bb6d9769d8aa1b9203790d1466f3e0daf24bc559bb9736159ee2fec0905eb98",
+          "checkpoint_sha256": "1a5c99eb92d17a30350c7b28e6fc2ffccacee43756285516c3b2f975ddaf5d32"
+        },
+        {
+          "job_id": "trashnet_d_grow_s2903",
+          "result_sha256": "69ac989583cf6c7fe7b3d6ae7b85a98e75ca259c8fcc9f1d4fac14c3ee36e92a",
+          "probe_features_sha256": "d15e0840f8df2bd2481bdc5eb81ae83c0ec2b4c1f6b5bcc29a3b1deaf2a92454",
+          "checkpoint_sha256": "d9fcbb7183f201c00322d5455455486782581346cb50acebe49ca826ad6b9930"
+        },
+        {
+          "job_id": "trashnet_joint_c_shrink_d_grow_s2903",
+          "result_sha256": "78d348256f3a78692e5ae211d582c337bec82ebb7e3b1e31a13277984d1402d4",
+          "probe_features_sha256": "16d91323e9358ba3f1988e85e7d98a530b07ea9e34ade28c3902e58e8fca87f2",
+          "checkpoint_sha256": "184c8ca095cd1ae01f763e4462e74d8227bbb713ef6b65b3038bcbbdf233a0bd"
+        }
+      ],
+      "design_identifiability": {
+        "nonreference_allocations": 6,
+        "four_width_transfer_rank": 2,
+        "four_width_singular_values": [
+          0.25731866252531466,
+          0.08495306270614363,
+          1.4246729460964512e-17,
+          0.0
+        ],
+        "condition_number": null,
+        "five_block_transfer_rank": 2,
+        "warning": "Blocks 2 and 3 share the same width. Their independent allocation effects are not identifiable from this pilot. Ridge coefficients are not causal effects. Grow/shrink directions are incompletely covered.",
+        "condition_number_note": "Not defined for full four-width design: a,b are held fixed intentionally; factorial c,d contrasts are evaluated directly, no four-stage regression."
+      },
+      "sum_recorded_run_elapsed_s": 21206.58099746704,
+      "scientific_results_computed": false
+    },
+    "4303": {
+      "state": "COMPLETE_DEVELOPMENT_COHORT",
+      "completed": 42,
+      "total": 42,
+      "protocol_lock_sha256": "a28f1b1b4263bbda3da7f48a781f94eda317ce58abce4aae299bb28cc1ecbbae",
+      "sources": [
+        {
+          "job_id": "warpc_base_s2901",
+          "result_sha256": "f789156aa64d2d61747d70ad1edab1483aa4e31b8c8740f548c1413ae0cfa5dc",
+          "probe_features_sha256": "bed4b8233e109b1bce5c682bd6c5ef61a329f56af58b883b8619dfc82698b3e5",
+          "checkpoint_sha256": "b5919d0f8ea7e8f1d9eede741614eeca248f335eb6453200b48d808be2e5bd1c"
+        },
+        {
+          "job_id": "warpc_c_grow_s2901",
+          "result_sha256": "a7e02dd1dfe030e7fce86f4c0d0ad462624701fb5acc409829ee9f61631a6c2d",
+          "probe_features_sha256": "638e0cab67c849d794947cb489eed562657259a06802e9ac75298b47ba2c2f6f",
+          "checkpoint_sha256": "9682cf53671369096310fddd859292b3790567f2c5f3a37fe96e9ac642caa29d"
+        },
+        {
+          "job_id": "warpc_d_shrink_s2901",
+          "result_sha256": "df8934c9ccb1e909cb608f0465dc0ff47bfd580da5a17d69f49729c0bc588e17",
+          "probe_features_sha256": "8756b4c8fa3ed7c6b517df35a1293b694d03aec85fe00b58b335e2aee22556bc",
+          "checkpoint_sha256": "46faad40fd5e340f6ccfd21f979376742f86614cba2fdc051784e40403275c05"
+        },
+        {
+          "job_id": "warpc_joint_c_grow_d_shrink_s2901",
+          "result_sha256": "f0983169db2c7e280becddad42ac59c71f514976b27147e829571c0f8942b7c3",
+          "probe_features_sha256": "2f214ed455bb417ac91d83ed322f19548b53439201497943d934e65b0f9ae168",
+          "checkpoint_sha256": "3a3c1e71ce1f107f7773d86f12e0b4952cc12dfa80f237d1bf854daa0dca8ebe"
+        },
+        {
+          "job_id": "warpc_c_shrink_s2901",
+          "result_sha256": "00313dbfaaecaee0a22189cc1121dfe5b33a4da055d2d99b063148f50a4a79c3",
+          "probe_features_sha256": "43cb8966c6599849530cf407dc998fafb7db71743b43eb5f07f77beff2e886de",
+          "checkpoint_sha256": "8f8a8d0dce2abde15d304fdb65b758fe80bf0a4d188391b68ace992e2a0dd6b8"
+        },
+        {
+          "job_id": "warpc_d_grow_s2901",
+          "result_sha256": "1ab821cfdce1146389a9216ac0475194c538f71758b1cf2a74b53b5aa3ab7728",
+          "probe_features_sha256": "c4c904d55a4669485033b278bb03e396b6105e014b8ca45b9d1cc2cd129d9f1f",
+          "checkpoint_sha256": "cef749f00fb7b72693d9ba202ded9580372fd73a7363c8dc903c43ece843c9d8"
+        },
+        {
+          "job_id": "warpc_joint_c_shrink_d_grow_s2901",
+          "result_sha256": "89c179307167ba82025d4a6d0102d771cec1a713a73382cf998a73b1ca41b93a",
+          "probe_features_sha256": "6ef64e2ac49dcef177ace35ef89f398caf41c817e1075dde609eb37dd0da824f",
+          "checkpoint_sha256": "e38429b9f493297be143c1fd3478fc86c8f6109bb47f1f7b9723d35ff3c06fa8"
+        },
+        {
+          "job_id": "warpc_base_s2902",
+          "result_sha256": "e7a8efdb7ccbf6bdd78103a2fc5380106349d418c0476babe107292ad5115d2f",
+          "probe_features_sha256": "fe931155c14c4381c5c3b35121a59cd4fa93eee15289212db97d37cc7a21e673",
+          "checkpoint_sha256": "f02c72efdd1a88965f81e179de754969bfb0ebf81aed553b876977533e8cc02c"
+        },
+        {
+          "job_id": "warpc_c_grow_s2902",
+          "result_sha256": "efae52cc4439f8c64c81dd2adeefee3c6363125b0c972c126fbac9804084d2a2",
+          "probe_features_sha256": "03e8fbcb3d60b30817de1ca8c3f6aa98f2cbc6f7909eebf7b687b1324b78b04e",
+          "checkpoint_sha256": "a5b68f42e5f08cb2bc026188d99ed2628d8432c1abb4121cf3b2b17a1c2445b8"
+        },
+        {
+          "job_id": "warpc_d_shrink_s2902",
+          "result_sha256": "b62dfdf79733439bb6e7bf26962a49d3d38fb7a8a224c63e18a2d641c51aedd5",
+          "probe_features_sha256": "b319309b447142154069cab1dc0f478df6781a1e5d8bb80117e460991ed12a75",
+          "checkpoint_sha256": "0c6844a0765796743acb41a967df8dcaf30464e06aa44a0bdd6b065b0d4efc58"
+        },
+        {
+          "job_id": "warpc_joint_c_grow_d_shrink_s2902",
+          "result_sha256": "234cd70fb79c9590663ca69e85a4f1670fd5cfccbb501988dcd0dbbeb1a0e02c",
+          "probe_features_sha256": "6ff4cccd95659d976dcec53d0cb53963246253a72f7fff9e477cbce9c09e34ed",
+          "checkpoint_sha256": "622bc9c44e5377d2be2fbb102523426b82da8f4205e8e78364a70e02a418e2a3"
+        },
+        {
+          "job_id": "warpc_c_shrink_s2902",
+          "result_sha256": "5da1a31b4c2294903d332bcb97acb9ec825fd72664c95ae2d8cce36fbc6e9483",
+          "probe_features_sha256": "d48ca3a13098c15eeace448939cecc000fb38dd9586d431494a9420128f51bec",
+          "checkpoint_sha256": "f8f6b42e9636392c4bd5a777abc5aaaa4d67962af8b2f4bdb2f576e0089777b4"
+        },
+        {
+          "job_id": "warpc_d_grow_s2902",
+          "result_sha256": "a25d86cc58354a4e78d964a70ac4e4f97e56b80f1146a51f42b8d77a9dc3d113",
+          "probe_features_sha256": "f34b77513b903e0a9ef03c4b663455e86b0d1d9129e2814c9ca5834fbecaf52d",
+          "checkpoint_sha256": "754a30b306db050db80f2b26134a6041339db047fffd5622b5f4b32280b67337"
+        },
+        {
+          "job_id": "warpc_joint_c_shrink_d_grow_s2902",
+          "result_sha256": "7f47a87913cfc14ba1dd7e316c7b4953cc7e067cebad39d0dd1436a84447bc62",
+          "probe_features_sha256": "6e16f0f28c38c08fedaa5234c7dda37e351809953dab337541f0ca8df5863b86",
+          "checkpoint_sha256": "9c9e2158b8a809090a114c264d9e8dd1e75c5ff77a3d72592fffa2d722871d42"
+        },
+        {
+          "job_id": "warpc_base_s2903",
+          "result_sha256": "5cbb00795d1f74994465343739e34d7b67064a70cf590f28b0ba6a3cb05bb553",
+          "probe_features_sha256": "14fb2660a4a191214af7c6e9d2169deaa512ea628286f3aecd5d683ef80e13ba",
+          "checkpoint_sha256": "877c077329240fc442e1cbcb915105e25619527ba9d10b2c7424ce3baaeeb11d"
+        },
+        {
+          "job_id": "warpc_c_grow_s2903",
+          "result_sha256": "84fba7e0260a403bc2b0ee43ba5e07268500996bcb067c8f96ec067a6591ad20",
+          "probe_features_sha256": "1232b0b4201ef780b3d457e538b7f5b943c87161459c312f018c3b5a7b8991a2",
+          "checkpoint_sha256": "3529be68f7b95128844dbb5cef4339891e50b4a8b0ef531db2d5569527605df1"
+        },
+        {
+          "job_id": "warpc_d_shrink_s2903",
+          "result_sha256": "ac211b255e15518d51f306f2579761f2a1fbf1bebacf9075753262c2d9930f92",
+          "probe_features_sha256": "f94850c9f205ec0f818b0413df5796d841f9fcf5a1df68f962c30b5dab66faa0",
+          "checkpoint_sha256": "8e6967aa6bce22f85e011298f053e7cefb221497d1fcf5bcb081b94fe50b89d4"
+        },
+        {
+          "job_id": "warpc_joint_c_grow_d_shrink_s2903",
+          "result_sha256": "229907c7d42a34144b3992e82e1e98f76d86f1f88f2bd14a0e851888accda005",
+          "probe_features_sha256": "54821806cf80442a25f506806fa3c82a26efa4e61be9d8e59420bb9cd035ae32",
+          "checkpoint_sha256": "2343bf83690f498f3f1ed3cc39130aca4c94fb21bbd668430ca4776916ae0c20"
+        },
+        {
+          "job_id": "warpc_c_shrink_s2903",
+          "result_sha256": "bbf152c8395c4f0687c7f36359d5debdcdc469948f7011d4a976ffa5e82dba1e",
+          "probe_features_sha256": "cea36355d080e82b91c62e2298ad54ce46736025952fcbe8382e1890c2473c6a",
+          "checkpoint_sha256": "4ff94944d9074d0fbb30a891a1218f7d8c039acca28368de05945af6c0b35937"
+        },
+        {
+          "job_id": "warpc_d_grow_s2903",
+          "result_sha256": "3f0ee5aac61d5e31a933a93dbc0da4245408a11c323abe05b9f2e304c36674b7",
+          "probe_features_sha256": "11ee9f692ca6d152be4cced6a73096e685a843bd4c71157c217a6d0e07314507",
+          "checkpoint_sha256": "2004f702b6b3f1ba955c5c53a7b1fc4ae668b12b40c5a9449b8d51c3905b0c20"
+        },
+        {
+          "job_id": "warpc_joint_c_shrink_d_grow_s2903",
+          "result_sha256": "eb235e40c11b8ab16ee505b3e18da55be22e08882ca29017b60a4359f467ce2e",
+          "probe_features_sha256": "5e5725f7e01291eba4bc63d02615de642797266de7fd5ffdedc15fc9730a8c9c",
+          "checkpoint_sha256": "131569370a8f86571eed027066c4ad6bc96979a0fb927c8addd4469ea9b58156"
+        },
+        {
+          "job_id": "trashnet_base_s2901",
+          "result_sha256": "e7af4acfbf8a0b0ae369afd6f38c0add98d5f01748b94320781a8c1d6abe989d",
+          "probe_features_sha256": "e4ee7dca6b4354b84112a5367d74a82644ebc9591d99e04eecddea0711887e22",
+          "checkpoint_sha256": "aa6e24f723b0b2917aa57a14f52b81f1d1d12147825683a5ae86e8db65be25bb"
+        },
+        {
+          "job_id": "trashnet_c_grow_s2901",
+          "result_sha256": "897bb5c5600c690d005cf05aa86a859e7e71b9445c8f33039d33a0dbf4012853",
+          "probe_features_sha256": "695e4058c916c0b43cd1fd613319a2b08ee5c933dde7e3e8fda772ae145b70c0",
+          "checkpoint_sha256": "382ba894d0a904bbe258071845f6cf4d1ece22a909d2155b1452565e59aa5886"
+        },
+        {
+          "job_id": "trashnet_d_shrink_s2901",
+          "result_sha256": "2c41e437c5142518dd8b171be994dcc1f0445ef1705085dfdebd3d39fa8f7ba4",
+          "probe_features_sha256": "02bbc5d514ae5a0dd49acd7f5f1340b327c130cd380a6beb92de1fc470751afc",
+          "checkpoint_sha256": "5a7338b9ee23c0f921c8435beddf838382bd6f7e8af3037507196aad726737e9"
+        },
+        {
+          "job_id": "trashnet_joint_c_grow_d_shrink_s2901",
+          "result_sha256": "223875707e1e8fa27e0b78611ca1f2b481fb64647f9eb8cfb65a6c8659e53aeb",
+          "probe_features_sha256": "ea122cbc35c445f4853ce8fde5b5f30332bf88943b95aa25e763ef12e3d99da7",
+          "checkpoint_sha256": "034526f1a4c30c2c52c0d38792c117a925e45fb39251f20a59a33dad16baea38"
+        },
+        {
+          "job_id": "trashnet_c_shrink_s2901",
+          "result_sha256": "0334b0c2c89ee8c81d01e1c6ae444408a571e02cc1256f53874af66357a59f8f",
+          "probe_features_sha256": "371944b2420dcd83ebb280a3ce613cbf10629ca68b5ef85005767bd75c210c9b",
+          "checkpoint_sha256": "c1974c149ae2b0f556891679b6e1e05f03e32a310159093cec4a813c771f848c"
+        },
+        {
+          "job_id": "trashnet_d_grow_s2901",
+          "result_sha256": "2cf966577ee29f660688890da65fe230f0298e96b7327e424c5ce1ef962d13df",
+          "probe_features_sha256": "9b4ecea6a436956fd979eef22f5e339f0d4296e1066855cf359a319712ab2adc",
+          "checkpoint_sha256": "9e81672d9e88cf298e9c01b905e11a15b40501d4aa74d00b0a1ba900e644509c"
+        },
+        {
+          "job_id": "trashnet_joint_c_shrink_d_grow_s2901",
+          "result_sha256": "f91b1d11f95532e6d0f7a6cd18a04fa35e0ee7cdc8872566a90cd5dde8aeb081",
+          "probe_features_sha256": "e2bfdebdb0e27126f2224a56162fac66fe5cc495bd3ca5ac421cd40589a09bd0",
+          "checkpoint_sha256": "fe8ed9239333d2ce73a7da5f4435127b73c49ed80ddc1ee2b81cc98b4f76fa56"
+        },
+        {
+          "job_id": "trashnet_base_s2902",
+          "result_sha256": "65737596e06a63ca0e053239e9c363cf2cca1b2b5a5a2eb9a597384e719bc4f2",
+          "probe_features_sha256": "ce9b6a3a64e91c9bc436c7a998fb99c64601bcd5350ca4941fd06c845cc74f17",
+          "checkpoint_sha256": "c2c73f2fdcaf72ff7ce47c21fe6473ccc873009dc1b53140092cfa2fc55a3c2f"
+        },
+        {
+          "job_id": "trashnet_c_grow_s2902",
+          "result_sha256": "5ec0cc078d1a1f4370f216ff7e7f5527ff496052ce7331eb9598abdd626a009c",
+          "probe_features_sha256": "75bb8a495f7835a9ad57f58afb18093a8b354b8c7695a388cfd8a91b9e71b743",
+          "checkpoint_sha256": "38630665addfd0898afa11c49db6478e62d3db19430d83c156f201a0b9674621"
+        },
+        {
+          "job_id": "trashnet_d_shrink_s2902",
+          "result_sha256": "bf60595457ccc937158337b506d01f42a237c87b5778839d3db8b157cec4660e",
+          "probe_features_sha256": "4bb5cf2c99c12aa138f27ed135e3aab9d43933bcbc1fee5e810a226140355080",
+          "checkpoint_sha256": "e0671d57eae96307adb18a4073e5f1cdea5a2dc98e52b25c471e578b87ec650a"
+        },
+        {
+          "job_id": "trashnet_joint_c_grow_d_shrink_s2902",
+          "result_sha256": "849c28c71131aa30db92e2d26d87e917a6944285d3c90f9b3259fef3d53bf268",
+          "probe_features_sha256": "aab36ee2bdb13fcf13aece914c7832a8fc48571faaae35f187efa0ee9cfd9c42",
+          "checkpoint_sha256": "4cd44f66c68e9919d2dd1db360d9279e81ff37a6810af46c81523c9c28240312"
+        },
+        {
+          "job_id": "trashnet_c_shrink_s2902",
+          "result_sha256": "428bbe965e4aef73a87dd09804c1f34835028dc8502fb705147291360ebec324",
+          "probe_features_sha256": "804d9957bbf9a7de6ab7021923f5ad1587ea80e332b1f0122dc895a855f0d897",
+          "checkpoint_sha256": "4ce619e0f00e01f4b2c916b63a06dd30756a9a3dfb11ff1d668aeade7bf8f6b2"
+        },
+        {
+          "job_id": "trashnet_d_grow_s2902",
+          "result_sha256": "0f8e98cefa2f64d85748211d875e262c44f1b2ad497ad8b52bc86c929b5e90d0",
+          "probe_features_sha256": "e29a40a23bea9e9af7d66c9074b729208c1c702855960a764cf6e392ef024902",
+          "checkpoint_sha256": "2b1f78764fb5419527b2bdbb1c704fb3b3533c6590d2cd8788d80e7189333e9d"
+        },
+        {
+          "job_id": "trashnet_joint_c_shrink_d_grow_s2902",
+          "result_sha256": "02db3c209a997a756a20d89b09be41a70d61535991b9f7ffcbc9c48ec6f45474",
+          "probe_features_sha256": "e952298931aefa0becccec784fb6203137a74cecd54b2209c42dabb98eea3572",
+          "checkpoint_sha256": "9da0c58594b8a65a5025248c0426653226f75fdff59cf50ddd6c81f984533b62"
+        },
+        {
+          "job_id": "trashnet_base_s2903",
+          "result_sha256": "0517fd313df83e55154fe4cd4760c72d97fa2277115a3b641b61b23fc18c2fb3",
+          "probe_features_sha256": "f48da081d62edf503d2b607786af03413b5da75fe44810faa02e48b2ebdf9d1b",
+          "checkpoint_sha256": "5c94a7e6a3c85513daccecf72d8f9cffb09266ca0ed969a68f9fec039d805d33"
+        },
+        {
+          "job_id": "trashnet_c_grow_s2903",
+          "result_sha256": "2acfa0c1b6dd4afaaf0550c4308249539fb7a1729ac2cfaf05ddd9a9e78295bb",
+          "probe_features_sha256": "b4e1344ce3afd064c0e82df439b402e4ccadfb3538567e797f9c6260dc7ad4b3",
+          "checkpoint_sha256": "cb8d68ff36d5a08b434e5d8b45ffd74d627310045d29fb22c1ab98ab488aae71"
+        },
+        {
+          "job_id": "trashnet_d_shrink_s2903",
+          "result_sha256": "77499572d5ae4258d609f696420222b59d0067db7880241e749b635f4f3fe4bf",
+          "probe_features_sha256": "c6d49e9fb28fc62d247c705a8c121dff8d36dc0678ba856046b2dbbbdabd120e",
+          "checkpoint_sha256": "c469128238b26cfebc3652fdd2ad27292cd75cc0a1beb2975e80b703e82261d3"
+        },
+        {
+          "job_id": "trashnet_joint_c_grow_d_shrink_s2903",
+          "result_sha256": "ff790827288f6bec6ee2e9304107ef31ae00ab4284e14f80f12e8e980c071949",
+          "probe_features_sha256": "5969412945fb708582122a6bc846d64fd838ff940efc42ba3dd2f0c622209d76",
+          "checkpoint_sha256": "e50bdbf8853874551a838b9e6295a3b75c0b068cc8dc16d85b15333f8b0942b2"
+        },
+        {
+          "job_id": "trashnet_c_shrink_s2903",
+          "result_sha256": "79939b6caa1a2a55b0a9094986689c535480b063a1074e69b15dfd42a57ea3e5",
+          "probe_features_sha256": "9c9272257360b2908b97d176056ca569dba3981c9e49f62eebe6e6d2d76c0027",
+          "checkpoint_sha256": "a7be22856badbadc6bf3a0ff094f760b1c17335f310e1375344c6ef352b30b1c"
+        },
+        {
+          "job_id": "trashnet_d_grow_s2903",
+          "result_sha256": "d8e774a70257c7bbaa15b677cfb93438aaca6652e2a80e18877a9afe8f56f262",
+          "probe_features_sha256": "2dc6f5c22640cb8af99f20b772b3a65b58ce40461e42caff4e0c33a15cad74e3",
+          "checkpoint_sha256": "3b3c41765fe9037422daa61da94f398be0a8afa21f4750b61f1c9db2f7096a1d"
+        },
+        {
+          "job_id": "trashnet_joint_c_shrink_d_grow_s2903",
+          "result_sha256": "9ec887d7bafbcaeaf384a3e3af06d965431d7c839835f3a315fafea89516015d",
+          "probe_features_sha256": "7f6e4771f421d1029e0170460eb5b19e8eac19c6c1395fbf49e7f8e0e1a3cf42",
+          "checkpoint_sha256": "5acbe7c1e16e752afc4760215fcb2c8f1824516d30eb8f14f2846a7ebd2b3307"
+        }
+      ],
+      "design_identifiability": {
+        "nonreference_allocations": 6,
+        "four_width_transfer_rank": 2,
+        "four_width_singular_values": [
+          0.25731866252531466,
+          0.08495306270614363,
+          1.4246729460964512e-17,
+          0.0
+        ],
+        "condition_number": null,
+        "five_block_transfer_rank": 2,
+        "warning": "Blocks 2 and 3 share the same width. Their independent allocation effects are not identifiable from this pilot. Ridge coefficients are not causal effects. Grow/shrink directions are incompletely covered.",
+        "condition_number_note": "Not defined for full four-width design: a,b are held fixed intentionally; factorial c,d contrasts are evaluated directly, no four-stage regression."
+      },
+      "sum_recorded_run_elapsed_s": 21661.18932080269,
+      "scientific_results_computed": false
+    },
+    "4304": {
+      "state": "COMPLETE_DEVELOPMENT_COHORT",
+      "completed": 42,
+      "total": 42,
+      "protocol_lock_sha256": "641f8c41b11337073be7f6077a8c227c907c38b7cb04ba9248b3dae8d6482137",
+      "sources": [
+        {
+          "job_id": "warpc_base_s2901",
+          "result_sha256": "13db08384cba0f73bd1edb2f94eb374bb66899af66ce7d482ff7abfd6ccb2185",
+          "probe_features_sha256": "cb994ace3c009b258f4804b63b4b4783ad630d64591cd81ee37d9f5b0df8df63",
+          "checkpoint_sha256": "f00128950000972eaa52a7a73c682399f04190a0fe961fb6ac46d39090706966"
+        },
+        {
+          "job_id": "warpc_c_grow_s2901",
+          "result_sha256": "53d1656f4da0934c8e351b1fca4ca5fc1b684c413e54a4fb94a22e0a1d30612a",
+          "probe_features_sha256": "2a0fe8d86b719f609c93af8a76e1c66352d0b0a9e687447d558c884459f300b4",
+          "checkpoint_sha256": "c90478978cac5adf21c2f72c751eaea0c5c8f333d4165fa774cb462b199cb154"
+        },
+        {
+          "job_id": "warpc_d_shrink_s2901",
+          "result_sha256": "dd44b956bcb034b29c47075d76a397026568d7951f9db105df531c9307c08388",
+          "probe_features_sha256": "8ce9e43fac2c801e35a10b7e9c8a4cc01c11995345529912d968d86d4a32b3f3",
+          "checkpoint_sha256": "0d8f51693ccd3d23df8aa8f10861a38dfe5a08dede6083ac91aaf4da6164a5b8"
+        },
+        {
+          "job_id": "warpc_joint_c_grow_d_shrink_s2901",
+          "result_sha256": "c869a72e281404e92366ba64df0aa28eee12e38161aba0be154fca31eacad3d3",
+          "probe_features_sha256": "8287e09f4fc02f35b7e619b754eb069d69db571860bdbb6f8d7c28890bb191d9",
+          "checkpoint_sha256": "4301ca939804bb6269aa9380c97523cd8969a23d061eec813accbd69540d1054"
+        },
+        {
+          "job_id": "warpc_c_shrink_s2901",
+          "result_sha256": "8d021dbc4b4303aaf9136de13151b28190174028b7cb1cd3d462d0399570dcf6",
+          "probe_features_sha256": "665a7ab9520a9fd66ed591f7167e9c3acf74d145eae33a4591197be8b8fa1647",
+          "checkpoint_sha256": "9ba53af48207988a95511669bb1c66b8b75eadca4a0044150120cf9cdb9f5e37"
+        },
+        {
+          "job_id": "warpc_d_grow_s2901",
+          "result_sha256": "cb741efb34004be1be5ec9863ccd9b50ccf90f71d801191bde8b3b18c9ca6565",
+          "probe_features_sha256": "b9687dcc49fa4cdd88856b7b7f465c1ef6bc17a43baac5bf1fa6845bff95d14c",
+          "checkpoint_sha256": "a403c71b3aebe992f7bb0645897568f41597766032f071a5d8105f47704e8094"
+        },
+        {
+          "job_id": "warpc_joint_c_shrink_d_grow_s2901",
+          "result_sha256": "cf62dd9c6fa13cb32baf8d777850906052d8727268c9755106ccf2f353db06c7",
+          "probe_features_sha256": "7423f7e2d32a15842c0cb6618882481feefb6ea078f0409a73742a3ae806d631",
+          "checkpoint_sha256": "a8a805e7763dfeaf479afba176c1cfd1b85c825244470761d053acf7b95a46af"
+        },
+        {
+          "job_id": "warpc_base_s2902",
+          "result_sha256": "4e193def5329ff9924864200d0e14fbf48615179b5fbdd61d0c022fd286a703f",
+          "probe_features_sha256": "a11474015347646160942afed0ddd7f1bcd35c3fe9b0908feb6943e85bb89fe1",
+          "checkpoint_sha256": "90353a37567fe2aa2d2589407c2111168abf9c54a52d244c0ddd16f013005e7c"
+        },
+        {
+          "job_id": "warpc_c_grow_s2902",
+          "result_sha256": "68841212b5e2cf8210fc1a78f6eb9b69592aee218a69588f1b59fd55ce278097",
+          "probe_features_sha256": "2db3df9e8de716857f391ccad75720fdcc9b249066d5a994a3eb7f7df3bb67d8",
+          "checkpoint_sha256": "028e1a1cb114b4e68ccde9e8978bf94040ce8dd2322da30157294ce5e529f08e"
+        },
+        {
+          "job_id": "warpc_d_shrink_s2902",
+          "result_sha256": "8621c85bb5518505e25a06332ea48dc2aee598ad8c8f6b6fc007673b6e4bbb20",
+          "probe_features_sha256": "1f2c3248f9d1cd60ff7fdadc9398754f4e3c2b099aba2150f2ce4c7604f833e8",
+          "checkpoint_sha256": "a5035803e3cef522715b28517b33cab4ec07e358649c39776502a45fd9f19a02"
+        },
+        {
+          "job_id": "warpc_joint_c_grow_d_shrink_s2902",
+          "result_sha256": "397d38973937f8b67b8847c69460d6678db698516f314b88d8a43759d60577bb",
+          "probe_features_sha256": "327e64f8114eb99b5a706bbcdab38adb79e67cff431ef6f0bbfe53d365301d9e",
+          "checkpoint_sha256": "fa41c2f46ef41ec8d064b8f6230dea94439e70237b6bac97da305dbf7ffda454"
+        },
+        {
+          "job_id": "warpc_c_shrink_s2902",
+          "result_sha256": "883e410ee577b6c20bcbff5b87da7c061c17a9338ca67a21fe1a2c4a72c96bb1",
+          "probe_features_sha256": "fc9bdf78b9a03062884e138d534549f5f363880eaa5853dd83516a4bc37e3379",
+          "checkpoint_sha256": "350cbf1363de3522874f3284df34eabea961f71eded0ead1ed0d03807d806eeb"
+        },
+        {
+          "job_id": "warpc_d_grow_s2902",
+          "result_sha256": "3e73b90b22b1c2967e5ddc65fd6f69cc2194ea2e8fda933cad3b88a4f4100177",
+          "probe_features_sha256": "cb9f8d30fc641d2d202bd6a7a70bce5d99622863ad344154973db16d091bb471",
+          "checkpoint_sha256": "5f82964aa72adb4b271dcbe4847ce7411d799722dc03c6ca3ef26695d8eb7ee4"
+        },
+        {
+          "job_id": "warpc_joint_c_shrink_d_grow_s2902",
+          "result_sha256": "94188abc3bf99528af0d19d3dba6afdeb1a0bde5b02a2e989632b9c47878515a",
+          "probe_features_sha256": "a5af8ac73fa55052f92926dd0d7f1c84eeee8c7d23647b9b0fc4d9470a0a75ed",
+          "checkpoint_sha256": "1fc5b35ac9f978f71ad6a171715fce7e052ffb01b9a0780fd429e3f57d1cdb9a"
+        },
+        {
+          "job_id": "warpc_base_s2903",
+          "result_sha256": "18228f7f5a3a8796321a357859267d498d16414a317c23ed9bc2ef1dc61062be",
+          "probe_features_sha256": "24390fd6386411940efe0dbc6e0416d558acf4a1a56ac6d4792ea399a97fffaf",
+          "checkpoint_sha256": "705505a4a204f89de6bfd2450be9776fcadced977c6adea4aa26dfe7cc3e0687"
+        },
+        {
+          "job_id": "warpc_c_grow_s2903",
+          "result_sha256": "559d8a7996b04703c7d9457c42f7fd0c37c3cbd1d348668f228bdc603d396e13",
+          "probe_features_sha256": "914f0ba35cb24a33f1538a31ed89f842a5b711dd5666bbeb74e108012510e58b",
+          "checkpoint_sha256": "9268344e9bfa1493ed0793a9b47d1dc0217e83d7931eadd2aaa10476d1e304b0"
+        },
+        {
+          "job_id": "warpc_d_shrink_s2903",
+          "result_sha256": "0badc3f97adf289b145eeb84146b9f68a166b5c9bc39f19b2846359d06abd0c8",
+          "probe_features_sha256": "9b292117251226f2be6240180f6441aa9755b79ac781b00980820c30f06889b5",
+          "checkpoint_sha256": "4a10b7e459b6e962a9111718c886be991ac49c1c5c3ad61c49539282a0de923a"
+        },
+        {
+          "job_id": "warpc_joint_c_grow_d_shrink_s2903",
+          "result_sha256": "d10400d8ffb13b91a8a256032d7e0d4ddc654ef8777eb2f0e3a550f3f3747bab",
+          "probe_features_sha256": "f693daf1c837d6bac8481b7434aae1efa480a39b5c8952ea056abee18a38b171",
+          "checkpoint_sha256": "25fcf231d69a8d4a9e8904cf0db5b937d6bda1f0e1b6fb872c83bb387ef065b0"
+        },
+        {
+          "job_id": "warpc_c_shrink_s2903",
+          "result_sha256": "af28eab5ed3cad6eba4677d8279760e4b69bd192cc73b10efdb67df684367932",
+          "probe_features_sha256": "d7bb86857b6b18aafd8e0926baec31f3fe149fa142a851f54f5d310bde0d50d7",
+          "checkpoint_sha256": "cf75404340e8fa9be9d23b72b6e2d3da0a8f934ea6849250d68ad97835a5d197"
+        },
+        {
+          "job_id": "warpc_d_grow_s2903",
+          "result_sha256": "6bb74a87eeb8ba402d90ed73a99338a430ba1606eef336a48ce396d186b64264",
+          "probe_features_sha256": "b239a21583a62636ba3d2a2ddbb812f63c2acf18dd43b75bbe03e256ca869e51",
+          "checkpoint_sha256": "6c8b326e6cf5fab488fece30c956360133c816f9a7762f81f42349c9cbf4d81f"
+        },
+        {
+          "job_id": "warpc_joint_c_shrink_d_grow_s2903",
+          "result_sha256": "2989fa9fd1b0abe59842d16b94dd56d701a0c60a8e3629b2dcef39e73f11edfd",
+          "probe_features_sha256": "d2792e9fb66477994fcdfcd9a7250c7f4e075b68ca6f3df47fd9c64683365ca3",
+          "checkpoint_sha256": "e3de59753ecd2c63031adbc703bb37d1db9a2dfc64a15e0dfd17321c0be037bc"
+        },
+        {
+          "job_id": "trashnet_base_s2901",
+          "result_sha256": "caa139201150781fcc4b82bf0822110bc85a489e483b13189bc5c28920fcd43c",
+          "probe_features_sha256": "16276b15979828e4fb846b304037d89dd1e7596a1ccd4f867023269879693e14",
+          "checkpoint_sha256": "3d310243204b241509e9048a19daed7a8a0357038dad4a436ffd5360119d5f5b"
+        },
+        {
+          "job_id": "trashnet_c_grow_s2901",
+          "result_sha256": "90c6eadb8767a0c37f16dc7da204bf868a284e71cf51c322d2ff1397efd769c9",
+          "probe_features_sha256": "c5b3a453fc5a3934c7ba497457c429879f58c57335ba8892f314676bfdb007c5",
+          "checkpoint_sha256": "db43025e14d10de5c33b6e14a2933df08946c286284c6c844db5514e327c21fc"
+        },
+        {
+          "job_id": "trashnet_d_shrink_s2901",
+          "result_sha256": "33684b42a7f93f0b6deebf05f71b139bcd05fa45c93c9ba1bae2f8f148bdd23d",
+          "probe_features_sha256": "8a882b79f7d56373e778463680362f7ab296024c23c5ec1c61947433ee3144dc",
+          "checkpoint_sha256": "16830a20b8349799864fd443fbf9cf68731011c0a5283b7679986cde2b290869"
+        },
+        {
+          "job_id": "trashnet_joint_c_grow_d_shrink_s2901",
+          "result_sha256": "63c2f3d10918a15e1208ba4cd6d9a6264cfa8fab9f9541b046c8bbb94533d024",
+          "probe_features_sha256": "69cab9b41ba26627af4d52f728c0dde2a2990eb9c405b4c69824e9fe120ac316",
+          "checkpoint_sha256": "a30ec6f0d25a31b8ad74d8791d99e4ca9ee354a63965751af682009e9e09362d"
+        },
+        {
+          "job_id": "trashnet_c_shrink_s2901",
+          "result_sha256": "a4a4257375201098335ed68e05846103cade8849abcafbd1ece84946c21e1aae",
+          "probe_features_sha256": "9836d5c49318991705c30fdf83bd0ba23b9ced7eca01182588122baf38511758",
+          "checkpoint_sha256": "534a4e30d4f6083ce68ccc422b1c52238baae7dc4151360c4a2178728bccc56e"
+        },
+        {
+          "job_id": "trashnet_d_grow_s2901",
+          "result_sha256": "31249c584e5e31a41ee280c86a35fe75c1189964b2ed628dc9b349e424f9a1f8",
+          "probe_features_sha256": "bd59161b09eedc75397624c8ec714f1534a826fc07a737ab1c913f7637187d97",
+          "checkpoint_sha256": "a03cf845eff1a640aba329015dc4c1e775f229650b11cc77029dcf0bd546ff8e"
+        },
+        {
+          "job_id": "trashnet_joint_c_shrink_d_grow_s2901",
+          "result_sha256": "b3808200502f5a639eb605dff6163f843bba6a1c4066dbe87a94236354bd28be",
+          "probe_features_sha256": "62e92c8c2ccb32cea42193d92ffe73ad2b7031bb470797498d2979c927be63f2",
+          "checkpoint_sha256": "e07054269c307125981883b57b8b6696a2967f0e287cbc517ebbc89233c8b32f"
+        },
+        {
+          "job_id": "trashnet_base_s2902",
+          "result_sha256": "e9ce56ae7e75a71c49757d99a2d73c3f5b54ef4b05f010993c905abe9eaf9b29",
+          "probe_features_sha256": "75d73ac4ce4a7989fa50fac92fa5ae7a3d7d10f412ba1b7692c2306a979ea15d",
+          "checkpoint_sha256": "56d1745c449b281f82eca72b7a80171745a190239b4c0812acaadd585394b980"
+        },
+        {
+          "job_id": "trashnet_c_grow_s2902",
+          "result_sha256": "bf3f886ee375e6bfa3988167d518c1b94dc6a7f9f8e8acae056d56d389ed6ec6",
+          "probe_features_sha256": "138fd46b0794235df93ef445158cadd1b4ebfea863b94eb459a0a1ac496cc6f2",
+          "checkpoint_sha256": "8ed3b67ce404db49bcb5eec79aa48df956c0f624ce06ed18ceab65a833dd1427"
+        },
+        {
+          "job_id": "trashnet_d_shrink_s2902",
+          "result_sha256": "78ce4fb3d619c7dbaec99bfa46ad09f37731e9ad7a37579657fe802bc01a94f9",
+          "probe_features_sha256": "89db6be00f6cfc317fed1d20ede7761eee2835e93fad8cbab9d32f7b16e81dcb",
+          "checkpoint_sha256": "cd1f109ca55283ffec78bf7605d7bbfa0ae4ace43aeb8437562f69732ac189aa"
+        },
+        {
+          "job_id": "trashnet_joint_c_grow_d_shrink_s2902",
+          "result_sha256": "7e10c7c8b4caf5e74a33ac4f4f990ee11b8c4eb6e920b9028fcd58f11cf1a12c",
+          "probe_features_sha256": "1e17e70f1e1e2b636f93a92c1bdd9bf382e7af0989037f618dead2fdad653028",
+          "checkpoint_sha256": "da536d4bb6d7b417f9d979d1a7c1736e0e1b87b760b0b19f8a847fa5fad1dae6"
+        },
+        {
+          "job_id": "trashnet_c_shrink_s2902",
+          "result_sha256": "7e741bdd16335453f9d0c4521fda2c68bdb780c24afae6d657b5386bbd587834",
+          "probe_features_sha256": "9e846d0257b85a1addbd606f2a3653c8e2253ab1d4efc9e779d73897acc7270c",
+          "checkpoint_sha256": "b4021057928c05cc8aa63a8f1680f3be7f972c3659246efb97751129383651f4"
+        },
+        {
+          "job_id": "trashnet_d_grow_s2902",
+          "result_sha256": "5a56b39bb637e3d0a2cb45edc8cbfc018cee5ee89298b8678a098197ee2e35b1",
+          "probe_features_sha256": "e707734810ac0915e6dbf60da891580058adf1c1c82918cd65c31b95889b162b",
+          "checkpoint_sha256": "85572bedc521496e43219979f05ec3892f698a34da04d7e9b988882eee33c06e"
+        },
+        {
+          "job_id": "trashnet_joint_c_shrink_d_grow_s2902",
+          "result_sha256": "663160e47d5ca24cca445c1582e65c8d211f679d8991e545a153c35e8d7ad595",
+          "probe_features_sha256": "33a9125faf9537312faefaa553fce5dc6d740a5a05d555d1733b2c457258bb67",
+          "checkpoint_sha256": "f1fd1aae20fc1c00b8548334cf91929a8563634356e6ae12c1d25570b1b6fee9"
+        },
+        {
+          "job_id": "trashnet_base_s2903",
+          "result_sha256": "15ddd3ea3bd49a08780cc52b7f42dbcb65334beaf2be4a4a127f37309eb3fba5",
+          "probe_features_sha256": "b88856d6b2e0db1b6a3c1b8123b7ad6c0e4bc67f6d1123fb48c33297ec58d28e",
+          "checkpoint_sha256": "eb6dd8aaf67c5c3822ca0229cef1ea7b2692dd0083686957a331cc340cb1e472"
+        },
+        {
+          "job_id": "trashnet_c_grow_s2903",
+          "result_sha256": "f20c5a1581cf2f7e1f9aa71b245b33694c3aa41fc5bf257d8368993e273620b4",
+          "probe_features_sha256": "9baa8e396730db4622d62191d984123ba8b7fe0bfbb0e86c4a1bf817d53c70f4",
+          "checkpoint_sha256": "8cb87c3a0ce2f859b9bf76341d6ee19566db6bcee1dc7455cca3a29bf8cae6f1"
+        },
+        {
+          "job_id": "trashnet_d_shrink_s2903",
+          "result_sha256": "209936bf85b1f4f42de4503bc67abab6bd0331d9dae9ad16288ed9d342ed248d",
+          "probe_features_sha256": "2a99d17ed2036d60ffa70cff044f55d3e25c8ffa8621458f00b6a677bdc674f0",
+          "checkpoint_sha256": "80b723a5b938d46a2bedecf2de4d19986860e88b5c2dd2dcc8ee1accb1dc5bd5"
+        },
+        {
+          "job_id": "trashnet_joint_c_grow_d_shrink_s2903",
+          "result_sha256": "d8d2492ed8e901840bac183ed3388d66aead99a48458bf99ecbf2eaa08b67249",
+          "probe_features_sha256": "45cfc61dcb86bfb70b63accb0739afb44c6d4478de7eed720f758df2c594c393",
+          "checkpoint_sha256": "356ff58ad4d131eaee1582db30c282be9d098cebbad658d7a09d0e1ab5042557"
+        },
+        {
+          "job_id": "trashnet_c_shrink_s2903",
+          "result_sha256": "1c6a98201861a380505dd4eb5c21f01d8c1784e696a918df10a1ad3f4133b0ef",
+          "probe_features_sha256": "56e0430009a9d39e6c9c8fef56f861d939f87f0b1930479cc19fb8da6bc2edc5",
+          "checkpoint_sha256": "4a41af980368fa6fd6dfa8fd56089c19d6250f2126458a05859cd910e3ee1a32"
+        },
+        {
+          "job_id": "trashnet_d_grow_s2903",
+          "result_sha256": "0fb9426d2ced9f0dc92ca3f619462c4ac8f8914be4c8fb94aaa424453633ba22",
+          "probe_features_sha256": "6caa312b4c8a0e1c1a81cc670c4947e264bdee195720e6812f5e3ac7ea83fa7b",
+          "checkpoint_sha256": "0b6b24b768577016e475d9eb8cc8a563b655452bdf03b94bfbad9b9c01b248af"
+        },
+        {
+          "job_id": "trashnet_joint_c_shrink_d_grow_s2903",
+          "result_sha256": "e71f513b1af98922b639770f56fc1f63a949861bede7ea056fb916a151c3d47f",
+          "probe_features_sha256": "49440504d0c14261136db8b058a0f9b5f6d7a6396ad849bc115b03b5b95656f6",
+          "checkpoint_sha256": "97ad10612634b524d9d89781990acaff76d2ed415a28e5d35a9d38181a412347"
+        }
+      ],
+      "design_identifiability": {
+        "nonreference_allocations": 6,
+        "four_width_transfer_rank": 2,
+        "four_width_singular_values": [
+          0.25731866252531466,
+          0.08495306270614363,
+          1.4246729460964512e-17,
+          0.0
+        ],
+        "condition_number": null,
+        "five_block_transfer_rank": 2,
+        "warning": "Blocks 2 and 3 share the same width. Their independent allocation effects are not identifiable from this pilot. Ridge coefficients are not causal effects. Grow/shrink directions are incompletely covered.",
+        "condition_number_note": "Not defined for full four-width design: a,b are held fixed intentionally; factorial c,d contrasts are evaluated directly, no four-stage regression."
+      },
+      "sum_recorded_run_elapsed_s": 20770.364689826965,
+      "scientific_results_computed": false
+    }
+  },
+  "summary": [
+    {
+      "dataset": "warpc",
+      "direction": "c_up_d_down",
+      "n_contexts": 9,
+      "means": {
+        "gain_component_g_pp": 0.6137770322097699,
+        "gain_component_d_pp": -0.1408472448471584,
+        "gain_joint_pp": -3.653465960335188,
+        "interaction_pp": -4.126395747697799,
+        "joint_proxy_error_pp": -5.241687014113509
+      },
+      "mean_abs_interaction_pp": 4.87010327620843,
+      "positive_interaction_contexts": 2,
+      "by_split": {
+        "4302": {
+          "gain_component_g_pp": 0.8845182486746054,
+          "gain_component_d_pp": -0.9022006931411849,
+          "gain_joint_pp": -7.489122229124202,
+          "interaction_pp": -7.471439784657623,
+          "joint_proxy_error_pp": -9.459374765833353
+        },
+        "4303": {
+          "gain_component_g_pp": 0.10685509082430229,
+          "gain_component_d_pp": 1.0139049513335392,
+          "gain_joint_pp": -1.0665115363823139,
+          "interaction_pp": -2.1872715785401553,
+          "joint_proxy_error_pp": -3.0092151724081457
+        },
+        "4304": {
+          "gain_component_g_pp": 0.8499577571304019,
+          "gain_component_d_pp": -0.5342459927338296,
+          "gain_joint_pp": -2.4047641154990473,
+          "interaction_pp": -2.72047587989562,
+          "joint_proxy_error_pp": -3.2564711040990306
+        }
+      }
+    },
+    {
+      "dataset": "warpc",
+      "direction": "c_down_d_up",
+      "n_contexts": 9,
+      "means": {
+        "gain_component_g_pp": -0.6245616486800895,
+        "gain_component_d_pp": -2.480689268394521,
+        "gain_joint_pp": -1.2049611439396508,
+        "interaction_pp": 1.9002897731349604,
+        "joint_proxy_error_pp": 0.46425555836329335
+      },
+      "mean_abs_interaction_pp": 5.137999211341135,
+      "positive_interaction_contexts": 6,
+      "by_split": {
+        "4302": {
+          "gain_component_g_pp": -0.3817175802730885,
+          "gain_component_d_pp": 0.3154774264269773,
+          "gain_joint_pp": -1.516798087720128,
+          "interaction_pp": -1.450557933874016,
+          "joint_proxy_error_pp": 0.6029939725926895
+        },
+        "4303": {
+          "gain_component_g_pp": 0.649355401015478,
+          "gain_component_d_pp": -3.4491328411260223,
+          "gain_joint_pp": -0.055478174686162396,
+          "interaction_pp": 2.7442992654243827,
+          "joint_proxy_error_pp": 1.8905875995840014
+        },
+        "4304": {
+          "gain_component_g_pp": -2.141322766782658,
+          "gain_component_d_pp": -4.308412390484518,
+          "gain_joint_pp": -2.042607169412662,
+          "interaction_pp": 4.407127987854515,
+          "joint_proxy_error_pp": -1.1008148970868108
+        }
+      }
+    },
+    {
+      "dataset": "trashnet",
+      "direction": "c_up_d_down",
+      "n_contexts": 9,
+      "means": {
+        "gain_component_g_pp": 0.4696030946207128,
+        "gain_component_d_pp": 0.7148210235374116,
+        "gain_joint_pp": 0.46798879339693367,
+        "interaction_pp": -0.7164353247611911,
+        "joint_proxy_error_pp": -2.182169370294848
+      },
+      "mean_abs_interaction_pp": 5.1663514131052946,
+      "positive_interaction_contexts": 5,
+      "by_split": {
+        "4302": {
+          "gain_component_g_pp": -1.6109375869738958,
+          "gain_component_d_pp": 1.0904759531685317,
+          "gain_joint_pp": -3.225678385119891,
+          "interaction_pp": -2.705216751314527,
+          "joint_proxy_error_pp": -5.781277147772731
+        },
+        "4303": {
+          "gain_component_g_pp": 0.11021501348695122,
+          "gain_component_d_pp": 1.512968048642872,
+          "gain_joint_pp": 1.0295529849225624,
+          "interaction_pp": -0.5936300772072616,
+          "joint_proxy_error_pp": -0.950153503479291
+        },
+        "4304": {
+          "gain_component_g_pp": 2.909531857349083,
+          "gain_component_d_pp": -0.458980931199169,
+          "gain_joint_pp": 3.6000917803881296,
+          "interaction_pp": 1.1495408542382155,
+          "joint_proxy_error_pp": 0.18492254036747724
+        }
+      }
+    },
+    {
+      "dataset": "trashnet",
+      "direction": "c_down_d_up",
+      "n_contexts": 9,
+      "means": {
+        "gain_component_g_pp": 1.3911613240108394,
+        "gain_component_d_pp": 0.9763199190085073,
+        "gain_joint_pp": -0.81179277105393,
+        "interaction_pp": -3.1792740140732767,
+        "joint_proxy_error_pp": 2.009438644293889
+      },
+      "mean_abs_interaction_pp": 6.18956988508733,
+      "positive_interaction_contexts": 3,
+      "by_split": {
+        "4302": {
+          "gain_component_g_pp": -0.398284173758187,
+          "gain_component_d_pp": -1.239841656586336,
+          "gain_joint_pp": -3.5490343373978765,
+          "interaction_pp": -1.9109085070533538,
+          "joint_proxy_error_pp": -0.8177276348367598
+        },
+        "4303": {
+          "gain_component_g_pp": 3.8367083245291926,
+          "gain_component_d_pp": 0.778540533123398,
+          "gain_joint_pp": 0.0012373986662803649,
+          "interaction_pp": -4.61401145898631,
+          "joint_proxy_error_pp": 2.1611903010055467
+        },
+        "4304": {
+          "gain_component_g_pp": 0.7350598212615126,
+          "gain_component_d_pp": 3.39026088048846,
+          "gain_joint_pp": 1.112418625569806,
+          "interaction_pp": -3.012902076180166,
+          "joint_proxy_error_pp": 4.684853266712881
+        }
+      }
+    }
+  ],
+  "scope": "Development intervention analysis with reused Base references and overlapping split pools. Interaction is a finite difference of width-boundary interventions, not a universal stage mechanism. Error decomposition is an arithmetic identity, not a new estimator. No iid significance, automatic novelty, or untouched task claim."
+}

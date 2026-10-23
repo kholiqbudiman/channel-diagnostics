@@ -1,0 +1,29 @@
+PENILAIAN ILMIAH SETELAH TRANSFER DTD — 17 OKTOBER 2026
+
+KEPUTUSAN
+Penelitian ACRE sekarang lebih kuat sebagai studi empiris yang terkontrol. Pembanding diagnostik dan konteks transfer yang sebelumnya diminta sudah dilaksanakan. Namun, novelty algoritmik atau mekanisme representasi umum belum dihasilkan. Saya belum merekomendasikan klaim siap Neurocomputing dari hasil ini saja; penilaian tersebut bukan keputusan jurnal atau kesimpulan bahwa semua jurnal Q1 pasti menolak.
+
+APA YANG BERTAMBAH
+Kegagalan prediksi tidak lagi diperiksa hanya lewat satu proxy F1. Masking loss, Taylor signed/squared, BN gamma dan kontrol architecture-only juga dinilai dengan keputusan yang dibekukan sebelum outcome DTD. Pemisahan diagnostic/evaluation pada konteks tekstur menguatkan validitas uji transfer. Semua hasil dipertahankan. Ini kemajuan ilmiah nyata meskipun tidak menghasilkan kebijakan baru yang lebih baik.
+
+TEMUAN YANG MENDUKUNG
+Pada DTD, mean gain pilihan dibanding Base:mask F1 -1,507pp;mask CE -1,397pp;Taylor signed -1,019pp;Taylor squared -1,397pp;BN gamma -2,112pp;ridge -1,397pp. Base mempunyai mean F1 25,944%. Semua kebijakan yang mengubah konfigurasi memiliki mean gain negatif pada konteks ini. Kesimpulan terbatas pada adaptasi diagnostik, calon arsitektur dan resep yang diuji, bukan kegagalan semua algoritma pruning/alokasi.
+
+KOREKSI PENTING TERHADAP INTERPRETASI
+1. Gain negatif tidak boleh seluruhnya dianggap bukti diagnostik tidak berguna. Base adalah kandidat terbaik dalam 7/9 konteks; hanya 2/18 efek joint mengungguli Base. Bahkan oracle retrospektif yang tahu hasil akhir hanya memberi mean keuntungan +0,612pp. Jadi ruang perbaikan dalam inventori ini kecil. Perlu memperlihatkan opportunity/headroom bersama kualitas pemilihan, bukan hanya daftar gain negatif. Oracle bukan prosedur yang tersedia sebelum evaluasi.
+2. CE-mask lebih baik dari F1-mask sebesar +0,111 pp secara rata-rata, tetapi keduanya memilih kandidat sama di 8/9 konteks. Selisih seluruh mean berasal dari satu pilihan berbeda. Interval bootstrap kondisional kontras pada konteks itu mencakup nol. Tidak ada dasar menyebut penggantian loss menghasilkan keunggulan yang konsisten.
+3. Rata-rata interaction F1 DTD +0,448pp dan +0,046 pp. Ini membatasi penjelasan berupa interaksi negatif yang berlaku umum. Namun, nilai individual tetap bervariasi:mean absolute interaction masing-masing 2,974 pp dan 1,700 pp. Mean mendekati nol bukan bukti bahwa efek aditif atau interaksi tidak ada.
+4. Semua 18 interval bootstrap interaction DTD mencakup nol. Interval ini hanya mengukur resampling gambar pada checkpoint tetap, bukan seluruh ketidakpastian training/split/task. Jumlah interval tersebut bukan ambang otomatis menerima/menolak paper.
+
+KONTRIBUSI YANG PALING DAPAT DIPERTAHANKAN
+'Pengujian terkontrol menunjukkan bahwa importance/sensitivity pada model terlatih tidak dengan sendirinya memberi keputusan redistribusi kapasitas yang menguntungkan setelah retraining. Nilai diagnostik perlu diperiksa melalui fidelity, utility pemilihan, dan ruang perbaikan kandidat; respons gabungan juga bergantung pada task dan arah intervensi.'
+Ini kontribusi empiris tentang batas pemakaian diagnostik. Tidak mengklaim ACRE menemukan pertama kali ketergantungan layer, membuktikan mekanisme kausal umum, atau mengembangkan alokasi otomatis yang unggul.
+
+IMPLIKASI VENUE
+Hasil negatif tidak otomatis menutup peluang publikasi. Untuk Neurocomputing, persoalan yang tetap harus dijawab ialah apa yang dipelajari pembaca di luar kegagalan beberapa adaptasi skor pada inventori yang sebagian besar lebih buruk dari Base. Kontrol yang lebih baik dan konteks baru meningkatkan kredibilitas, tetapi tidak otomatis menyelesaikan nilai tambah tersebut. Saya tidak menetapkan syarat baru berupa algoritma NAS, ratusan run atau mekanisme kausal jika manuskrip tetap berupa studi empiris.
+
+LANGKAH BERIKUTNYA
+Saya menyarankan menyatukan seluruh bukti menjadi satu naskah empiris sekarang, sebelum meluncurkan eksperimen GPU lagi. Jadikan perbandingan diagnostik dan transfer sebagai pusat; pisahkan fidelity prediksi, utility keputusan dan candidate headroom; tampilkan hasil yang membatasi hipotesis interaksi sebelumnya. Bukti dan analisis untuk revisi ini sudah tersedia. Setelah manuskrip utuh selesai, nilai kembali kekhasan kontribusi terhadap literatur terdekat dan kecocokan venue.
+
+Review ini hanya menelaah dan menambahkan ringkasan headroom dari hasil yang sudah ada. Tidak ada perubahan manuskrip, protokol atau training baru.
+Sumber utama:dtd_comparison/summary.json,primary_policy_contrast.csv,all_interactions.csv,conditional_bootstrap.json,verified_results_snapshot.json.

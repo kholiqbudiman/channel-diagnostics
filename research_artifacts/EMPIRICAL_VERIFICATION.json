@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "distinct_training_runs": 279,
+  "cohort_new_runs": [
+    36,
+    72,
+    108,
+    63
+  ],
+  "reused_base_records": 18,
+  "metric_records_checked": 297,
+  "policy_decisions_checked": 189,
+  "interaction_contexts_checked": 54,
+  "dtd_all_effects_checked": 54,
+  "scope": "Retained records and printed summary reconciliation; no fresh inference or remote binary authentication."
+}

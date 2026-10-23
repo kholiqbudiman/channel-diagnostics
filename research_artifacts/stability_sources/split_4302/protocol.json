@@ -1,0 +1,1383 @@
+{
+  "version": "pilot_informed_stability_v1",
+  "scope": "Prospective stability replication, pilot-informed candidates; reused training pools; no independent new-task confirmation",
+  "datasets": {
+    "warpc": "/home/kholiq/KD/Disertasi/Paper 3/hks-ot-artifact/data/raw/warpc/Warp-C/train_crops",
+    "trashnet": "/home/kholiq/KD/wasterecycle/data/trashnet/train"
+  },
+  "split_seed": 4302,
+  "models": [
+    {
+      "name": "base",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true,
+      "cost_k5": {
+        "params": 20245,
+        "macs": 9055616,
+        "block_costs": [
+          {
+            "params": 1472,
+            "macs": 3022848
+          },
+          {
+            "params": 1744,
+            "macs": 1787904
+          },
+          {
+            "params": 2976,
+            "macs": 1575936
+          },
+          {
+            "params": 3776,
+            "macs": 1002240
+          },
+          {
+            "params": 9488,
+            "macs": 671040
+          }
+        ]
+      }
+    },
+    {
+      "name": "base_no_residual",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": false,
+      "cost_k5": {
+        "params": 20245,
+        "macs": 9055616,
+        "block_costs": [
+          {
+            "params": 1472,
+            "macs": 3022848
+          },
+          {
+            "params": 1744,
+            "macs": 1787904
+          },
+          {
+            "params": 2976,
+            "macs": 1575936
+          },
+          {
+            "params": 3776,
+            "macs": 1002240
+          },
+          {
+            "params": 9488,
+            "macs": 671040
+          }
+        ]
+      }
+    },
+    {
+      "name": "allocation_14_30_36_52",
+      "kind": "allocation",
+      "channels": [
+        14,
+        30,
+        36,
+        52
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true,
+      "cost_k5": {
+        "params": 20131,
+        "macs": 9131876,
+        "block_costs": [
+          {
+            "params": 1176,
+            "macs": 2386944
+          },
+          {
+            "params": 1656,
+            "macs": 1532160
+          },
+          {
+            "params": 4440,
+            "macs": 2384640
+          },
+          {
+            "params": 4812,
+            "macs": 1425600
+          },
+          {
+            "params": 7376,
+            "macs": 531360
+          }
+        ]
+      }
+    },
+    {
+      "name": "allocation_12_34_36_36",
+      "kind": "allocation",
+      "channels": [
+        12,
+        34,
+        36,
+        36
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true,
+      "cost_k5": {
+        "params": 20413,
+        "macs": 9107604,
+        "block_costs": [
+          {
+            "params": 912,
+            "macs": 1824768
+          },
+          {
+            "params": 1484,
+            "macs": 1257984
+          },
+          {
+            "params": 5576,
+            "macs": 3015936
+          },
+          {
+            "params": 5716,
+            "macs": 1772352
+          },
+          {
+            "params": 6192,
+            "macs": 489888
+          }
+        ]
+      }
+    }
+  ],
+  "jobs": [
+    {
+      "id": "warpc_base_s2901",
+      "dataset": "warpc",
+      "model": {
+        "name": "base",
+        "kind": "allocation",
+        "channels": [
+          16,
+          24,
+          40,
+          64
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": true,
+        "cost_k5": {
+          "params": 20245,
+          "macs": 9055616,
+          "block_costs": [
+            {
+              "params": 1472,
+              "macs": 3022848
+            },
+            {
+              "params": 1744,
+              "macs": 1787904
+            },
+            {
+              "params": 2976,
+              "macs": 1575936
+            },
+            {
+              "params": 3776,
+              "macs": 1002240
+            },
+            {
+              "params": 9488,
+              "macs": 671040
+            }
+          ]
+        }
+      },
+      "seed": 2901
+    },
+    {
+      "id": "warpc_base_no_residual_s2901",
+      "dataset": "warpc",
+      "model": {
+        "name": "base_no_residual",
+        "kind": "allocation",
+        "channels": [
+          16,
+          24,
+          40,
+          64
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": false,
+        "cost_k5": {
+          "params": 20245,
+          "macs": 9055616,
+          "block_costs": [
+            {
+              "params": 1472,
+              "macs": 3022848
+            },
+            {
+              "params": 1744,
+              "macs": 1787904
+            },
+            {
+              "params": 2976,
+              "macs": 1575936
+            },
+            {
+              "params": 3776,
+              "macs": 1002240
+            },
+            {
+              "params": 9488,
+              "macs": 671040
+            }
+          ]
+        }
+      },
+      "seed": 2901
+    },
+    {
+      "id": "warpc_allocation_14_30_36_52_s2901",
+      "dataset": "warpc",
+      "model": {
+        "name": "allocation_14_30_36_52",
+        "kind": "allocation",
+        "channels": [
+          14,
+          30,
+          36,
+          52
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": true,
+        "cost_k5": {
+          "params": 20131,
+          "macs": 9131876,
+          "block_costs": [
+            {
+              "params": 1176,
+              "macs": 2386944
+            },
+            {
+              "params": 1656,
+              "macs": 1532160
+            },
+            {
+              "params": 4440,
+              "macs": 2384640
+            },
+            {
+              "params": 4812,
+              "macs": 1425600
+            },
+            {
+              "params": 7376,
+              "macs": 531360
+            }
+          ]
+        }
+      },
+      "seed": 2901
+    },
+    {
+      "id": "warpc_allocation_12_34_36_36_s2901",
+      "dataset": "warpc",
+      "model": {
+        "name": "allocation_12_34_36_36",
+        "kind": "allocation",
+        "channels": [
+          12,
+          34,
+          36,
+          36
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": true,
+        "cost_k5": {
+          "params": 20413,
+          "macs": 9107604,
+          "block_costs": [
+            {
+              "params": 912,
+              "macs": 1824768
+            },
+            {
+              "params": 1484,
+              "macs": 1257984
+            },
+            {
+              "params": 5576,
+              "macs": 3015936
+            },
+            {
+              "params": 5716,
+              "macs": 1772352
+            },
+            {
+              "params": 6192,
+              "macs": 489888
+            }
+          ]
+        }
+      },
+      "seed": 2901
+    },
+    {
+      "id": "warpc_base_s2902",
+      "dataset": "warpc",
+      "model": {
+        "name": "base",
+        "kind": "allocation",
+        "channels": [
+          16,
+          24,
+          40,
+          64
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": true,
+        "cost_k5": {
+          "params": 20245,
+          "macs": 9055616,
+          "block_costs": [
+            {
+              "params": 1472,
+              "macs": 3022848
+            },
+            {
+              "params": 1744,
+              "macs": 1787904
+            },
+            {
+              "params": 2976,
+              "macs": 1575936
+            },
+            {
+              "params": 3776,
+              "macs": 1002240
+            },
+            {
+              "params": 9488,
+              "macs": 671040
+            }
+          ]
+        }
+      },
+      "seed": 2902
+    },
+    {
+      "id": "warpc_base_no_residual_s2902",
+      "dataset": "warpc",
+      "model": {
+        "name": "base_no_residual",
+        "kind": "allocation",
+        "channels": [
+          16,
+          24,
+          40,
+          64
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": false,
+        "cost_k5": {
+          "params": 20245,
+          "macs": 9055616,
+          "block_costs": [
+            {
+              "params": 1472,
+              "macs": 3022848
+            },
+            {
+              "params": 1744,
+              "macs": 1787904
+            },
+            {
+              "params": 2976,
+              "macs": 1575936
+            },
+            {
+              "params": 3776,
+              "macs": 1002240
+            },
+            {
+              "params": 9488,
+              "macs": 671040
+            }
+          ]
+        }
+      },
+      "seed": 2902
+    },
+    {
+      "id": "warpc_allocation_14_30_36_52_s2902",
+      "dataset": "warpc",
+      "model": {
+        "name": "allocation_14_30_36_52",
+        "kind": "allocation",
+        "channels": [
+          14,
+          30,
+          36,
+          52
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": true,
+        "cost_k5": {
+          "params": 20131,
+          "macs": 9131876,
+          "block_costs": [
+            {
+              "params": 1176,
+              "macs": 2386944
+            },
+            {
+              "params": 1656,
+              "macs": 1532160
+            },
+            {
+              "params": 4440,
+              "macs": 2384640
+            },
+            {
+              "params": 4812,
+              "macs": 1425600
+            },
+            {
+              "params": 7376,
+              "macs": 531360
+            }
+          ]
+        }
+      },
+      "seed": 2902
+    },
+    {
+      "id": "warpc_allocation_12_34_36_36_s2902",
+      "dataset": "warpc",
+      "model": {
+        "name": "allocation_12_34_36_36",
+        "kind": "allocation",
+        "channels": [
+          12,
+          34,
+          36,
+          36
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": true,
+        "cost_k5": {
+          "params": 20413,
+          "macs": 9107604,
+          "block_costs": [
+            {
+              "params": 912,
+              "macs": 1824768
+            },
+            {
+              "params": 1484,
+              "macs": 1257984
+            },
+            {
+              "params": 5576,
+              "macs": 3015936
+            },
+            {
+              "params": 5716,
+              "macs": 1772352
+            },
+            {
+              "params": 6192,
+              "macs": 489888
+            }
+          ]
+        }
+      },
+      "seed": 2902
+    },
+    {
+      "id": "warpc_base_s2903",
+      "dataset": "warpc",
+      "model": {
+        "name": "base",
+        "kind": "allocation",
+        "channels": [
+          16,
+          24,
+          40,
+          64
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": true,
+        "cost_k5": {
+          "params": 20245,
+          "macs": 9055616,
+          "block_costs": [
+            {
+              "params": 1472,
+              "macs": 3022848
+            },
+            {
+              "params": 1744,
+              "macs": 1787904
+            },
+            {
+              "params": 2976,
+              "macs": 1575936
+            },
+            {
+              "params": 3776,
+              "macs": 1002240
+            },
+            {
+              "params": 9488,
+              "macs": 671040
+            }
+          ]
+        }
+      },
+      "seed": 2903
+    },
+    {
+      "id": "warpc_base_no_residual_s2903",
+      "dataset": "warpc",
+      "model": {
+        "name": "base_no_residual",
+        "kind": "allocation",
+        "channels": [
+          16,
+          24,
+          40,
+          64
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": false,
+        "cost_k5": {
+          "params": 20245,
+          "macs": 9055616,
+          "block_costs": [
+            {
+              "params": 1472,
+              "macs": 3022848
+            },
+            {
+              "params": 1744,
+              "macs": 1787904
+            },
+            {
+              "params": 2976,
+              "macs": 1575936
+            },
+            {
+              "params": 3776,
+              "macs": 1002240
+            },
+            {
+              "params": 9488,
+              "macs": 671040
+            }
+          ]
+        }
+      },
+      "seed": 2903
+    },
+    {
+      "id": "warpc_allocation_14_30_36_52_s2903",
+      "dataset": "warpc",
+      "model": {
+        "name": "allocation_14_30_36_52",
+        "kind": "allocation",
+        "channels": [
+          14,
+          30,
+          36,
+          52
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": true,
+        "cost_k5": {
+          "params": 20131,
+          "macs": 9131876,
+          "block_costs": [
+            {
+              "params": 1176,
+              "macs": 2386944
+            },
+            {
+              "params": 1656,
+              "macs": 1532160
+            },
+            {
+              "params": 4440,
+              "macs": 2384640
+            },
+            {
+              "params": 4812,
+              "macs": 1425600
+            },
+            {
+              "params": 7376,
+              "macs": 531360
+            }
+          ]
+        }
+      },
+      "seed": 2903
+    },
+    {
+      "id": "warpc_allocation_12_34_36_36_s2903",
+      "dataset": "warpc",
+      "model": {
+        "name": "allocation_12_34_36_36",
+        "kind": "allocation",
+        "channels": [
+          12,
+          34,
+          36,
+          36
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": true,
+        "cost_k5": {
+          "params": 20413,
+          "macs": 9107604,
+          "block_costs": [
+            {
+              "params": 912,
+              "macs": 1824768
+            },
+            {
+              "params": 1484,
+              "macs": 1257984
+            },
+            {
+              "params": 5576,
+              "macs": 3015936
+            },
+            {
+              "params": 5716,
+              "macs": 1772352
+            },
+            {
+              "params": 6192,
+              "macs": 489888
+            }
+          ]
+        }
+      },
+      "seed": 2903
+    },
+    {
+      "id": "trashnet_base_s2901",
+      "dataset": "trashnet",
+      "model": {
+        "name": "base",
+        "kind": "allocation",
+        "channels": [
+          16,
+          24,
+          40,
+          64
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": true,
+        "cost_k5": {
+          "params": 20245,
+          "macs": 9055616,
+          "block_costs": [
+            {
+              "params": 1472,
+              "macs": 3022848
+            },
+            {
+              "params": 1744,
+              "macs": 1787904
+            },
+            {
+              "params": 2976,
+              "macs": 1575936
+            },
+            {
+              "params": 3776,
+              "macs": 1002240
+            },
+            {
+              "params": 9488,
+              "macs": 671040
+            }
+          ]
+        }
+      },
+      "seed": 2901
+    },
+    {
+      "id": "trashnet_base_no_residual_s2901",
+      "dataset": "trashnet",
+      "model": {
+        "name": "base_no_residual",
+        "kind": "allocation",
+        "channels": [
+          16,
+          24,
+          40,
+          64
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": false,
+        "cost_k5": {
+          "params": 20245,
+          "macs": 9055616,
+          "block_costs": [
+            {
+              "params": 1472,
+              "macs": 3022848
+            },
+            {
+              "params": 1744,
+              "macs": 1787904
+            },
+            {
+              "params": 2976,
+              "macs": 1575936
+            },
+            {
+              "params": 3776,
+              "macs": 1002240
+            },
+            {
+              "params": 9488,
+              "macs": 671040
+            }
+          ]
+        }
+      },
+      "seed": 2901
+    },
+    {
+      "id": "trashnet_allocation_14_30_36_52_s2901",
+      "dataset": "trashnet",
+      "model": {
+        "name": "allocation_14_30_36_52",
+        "kind": "allocation",
+        "channels": [
+          14,
+          30,
+          36,
+          52
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": true,
+        "cost_k5": {
+          "params": 20131,
+          "macs": 9131876,
+          "block_costs": [
+            {
+              "params": 1176,
+              "macs": 2386944
+            },
+            {
+              "params": 1656,
+              "macs": 1532160
+            },
+            {
+              "params": 4440,
+              "macs": 2384640
+            },
+            {
+              "params": 4812,
+              "macs": 1425600
+            },
+            {
+              "params": 7376,
+              "macs": 531360
+            }
+          ]
+        }
+      },
+      "seed": 2901
+    },
+    {
+      "id": "trashnet_allocation_12_34_36_36_s2901",
+      "dataset": "trashnet",
+      "model": {
+        "name": "allocation_12_34_36_36",
+        "kind": "allocation",
+        "channels": [
+          12,
+          34,
+          36,
+          36
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": true,
+        "cost_k5": {
+          "params": 20413,
+          "macs": 9107604,
+          "block_costs": [
+            {
+              "params": 912,
+              "macs": 1824768
+            },
+            {
+              "params": 1484,
+              "macs": 1257984
+            },
+            {
+              "params": 5576,
+              "macs": 3015936
+            },
+            {
+              "params": 5716,
+              "macs": 1772352
+            },
+            {
+              "params": 6192,
+              "macs": 489888
+            }
+          ]
+        }
+      },
+      "seed": 2901
+    },
+    {
+      "id": "trashnet_base_s2902",
+      "dataset": "trashnet",
+      "model": {
+        "name": "base",
+        "kind": "allocation",
+        "channels": [
+          16,
+          24,
+          40,
+          64
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": true,
+        "cost_k5": {
+          "params": 20245,
+          "macs": 9055616,
+          "block_costs": [
+            {
+              "params": 1472,
+              "macs": 3022848
+            },
+            {
+              "params": 1744,
+              "macs": 1787904
+            },
+            {
+              "params": 2976,
+              "macs": 1575936
+            },
+            {
+              "params": 3776,
+              "macs": 1002240
+            },
+            {
+              "params": 9488,
+              "macs": 671040
+            }
+          ]
+        }
+      },
+      "seed": 2902
+    },
+    {
+      "id": "trashnet_base_no_residual_s2902",
+      "dataset": "trashnet",
+      "model": {
+        "name": "base_no_residual",
+        "kind": "allocation",
+        "channels": [
+          16,
+          24,
+          40,
+          64
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": false,
+        "cost_k5": {
+          "params": 20245,
+          "macs": 9055616,
+          "block_costs": [
+            {
+              "params": 1472,
+              "macs": 3022848
+            },
+            {
+              "params": 1744,
+              "macs": 1787904
+            },
+            {
+              "params": 2976,
+              "macs": 1575936
+            },
+            {
+              "params": 3776,
+              "macs": 1002240
+            },
+            {
+              "params": 9488,
+              "macs": 671040
+            }
+          ]
+        }
+      },
+      "seed": 2902
+    },
+    {
+      "id": "trashnet_allocation_14_30_36_52_s2902",
+      "dataset": "trashnet",
+      "model": {
+        "name": "allocation_14_30_36_52",
+        "kind": "allocation",
+        "channels": [
+          14,
+          30,
+          36,
+          52
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": true,
+        "cost_k5": {
+          "params": 20131,
+          "macs": 9131876,
+          "block_costs": [
+            {
+              "params": 1176,
+              "macs": 2386944
+            },
+            {
+              "params": 1656,
+              "macs": 1532160
+            },
+            {
+              "params": 4440,
+              "macs": 2384640
+            },
+            {
+              "params": 4812,
+              "macs": 1425600
+            },
+            {
+              "params": 7376,
+              "macs": 531360
+            }
+          ]
+        }
+      },
+      "seed": 2902
+    },
+    {
+      "id": "trashnet_allocation_12_34_36_36_s2902",
+      "dataset": "trashnet",
+      "model": {
+        "name": "allocation_12_34_36_36",
+        "kind": "allocation",
+        "channels": [
+          12,
+          34,
+          36,
+          36
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": true,
+        "cost_k5": {
+          "params": 20413,
+          "macs": 9107604,
+          "block_costs": [
+            {
+              "params": 912,
+              "macs": 1824768
+            },
+            {
+              "params": 1484,
+              "macs": 1257984
+            },
+            {
+              "params": 5576,
+              "macs": 3015936
+            },
+            {
+              "params": 5716,
+              "macs": 1772352
+            },
+            {
+              "params": 6192,
+              "macs": 489888
+            }
+          ]
+        }
+      },
+      "seed": 2902
+    },
+    {
+      "id": "trashnet_base_s2903",
+      "dataset": "trashnet",
+      "model": {
+        "name": "base",
+        "kind": "allocation",
+        "channels": [
+          16,
+          24,
+          40,
+          64
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": true,
+        "cost_k5": {
+          "params": 20245,
+          "macs": 9055616,
+          "block_costs": [
+            {
+              "params": 1472,
+              "macs": 3022848
+            },
+            {
+              "params": 1744,
+              "macs": 1787904
+            },
+            {
+              "params": 2976,
+              "macs": 1575936
+            },
+            {
+              "params": 3776,
+              "macs": 1002240
+            },
+            {
+              "params": 9488,
+              "macs": 671040
+            }
+          ]
+        }
+      },
+      "seed": 2903
+    },
+    {
+      "id": "trashnet_base_no_residual_s2903",
+      "dataset": "trashnet",
+      "model": {
+        "name": "base_no_residual",
+        "kind": "allocation",
+        "channels": [
+          16,
+          24,
+          40,
+          64
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": false,
+        "cost_k5": {
+          "params": 20245,
+          "macs": 9055616,
+          "block_costs": [
+            {
+              "params": 1472,
+              "macs": 3022848
+            },
+            {
+              "params": 1744,
+              "macs": 1787904
+            },
+            {
+              "params": 2976,
+              "macs": 1575936
+            },
+            {
+              "params": 3776,
+              "macs": 1002240
+            },
+            {
+              "params": 9488,
+              "macs": 671040
+            }
+          ]
+        }
+      },
+      "seed": 2903
+    },
+    {
+      "id": "trashnet_allocation_14_30_36_52_s2903",
+      "dataset": "trashnet",
+      "model": {
+        "name": "allocation_14_30_36_52",
+        "kind": "allocation",
+        "channels": [
+          14,
+          30,
+          36,
+          52
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": true,
+        "cost_k5": {
+          "params": 20131,
+          "macs": 9131876,
+          "block_costs": [
+            {
+              "params": 1176,
+              "macs": 2386944
+            },
+            {
+              "params": 1656,
+              "macs": 1532160
+            },
+            {
+              "params": 4440,
+              "macs": 2384640
+            },
+            {
+              "params": 4812,
+              "macs": 1425600
+            },
+            {
+              "params": 7376,
+              "macs": 531360
+            }
+          ]
+        }
+      },
+      "seed": 2903
+    },
+    {
+      "id": "trashnet_allocation_12_34_36_36_s2903",
+      "dataset": "trashnet",
+      "model": {
+        "name": "allocation_12_34_36_36",
+        "kind": "allocation",
+        "channels": [
+          12,
+          34,
+          36,
+          36
+        ],
+        "expansions": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "residual": true,
+        "cost_k5": {
+          "params": 20413,
+          "macs": 9107604,
+          "block_costs": [
+            {
+              "params": 912,
+              "macs": 1824768
+            },
+            {
+              "params": 1484,
+              "macs": 1257984
+            },
+            {
+              "params": 5576,
+              "macs": 3015936
+            },
+            {
+              "params": 5716,
+              "macs": 1772352
+            },
+            {
+              "params": 6192,
+              "macs": 489888
+            }
+          ]
+        }
+      },
+      "seed": 2903
+    }
+  ],
+  "max_workers": 4,
+  "training": {
+    "resolution": 96,
+    "epochs": 100,
+    "patience": 20,
+    "checkpoint_selection": "selection macro-F1",
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "label_smoothing": 0.1,
+    "batch_size": 64
+  },
+  "class_mapping": "semantic parent folder name; never numeric fine-folder index",
+  "diagnostics": "probe-only class metrics, block pooled features and random channel removal",
+  "legacy_source_sha256": {
+    "legacy_issue3.py": "538db3b6842c38912b5339655a3d0b900613e3024744a0d46484210c67f6e231",
+    "legacy_table3.py": "3e813fa91229f49cfd4973ac49a068f12f5b8b14bd78fd2f60bbb943c290ff0f"
+  }
+}

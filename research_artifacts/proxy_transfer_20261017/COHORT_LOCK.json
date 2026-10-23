@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-10-16T23:53:04.929382+00:00",
+  "sources": {
+    "PLAN_SEBELUM_EKSEKUSI.txt": "3accf098ba5bb6c1a6814669026f536293bc8990edfec5eb173e424d08533496",
+    "prepare.py": "75f562e02ef1423f5fd92f36d7f256c736e558bd5e03c8396178fb06d49e049b",
+    "scores.py": "5a96e2207491eb17c036cd7057fa515e6030fc784f8600937b6aa21de68f7189",
+    "diagnostics.py": "0c57edd55214fe467cf7ec94e7b8d05358e0c121d63077f1cd2f81111ba7e119",
+    "train.py": "67a26929713d0ddae68e3f02c06fecf466d672f530d80e9c40f10cf90fc5bad4",
+    "old_profile.py": "9e4a6b5ca274a77ce2356a210d269017bb5df0c4f4e40856370c68564b1506a8",
+    "analyze.py": "46fcbaeb98daa220ff03d2efcfe3be417e3d5fb8cba1f6103ba9332ed71e6f77",
+    "scheduler.py": "06dd1d731c86cb12e4104cd00510c40ec2a0d41b5f49437ab07351baa34d1f4e",
+    "admission.py": "dd1891afdb7d0fc5bae01e1474eaa0ac67510a208d44f9cea9192360d150d2e8",
+    "reference.py": "c30252ad382a47612a7e225a0b1bab899bcd1d525bfab2a3c3b343a5af3a2936",
+    "models.py": "ca25d2a8899cc12009149d1657b4f27d4acc9c4e639162f7471ea9d5ba046f21",
+    "legacy_issue3.py": "538db3b6842c38912b5339655a3d0b900613e3024744a0d46484210c67f6e231",
+    "legacy_table3.py": "3e813fa91229f49cfd4973ac49a068f12f5b8b14bd78fd2f60bbb943c290ff0f",
+    "budget_design.py": "3c29f3caed6d00a407164c256977362edafb0d311f94457738a0a12597b929cf",
+    "old_results.json": "186bb9e41fa77917a31408cff2176c59f708bc9ff4c8dbec6714392fdb991623",
+    "ridge.json": "b85e7a8c9bcdfc8da3cba6eb7d8228af582a474fb0410b4cb938fa0997159262",
+    "PROTOCOL.json": "ee6a0619d5f1fc17e2dbf6d263a2ef0fc114f680730727ca2a0ca75b64830f6b",
+    "jobs.json": "68c0336361be86694cbdd34cf24438b4c9dc8e0c8b518eed908e4e9d70bb213d",
+    "preflight.json": "b01454a6f4ebe61d11bdb33055e577c65e745a07540a1629566f06f747fd6342",
+    "DATA_EXCLUSIONS.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "data_6301.json": "daf3723d6780736cd96800ba4efb3a45ed3a52093c150a42f8feb19e34e6b02c",
+    "data_6302.json": "645016efb40686612f7e1f996e99f65c5b7975a954cae3c3f9492de6a5d5a3bf",
+    "data_6303.json": "2b23045ab9dbf858f17fcbb646f944dc9ad1c87d54bdcaa98100d22edfd308be",
+    "supplemental_checks.py": "202a88d2a1cd878e64e4f06d5f3784ebbc699ae88a72e952fab6fcd6dac6b763",
+    "SUPPLEMENTAL_CHECKS.json": "1c870929b7a7fbc658b74f10e7fda70ef5ce5e7fef509de7f0b69d65f09e584f",
+    "PRE_GO_PUBLICATION_AMENDMENT.json": "6bbbd8d5571afa5b607c330b6c86097d6ee4e9d82bf4633997776a7e465b2598",
+    "CPU_RECONCILIATION_AMENDMENT.json": "7b13273e9d791f54ceb7802f32e97517a62dded7b62537afc0f3a8f47381b376"
+  },
+  "scope": "Frozen prospective DTD protocol and retrospective old-data diagnostics. Before GO/new training."
+}

@@ -1,0 +1,1514 @@
+[
+  {
+    "id": "dtd_split6303_base_s3903",
+    "split": 6303,
+    "seed": 3903,
+    "dataset": "dtd",
+    "model": {
+      "name": "base",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6301_base_s3903",
+    "split": 6301,
+    "seed": 3903,
+    "dataset": "dtd",
+    "model": {
+      "name": "base",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6301_base_s3901",
+    "split": 6301,
+    "seed": 3901,
+    "dataset": "dtd",
+    "model": {
+      "name": "base",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6303_base_s3902",
+    "split": 6303,
+    "seed": 3902,
+    "dataset": "dtd",
+    "model": {
+      "name": "base",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6302_base_s3901",
+    "split": 6302,
+    "seed": 3901,
+    "dataset": "dtd",
+    "model": {
+      "name": "base",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6302_base_s3903",
+    "split": 6302,
+    "seed": 3903,
+    "dataset": "dtd",
+    "model": {
+      "name": "base",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6301_base_s3902",
+    "split": 6301,
+    "seed": 3902,
+    "dataset": "dtd",
+    "model": {
+      "name": "base",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6303_base_s3901",
+    "split": 6303,
+    "seed": 3901,
+    "dataset": "dtd",
+    "model": {
+      "name": "base",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6302_base_s3902",
+    "split": 6302,
+    "seed": 3902,
+    "dataset": "dtd",
+    "model": {
+      "name": "base",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6302_joint_c_shrink_d_grow_s3902",
+    "split": 6302,
+    "seed": 3902,
+    "dataset": "dtd",
+    "model": {
+      "name": "joint_c_shrink_d_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        38,
+        70
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6301_joint_c_grow_d_shrink_s3901",
+    "split": 6301,
+    "seed": 3901,
+    "dataset": "dtd",
+    "model": {
+      "name": "joint_c_grow_d_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        42,
+        58
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6303_joint_c_grow_d_shrink_s3902",
+    "split": 6303,
+    "seed": 3902,
+    "dataset": "dtd",
+    "model": {
+      "name": "joint_c_grow_d_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        42,
+        58
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6302_d_grow_s3901",
+    "split": 6302,
+    "seed": 3901,
+    "dataset": "dtd",
+    "model": {
+      "name": "d_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        70
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6301_d_grow_s3903",
+    "split": 6301,
+    "seed": 3903,
+    "dataset": "dtd",
+    "model": {
+      "name": "d_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        70
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6303_d_shrink_s3902",
+    "split": 6303,
+    "seed": 3902,
+    "dataset": "dtd",
+    "model": {
+      "name": "d_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        58
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6303_d_grow_s3903",
+    "split": 6303,
+    "seed": 3903,
+    "dataset": "dtd",
+    "model": {
+      "name": "d_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        70
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6302_joint_c_grow_d_shrink_s3901",
+    "split": 6302,
+    "seed": 3901,
+    "dataset": "dtd",
+    "model": {
+      "name": "joint_c_grow_d_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        42,
+        58
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6301_c_shrink_s3901",
+    "split": 6301,
+    "seed": 3901,
+    "dataset": "dtd",
+    "model": {
+      "name": "c_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        38,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6301_c_shrink_s3903",
+    "split": 6301,
+    "seed": 3903,
+    "dataset": "dtd",
+    "model": {
+      "name": "c_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        38,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6301_joint_c_shrink_d_grow_s3902",
+    "split": 6301,
+    "seed": 3902,
+    "dataset": "dtd",
+    "model": {
+      "name": "joint_c_shrink_d_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        38,
+        70
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6301_joint_c_shrink_d_grow_s3901",
+    "split": 6301,
+    "seed": 3901,
+    "dataset": "dtd",
+    "model": {
+      "name": "joint_c_shrink_d_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        38,
+        70
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6302_joint_c_shrink_d_grow_s3901",
+    "split": 6302,
+    "seed": 3901,
+    "dataset": "dtd",
+    "model": {
+      "name": "joint_c_shrink_d_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        38,
+        70
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6301_d_shrink_s3902",
+    "split": 6301,
+    "seed": 3902,
+    "dataset": "dtd",
+    "model": {
+      "name": "d_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        58
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6303_c_grow_s3903",
+    "split": 6303,
+    "seed": 3903,
+    "dataset": "dtd",
+    "model": {
+      "name": "c_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        42,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6303_joint_c_grow_d_shrink_s3901",
+    "split": 6303,
+    "seed": 3901,
+    "dataset": "dtd",
+    "model": {
+      "name": "joint_c_grow_d_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        42,
+        58
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6302_c_grow_s3901",
+    "split": 6302,
+    "seed": 3901,
+    "dataset": "dtd",
+    "model": {
+      "name": "c_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        42,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6301_c_grow_s3903",
+    "split": 6301,
+    "seed": 3903,
+    "dataset": "dtd",
+    "model": {
+      "name": "c_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        42,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6302_d_shrink_s3901",
+    "split": 6302,
+    "seed": 3901,
+    "dataset": "dtd",
+    "model": {
+      "name": "d_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        58
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6302_joint_c_shrink_d_grow_s3903",
+    "split": 6302,
+    "seed": 3903,
+    "dataset": "dtd",
+    "model": {
+      "name": "joint_c_shrink_d_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        38,
+        70
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6301_d_grow_s3902",
+    "split": 6301,
+    "seed": 3902,
+    "dataset": "dtd",
+    "model": {
+      "name": "d_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        70
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6303_d_grow_s3901",
+    "split": 6303,
+    "seed": 3901,
+    "dataset": "dtd",
+    "model": {
+      "name": "d_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        70
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6302_joint_c_grow_d_shrink_s3903",
+    "split": 6302,
+    "seed": 3903,
+    "dataset": "dtd",
+    "model": {
+      "name": "joint_c_grow_d_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        42,
+        58
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6302_c_grow_s3902",
+    "split": 6302,
+    "seed": 3902,
+    "dataset": "dtd",
+    "model": {
+      "name": "c_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        42,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6301_d_shrink_s3901",
+    "split": 6301,
+    "seed": 3901,
+    "dataset": "dtd",
+    "model": {
+      "name": "d_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        58
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6303_joint_c_shrink_d_grow_s3903",
+    "split": 6303,
+    "seed": 3903,
+    "dataset": "dtd",
+    "model": {
+      "name": "joint_c_shrink_d_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        38,
+        70
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6303_d_shrink_s3901",
+    "split": 6303,
+    "seed": 3901,
+    "dataset": "dtd",
+    "model": {
+      "name": "d_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        58
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6303_c_grow_s3901",
+    "split": 6303,
+    "seed": 3901,
+    "dataset": "dtd",
+    "model": {
+      "name": "c_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        42,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6302_d_grow_s3903",
+    "split": 6302,
+    "seed": 3903,
+    "dataset": "dtd",
+    "model": {
+      "name": "d_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        70
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6303_d_shrink_s3903",
+    "split": 6303,
+    "seed": 3903,
+    "dataset": "dtd",
+    "model": {
+      "name": "d_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        58
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6301_c_grow_s3902",
+    "split": 6301,
+    "seed": 3902,
+    "dataset": "dtd",
+    "model": {
+      "name": "c_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        42,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6303_c_shrink_s3903",
+    "split": 6303,
+    "seed": 3903,
+    "dataset": "dtd",
+    "model": {
+      "name": "c_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        38,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6301_joint_c_shrink_d_grow_s3903",
+    "split": 6301,
+    "seed": 3903,
+    "dataset": "dtd",
+    "model": {
+      "name": "joint_c_shrink_d_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        38,
+        70
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6301_d_shrink_s3903",
+    "split": 6301,
+    "seed": 3903,
+    "dataset": "dtd",
+    "model": {
+      "name": "d_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        58
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6301_joint_c_grow_d_shrink_s3902",
+    "split": 6301,
+    "seed": 3902,
+    "dataset": "dtd",
+    "model": {
+      "name": "joint_c_grow_d_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        42,
+        58
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6302_c_shrink_s3903",
+    "split": 6302,
+    "seed": 3903,
+    "dataset": "dtd",
+    "model": {
+      "name": "c_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        38,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6303_c_shrink_s3901",
+    "split": 6303,
+    "seed": 3901,
+    "dataset": "dtd",
+    "model": {
+      "name": "c_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        38,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6301_d_grow_s3901",
+    "split": 6301,
+    "seed": 3901,
+    "dataset": "dtd",
+    "model": {
+      "name": "d_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        70
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6302_c_grow_s3903",
+    "split": 6302,
+    "seed": 3903,
+    "dataset": "dtd",
+    "model": {
+      "name": "c_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        42,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6302_c_shrink_s3901",
+    "split": 6302,
+    "seed": 3901,
+    "dataset": "dtd",
+    "model": {
+      "name": "c_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        38,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6302_c_shrink_s3902",
+    "split": 6302,
+    "seed": 3902,
+    "dataset": "dtd",
+    "model": {
+      "name": "c_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        38,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6302_d_shrink_s3902",
+    "split": 6302,
+    "seed": 3902,
+    "dataset": "dtd",
+    "model": {
+      "name": "d_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        58
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6303_joint_c_grow_d_shrink_s3903",
+    "split": 6303,
+    "seed": 3903,
+    "dataset": "dtd",
+    "model": {
+      "name": "joint_c_grow_d_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        42,
+        58
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6302_d_shrink_s3903",
+    "split": 6302,
+    "seed": 3903,
+    "dataset": "dtd",
+    "model": {
+      "name": "d_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        58
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6303_joint_c_shrink_d_grow_s3902",
+    "split": 6303,
+    "seed": 3902,
+    "dataset": "dtd",
+    "model": {
+      "name": "joint_c_shrink_d_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        38,
+        70
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6303_joint_c_shrink_d_grow_s3901",
+    "split": 6303,
+    "seed": 3901,
+    "dataset": "dtd",
+    "model": {
+      "name": "joint_c_shrink_d_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        38,
+        70
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6303_c_shrink_s3902",
+    "split": 6303,
+    "seed": 3902,
+    "dataset": "dtd",
+    "model": {
+      "name": "c_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        38,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6303_d_grow_s3902",
+    "split": 6303,
+    "seed": 3902,
+    "dataset": "dtd",
+    "model": {
+      "name": "d_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        70
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6302_d_grow_s3902",
+    "split": 6302,
+    "seed": 3902,
+    "dataset": "dtd",
+    "model": {
+      "name": "d_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        40,
+        70
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6303_c_grow_s3902",
+    "split": 6303,
+    "seed": 3902,
+    "dataset": "dtd",
+    "model": {
+      "name": "c_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        42,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6302_joint_c_grow_d_shrink_s3902",
+    "split": 6302,
+    "seed": 3902,
+    "dataset": "dtd",
+    "model": {
+      "name": "joint_c_grow_d_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        42,
+        58
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6301_c_shrink_s3902",
+    "split": 6301,
+    "seed": 3902,
+    "dataset": "dtd",
+    "model": {
+      "name": "c_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        38,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6301_c_grow_s3901",
+    "split": 6301,
+    "seed": 3901,
+    "dataset": "dtd",
+    "model": {
+      "name": "c_grow",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        42,
+        64
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  },
+  {
+    "id": "dtd_split6301_joint_c_grow_d_shrink_s3903",
+    "split": 6301,
+    "seed": 3903,
+    "dataset": "dtd",
+    "model": {
+      "name": "joint_c_grow_d_shrink",
+      "kind": "allocation",
+      "channels": [
+        16,
+        24,
+        42,
+        58
+      ],
+      "expansions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "residual": true
+    }
+  }
+]

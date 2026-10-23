@@ -1,0 +1,26 @@
+{
+  "datasets_verified": [
+    "warpc",
+    "trashnet"
+  ],
+  "checks": [
+    {
+      "split": 4302,
+      "forward_backward": 8,
+      "initial_weight_pairs": 6,
+      "lock_sha256": "a03c806e4930979249308aea8f28bffad8d2fde5acde25e39114b4becd25d298"
+    },
+    {
+      "split": 4303,
+      "forward_backward": 8,
+      "initial_weight_pairs": 6,
+      "lock_sha256": "2fb929c0866556db95d6051230105f33d302ec775d93426384f3ec97e7c45c0e"
+    },
+    {
+      "split": 4304,
+      "forward_backward": 8,
+      "initial_weight_pairs": 6,
+      "lock_sha256": "1bfe1a87f9f947bcbe6d859c098725129eb17cb724eb3f6a35789b637c35f061"
+    }
+  ]
+}

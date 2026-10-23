@@ -1,0 +1,17 @@
+{
+  "state": "PASS",
+  "checks": [
+    "Spare capacity with four DKD workers perGPU admitted",
+    "Isolated profiling blocks ACRE",
+    "Cost failure blocks ACRE",
+    "Stale DKD telemetry blocks ACRE",
+    "DKD refill priority blocks ACRE",
+    "DKD failure blocks ACRE",
+    "Unknown CUDA processes block ACRE",
+    "One ACRE worker perGPU enforced",
+    "High GPU utilization blocks admission",
+    "Low VRAM blocks admission",
+    "Completed DKD waits for isolated profiles",
+    "Completed DKD and15profiles permits emptyGPU"
+  ]
+}

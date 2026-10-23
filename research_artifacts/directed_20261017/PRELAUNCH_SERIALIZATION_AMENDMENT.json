@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-16T14:54:38.220520+00:00",
+  "scope": "Before any new scientific training; JSON representation only",
+  "previous_lock_sha256": "e0353035c87940c05436cc5bb5c248947e6d8c692214caaba9494378bc48200f",
+  "final_lock_sha256": "41619ae24524c4a99f610ca578191193f1ba4786d355bd8703724b3c240f41fc",
+  "change": "Undefined full-four-width condition number becomes null with rank explanation. Fixed a,b cause intentional rank2; factorial and proxy quantities unchanged. Original source and lock archived.",
+  "new_outcomes_observed": 0
+}

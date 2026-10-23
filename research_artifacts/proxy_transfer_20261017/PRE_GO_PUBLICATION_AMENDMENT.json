@@ -1,0 +1,6 @@
+{
+  "created_utc": "2026-10-17T00:02:52.668871+00:00",
+  "reason": "Publish all_profiles before COMPLETE status to prevent watcher race; no endpoint, recipe or estimator changes.",
+  "new_training_outcomes": 0,
+  "previous_lock_sha256": "9efc41c47bce9220d476211d7804e61dba76485e44b3bf91cb21fde114b35121"
+}

@@ -1,0 +1,18 @@
+PERBANDINGAN DIAGNOSTIK LAMA — RETROSPEKTIF
+Hasil ini memakai probe WaRP-C/TrashNet yang telah terekspos, bukan konfirmasi baru.
+Gain adalah hasil pilihan di antaraBase+2joint; semua metode dan hasil dipertahankan.
+
+trashnet | mask_f1 | mean gain +0.468 pp | regret 1.803 pp | nonBase 9/9
+trashnet | mask_macro_ce | mean gain +0.468 pp | regret 1.803 pp | nonBase 9/9
+trashnet | taylor_signed | mean gain +0.983 pp | regret 1.288 pp | nonBase 8/9
+trashnet | taylor_squared | mean gain +0.468 pp | regret 1.803 pp | nonBase 9/9
+trashnet | bn_gamma | mean gain -0.812 pp | regret 3.083 pp | nonBase 9/9
+trashnet | architecture_ridge | mean gain +0.000 pp | regret 2.271 pp | nonBase 0/9
+trashnet | choose_base | mean gain +0.000 pp | regret 2.271 pp | nonBase 0/9
+warpc | mask_f1 | mean gain -3.236 pp | regret 4.550 pp | nonBase 9/9
+warpc | mask_macro_ce | mean gain -3.653 pp | regret 4.967 pp | nonBase 9/9
+warpc | taylor_signed | mean gain -3.653 pp | regret 4.967 pp | nonBase 9/9
+warpc | taylor_squared | mean gain -3.653 pp | regret 4.967 pp | nonBase 9/9
+warpc | bn_gamma | mean gain -1.205 pp | regret 2.519 pp | nonBase 9/9
+warpc | architecture_ridge | mean gain +0.000 pp | regret 1.314 pp | nonBase 0/9
+warpc | choose_base | mean gain +0.000 pp | regret 1.314 pp | nonBase 0/9

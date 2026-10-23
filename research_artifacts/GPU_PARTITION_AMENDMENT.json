@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-16T09:34:11.309063+00:00",
+  "authorization": "User requested concurrent use of genuinely free GPU1",
+  "scope": "Cost profiling already complete for all5 methods. Calibration produces probabilities/accuracy, no timing benchmark. Reserve GPU0 for calibration and GPU1 for ACRE until measurement completion; then both GPUs can admit ACRE.",
+  "completed_metrics_preserved": 61,
+  "metric_formulas_changed": false,
+  "training_protocol_changed": false,
+  "strict_accuracy_check_preserved": true,
+  "technical_interruption": "Evaluator stopped once to replace all-device guard with per-device guard. Atomic completed results retained; at most in-progress checkpoint re-evaluated.",
+  "calibration_worker_sha256": "40f920735e59f6bbf01da48f9e4784d08b8099f23d6e1333b509c0494a27bcc2",
+  "acre_scheduler_sha256": "2d32501f1be66f89e521939fbd478774245c53486dc98c3a5a0bc8b3d4b06e52",
+  "audit_folder": "/home/kholiq/KD/DKD11_benchmark/post_primary_20261016/recovery_audit/gpu_partition_20261016T093402Z"
+}

@@ -1,0 +1,33 @@
+ACRE ONLY — CHANNEL DIAGNOSTICS / WIDTH REDISTRIBUTION / RETRAINING
+Post-outcome analysis plan, 17 October 2026.
+Existing aggregate outcomes have been inspected. This plan is NOT a preregistered
+confirmation and does not replace the original prospective DTD primary contrast.
+No DKD files, jobs, GPU allocations or experimental locks will be modified.
+No new training is part of this analysis.
+
+Use all 27 directed/DTD split-seed contexts, all six nonreference effects each.
+Keep waste CPU diagnostic reanalysis and DTD GPU diagnostics distinct.
+1. Separate c growth, c shrinkage, d growth, d shrinkage and both joint effects.
+   Report F1-mask errors versus zero by every task and intervention type; retain
+   all five diagnostics in ranking/decision evidence. No favorable subset selection.
+2. Test representational restrictions of fixed zero-anchored log-width mapping.
+   For each context, construct six-by-two log(c/40), log(d/64) matrix X.
+   Fit b*=argmin||g-Xb||² AFTER outcomes solely as an oracle diagnostic lower bound.
+   Report minimum achievable six-effect RMSE, zero-gain RMSE, actual F1-mask RMSE,
+   and exact orthogonal squared-error identity. Never call b* a transferred method,
+   a successful allocator, a causal variance component, or a noise-free mechanism.
+3. For both single-width axes retain both directions. Report sign incompatibility
+   with any zero-anchored monotone linear slope: both gains strictly positive or
+   both strictly negative. Define magnitude-aware bidirectional closure in log
+   coordinates; summarize all contexts without significance claims.
+4. Retrieve only nine already-computed DTD diagnostic JSONs and committed score
+   JSONs if accessible; verify SHA256 against retained commitments. No inference.
+   Compare signed Taylor predicted expected random-removal loss f*s with measured
+   mean mask loss, across five blocks per context. This checks frozen-model local
+   response, not retraining or independent validation of the mask slope itself.
+   Keep finite mask size, sampled channels, task support, and runtime limitations.
+5. Integrate only supported findings into abstract, introduction, methods, results,
+   discussion and supplement. Distinguish diagnostic calibration, mapping-family
+   restrictions and selection utility. Preserve primary DTD result and headroom.
+6. Preserve sources/receipts/CSV, generate vector figure/table, compile and verify.
+Do not describe a post-outcome pattern as prospectively validated or Q1 guaranteed.

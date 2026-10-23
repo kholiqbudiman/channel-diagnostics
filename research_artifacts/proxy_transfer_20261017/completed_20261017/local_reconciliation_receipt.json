@@ -1,0 +1,23 @@
+{
+  "state": "LOCAL_METRIC_RECONCILIATION_PASS",
+  "model_records": 63,
+  "decisions": 63,
+  "scope": "Gain/regret rechecked against fetched result snapshot; server checkpoint/NPZ audit receipt retained, not repeated here.",
+  "files": {
+    "analysis_status.json": "95254670583453c9b71d17fb7269ccfe60e5dfa658413379bc558040c60080f5",
+    "conditional_bootstrap.json": "08d7105210e268601b4e50190dcbb2c577edbc51ea71d193b2a015ac489d6e26",
+    "evaluation_audit.json": "3d06b9238ef42316b245262b5449d4e465f75539690715bfd63de6d4552300ca",
+    "EVALUATION_RELEASE.json": "a48a3804669e1edfbe2b709632a729ab8ec8b2b41a8af0e470d6a6a28457ccb6",
+    "HASIL_TRANSFER_DTD.txt": "0cac29ce5a72695111e9b948e9ce774cab7438e3d1090c44ee59c0c8f4b4e281",
+    "old_diagnostic_status.json": "6aab96bf5c3f7c69b53e8b0e22f098bad14b932c817711646466a1115f0f2956",
+    "PREDICTION_BARRIER.json": "7305daf9af4a3db9f31663fc33bfff5b8f005ce56120fec2795ade24f1b23614",
+    "status.json": "c2295d662ec7ae202d31e2d0dabdeaf1a11d774054745135ab3a8acff1e8b4ea",
+    "verified_results_snapshot.json": "2e6a9bc50302c8910ea13d45ae5c3201ef3b395f2e0d0fccc2bbf7e59d527142",
+    "dtd_comparison/all_context_metrics.csv": "751aa9341a25acd96d68b6e36712da82c6c96a892c5ab94969a4c81edfb105fc",
+    "dtd_comparison/all_decisions.csv": "ece11679b9ac028c1106da95a79da0b46d82e51968fccb607370247a913b9233",
+    "dtd_comparison/all_effects.csv": "be7338153fddbaf8228f702d893bc9c40c9296e6a6937059e5212451b4fb9614",
+    "dtd_comparison/all_interactions.csv": "aea66743cc735df9f93d83511fae62a45393520f099eb9b4acb5b94a8e85aae0",
+    "dtd_comparison/primary_policy_contrast.csv": "892bcf91f1370f02991e41ec9f114a852861023cebc900cdb86aca5f5858eb01",
+    "dtd_comparison/summary.json": "001cea4a2302e12ddf9ccb4a36c4a897245ea635df5ed1daf77a2e8029233a93"
+  }
+}

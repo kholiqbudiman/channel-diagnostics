@@ -1,0 +1,10 @@
+{
+  "complete_pilot_analysis.json": "79541de1896c0c74c76cb75c0c468dce8d643d01177d3abc00c60ebadab1167a",
+  "analyze_complete_pilot.py": "c47cd2e20c5fc5c8010ed04a59a69b1ac5c0c31ffe24ddff514ef3dee31fc0de",
+  "confusion_response.py": "879a17cdfda925b335562c95d0db8aae499e5df4ca199d54490e1160c7c85042",
+  "test_method.py": "929b5c306dcb421b410fedfc98fb7da41f92e00fe37ac75ceedd026d902b824f",
+  "METHOD_AND_VALIDATION.txt": "6377aa00df62de57bd1ca1badd46c4c48c8109302153bd04a633018e94e45152",
+  "source_manifest.json": "20536053562a0b5500192852298378159d0b9da536bf1369f939f59a2e816c74",
+  "cohort_gate_20261010.json": "9873177085deb3e05c2dbc6c8842e6f7beda6b2e5835c40cfc1bbfb6d4a0c901",
+  "watcher_status.json": "2d54d65a30f4aa494ba9fe50f69642de504d8f152784fcaccc70582c825f53c9"
+}

@@ -1,0 +1,236 @@
+[
+  {
+    "split": 4302,
+    "dataset": "warpc",
+    "seed": 2901,
+    "job": "warpc_base_s2901",
+    "original_folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302/runs/warpc_base_s2901",
+    "files": {
+      "result.json": "bbe8df0a9a4daad0d798ba2aded6e9dbba9c1eec683bdb670f9ec60a6428b92f",
+      "best.pt": "03bbf75fcd0a99f9f9a1691baf3bfd14f491d74a4c254706a6f9051ab2fb9eea",
+      "initial_state.pt": "dbbcf87b66d1d6f9b44a256a0194007cfb9133ff6858914fc6b84ce783497f35",
+      "probe_features.npz": "bcfa2e03b529f5e1c53d30d5ef643ccd8e7657b01d4285009741a0fae01dd9f9"
+    }
+  },
+  {
+    "split": 4302,
+    "dataset": "warpc",
+    "seed": 2902,
+    "job": "warpc_base_s2902",
+    "original_folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302/runs/warpc_base_s2902",
+    "files": {
+      "result.json": "5a8e483feeeda850bc8ede92661095816c6a3db0dada2e88d520834bbed8a7e0",
+      "best.pt": "eeb8ea4a0efeb6faa68cb01918c5ee7921e8fd0921f33e83ff26231a2adcf197",
+      "initial_state.pt": "9ef658e9aac46a4a21a46127555d5a5f4ed61dc729703cd2eaf9a54458ea9b44",
+      "probe_features.npz": "d84088a29c4cb33a64c6082749cacb88bd5bbc9736f5e87921716f10b4899cc3"
+    }
+  },
+  {
+    "split": 4302,
+    "dataset": "warpc",
+    "seed": 2903,
+    "job": "warpc_base_s2903",
+    "original_folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302/runs/warpc_base_s2903",
+    "files": {
+      "result.json": "645cd0415d6efb2a3b43c2a83d82c5b4982921c5f4eebd1427554852e693fe89",
+      "best.pt": "04937133ac903649095abf2f2b988ed2f1d62c683ba17455a115d1b41ccaa5cc",
+      "initial_state.pt": "71e1bcbd43fb3cd087b5b6e96c6cb1f84b937aff578e39bb44a7e4a9cb581d6e",
+      "probe_features.npz": "9b4f2859a2b04a582326b6fdfc049931d8890c1350f9aac2d217eb2e21c7dc97"
+    }
+  },
+  {
+    "split": 4302,
+    "dataset": "trashnet",
+    "seed": 2901,
+    "job": "trashnet_base_s2901",
+    "original_folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302/runs/trashnet_base_s2901",
+    "files": {
+      "result.json": "c2cd31fa67c91b8311444a5da98590768816fb6fbe495793adf5a22280c55bcd",
+      "best.pt": "85106b99eb91ac9ab696b0f82ab6b42833120fd1c30c58452fd56e89702c047f",
+      "initial_state.pt": "aa2419d3a7b3ffe0c7283c0463ce0cd2c0fb54d562d5052b56514ddda528bca0",
+      "probe_features.npz": "8e7493ebcb1c6953b24ee7c6809e51c8011cea11088cda6b1901c79564a1106e"
+    }
+  },
+  {
+    "split": 4302,
+    "dataset": "trashnet",
+    "seed": 2902,
+    "job": "trashnet_base_s2902",
+    "original_folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302/runs/trashnet_base_s2902",
+    "files": {
+      "result.json": "4e367f04cb82dc08c3295c82b86afdec4da4dfaa9da24214c4c75bf57aed3094",
+      "best.pt": "c98aa84daf0abb41a4b35864fc46269a42440635eb7fcf0f2ceaf429ca95d85d",
+      "initial_state.pt": "7c454dcd3a89032e032c47494e760182272c30adeec14571779638ac1edf256f",
+      "probe_features.npz": "e4246fd04bb4a67370a690696e9daf5e67e53d3d173c67d64f4677afd50af1d5"
+    }
+  },
+  {
+    "split": 4302,
+    "dataset": "trashnet",
+    "seed": 2903,
+    "job": "trashnet_base_s2903",
+    "original_folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302/runs/trashnet_base_s2903",
+    "files": {
+      "result.json": "715c66800a763c53b9f5156b66b62f3eb83ae1ad837014fdeaf1a4774dc41426",
+      "best.pt": "f468dd7506cd93ed2c3f11011eb78b12b6c0cf13e6f6829a0f80f3e8472c4b1d",
+      "initial_state.pt": "0573cf50738c3eef22c8674e1a5465ed5ba453efb58f74ebc453167aa347b5e5",
+      "probe_features.npz": "9f2e9396f14ecf30755141200d9eaf4b2bd29703c2dbaeda3d6382eb8d74562b"
+    }
+  },
+  {
+    "split": 4303,
+    "dataset": "warpc",
+    "seed": 2901,
+    "job": "warpc_base_s2901",
+    "original_folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303/runs/warpc_base_s2901",
+    "files": {
+      "result.json": "f789156aa64d2d61747d70ad1edab1483aa4e31b8c8740f548c1413ae0cfa5dc",
+      "best.pt": "b5919d0f8ea7e8f1d9eede741614eeca248f335eb6453200b48d808be2e5bd1c",
+      "initial_state.pt": "dbbcf87b66d1d6f9b44a256a0194007cfb9133ff6858914fc6b84ce783497f35",
+      "probe_features.npz": "bed4b8233e109b1bce5c682bd6c5ef61a329f56af58b883b8619dfc82698b3e5"
+    }
+  },
+  {
+    "split": 4303,
+    "dataset": "warpc",
+    "seed": 2902,
+    "job": "warpc_base_s2902",
+    "original_folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303/runs/warpc_base_s2902",
+    "files": {
+      "result.json": "e7a8efdb7ccbf6bdd78103a2fc5380106349d418c0476babe107292ad5115d2f",
+      "best.pt": "f02c72efdd1a88965f81e179de754969bfb0ebf81aed553b876977533e8cc02c",
+      "initial_state.pt": "9ef658e9aac46a4a21a46127555d5a5f4ed61dc729703cd2eaf9a54458ea9b44",
+      "probe_features.npz": "fe931155c14c4381c5c3b35121a59cd4fa93eee15289212db97d37cc7a21e673"
+    }
+  },
+  {
+    "split": 4303,
+    "dataset": "warpc",
+    "seed": 2903,
+    "job": "warpc_base_s2903",
+    "original_folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303/runs/warpc_base_s2903",
+    "files": {
+      "result.json": "5cbb00795d1f74994465343739e34d7b67064a70cf590f28b0ba6a3cb05bb553",
+      "best.pt": "877c077329240fc442e1cbcb915105e25619527ba9d10b2c7424ce3baaeeb11d",
+      "initial_state.pt": "71e1bcbd43fb3cd087b5b6e96c6cb1f84b937aff578e39bb44a7e4a9cb581d6e",
+      "probe_features.npz": "14fb2660a4a191214af7c6e9d2169deaa512ea628286f3aecd5d683ef80e13ba"
+    }
+  },
+  {
+    "split": 4303,
+    "dataset": "trashnet",
+    "seed": 2901,
+    "job": "trashnet_base_s2901",
+    "original_folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303/runs/trashnet_base_s2901",
+    "files": {
+      "result.json": "e7af4acfbf8a0b0ae369afd6f38c0add98d5f01748b94320781a8c1d6abe989d",
+      "best.pt": "aa6e24f723b0b2917aa57a14f52b81f1d1d12147825683a5ae86e8db65be25bb",
+      "initial_state.pt": "aa2419d3a7b3ffe0c7283c0463ce0cd2c0fb54d562d5052b56514ddda528bca0",
+      "probe_features.npz": "e4ee7dca6b4354b84112a5367d74a82644ebc9591d99e04eecddea0711887e22"
+    }
+  },
+  {
+    "split": 4303,
+    "dataset": "trashnet",
+    "seed": 2902,
+    "job": "trashnet_base_s2902",
+    "original_folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303/runs/trashnet_base_s2902",
+    "files": {
+      "result.json": "65737596e06a63ca0e053239e9c363cf2cca1b2b5a5a2eb9a597384e719bc4f2",
+      "best.pt": "c2c73f2fdcaf72ff7ce47c21fe6473ccc873009dc1b53140092cfa2fc55a3c2f",
+      "initial_state.pt": "7c454dcd3a89032e032c47494e760182272c30adeec14571779638ac1edf256f",
+      "probe_features.npz": "ce9b6a3a64e91c9bc436c7a998fb99c64601bcd5350ca4941fd06c845cc74f17"
+    }
+  },
+  {
+    "split": 4303,
+    "dataset": "trashnet",
+    "seed": 2903,
+    "job": "trashnet_base_s2903",
+    "original_folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303/runs/trashnet_base_s2903",
+    "files": {
+      "result.json": "0517fd313df83e55154fe4cd4760c72d97fa2277115a3b641b61b23fc18c2fb3",
+      "best.pt": "5c94a7e6a3c85513daccecf72d8f9cffb09266ca0ed969a68f9fec039d805d33",
+      "initial_state.pt": "0573cf50738c3eef22c8674e1a5465ed5ba453efb58f74ebc453167aa347b5e5",
+      "probe_features.npz": "f48da081d62edf503d2b607786af03413b5da75fe44810faa02e48b2ebdf9d1b"
+    }
+  },
+  {
+    "split": 4304,
+    "dataset": "warpc",
+    "seed": 2901,
+    "job": "warpc_base_s2901",
+    "original_folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304/runs/warpc_base_s2901",
+    "files": {
+      "result.json": "13db08384cba0f73bd1edb2f94eb374bb66899af66ce7d482ff7abfd6ccb2185",
+      "best.pt": "f00128950000972eaa52a7a73c682399f04190a0fe961fb6ac46d39090706966",
+      "initial_state.pt": "dbbcf87b66d1d6f9b44a256a0194007cfb9133ff6858914fc6b84ce783497f35",
+      "probe_features.npz": "cb994ace3c009b258f4804b63b4b4783ad630d64591cd81ee37d9f5b0df8df63"
+    }
+  },
+  {
+    "split": 4304,
+    "dataset": "warpc",
+    "seed": 2902,
+    "job": "warpc_base_s2902",
+    "original_folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304/runs/warpc_base_s2902",
+    "files": {
+      "result.json": "4e193def5329ff9924864200d0e14fbf48615179b5fbdd61d0c022fd286a703f",
+      "best.pt": "90353a37567fe2aa2d2589407c2111168abf9c54a52d244c0ddd16f013005e7c",
+      "initial_state.pt": "9ef658e9aac46a4a21a46127555d5a5f4ed61dc729703cd2eaf9a54458ea9b44",
+      "probe_features.npz": "a11474015347646160942afed0ddd7f1bcd35c3fe9b0908feb6943e85bb89fe1"
+    }
+  },
+  {
+    "split": 4304,
+    "dataset": "warpc",
+    "seed": 2903,
+    "job": "warpc_base_s2903",
+    "original_folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304/runs/warpc_base_s2903",
+    "files": {
+      "result.json": "18228f7f5a3a8796321a357859267d498d16414a317c23ed9bc2ef1dc61062be",
+      "best.pt": "705505a4a204f89de6bfd2450be9776fcadced977c6adea4aa26dfe7cc3e0687",
+      "initial_state.pt": "71e1bcbd43fb3cd087b5b6e96c6cb1f84b937aff578e39bb44a7e4a9cb581d6e",
+      "probe_features.npz": "24390fd6386411940efe0dbc6e0416d558acf4a1a56ac6d4792ea399a97fffaf"
+    }
+  },
+  {
+    "split": 4304,
+    "dataset": "trashnet",
+    "seed": 2901,
+    "job": "trashnet_base_s2901",
+    "original_folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304/runs/trashnet_base_s2901",
+    "files": {
+      "result.json": "caa139201150781fcc4b82bf0822110bc85a489e483b13189bc5c28920fcd43c",
+      "best.pt": "3d310243204b241509e9048a19daed7a8a0357038dad4a436ffd5360119d5f5b",
+      "initial_state.pt": "aa2419d3a7b3ffe0c7283c0463ce0cd2c0fb54d562d5052b56514ddda528bca0",
+      "probe_features.npz": "16276b15979828e4fb846b304037d89dd1e7596a1ccd4f867023269879693e14"
+    }
+  },
+  {
+    "split": 4304,
+    "dataset": "trashnet",
+    "seed": 2902,
+    "job": "trashnet_base_s2902",
+    "original_folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304/runs/trashnet_base_s2902",
+    "files": {
+      "result.json": "e9ce56ae7e75a71c49757d99a2d73c3f5b54ef4b05f010993c905abe9eaf9b29",
+      "best.pt": "56d1745c449b281f82eca72b7a80171745a190239b4c0812acaadd585394b980",
+      "initial_state.pt": "7c454dcd3a89032e032c47494e760182272c30adeec14571779638ac1edf256f",
+      "probe_features.npz": "75d73ac4ce4a7989fa50fac92fa5ae7a3d7d10f412ba1b7692c2306a979ea15d"
+    }
+  },
+  {
+    "split": 4304,
+    "dataset": "trashnet",
+    "seed": 2903,
+    "job": "trashnet_base_s2903",
+    "original_folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304/runs/trashnet_base_s2903",
+    "files": {
+      "result.json": "15ddd3ea3bd49a08780cc52b7f42dbcb65334beaf2be4a4a127f37309eb3fba5",
+      "best.pt": "eb6dd8aaf67c5c3822ca0229cef1ea7b2692dd0083686957a331cc340cb1e472",
+      "initial_state.pt": "0573cf50738c3eef22c8674e1a5465ed5ba453efb58f74ebc453167aa347b5e5",
+      "probe_features.npz": "b88856d6b2e0db1b6a3c1b8123b7ad6c0e4bc67f6d1123fb48c33297ec58d28e"
+    }
+  }
+]

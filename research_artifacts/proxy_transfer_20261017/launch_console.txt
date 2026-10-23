@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-10-17T00:02:52.690635+00:00",
+  "go": {
+    "state": "GO",
+    "created_utc": "2026-10-17T00:02:52.669225+00:00",
+    "cohort_lock_sha256": "8d222e06771ecc47e6c7a8b0dc0b499bb3aa56a37e8f2b9328635309eeb174ce",
+    "new_training_runs": 63,
+    "old_profiles": 18,
+    "conditions": "DKD/cost priority, max1ACREworker/GPU, all9Base prediction commits before nonBase, complete-cohort final evaluation",
+    "pre_go_checks_sha256": "1c870929b7a7fbc658b74f10e7fda70ef5ce5e7fef509de7f0b69d65f09e584f"
+  },
+  "services": [
+    {
+      "unit": "acre-proxy-old-diagnostics-20261017",
+      "stdout": "",
+      "stderr": "Running as unit: acre-proxy-old-diagnostics-20261017.service\n"
+    },
+    {
+      "unit": "acre-proxy-analysis-20261017",
+      "stdout": "",
+      "stderr": "Running as unit: acre-proxy-analysis-20261017.service\n"
+    },
+    {
+      "unit": "acre-proxy-transfer-20261017",
+      "stdout": "",
+      "stderr": "Running as unit: acre-proxy-transfer-20261017.service\n"
+    }
+  ]
+}

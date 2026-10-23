@@ -1,0 +1,513 @@
+{
+  "prediction_recomputations": 126,
+  "checkpoint_hashes": 126,
+  "initialization_hashes": 126,
+  "bootstrap_replicates": 1000,
+  "scope": "Paired class-stratified image bootstrap conditional on fitted checkpoints and fixed probe; not training, split, source-object or task uncertainty. No pooled iid p-values.",
+  "rows": [
+    {
+      "split": 4302,
+      "dataset": "warpc",
+      "seed": 2901,
+      "direction": "c_up_d_down",
+      "conditional_f1_interval": [
+        -15.741257558489076,
+        -1.7725678013644461
+      ],
+      "conditional_accuracy_interval": [
+        -5.454545454545439,
+        -0.11079545454545406
+      ]
+    },
+    {
+      "split": 4302,
+      "dataset": "warpc",
+      "seed": 2901,
+      "direction": "c_down_d_up",
+      "conditional_f1_interval": [
+        -14.20195362966667,
+        1.0297831875499956
+      ],
+      "conditional_accuracy_interval": [
+        -4.772727272727266,
+        0.22727272727271952
+      ]
+    },
+    {
+      "split": 4302,
+      "dataset": "warpc",
+      "seed": 2902,
+      "direction": "c_up_d_down",
+      "conditional_f1_interval": [
+        -12.773814863372417,
+        3.7355104014605978
+      ],
+      "conditional_accuracy_interval": [
+        -4.772727272727295,
+        0.681818181818187
+      ]
+    },
+    {
+      "split": 4302,
+      "dataset": "warpc",
+      "seed": 2902,
+      "direction": "c_down_d_up",
+      "conditional_f1_interval": [
+        -1.8116837128520615,
+        14.682804109288897
+      ],
+      "conditional_accuracy_interval": [
+        -1.022727272727281,
+        4.0909090909090935
+      ]
+    },
+    {
+      "split": 4302,
+      "dataset": "warpc",
+      "seed": 2903,
+      "direction": "c_up_d_down",
+      "conditional_f1_interval": [
+        -18.575880512478115,
+        -1.1425695987610311
+      ],
+      "conditional_accuracy_interval": [
+        -8.639204545454549,
+        -2.2727272727272805
+      ]
+    },
+    {
+      "split": 4302,
+      "dataset": "warpc",
+      "seed": 2903,
+      "direction": "c_down_d_up",
+      "conditional_f1_interval": [
+        -13.342446884280486,
+        3.318545173452877
+      ],
+      "conditional_accuracy_interval": [
+        -6.477272727272706,
+        -0.795454545454561
+      ]
+    },
+    {
+      "split": 4302,
+      "dataset": "trashnet",
+      "seed": 2901,
+      "direction": "c_up_d_down",
+      "conditional_f1_interval": [
+        -11.27173241089363,
+        4.350478370084694
+      ],
+      "conditional_accuracy_interval": [
+        -10.101010101010075,
+        4.0404040404040416
+      ]
+    },
+    {
+      "split": 4302,
+      "dataset": "trashnet",
+      "seed": 2901,
+      "direction": "c_down_d_up",
+      "conditional_f1_interval": [
+        -1.514731143138597,
+        14.851029831100616
+      ],
+      "conditional_accuracy_interval": [
+        -3.030303030303046,
+        11.616161616161605
+      ]
+    },
+    {
+      "split": 4302,
+      "dataset": "trashnet",
+      "seed": 2902,
+      "direction": "c_up_d_down",
+      "conditional_f1_interval": [
+        -7.978306808919333,
+        9.905754153957174
+      ],
+      "conditional_accuracy_interval": [
+        -7.070707070707073,
+        8.585858585858574
+      ]
+    },
+    {
+      "split": 4302,
+      "dataset": "trashnet",
+      "seed": 2902,
+      "direction": "c_down_d_up",
+      "conditional_f1_interval": [
+        -13.28850994902829,
+        3.1008160638072364
+      ],
+      "conditional_accuracy_interval": [
+        -12.133838383838414,
+        3.030303030303031
+      ]
+    },
+    {
+      "split": 4302,
+      "dataset": "trashnet",
+      "seed": 2903,
+      "direction": "c_up_d_down",
+      "conditional_f1_interval": [
+        -14.877331248503792,
+        3.2692742116293054
+      ],
+      "conditional_accuracy_interval": [
+        -12.62626262626263,
+        3.0303030303030027
+      ]
+    },
+    {
+      "split": 4302,
+      "dataset": "trashnet",
+      "seed": 2903,
+      "direction": "c_down_d_up",
+      "conditional_f1_interval": [
+        -14.188270807506067,
+        -2.009938497016303
+      ],
+      "conditional_accuracy_interval": [
+        -14.141414141414117,
+        -1.5151515151515156
+      ]
+    },
+    {
+      "split": 4303,
+      "dataset": "warpc",
+      "seed": 2901,
+      "direction": "c_up_d_down",
+      "conditional_f1_interval": [
+        -4.082410885573523,
+        9.2205867893121
+      ],
+      "conditional_accuracy_interval": [
+        -4.204545454545453,
+        0.5710227272727333
+      ]
+    },
+    {
+      "split": 4303,
+      "dataset": "warpc",
+      "seed": 2901,
+      "direction": "c_down_d_up",
+      "conditional_f1_interval": [
+        0.9850257788381017,
+        13.257192666030434
+      ],
+      "conditional_accuracy_interval": [
+        -0.5681818181818272,
+        4.431818181818187
+      ]
+    },
+    {
+      "split": 4303,
+      "dataset": "warpc",
+      "seed": 2902,
+      "direction": "c_up_d_down",
+      "conditional_f1_interval": [
+        -11.046055424934641,
+        4.8173677550170275
+      ],
+      "conditional_accuracy_interval": [
+        -3.9772727272727195,
+        1.4772727272727195
+      ]
+    },
+    {
+      "split": 4303,
+      "dataset": "warpc",
+      "seed": 2902,
+      "direction": "c_down_d_up",
+      "conditional_f1_interval": [
+        -9.672667742375118,
+        3.3676279221286505
+      ],
+      "conditional_accuracy_interval": [
+        -6.3664772727272965,
+        -0.6818181818181724
+      ]
+    },
+    {
+      "split": 4303,
+      "dataset": "warpc",
+      "seed": 2903,
+      "direction": "c_up_d_down",
+      "conditional_f1_interval": [
+        -12.197959919884582,
+        -0.3749961611628983
+      ],
+      "conditional_accuracy_interval": [
+        -2.8437500000000018,
+        2.5
+      ]
+    },
+    {
+      "split": 4303,
+      "dataset": "warpc",
+      "seed": 2903,
+      "direction": "c_down_d_up",
+      "conditional_f1_interval": [
+        -1.0614214218528357,
+        10.75576834295126
+      ],
+      "conditional_accuracy_interval": [
+        -1.3664772727272825,
+        3.86363636363636
+      ]
+    },
+    {
+      "split": 4303,
+      "dataset": "trashnet",
+      "seed": 2901,
+      "direction": "c_up_d_down",
+      "conditional_f1_interval": [
+        -8.318116606734124,
+        9.619898435180506
+      ],
+      "conditional_accuracy_interval": [
+        -8.585858585858603,
+        5.050505050505052
+      ]
+    },
+    {
+      "split": 4303,
+      "dataset": "trashnet",
+      "seed": 2901,
+      "direction": "c_down_d_up",
+      "conditional_f1_interval": [
+        -4.935111189493359,
+        11.656167738625244
+      ],
+      "conditional_accuracy_interval": [
+        -6.060606060606062,
+        8.080808080808069
+      ]
+    },
+    {
+      "split": 4303,
+      "dataset": "trashnet",
+      "seed": 2902,
+      "direction": "c_up_d_down",
+      "conditional_f1_interval": [
+        -23.4190264858676,
+        0.05082218532785297
+      ],
+      "conditional_accuracy_interval": [
+        -16.666666666666686,
+        -1.4210854715202004e-14
+      ]
+    },
+    {
+      "split": 4303,
+      "dataset": "trashnet",
+      "seed": 2902,
+      "direction": "c_down_d_up",
+      "conditional_f1_interval": [
+        -20.940650604014856,
+        1.168541139704377
+      ],
+      "conditional_accuracy_interval": [
+        -12.121212121212125,
+        4.053030303030305
+      ]
+    },
+    {
+      "split": 4303,
+      "dataset": "trashnet",
+      "seed": 2903,
+      "direction": "c_up_d_down",
+      "conditional_f1_interval": [
+        -0.09213823291291623,
+        19.03109352607713
+      ],
+      "conditional_accuracy_interval": [
+        -1.0101010101010246,
+        12.62626262626263
+      ]
+    },
+    {
+      "split": 4303,
+      "dataset": "trashnet",
+      "seed": 2903,
+      "direction": "c_down_d_up",
+      "conditional_f1_interval": [
+        -16.057980591250818,
+        1.4287793219219656
+      ],
+      "conditional_accuracy_interval": [
+        -11.616161616161591,
+        1.515151515151544
+      ]
+    },
+    {
+      "split": 4304,
+      "dataset": "warpc",
+      "seed": 2901,
+      "direction": "c_up_d_down",
+      "conditional_f1_interval": [
+        -17.437265111192893,
+        0.17033474295118756
+      ],
+      "conditional_accuracy_interval": [
+        -4.204545454545453,
+        0.5710227272727333
+      ]
+    },
+    {
+      "split": 4304,
+      "dataset": "warpc",
+      "seed": 2901,
+      "direction": "c_down_d_up",
+      "conditional_f1_interval": [
+        4.137309196957921,
+        15.969534387909166
+      ],
+      "conditional_accuracy_interval": [
+        1.3636363636363735,
+        6.25
+      ]
+    },
+    {
+      "split": 4304,
+      "dataset": "warpc",
+      "seed": 2902,
+      "direction": "c_up_d_down",
+      "conditional_f1_interval": [
+        -5.03544131145547,
+        3.920967182090842
+      ],
+      "conditional_accuracy_interval": [
+        -3.9772727272727195,
+        1.4772727272727195
+      ]
+    },
+    {
+      "split": 4304,
+      "dataset": "warpc",
+      "seed": 2902,
+      "direction": "c_down_d_up",
+      "conditional_f1_interval": [
+        -1.0670774823640916,
+        7.907872300136039
+      ],
+      "conditional_accuracy_interval": [
+        -0.681818181818187,
+        4.20738636363636
+      ]
+    },
+    {
+      "split": 4304,
+      "dataset": "warpc",
+      "seed": 2903,
+      "direction": "c_up_d_down",
+      "conditional_f1_interval": [
+        -5.284374977326834,
+        7.432186619913407
+      ],
+      "conditional_accuracy_interval": [
+        -3.181818181818187,
+        1.707386363636373
+      ]
+    },
+    {
+      "split": 4304,
+      "dataset": "warpc",
+      "seed": 2903,
+      "direction": "c_down_d_up",
+      "conditional_f1_interval": [
+        -5.9871767604304384,
+        6.637006425892488
+      ],
+      "conditional_accuracy_interval": [
+        -3.184659090909109,
+        2.1590909090909207
+      ]
+    },
+    {
+      "split": 4304,
+      "dataset": "trashnet",
+      "seed": 2901,
+      "direction": "c_up_d_down",
+      "conditional_f1_interval": [
+        -3.165462702493399,
+        12.3477011234942
+      ],
+      "conditional_accuracy_interval": [
+        -3.0303030303030596,
+        11.1111111111111
+      ]
+    },
+    {
+      "split": 4304,
+      "dataset": "trashnet",
+      "seed": 2901,
+      "direction": "c_down_d_up",
+      "conditional_f1_interval": [
+        -16.317446762386606,
+        1.1058458556567694
+      ],
+      "conditional_accuracy_interval": [
+        -12.121212121212096,
+        0.5050505050505052
+      ]
+    },
+    {
+      "split": 4304,
+      "dataset": "trashnet",
+      "seed": 2902,
+      "direction": "c_up_d_down",
+      "conditional_f1_interval": [
+        -14.736143077267528,
+        2.7638266065035952
+      ],
+      "conditional_accuracy_interval": [
+        -12.62626262626263,
+        2.52525252525254
+      ]
+    },
+    {
+      "split": 4304,
+      "dataset": "trashnet",
+      "seed": 2902,
+      "direction": "c_down_d_up",
+      "conditional_f1_interval": [
+        -5.689440505724744,
+        12.671093842186945
+      ],
+      "conditional_accuracy_interval": [
+        -9.595959595959584,
+        6.565656565656553
+      ]
+    },
+    {
+      "split": 4304,
+      "dataset": "trashnet",
+      "seed": 2903,
+      "direction": "c_up_d_down",
+      "conditional_f1_interval": [
+        -5.317109458145836,
+        14.885727151802392
+      ],
+      "conditional_accuracy_interval": [
+        -2.0202020202020208,
+        12.12121212121211
+      ]
+    },
+    {
+      "split": 4304,
+      "dataset": "trashnet",
+      "seed": 2903,
+      "direction": "c_down_d_up",
+      "conditional_f1_interval": [
+        -16.494448202988288,
+        3.8299775910013083
+      ],
+      "conditional_accuracy_interval": [
+        -10.606060606060595,
+        6.0606060606060765
+      ]
+    }
+  ]
+}

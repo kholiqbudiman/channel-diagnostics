@@ -1,0 +1,650 @@
+[
+  {
+    "id": "split4303_trashnet_base_no_residual_s2903",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "trashnet_base_no_residual_s2903",
+    "dataset": "trashnet",
+    "seed": 2903,
+    "model": "base_no_residual"
+  },
+  {
+    "id": "split4304_trashnet_base_no_residual_s2902",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "trashnet_base_no_residual_s2902",
+    "dataset": "trashnet",
+    "seed": 2902,
+    "model": "base_no_residual"
+  },
+  {
+    "id": "split4303_warpc_allocation_12_34_36_36_s2902",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "warpc_allocation_12_34_36_36_s2902",
+    "dataset": "warpc",
+    "seed": 2902,
+    "model": "allocation_12_34_36_36"
+  },
+  {
+    "id": "split4302_warpc_allocation_12_34_36_36_s2901",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "warpc_allocation_12_34_36_36_s2901",
+    "dataset": "warpc",
+    "seed": 2901,
+    "model": "allocation_12_34_36_36"
+  },
+  {
+    "id": "split4303_trashnet_base_s2903",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "trashnet_base_s2903",
+    "dataset": "trashnet",
+    "seed": 2903,
+    "model": "base"
+  },
+  {
+    "id": "split4304_trashnet_base_s2903",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "trashnet_base_s2903",
+    "dataset": "trashnet",
+    "seed": 2903,
+    "model": "base"
+  },
+  {
+    "id": "split4304_warpc_allocation_14_30_36_52_s2903",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "warpc_allocation_14_30_36_52_s2903",
+    "dataset": "warpc",
+    "seed": 2903,
+    "model": "allocation_14_30_36_52"
+  },
+  {
+    "id": "split4304_trashnet_base_no_residual_s2903",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "trashnet_base_no_residual_s2903",
+    "dataset": "trashnet",
+    "seed": 2903,
+    "model": "base_no_residual"
+  },
+  {
+    "id": "split4302_trashnet_allocation_14_30_36_52_s2903",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "trashnet_allocation_14_30_36_52_s2903",
+    "dataset": "trashnet",
+    "seed": 2903,
+    "model": "allocation_14_30_36_52"
+  },
+  {
+    "id": "split4302_trashnet_allocation_12_34_36_36_s2902",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "trashnet_allocation_12_34_36_36_s2902",
+    "dataset": "trashnet",
+    "seed": 2902,
+    "model": "allocation_12_34_36_36"
+  },
+  {
+    "id": "split4303_trashnet_allocation_14_30_36_52_s2902",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "trashnet_allocation_14_30_36_52_s2902",
+    "dataset": "trashnet",
+    "seed": 2902,
+    "model": "allocation_14_30_36_52"
+  },
+  {
+    "id": "split4302_trashnet_base_s2903",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "trashnet_base_s2903",
+    "dataset": "trashnet",
+    "seed": 2903,
+    "model": "base"
+  },
+  {
+    "id": "split4302_trashnet_base_s2902",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "trashnet_base_s2902",
+    "dataset": "trashnet",
+    "seed": 2902,
+    "model": "base"
+  },
+  {
+    "id": "split4302_warpc_base_no_residual_s2902",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "warpc_base_no_residual_s2902",
+    "dataset": "warpc",
+    "seed": 2902,
+    "model": "base_no_residual"
+  },
+  {
+    "id": "split4303_warpc_allocation_14_30_36_52_s2902",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "warpc_allocation_14_30_36_52_s2902",
+    "dataset": "warpc",
+    "seed": 2902,
+    "model": "allocation_14_30_36_52"
+  },
+  {
+    "id": "split4303_trashnet_base_no_residual_s2901",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "trashnet_base_no_residual_s2901",
+    "dataset": "trashnet",
+    "seed": 2901,
+    "model": "base_no_residual"
+  },
+  {
+    "id": "split4302_warpc_base_s2901",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "warpc_base_s2901",
+    "dataset": "warpc",
+    "seed": 2901,
+    "model": "base"
+  },
+  {
+    "id": "split4302_trashnet_allocation_14_30_36_52_s2902",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "trashnet_allocation_14_30_36_52_s2902",
+    "dataset": "trashnet",
+    "seed": 2902,
+    "model": "allocation_14_30_36_52"
+  },
+  {
+    "id": "split4303_trashnet_allocation_12_34_36_36_s2902",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "trashnet_allocation_12_34_36_36_s2902",
+    "dataset": "trashnet",
+    "seed": 2902,
+    "model": "allocation_12_34_36_36"
+  },
+  {
+    "id": "split4303_warpc_base_no_residual_s2902",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "warpc_base_no_residual_s2902",
+    "dataset": "warpc",
+    "seed": 2902,
+    "model": "base_no_residual"
+  },
+  {
+    "id": "split4304_warpc_base_no_residual_s2901",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "warpc_base_no_residual_s2901",
+    "dataset": "warpc",
+    "seed": 2901,
+    "model": "base_no_residual"
+  },
+  {
+    "id": "split4303_warpc_allocation_14_30_36_52_s2901",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "warpc_allocation_14_30_36_52_s2901",
+    "dataset": "warpc",
+    "seed": 2901,
+    "model": "allocation_14_30_36_52"
+  },
+  {
+    "id": "split4304_trashnet_base_no_residual_s2901",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "trashnet_base_no_residual_s2901",
+    "dataset": "trashnet",
+    "seed": 2901,
+    "model": "base_no_residual"
+  },
+  {
+    "id": "split4304_trashnet_allocation_12_34_36_36_s2902",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "trashnet_allocation_12_34_36_36_s2902",
+    "dataset": "trashnet",
+    "seed": 2902,
+    "model": "allocation_12_34_36_36"
+  },
+  {
+    "id": "split4303_warpc_base_no_residual_s2903",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "warpc_base_no_residual_s2903",
+    "dataset": "warpc",
+    "seed": 2903,
+    "model": "base_no_residual"
+  },
+  {
+    "id": "split4304_trashnet_base_s2902",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "trashnet_base_s2902",
+    "dataset": "trashnet",
+    "seed": 2902,
+    "model": "base"
+  },
+  {
+    "id": "split4303_trashnet_allocation_14_30_36_52_s2903",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "trashnet_allocation_14_30_36_52_s2903",
+    "dataset": "trashnet",
+    "seed": 2903,
+    "model": "allocation_14_30_36_52"
+  },
+  {
+    "id": "split4304_trashnet_base_s2901",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "trashnet_base_s2901",
+    "dataset": "trashnet",
+    "seed": 2901,
+    "model": "base"
+  },
+  {
+    "id": "split4304_warpc_allocation_12_34_36_36_s2901",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "warpc_allocation_12_34_36_36_s2901",
+    "dataset": "warpc",
+    "seed": 2901,
+    "model": "allocation_12_34_36_36"
+  },
+  {
+    "id": "split4302_warpc_allocation_14_30_36_52_s2903",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "warpc_allocation_14_30_36_52_s2903",
+    "dataset": "warpc",
+    "seed": 2903,
+    "model": "allocation_14_30_36_52"
+  },
+  {
+    "id": "split4304_trashnet_allocation_12_34_36_36_s2903",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "trashnet_allocation_12_34_36_36_s2903",
+    "dataset": "trashnet",
+    "seed": 2903,
+    "model": "allocation_12_34_36_36"
+  },
+  {
+    "id": "split4303_trashnet_base_no_residual_s2902",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "trashnet_base_no_residual_s2902",
+    "dataset": "trashnet",
+    "seed": 2902,
+    "model": "base_no_residual"
+  },
+  {
+    "id": "split4303_warpc_base_s2902",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "warpc_base_s2902",
+    "dataset": "warpc",
+    "seed": 2902,
+    "model": "base"
+  },
+  {
+    "id": "split4304_warpc_base_s2902",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "warpc_base_s2902",
+    "dataset": "warpc",
+    "seed": 2902,
+    "model": "base"
+  },
+  {
+    "id": "split4302_trashnet_allocation_12_34_36_36_s2903",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "trashnet_allocation_12_34_36_36_s2903",
+    "dataset": "trashnet",
+    "seed": 2903,
+    "model": "allocation_12_34_36_36"
+  },
+  {
+    "id": "split4304_trashnet_allocation_14_30_36_52_s2901",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "trashnet_allocation_14_30_36_52_s2901",
+    "dataset": "trashnet",
+    "seed": 2901,
+    "model": "allocation_14_30_36_52"
+  },
+  {
+    "id": "split4303_trashnet_allocation_12_34_36_36_s2901",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "trashnet_allocation_12_34_36_36_s2901",
+    "dataset": "trashnet",
+    "seed": 2901,
+    "model": "allocation_12_34_36_36"
+  },
+  {
+    "id": "split4303_warpc_base_s2901",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "warpc_base_s2901",
+    "dataset": "warpc",
+    "seed": 2901,
+    "model": "base"
+  },
+  {
+    "id": "split4302_warpc_allocation_12_34_36_36_s2903",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "warpc_allocation_12_34_36_36_s2903",
+    "dataset": "warpc",
+    "seed": 2903,
+    "model": "allocation_12_34_36_36"
+  },
+  {
+    "id": "split4303_trashnet_allocation_14_30_36_52_s2901",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "trashnet_allocation_14_30_36_52_s2901",
+    "dataset": "trashnet",
+    "seed": 2901,
+    "model": "allocation_14_30_36_52"
+  },
+  {
+    "id": "split4302_warpc_allocation_14_30_36_52_s2902",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "warpc_allocation_14_30_36_52_s2902",
+    "dataset": "warpc",
+    "seed": 2902,
+    "model": "allocation_14_30_36_52"
+  },
+  {
+    "id": "split4304_warpc_base_no_residual_s2902",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "warpc_base_no_residual_s2902",
+    "dataset": "warpc",
+    "seed": 2902,
+    "model": "base_no_residual"
+  },
+  {
+    "id": "split4304_warpc_allocation_14_30_36_52_s2901",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "warpc_allocation_14_30_36_52_s2901",
+    "dataset": "warpc",
+    "seed": 2901,
+    "model": "allocation_14_30_36_52"
+  },
+  {
+    "id": "split4303_warpc_allocation_14_30_36_52_s2903",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "warpc_allocation_14_30_36_52_s2903",
+    "dataset": "warpc",
+    "seed": 2903,
+    "model": "allocation_14_30_36_52"
+  },
+  {
+    "id": "split4304_warpc_base_s2903",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "warpc_base_s2903",
+    "dataset": "warpc",
+    "seed": 2903,
+    "model": "base"
+  },
+  {
+    "id": "split4302_trashnet_base_no_residual_s2901",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "trashnet_base_no_residual_s2901",
+    "dataset": "trashnet",
+    "seed": 2901,
+    "model": "base_no_residual"
+  },
+  {
+    "id": "split4304_trashnet_allocation_14_30_36_52_s2902",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "trashnet_allocation_14_30_36_52_s2902",
+    "dataset": "trashnet",
+    "seed": 2902,
+    "model": "allocation_14_30_36_52"
+  },
+  {
+    "id": "split4302_warpc_allocation_14_30_36_52_s2901",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "warpc_allocation_14_30_36_52_s2901",
+    "dataset": "warpc",
+    "seed": 2901,
+    "model": "allocation_14_30_36_52"
+  },
+  {
+    "id": "split4304_warpc_allocation_12_34_36_36_s2902",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "warpc_allocation_12_34_36_36_s2902",
+    "dataset": "warpc",
+    "seed": 2902,
+    "model": "allocation_12_34_36_36"
+  },
+  {
+    "id": "split4303_trashnet_allocation_12_34_36_36_s2903",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "trashnet_allocation_12_34_36_36_s2903",
+    "dataset": "trashnet",
+    "seed": 2903,
+    "model": "allocation_12_34_36_36"
+  },
+  {
+    "id": "split4304_warpc_allocation_12_34_36_36_s2903",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "warpc_allocation_12_34_36_36_s2903",
+    "dataset": "warpc",
+    "seed": 2903,
+    "model": "allocation_12_34_36_36"
+  },
+  {
+    "id": "split4302_trashnet_base_s2901",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "trashnet_base_s2901",
+    "dataset": "trashnet",
+    "seed": 2901,
+    "model": "base"
+  },
+  {
+    "id": "split4302_warpc_base_s2903",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "warpc_base_s2903",
+    "dataset": "warpc",
+    "seed": 2903,
+    "model": "base"
+  },
+  {
+    "id": "split4304_warpc_base_s2901",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "warpc_base_s2901",
+    "dataset": "warpc",
+    "seed": 2901,
+    "model": "base"
+  },
+  {
+    "id": "split4304_trashnet_allocation_14_30_36_52_s2903",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "trashnet_allocation_14_30_36_52_s2903",
+    "dataset": "trashnet",
+    "seed": 2903,
+    "model": "allocation_14_30_36_52"
+  },
+  {
+    "id": "split4303_trashnet_base_s2901",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "trashnet_base_s2901",
+    "dataset": "trashnet",
+    "seed": 2901,
+    "model": "base"
+  },
+  {
+    "id": "split4302_warpc_base_s2902",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "warpc_base_s2902",
+    "dataset": "warpc",
+    "seed": 2902,
+    "model": "base"
+  },
+  {
+    "id": "split4304_warpc_allocation_14_30_36_52_s2902",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "warpc_allocation_14_30_36_52_s2902",
+    "dataset": "warpc",
+    "seed": 2902,
+    "model": "allocation_14_30_36_52"
+  },
+  {
+    "id": "split4303_warpc_allocation_12_34_36_36_s2901",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "warpc_allocation_12_34_36_36_s2901",
+    "dataset": "warpc",
+    "seed": 2901,
+    "model": "allocation_12_34_36_36"
+  },
+  {
+    "id": "split4302_trashnet_base_no_residual_s2903",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "trashnet_base_no_residual_s2903",
+    "dataset": "trashnet",
+    "seed": 2903,
+    "model": "base_no_residual"
+  },
+  {
+    "id": "split4303_warpc_base_s2903",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "warpc_base_s2903",
+    "dataset": "warpc",
+    "seed": 2903,
+    "model": "base"
+  },
+  {
+    "id": "split4303_warpc_base_no_residual_s2901",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "warpc_base_no_residual_s2901",
+    "dataset": "warpc",
+    "seed": 2901,
+    "model": "base_no_residual"
+  },
+  {
+    "id": "split4302_warpc_allocation_12_34_36_36_s2902",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "warpc_allocation_12_34_36_36_s2902",
+    "dataset": "warpc",
+    "seed": 2902,
+    "model": "allocation_12_34_36_36"
+  },
+  {
+    "id": "split4302_warpc_base_no_residual_s2901",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "warpc_base_no_residual_s2901",
+    "dataset": "warpc",
+    "seed": 2901,
+    "model": "base_no_residual"
+  },
+  {
+    "id": "split4303_warpc_allocation_12_34_36_36_s2903",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "warpc_allocation_12_34_36_36_s2903",
+    "dataset": "warpc",
+    "seed": 2903,
+    "model": "allocation_12_34_36_36"
+  },
+  {
+    "id": "split4302_warpc_base_no_residual_s2903",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "warpc_base_no_residual_s2903",
+    "dataset": "warpc",
+    "seed": 2903,
+    "model": "base_no_residual"
+  },
+  {
+    "id": "split4303_trashnet_base_s2902",
+    "split": 4303,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4303",
+    "inner_id": "trashnet_base_s2902",
+    "dataset": "trashnet",
+    "seed": 2902,
+    "model": "base"
+  },
+  {
+    "id": "split4304_warpc_base_no_residual_s2903",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "warpc_base_no_residual_s2903",
+    "dataset": "warpc",
+    "seed": 2903,
+    "model": "base_no_residual"
+  },
+  {
+    "id": "split4304_trashnet_allocation_12_34_36_36_s2901",
+    "split": 4304,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4304",
+    "inner_id": "trashnet_allocation_12_34_36_36_s2901",
+    "dataset": "trashnet",
+    "seed": 2901,
+    "model": "allocation_12_34_36_36"
+  },
+  {
+    "id": "split4302_trashnet_base_no_residual_s2902",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "trashnet_base_no_residual_s2902",
+    "dataset": "trashnet",
+    "seed": 2902,
+    "model": "base_no_residual"
+  },
+  {
+    "id": "split4302_trashnet_allocation_12_34_36_36_s2901",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "trashnet_allocation_12_34_36_36_s2901",
+    "dataset": "trashnet",
+    "seed": 2901,
+    "model": "allocation_12_34_36_36"
+  },
+  {
+    "id": "split4302_trashnet_allocation_14_30_36_52_s2901",
+    "split": 4302,
+    "folder": "/home/kholiq/KD/ACRE_stability_20261016/split_4302",
+    "inner_id": "trashnet_allocation_14_30_36_52_s2901",
+    "dataset": "trashnet",
+    "seed": 2901,
+    "model": "allocation_14_30_36_52"
+  }
+]

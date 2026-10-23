@@ -1,0 +1,56 @@
+[
+  {
+    "dataset": "all",
+    "endpoint": "macro_f1",
+    "rows": 36,
+    "mae": 16.26494971527839,
+    "nochange_mae": 3.4549231727819865,
+    "spearman": 0.011325611325611325,
+    "sign_agreement": 0.4444444444444444
+  },
+  {
+    "dataset": "all",
+    "endpoint": "class_loss",
+    "rows": 198,
+    "mae": 0.9418114161151063,
+    "nochange_mae": 0.1315180254403991,
+    "spearman": 0.04848500308031466,
+    "sign_agreement": 0.47474747474747475
+  },
+  {
+    "dataset": "warpc",
+    "endpoint": "macro_f1",
+    "rows": 18,
+    "mae": 11.650637682374741,
+    "nochange_mae": 3.471521060811341,
+    "spearman": 0.11042311661506708,
+    "sign_agreement": 0.5
+  },
+  {
+    "dataset": "warpc",
+    "endpoint": "class_loss",
+    "rows": 90,
+    "mae": 0.8195427815694687,
+    "nochange_mae": 0.13906839191913606,
+    "spearman": 0.044293534181174626,
+    "sign_agreement": 0.4666666666666667
+  },
+  {
+    "dataset": "trashnet",
+    "endpoint": "macro_f1",
+    "rows": 18,
+    "mae": 20.879261748182046,
+    "nochange_mae": 3.4383252847526315,
+    "spearman": -0.17853457172342618,
+    "sign_agreement": 0.3888888888888889
+  },
+  {
+    "dataset": "trashnet",
+    "endpoint": "class_loss",
+    "rows": 108,
+    "mae": 1.0437019449031377,
+    "nochange_mae": 0.12522605337478496,
+    "spearman": 0.029809368658721313,
+    "sign_agreement": 0.48148148148148145
+  }
+]

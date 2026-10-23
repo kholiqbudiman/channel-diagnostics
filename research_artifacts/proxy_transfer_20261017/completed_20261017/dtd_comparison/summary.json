@@ -1,0 +1,164 @@
+{
+  "methods": [
+    {
+      "dataset": "dtd",
+      "method": "mask_f1",
+      "contexts": 9,
+      "mean_selected_gain_pp": -1.5071659496873515,
+      "descriptive_sd_gain_pp": 2.160859439448973,
+      "mean_regret_pp": 2.1189738764432158,
+      "mean_uniform_random_gain_pp": -1.1695438409555963,
+      "mean_macro_ce_improvement": -0.016012653955049288,
+      "mean_spearman_f1": 0.05396825396825398,
+      "valid_rank_contexts": 9,
+      "nonbase_choices": 9,
+      "mean_f1_gain_mae_pp": 2.107521586013246
+    },
+    {
+      "dataset": "dtd",
+      "method": "mask_macro_ce",
+      "contexts": 9,
+      "mean_selected_gain_pp": -1.3966354964508332,
+      "descriptive_sd_gain_pp": 2.043643588618408,
+      "mean_regret_pp": 2.008443423206698,
+      "mean_uniform_random_gain_pp": -1.1695438409555963,
+      "mean_macro_ce_improvement": -0.0070960113060953844,
+      "mean_spearman_f1": 0.08571428571428572,
+      "valid_rank_contexts": 9,
+      "nonbase_choices": 9
+    },
+    {
+      "dataset": "dtd",
+      "method": "taylor_signed",
+      "contexts": 9,
+      "mean_selected_gain_pp": -1.018548426327696,
+      "descriptive_sd_gain_pp": 2.397655009754044,
+      "mean_regret_pp": 1.6303563530835605,
+      "mean_uniform_random_gain_pp": -1.1695438409555963,
+      "mean_macro_ce_improvement": -0.011938940830546387,
+      "mean_spearman_f1": -0.022222222222222223,
+      "valid_rank_contexts": 9,
+      "nonbase_choices": 9
+    },
+    {
+      "dataset": "dtd",
+      "method": "taylor_squared",
+      "contexts": 9,
+      "mean_selected_gain_pp": -1.3966354964508332,
+      "descriptive_sd_gain_pp": 2.043643588618408,
+      "mean_regret_pp": 2.008443423206698,
+      "mean_uniform_random_gain_pp": -1.1695438409555963,
+      "mean_macro_ce_improvement": -0.0070960113060953844,
+      "mean_spearman_f1": 0.18095238095238098,
+      "valid_rank_contexts": 9,
+      "nonbase_choices": 9
+    },
+    {
+      "dataset": "dtd",
+      "method": "bn_gamma",
+      "contexts": 9,
+      "mean_selected_gain_pp": -2.1119960264159556,
+      "descriptive_sd_gain_pp": 2.5467374981729436,
+      "mean_regret_pp": 2.72380395317182,
+      "mean_uniform_random_gain_pp": -1.1695438409555963,
+      "mean_macro_ce_improvement": -0.03023934012045531,
+      "mean_spearman_f1": -0.04761904761904763,
+      "valid_rank_contexts": 9,
+      "nonbase_choices": 9
+    },
+    {
+      "dataset": "dtd",
+      "method": "architecture_ridge",
+      "contexts": 9,
+      "mean_selected_gain_pp": -1.3966354964508332,
+      "descriptive_sd_gain_pp": 2.043643588618408,
+      "mean_regret_pp": 2.008443423206698,
+      "mean_uniform_random_gain_pp": -1.1695438409555963,
+      "mean_macro_ce_improvement": -0.0070960113060953844,
+      "mean_spearman_f1": 0.13650793650793652,
+      "valid_rank_contexts": 9,
+      "nonbase_choices": 9,
+      "mean_f1_gain_mae_pp": 2.026483778565678
+    },
+    {
+      "dataset": "dtd",
+      "method": "choose_base",
+      "contexts": 9,
+      "mean_selected_gain_pp": 0.0,
+      "descriptive_sd_gain_pp": 0.0,
+      "mean_regret_pp": 0.6118079267558644,
+      "mean_uniform_random_gain_pp": -1.1695438409555963,
+      "mean_macro_ce_improvement": 0.0,
+      "mean_spearman_f1": null,
+      "valid_rank_contexts": 0,
+      "nonbase_choices": 0,
+      "mean_f1_gain_mae_pp": 2.0482540782651792
+    }
+  ],
+  "primary": [
+    {
+      "dataset": "dtd",
+      "split": 6303,
+      "seed": 3903,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": -0.5745979978745197
+    },
+    {
+      "dataset": "dtd",
+      "split": 6301,
+      "seed": 3903,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": -4.191299189784864
+    },
+    {
+      "dataset": "dtd",
+      "split": 6301,
+      "seed": 3901,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": -2.1955878803859257
+    },
+    {
+      "dataset": "dtd",
+      "split": 6303,
+      "seed": 3902,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": -1.0584269520511391
+    },
+    {
+      "dataset": "dtd",
+      "split": 6302,
+      "seed": 3901,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": 3.1642547335962696
+    },
+    {
+      "dataset": "dtd",
+      "split": 6302,
+      "seed": 3903,
+      "ce_policy_minus_f1_policy_pp": 0.9947740791286641,
+      "ce_policy_minus_base_pp": -2.9362074573766535
+    },
+    {
+      "dataset": "dtd",
+      "split": 6301,
+      "seed": 3902,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": -1.3780730390966909
+    },
+    {
+      "dataset": "dtd",
+      "split": 6303,
+      "seed": 3901,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": -2.339014661182251
+    },
+    {
+      "dataset": "dtd",
+      "split": 6302,
+      "seed": 3902,
+      "ce_policy_minus_f1_policy_pp": 0.0,
+      "ce_policy_minus_base_pp": -1.0607670239017253
+    }
+  ],
+  "scope": "All prespecified methods retained. Scores of ordinal diagnostics are not F1 units. Contexts overlap in image pools; descriptive comparisons, not iid p-values."
+}
